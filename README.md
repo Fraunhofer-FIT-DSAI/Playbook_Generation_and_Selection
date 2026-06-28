@@ -34,7 +34,6 @@ results/
 
 docs/
   artifact_manifest.md            File-level overview of the public artifact.
-  claims_to_artifact.md           Mapping from paper claims to code/data/results.
 ```
 
 ## Setup
