@@ -1,0 +1,500 @@
+{
+  "generation_input": {
+    "recommended_mulval_case": "scenario_Chemical",
+    "total_step_count": 26,
+    "usable_step_count": 19
+  },
+  "scenario_id": "Chemical",
+  "scenario_name": "Chemical",
+  "schema_version": "1.0",
+  "selection_input": {
+    "attack_ids": [
+      "T0811",
+      "T0836",
+      "T0859",
+      "T0863",
+      "T0869",
+      "T0881",
+      "T0885",
+      "T1043",
+      "T1069",
+      "T1078",
+      "T1078.001",
+      "T1087",
+      "T1110",
+      "T1110.001",
+      "T1110.003",
+      "T1110.004",
+      "T1204",
+      "T1213",
+      "T1489",
+      "T1498.001",
+      "T1498.002",
+      "T1499.002",
+      "T1499.003",
+      "T1506",
+      "T1537",
+      "T1550.004",
+      "T1552",
+      "T1606",
+      "T1606.001",
+      "T1606.002"
+    ],
+    "scenario_csv": "selection_phase/source/Use-Case/SparqlQueryGeneration/LIAO-NO ICS main SCENARIO/df_SCENARIO_Chemical.csv",
+    "scenario_sparql": "selection_phase/source/Use-Case/SparqlQueryGeneration/SPARQL_QUERIES/df_SCENARIO_Chemical.sparql"
+  },
+  "steps": [
+    {
+      "attack_ids": [
+        "T1078.001"
+      ],
+      "cvss_score": "9.8",
+      "cvss_severity": "CRITICAL",
+      "generation_mitre_technique": "Default Accounts - T1078.001",
+      "generation_mitre_techniques": [
+        "Default Accounts - T1078.001"
+      ],
+      "order": 3,
+      "selected_attack_id": "T1078.001",
+      "tactic": "Initial Access",
+      "technique": "Default Accounts",
+      "top_cve": "CVE-2020-14510",
+      "usable_for_generation": true
+    },
+    {
+      "attack_ids": [
+        "T0863",
+        "T1204"
+      ],
+      "cvss_score": "9.8",
+      "cvss_severity": "CRITICAL",
+      "generation_mitre_technique": "User Execution - T0863",
+      "generation_mitre_techniques": [
+        "User Execution - T0863",
+        "User Execution - T1204"
+      ],
+      "order": 4,
+      "selected_attack_id": "T0863",
+      "tactic": "Execution",
+      "technique": "User Execution",
+      "top_cve": "CVE-2020-3198",
+      "usable_for_generation": true
+    },
+    {
+      "attack_ids": [
+        "T0859",
+        "T1078"
+      ],
+      "cvss_score": "9.9",
+      "cvss_severity": "CRITICAL",
+      "generation_mitre_technique": "Valid Accounts - T0859",
+      "generation_mitre_techniques": [
+        "Valid Accounts - T0859",
+        "Valid Accounts - T1078"
+      ],
+      "order": 5,
+      "selected_attack_id": "T0859",
+      "tactic": "Persistence",
+      "technique": "Valid Accounts",
+      "top_cve": "CVE-2018-15761",
+      "usable_for_generation": true
+    },
+    {
+      "attack_ids": [
+        "T1078.001"
+      ],
+      "cvss_score": "9.8",
+      "cvss_severity": "CRITICAL",
+      "generation_mitre_technique": "Default Accounts - T1078.001",
+      "generation_mitre_techniques": [
+        "Default Accounts - T1078.001"
+      ],
+      "order": 6,
+      "selected_attack_id": "T1078.001",
+      "tactic": "Privilege Escalation",
+      "technique": "Default Accounts",
+      "top_cve": "CVE-2020-14510",
+      "usable_for_generation": true
+    },
+    {
+      "attack_ids": [
+        "T1078.001"
+      ],
+      "cvss_score": "9.8",
+      "cvss_severity": "CRITICAL",
+      "generation_mitre_technique": "Default Accounts - T1078.001",
+      "generation_mitre_techniques": [
+        "Default Accounts - T1078.001"
+      ],
+      "order": 7,
+      "selected_attack_id": "T1078.001",
+      "tactic": "Defense Evasion",
+      "technique": "Default Accounts",
+      "top_cve": "CVE-2020-14510",
+      "usable_for_generation": true
+    },
+    {
+      "attack_ids": [
+        "T1552"
+      ],
+      "cvss_score": "8.8",
+      "cvss_severity": "HIGH",
+      "generation_mitre_technique": "Unsecured Credentials - T1552",
+      "generation_mitre_techniques": [
+        "Unsecured Credentials - T1552"
+      ],
+      "order": 8,
+      "selected_attack_id": "T1552",
+      "tactic": "Credential Access",
+      "technique": "Unsecured Credentials",
+      "top_cve": "CVE-2019-3763",
+      "usable_for_generation": true
+    },
+    {
+      "attack_ids": [
+        "T1606.002"
+      ],
+      "cvss_score": "10.0",
+      "cvss_severity": "CRITICAL",
+      "generation_mitre_technique": "SAML Tokens - T1606.002",
+      "generation_mitre_techniques": [
+        "SAML Tokens - T1606.002"
+      ],
+      "order": 8,
+      "selected_attack_id": "T1606.002",
+      "tactic": "Credential Access",
+      "technique": "SAML Tokens",
+      "top_cve": "CVE-2025-31324",
+      "usable_for_generation": true
+    },
+    {
+      "attack_ids": [
+        "T1110.003"
+      ],
+      "cvss_score": "",
+      "cvss_severity": "",
+      "generation_mitre_technique": "Password Spraying - T1110.003",
+      "generation_mitre_techniques": [
+        "Password Spraying - T1110.003"
+      ],
+      "order": 8,
+      "selected_attack_id": "T1110.003",
+      "tactic": "Credential Access",
+      "technique": "Password Spraying",
+      "top_cve": "",
+      "usable_for_generation": false
+    },
+    {
+      "attack_ids": [
+        "T1606.001"
+      ],
+      "cvss_score": "5.3",
+      "cvss_severity": "MEDIUM",
+      "generation_mitre_technique": "Web Cookies - T1606.001",
+      "generation_mitre_techniques": [
+        "Web Cookies - T1606.001"
+      ],
+      "order": 8,
+      "selected_attack_id": "T1606.001",
+      "tactic": "Credential Access",
+      "technique": "Web Cookies",
+      "top_cve": "CVE-2023-45720",
+      "usable_for_generation": true
+    },
+    {
+      "attack_ids": [
+        "T1606"
+      ],
+      "cvss_score": "10.0",
+      "cvss_severity": "CRITICAL",
+      "generation_mitre_technique": "Forge Web Credentials - T1606",
+      "generation_mitre_techniques": [
+        "Forge Web Credentials - T1606"
+      ],
+      "order": 8,
+      "selected_attack_id": "T1606",
+      "tactic": "Credential Access",
+      "technique": "Forge Web Credentials",
+      "top_cve": "CVE-2025-31324",
+      "usable_for_generation": true
+    },
+    {
+      "attack_ids": [
+        "T1110.004"
+      ],
+      "cvss_score": "7.7",
+      "cvss_severity": "HIGH",
+      "generation_mitre_technique": "Credential Stuffing - T1110.004",
+      "generation_mitre_techniques": [
+        "Credential Stuffing - T1110.004"
+      ],
+      "order": 8,
+      "selected_attack_id": "T1110.004",
+      "tactic": "Credential Access",
+      "technique": "Credential Stuffing",
+      "top_cve": "CVE-2024-42457",
+      "usable_for_generation": true
+    },
+    {
+      "attack_ids": [
+        "T1110"
+      ],
+      "cvss_score": "9.8",
+      "cvss_severity": "CRITICAL",
+      "generation_mitre_technique": "Brute Force - T1110",
+      "generation_mitre_techniques": [
+        "Brute Force - T1110"
+      ],
+      "order": 8,
+      "selected_attack_id": "T1110",
+      "tactic": "Credential Access",
+      "technique": "Brute Force",
+      "top_cve": "CVE-2025-46273",
+      "usable_for_generation": true
+    },
+    {
+      "attack_ids": [
+        "T1110.001"
+      ],
+      "cvss_score": "",
+      "cvss_severity": "",
+      "generation_mitre_technique": "Password Guessing - T1110.001",
+      "generation_mitre_techniques": [
+        "Password Guessing - T1110.001"
+      ],
+      "order": 8,
+      "selected_attack_id": "T1110.001",
+      "tactic": "Credential Access",
+      "technique": "Password Guessing",
+      "top_cve": "",
+      "usable_for_generation": false
+    },
+    {
+      "attack_ids": [
+        "T1087"
+      ],
+      "cvss_score": "7.5",
+      "cvss_severity": "HIGH",
+      "generation_mitre_technique": "Account Discovery - T1087",
+      "generation_mitre_techniques": [
+        "Account Discovery - T1087"
+      ],
+      "order": 9,
+      "selected_attack_id": "T1087",
+      "tactic": "Discovery",
+      "technique": "Account Discovery",
+      "top_cve": "CVE-2025-3606",
+      "usable_for_generation": true
+    },
+    {
+      "attack_ids": [
+        "T1069"
+      ],
+      "cvss_score": "7.5",
+      "cvss_severity": "HIGH",
+      "generation_mitre_technique": "Permission Groups Discovery - T1069",
+      "generation_mitre_techniques": [
+        "Permission Groups Discovery - T1069"
+      ],
+      "order": 9,
+      "selected_attack_id": "T1069",
+      "tactic": "Discovery",
+      "technique": "Permission Groups Discovery",
+      "top_cve": "CVE-2025-3606",
+      "usable_for_generation": true
+    },
+    {
+      "attack_ids": [
+        "T1550.004"
+      ],
+      "cvss_score": "10.0",
+      "cvss_severity": "CRITICAL",
+      "generation_mitre_technique": "Web Session Cookie - T1550.004",
+      "generation_mitre_techniques": [
+        "Web Session Cookie - T1550.004"
+      ],
+      "order": 10,
+      "selected_attack_id": "T1550.004",
+      "tactic": "Lateral Movement",
+      "technique": "Web Session Cookie",
+      "top_cve": "CVE-2025-31324",
+      "usable_for_generation": true
+    },
+    {
+      "attack_ids": [
+        "T0811",
+        "T1213"
+      ],
+      "cvss_score": "",
+      "cvss_severity": "",
+      "generation_mitre_technique": "Data from Information Repositories - T0811",
+      "generation_mitre_techniques": [
+        "Data from Information Repositories - T0811",
+        "Data from Information Repositories - T1213"
+      ],
+      "order": 11,
+      "selected_attack_id": "T0811",
+      "tactic": "Collection",
+      "technique": "Data from Information Repositories",
+      "top_cve": "",
+      "usable_for_generation": false
+    },
+    {
+      "attack_ids": [
+        "T0869"
+      ],
+      "cvss_score": "",
+      "cvss_severity": "",
+      "generation_mitre_technique": "Standard Application Layer Protocol - T0869",
+      "generation_mitre_techniques": [
+        "Standard Application Layer Protocol - T0869"
+      ],
+      "order": 12,
+      "selected_attack_id": "T0869",
+      "tactic": "Command and Control",
+      "technique": "Standard Application Layer Protocol",
+      "top_cve": "",
+      "usable_for_generation": false
+    },
+    {
+      "attack_ids": [
+        "T0885",
+        "T1043"
+      ],
+      "cvss_score": "",
+      "cvss_severity": "",
+      "generation_mitre_technique": "Commonly Used Port - T0885",
+      "generation_mitre_techniques": [
+        "Commonly Used Port - T0885",
+        "Commonly Used Port - T1043"
+      ],
+      "order": 12,
+      "selected_attack_id": "T0885",
+      "tactic": "Command and Control",
+      "technique": "Commonly Used Port",
+      "top_cve": "",
+      "usable_for_generation": false
+    },
+    {
+      "attack_ids": [
+        "T1537"
+      ],
+      "cvss_score": "",
+      "cvss_severity": "",
+      "generation_mitre_technique": "Transfer Data to Cloud Account - T1537",
+      "generation_mitre_techniques": [
+        "Transfer Data to Cloud Account - T1537"
+      ],
+      "order": 13,
+      "selected_attack_id": "T1537",
+      "tactic": "Exfiltration",
+      "technique": "Transfer Data to Cloud Account",
+      "top_cve": "",
+      "usable_for_generation": false
+    },
+    {
+      "attack_ids": [
+        "T0881",
+        "T1489"
+      ],
+      "cvss_score": "8.6",
+      "cvss_severity": "HIGH",
+      "generation_mitre_technique": "Service Stop - T0881",
+      "generation_mitre_techniques": [
+        "Service Stop - T0881",
+        "Service Stop - T1489"
+      ],
+      "order": 14,
+      "selected_attack_id": "T0881",
+      "tactic": "Inhibit Response Function",
+      "technique": "Service Stop",
+      "top_cve": "CVE-2019-1747",
+      "usable_for_generation": true
+    },
+    {
+      "attack_ids": [
+        "T0836"
+      ],
+      "cvss_score": "",
+      "cvss_severity": "",
+      "generation_mitre_technique": "Modify Parameter - T0836",
+      "generation_mitre_techniques": [
+        "Modify Parameter - T0836"
+      ],
+      "order": 15,
+      "selected_attack_id": "T0836",
+      "tactic": "Impair Process Control",
+      "technique": "Modify Parameter",
+      "top_cve": "",
+      "usable_for_generation": false
+    },
+    {
+      "attack_ids": [
+        "T1499.003"
+      ],
+      "cvss_score": "6.5",
+      "cvss_severity": "MEDIUM",
+      "generation_mitre_technique": "Application Exhaustion Flood - T1499.003",
+      "generation_mitre_techniques": [
+        "Application Exhaustion Flood - T1499.003"
+      ],
+      "order": 16,
+      "selected_attack_id": "T1499.003",
+      "tactic": "Impact",
+      "technique": "Application Exhaustion Flood",
+      "top_cve": "CVE-2025-0639",
+      "usable_for_generation": true
+    },
+    {
+      "attack_ids": [
+        "T1498.001"
+      ],
+      "cvss_score": "6.5",
+      "cvss_severity": "MEDIUM",
+      "generation_mitre_technique": "Direct Network Flood - T1498.001",
+      "generation_mitre_techniques": [
+        "Direct Network Flood - T1498.001"
+      ],
+      "order": 16,
+      "selected_attack_id": "T1498.001",
+      "tactic": "Impact",
+      "technique": "Direct Network Flood",
+      "top_cve": "CVE-2025-0639",
+      "usable_for_generation": true
+    },
+    {
+      "attack_ids": [
+        "T1498.002"
+      ],
+      "cvss_score": "6.5",
+      "cvss_severity": "MEDIUM",
+      "generation_mitre_technique": "Reflection Amplification - T1498.002",
+      "generation_mitre_techniques": [
+        "Reflection Amplification - T1498.002"
+      ],
+      "order": 16,
+      "selected_attack_id": "T1498.002",
+      "tactic": "Impact",
+      "technique": "Reflection Amplification",
+      "top_cve": "CVE-2025-0639",
+      "usable_for_generation": true
+    },
+    {
+      "attack_ids": [
+        "T1499.002"
+      ],
+      "cvss_score": "8.6",
+      "cvss_severity": "HIGH",
+      "generation_mitre_technique": "Service Exhaustion Flood - T1499.002",
+      "generation_mitre_techniques": [
+        "Service Exhaustion Flood - T1499.002"
+      ],
+      "order": 16,
+      "selected_attack_id": "T1499.002",
+      "tactic": "Impact",
+      "technique": "Service Exhaustion Flood",
+      "top_cve": "CVE-2019-1703",
+      "usable_for_generation": true
+    }
+  ]
+}

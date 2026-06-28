@@ -1,0 +1,2249 @@
+{
+  "ma_scenario_Commercial_Facilities_0001": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0002": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0003": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0004": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "ma_scenario_Commercial_Facilities_0005": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "ma_scenario_Commercial_Facilities_0006": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "ma_scenario_Commercial_Facilities_0007": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0009": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0010": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0011": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0012": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "ma_scenario_Commercial_Facilities_0013": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "ma_scenario_Commercial_Facilities_0014": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "ma_scenario_Commercial_Facilities_0015": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0017": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0018": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0019": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0020": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "ma_scenario_Commercial_Facilities_0021": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "ma_scenario_Commercial_Facilities_0022": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "ma_scenario_Commercial_Facilities_0023": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0025": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0026": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0027": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0028": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "ma_scenario_Commercial_Facilities_0029": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "ma_scenario_Commercial_Facilities_0030": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "ma_scenario_Commercial_Facilities_0031": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0033": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0034": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0035": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0036": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "ma_scenario_Commercial_Facilities_0037": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "ma_scenario_Commercial_Facilities_0038": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "ma_scenario_Commercial_Facilities_0039": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0041": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0042": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0043": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0044": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "ma_scenario_Commercial_Facilities_0045": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "ma_scenario_Commercial_Facilities_0046": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "ma_scenario_Commercial_Facilities_0047": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0049": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0050": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0051": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0052": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "ma_scenario_Commercial_Facilities_0053": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "ma_scenario_Commercial_Facilities_0054": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "ma_scenario_Commercial_Facilities_0055": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0057": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0058": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0059": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0060": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "ma_scenario_Commercial_Facilities_0061": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "ma_scenario_Commercial_Facilities_0062": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "ma_scenario_Commercial_Facilities_0063": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0065": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0066": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0067": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0068": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "ma_scenario_Commercial_Facilities_0069": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "ma_scenario_Commercial_Facilities_0070": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "ma_scenario_Commercial_Facilities_0071": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0073": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0074": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0075": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0076": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "ma_scenario_Commercial_Facilities_0077": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "ma_scenario_Commercial_Facilities_0078": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "ma_scenario_Commercial_Facilities_0079": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0081": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0082": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0083": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0084": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "ma_scenario_Commercial_Facilities_0085": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "ma_scenario_Commercial_Facilities_0086": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "ma_scenario_Commercial_Facilities_0087": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0089": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0090": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0091": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0092": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "ma_scenario_Commercial_Facilities_0093": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "ma_scenario_Commercial_Facilities_0094": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "ma_scenario_Commercial_Facilities_0095": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0097": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0098": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0099": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0100": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "ma_scenario_Commercial_Facilities_0101": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "ma_scenario_Commercial_Facilities_0102": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "ma_scenario_Commercial_Facilities_0103": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0105": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0106": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0107": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0108": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "ma_scenario_Commercial_Facilities_0109": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "ma_scenario_Commercial_Facilities_0110": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "ma_scenario_Commercial_Facilities_0111": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0113": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0114": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0115": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0116": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "ma_scenario_Commercial_Facilities_0117": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "ma_scenario_Commercial_Facilities_0118": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "ma_scenario_Commercial_Facilities_0119": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0121": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0122": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0123": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0124": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "ma_scenario_Commercial_Facilities_0125": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "ma_scenario_Commercial_Facilities_0126": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "ma_scenario_Commercial_Facilities_0127": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0129": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0130": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0131": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0132": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "ma_scenario_Commercial_Facilities_0133": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "ma_scenario_Commercial_Facilities_0134": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "ma_scenario_Commercial_Facilities_0135": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0137": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0138": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0139": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0140": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "ma_scenario_Commercial_Facilities_0141": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "ma_scenario_Commercial_Facilities_0142": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "ma_scenario_Commercial_Facilities_0143": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0145": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0146": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0147": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0148": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "ma_scenario_Commercial_Facilities_0149": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "ma_scenario_Commercial_Facilities_0150": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "ma_scenario_Commercial_Facilities_0151": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0153": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0154": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0155": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0156": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "ma_scenario_Commercial_Facilities_0157": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "ma_scenario_Commercial_Facilities_0158": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "ma_scenario_Commercial_Facilities_0159": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0161": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0162": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0163": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0164": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "ma_scenario_Commercial_Facilities_0165": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "ma_scenario_Commercial_Facilities_0166": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "ma_scenario_Commercial_Facilities_0167": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0169": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0170": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0171": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0172": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "ma_scenario_Commercial_Facilities_0173": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "ma_scenario_Commercial_Facilities_0174": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "ma_scenario_Commercial_Facilities_0175": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0177": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0178": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0179": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0180": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "ma_scenario_Commercial_Facilities_0181": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "ma_scenario_Commercial_Facilities_0182": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "ma_scenario_Commercial_Facilities_0183": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0185": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0186": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0187": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0188": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "ma_scenario_Commercial_Facilities_0189": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "ma_scenario_Commercial_Facilities_0190": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "ma_scenario_Commercial_Facilities_0191": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0193": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0194": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0195": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0196": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "ma_scenario_Commercial_Facilities_0197": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "ma_scenario_Commercial_Facilities_0198": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "ma_scenario_Commercial_Facilities_0199": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0201": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0202": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0203": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0204": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "ma_scenario_Commercial_Facilities_0205": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "ma_scenario_Commercial_Facilities_0206": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "ma_scenario_Commercial_Facilities_0207": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0209": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0210": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0211": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0212": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "ma_scenario_Commercial_Facilities_0213": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "ma_scenario_Commercial_Facilities_0214": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "ma_scenario_Commercial_Facilities_0215": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0217": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0218": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0219": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0220": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "ma_scenario_Commercial_Facilities_0221": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "ma_scenario_Commercial_Facilities_0222": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "ma_scenario_Commercial_Facilities_0223": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0225": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0226": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0227": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0228": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "ma_scenario_Commercial_Facilities_0229": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "ma_scenario_Commercial_Facilities_0230": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "ma_scenario_Commercial_Facilities_0231": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0233": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0234": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0235": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0236": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "ma_scenario_Commercial_Facilities_0237": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "ma_scenario_Commercial_Facilities_0238": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "ma_scenario_Commercial_Facilities_0239": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0241": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0242": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0243": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0244": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "ma_scenario_Commercial_Facilities_0245": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "ma_scenario_Commercial_Facilities_0246": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "ma_scenario_Commercial_Facilities_0247": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0249": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0250": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0251": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0252": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "ma_scenario_Commercial_Facilities_0253": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "ma_scenario_Commercial_Facilities_0254": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "ma_scenario_Commercial_Facilities_0255": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0256": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0257": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0258": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0259": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0260": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0261": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0262": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0263": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0264": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0265": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0266": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0267": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0268": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0269": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0270": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0271": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0272": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0273": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0274": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0275": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0276": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0277": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0278": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0279": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0280": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0281": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0282": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0283": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0284": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0285": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0286": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0287": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0288": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0289": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0290": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0291": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0292": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0293": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0294": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0295": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0296": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0297": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0298": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0299": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0300": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0301": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0302": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0303": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0304": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0305": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0306": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0307": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0308": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0309": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0310": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0311": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0312": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0313": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0314": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0315": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0316": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0317": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0318": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0319": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0320": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0321": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0322": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0323": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0324": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0325": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0326": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0327": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0328": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0329": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0330": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0331": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0332": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0333": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0334": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0335": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0336": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0337": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0338": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0339": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0340": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0341": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0342": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0343": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0344": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0345": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0346": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0347": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0348": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0349": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0350": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0351": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0352": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0353": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0354": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0355": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0356": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0357": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0358": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0359": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0360": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0361": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0362": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0363": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0364": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0365": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0366": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0367": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0368": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0369": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0370": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0371": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0372": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0373": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0374": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0375": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0376": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0377": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0378": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0379": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0380": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0381": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0382": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0383": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0384": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0385": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0386": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0387": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0388": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0389": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0390": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0391": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0392": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0393": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0394": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0395": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0396": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0397": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0398": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0399": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0400": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0401": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0402": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0403": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0404": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0405": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0406": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0407": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0408": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0409": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0410": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0411": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0412": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0413": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0414": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0415": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0416": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0417": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0418": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0419": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0420": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0421": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0422": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0423": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0424": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0425": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0426": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0427": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0428": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0429": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0430": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0431": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0432": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0433": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0434": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0435": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0436": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0437": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0438": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0439": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0440": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0441": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0442": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0443": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0444": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0445": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0446": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0447": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0448": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0449": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0450": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0451": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0452": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0453": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0454": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0455": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0456": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0457": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0458": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0459": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0460": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0461": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0462": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0463": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0464": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0465": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0466": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0467": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0468": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0469": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0470": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0471": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0472": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0473": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0474": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0475": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0476": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0477": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0478": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0479": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0480": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0481": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0482": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0483": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0484": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0485": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0486": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0487": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0488": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0489": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0490": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0491": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0492": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0493": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0494": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0495": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0496": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0497": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0498": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "ma_scenario_Commercial_Facilities_0499": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p1": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p101": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p1010": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "p1011": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p1012": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p1015": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "p1020": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p1021": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p1024": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p1026": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "p1028": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p1030": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p1031": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "p1034": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p1035": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p1037": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p1038": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p1039": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p1049": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p1050": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p1052": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p1053": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p1054": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p1055": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p1059": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p1060": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p1064": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p1074": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "p1079": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p1086": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p1087": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p1088": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p1090": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p1091": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p1092": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p1093": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p1096": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p1097": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p1105": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p1106": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p1108": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p1115": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p1121": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p1123": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p1129": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p1130": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p1136": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p1139": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p115": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p116": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p120": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "p126": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p128": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p129": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p130": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p131": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p134": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p139": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p14": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p140": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p142": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p157": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p159": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p16": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p160": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p17": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p170": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p177": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p20": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p3": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p33": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p34": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "p423": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p424": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p425": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p426": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p427": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p428": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p429": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p43": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p438": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p439": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p44": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p440": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p444": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p447": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p448": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p451": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p454": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p455": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "p456": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "p458": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "p460": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p461": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p463": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p469": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p474": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p478": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p486": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p487": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "p488": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p489": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p491": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p493": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p494": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p495": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "p498": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p499": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p501": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "p502": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "p503": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "p504": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "p505": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "p506": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "p507": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "p508": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p509": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p51": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p510": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p511": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p513": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "p516": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p518": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p520": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p523": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p524": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "p528": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p532": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p534": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "p535": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p536": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "p538": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "p539": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p54": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p540": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "p542": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p544": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p547": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "p549": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "p557": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p559": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p561": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p570": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p571": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p572": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p574": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p578": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "p580": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p581": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p582": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p583": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p584": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p585": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p586": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p591": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p592": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "p593": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p594": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p595": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p596": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p597": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p606": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p608": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "p614": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p617": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "p619": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p621": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p624": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "p627": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p628": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p629": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p634": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p636": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "p64": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p67": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p70": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "p86": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p89": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p90": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p92": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "p96": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ],
+  "p98": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004"
+  ]
+}

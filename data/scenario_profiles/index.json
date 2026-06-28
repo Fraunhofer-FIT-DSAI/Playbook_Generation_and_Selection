@@ -1,0 +1,116 @@
+{
+  "profiles": [
+    {
+      "attack_count": 30,
+      "path": "data/scenario_profiles/Chemical.json",
+      "scenario_id": "Chemical",
+      "scenario_name": "Chemical",
+      "usable_step_count": 19
+    },
+    {
+      "attack_count": 18,
+      "path": "data/scenario_profiles/Commercial_Facilities.json",
+      "scenario_id": "Commercial_Facilities",
+      "scenario_name": "Commercial Facilities",
+      "usable_step_count": 10
+    },
+    {
+      "attack_count": 41,
+      "path": "data/scenario_profiles/Communications.json",
+      "scenario_id": "Communications",
+      "scenario_name": "Communications",
+      "usable_step_count": 24
+    },
+    {
+      "attack_count": 20,
+      "path": "data/scenario_profiles/Critical_Manufacturing.json",
+      "scenario_id": "Critical_Manufacturing",
+      "scenario_name": "Critical Manufacturing",
+      "usable_step_count": 12
+    },
+    {
+      "attack_count": 38,
+      "path": "data/scenario_profiles/Dams.json",
+      "scenario_id": "Dams",
+      "scenario_name": "Dams",
+      "usable_step_count": 21
+    },
+    {
+      "attack_count": 49,
+      "path": "data/scenario_profiles/Defense_Industrial_Base.json",
+      "scenario_id": "Defense_Industrial_Base",
+      "scenario_name": "Defense Industrial Base",
+      "usable_step_count": 34
+    },
+    {
+      "attack_count": 67,
+      "path": "data/scenario_profiles/Emergency_Services.json",
+      "scenario_id": "Emergency_Services",
+      "scenario_name": "Emergency Services",
+      "usable_step_count": 34
+    },
+    {
+      "attack_count": 19,
+      "path": "data/scenario_profiles/Energy.json",
+      "scenario_id": "Energy",
+      "scenario_name": "Energy",
+      "usable_step_count": 11
+    },
+    {
+      "attack_count": 52,
+      "path": "data/scenario_profiles/Financial_Services.json",
+      "scenario_id": "Financial_Services",
+      "scenario_name": "Financial Services",
+      "usable_step_count": 35
+    },
+    {
+      "attack_count": 37,
+      "path": "data/scenario_profiles/Food_and_Agriculture.json",
+      "scenario_id": "Food_and_Agriculture",
+      "scenario_name": "Food and Agriculture",
+      "usable_step_count": 21
+    },
+    {
+      "attack_count": 42,
+      "path": "data/scenario_profiles/Government_Facilities.json",
+      "scenario_id": "Government_Facilities",
+      "scenario_name": "Government Facilities",
+      "usable_step_count": 25
+    },
+    {
+      "attack_count": 21,
+      "path": "data/scenario_profiles/Healthcare_and_Public_Health.json",
+      "scenario_id": "Healthcare_and_Public_Health",
+      "scenario_name": "Healthcare and Public Health",
+      "usable_step_count": 11
+    },
+    {
+      "attack_count": 20,
+      "path": "data/scenario_profiles/Information_Technology.json",
+      "scenario_id": "Information_Technology",
+      "scenario_name": "Information Technology",
+      "usable_step_count": 10
+    },
+    {
+      "attack_count": 42,
+      "path": "data/scenario_profiles/Nuclear_Reactors_Materials_and_Waste.json",
+      "scenario_id": "Nuclear_Reactors_Materials_and_Waste",
+      "scenario_name": "Nuclear Reactors, Materials, and Waste",
+      "usable_step_count": 25
+    },
+    {
+      "attack_count": 27,
+      "path": "data/scenario_profiles/Transportation_Systems.json",
+      "scenario_id": "Transportation_Systems",
+      "scenario_name": "Transportation Systems",
+      "usable_step_count": 14
+    },
+    {
+      "attack_count": 25,
+      "path": "data/scenario_profiles/Water_and_Wastewater_Systems.json",
+      "scenario_id": "Water_and_Wastewater_Systems",
+      "scenario_name": "Water and Wastewater Systems",
+      "usable_step_count": 14
+    }
+  ]
+}

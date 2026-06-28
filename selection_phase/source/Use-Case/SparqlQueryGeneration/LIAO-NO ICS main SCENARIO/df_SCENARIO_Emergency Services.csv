@@ -1,0 +1,62 @@
+ORDER,TACTIC,TECHNIQUE
+3,Initial Access,Default Accounts
+4,Execution,Command and Scripting Interpreter
+4,Execution,Malicious Image
+4,Execution,Network Device CLI
+4,Execution,User Execution
+5,Persistence,Default Accounts
+6,Privilege Escalation,Default Accounts
+7,Defense Evasion,Default Accounts
+8,Credential Access,Credentials In Files
+9,Discovery,System Network Connections Discovery
+9,Discovery,System Location Discovery
+9,Discovery,System Information Discovery
+9,Discovery,Software Discovery
+9,Discovery,Security Software Discovery
+9,Discovery,Permission Groups Discovery
+9,Discovery,Password Policy Discovery
+9,Discovery,Network Sniffing
+9,Discovery,Cloud Storage Object Discovery
+9,Discovery,Cloud Service Discovery
+9,Discovery,Cloud Service Dashboard
+9,Discovery,Cloud Infrastructure Discovery
+9,Discovery,Cloud Groups
+9,Discovery,Cloud Account
+9,Discovery,Account Discovery
+9,Discovery,Network Service Scanning
+10,Lateral Movement,Application Access Token
+10,Lateral Movement,Internal Spearphishing
+10,Lateral Movement,Taint Shared Content
+10,Lateral Movement,Use Alternate Authentication Material
+10,Lateral Movement,Web Session Cookie
+11,Collection,Network Device Configuration Dump
+11,Collection,Keylogging
+11,Collection,SNMP (MIB Dump)
+11,Collection,Remote Data Staging
+11,Collection,Input Capture
+11,Collection,Code Repositories
+11,Collection,Data from Configuration Repository
+11,Collection,Data from Cloud Storage Object
+11,Collection,Data Staged
+11,Collection,Confluence
+11,Collection,Data from Information Repositories
+12,Command and Control,Multi-hop Proxy
+12,Command and Control,Non-Application Layer Protocol
+12,Command and Control,Port Knocking
+12,Command and Control,Proxy
+12,Command and Control,Traffic Signaling
+13,Exfiltration,Traffic Duplication
+13,Exfiltration,Transfer Data to Cloud Account
+13,Exfiltration,Automated Exfiltration
+16,Impact,Resource Hijacking
+16,Impact,Application Exhaustion Flood
+16,Impact,Application or System Exploitation
+16,Impact,Data Destruction
+16,Impact,Data Encrypted for Impact
+16,Impact,Defacement
+16,Impact,Direct Network Flood
+16,Impact,Endpoint Denial of Service
+16,Impact,External Defacement
+16,Impact,Network Denial of Service
+16,Impact,Reflection Amplification
+16,Impact,Service Exhaustion Flood

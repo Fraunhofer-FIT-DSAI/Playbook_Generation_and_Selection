@@ -1,0 +1,91 @@
+{
+  "checks": [
+    {
+      "check": "generated_manifest_exists",
+      "details": "results/generated_repository/reduced_generated_playbooks_manifest.csv",
+      "passed": "True"
+    },
+    {
+      "check": "every_generated_playbook_has_source_scenario_id",
+      "details": "missing=0",
+      "passed": "True"
+    },
+    {
+      "check": "no_duplicate_generated_step_ids",
+      "details": "duplicates=0",
+      "passed": "True"
+    },
+    {
+      "check": "playbook_level_attack_coverage_matches_steps",
+      "details": "playbooks_missing_coverage=0; parser=xml",
+      "passed": "True"
+    },
+    {
+      "check": "reduced_pool_at_most_n_per_scenario",
+      "details": "{}",
+      "passed": "True"
+    },
+    {
+      "check": "community-only_selection_output_exists",
+      "details": "results/evaluation/community-only/scenario_playbook_evaluation_community-only.csv",
+      "passed": "True"
+    },
+    {
+      "check": "community-only_has_all_scoring_columns",
+      "details": "missing=[]",
+      "passed": "True"
+    },
+    {
+      "check": "community-only_has_normalized_recall_columns",
+      "details": "missing=[]",
+      "passed": "True"
+    },
+    {
+      "check": "generated-reduced_selection_output_exists",
+      "details": "results/evaluation/generated-reduced/scenario_playbook_evaluation_generated-reduced.csv",
+      "passed": "True"
+    },
+    {
+      "check": "generated-reduced_has_all_scoring_columns",
+      "details": "missing=[]",
+      "passed": "True"
+    },
+    {
+      "check": "generated-reduced_has_normalized_recall_columns",
+      "details": "missing=[]",
+      "passed": "True"
+    },
+    {
+      "check": "augmented-reduced_selection_output_exists",
+      "details": "results/evaluation/augmented-reduced/scenario_playbook_evaluation_augmented-reduced.csv",
+      "passed": "True"
+    },
+    {
+      "check": "augmented-reduced_has_all_scoring_columns",
+      "details": "missing=[]",
+      "passed": "True"
+    },
+    {
+      "check": "augmented-reduced_has_normalized_recall_columns",
+      "details": "missing=[]",
+      "passed": "True"
+    },
+    {
+      "check": "community-only_no_cross_scenario_generated_candidates",
+      "details": "wrong=0",
+      "passed": "True"
+    },
+    {
+      "check": "generated-reduced_no_cross_scenario_generated_candidates",
+      "details": "wrong=0",
+      "passed": "True"
+    },
+    {
+      "check": "augmented-reduced_no_cross_scenario_generated_candidates",
+      "details": "wrong=0",
+      "passed": "True"
+    }
+  ],
+  "failed": 0,
+  "passed": 17
+}

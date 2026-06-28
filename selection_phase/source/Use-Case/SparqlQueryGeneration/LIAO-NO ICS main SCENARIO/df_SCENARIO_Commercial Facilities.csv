@@ -1,0 +1,16 @@
+ORDER,TACTIC,TECHNIQUE
+3,Initial Access,Default Accounts
+4,Execution,User Execution
+5,Persistence,Valid Accounts
+6,Privilege Escalation,Default Accounts
+7,Defense Evasion,Default Accounts
+8,Credential Access,Credential Stuffing
+9,Discovery,Account Discovery
+9,Discovery,Permission Groups Discovery
+10,Lateral Movement,Web Session Cookie
+11,Collection,Data from Information Repositories
+12,Command and Control,Commonly Used Port
+13,Exfiltration,Transfer Data to Cloud Account
+14,Inhibit Response Function,Modify Alarm Settings
+15,Impair Process Control,Modify Parameter
+16,Impact,Application or System Exploitation

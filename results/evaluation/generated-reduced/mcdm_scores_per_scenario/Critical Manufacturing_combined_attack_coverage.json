@@ -1,0 +1,69 @@
+{
+  "ma_scenario_Critical_Manufacturing_0140": [
+    "T1078",
+    "T1078.001",
+    "T1110.004"
+  ],
+  "ma_scenario_Critical_Manufacturing_0142": [
+    "T1078",
+    "T1078.001",
+    "T1110.004",
+    "T1550.004"
+  ],
+  "ma_scenario_Critical_Manufacturing_0158": [
+    "T1078",
+    "T1078.001",
+    "T1110.004"
+  ],
+  "ma_scenario_Critical_Manufacturing_0172": [
+    "T1078",
+    "T1078.001",
+    "T1110.004"
+  ],
+  "ma_scenario_Critical_Manufacturing_0174": [
+    "T1078",
+    "T1078.001",
+    "T1110.004",
+    "T1550.004"
+  ],
+  "ma_scenario_Critical_Manufacturing_0190": [
+    "T1078",
+    "T1078.001",
+    "T1110.004"
+  ],
+  "ma_scenario_Critical_Manufacturing_0204": [
+    "T1078",
+    "T1078.001",
+    "T1110.004"
+  ],
+  "ma_scenario_Critical_Manufacturing_0206": [
+    "T1078",
+    "T1078.001",
+    "T1110.004",
+    "T1550.004"
+  ],
+  "ma_scenario_Critical_Manufacturing_0222": [
+    "T1078",
+    "T1078.001",
+    "T1110.004"
+  ],
+  "ma_scenario_Critical_Manufacturing_0460": [
+    "T1078",
+    "T1078.001",
+    "T1110.004",
+    "T1498.001"
+  ],
+  "ma_scenario_Critical_Manufacturing_0462": [
+    "T1078",
+    "T1078.001",
+    "T1110.004",
+    "T1498.001",
+    "T1550.004"
+  ],
+  "ma_scenario_Critical_Manufacturing_0478": [
+    "T1078",
+    "T1078.001",
+    "T1110.004",
+    "T1498.001"
+  ]
+}

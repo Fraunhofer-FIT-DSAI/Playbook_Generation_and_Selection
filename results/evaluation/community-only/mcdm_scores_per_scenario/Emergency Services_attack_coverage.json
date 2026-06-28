@@ -1,0 +1,1873 @@
+{
+  "p1": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1082",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1614"
+  ],
+  "p100": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p101": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p1010": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "p1011": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1082",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1534",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p1012": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1550.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p1013": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1550.001"
+  ],
+  "p1014": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p1015": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "p1016": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1550.001"
+  ],
+  "p1018": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1550.001"
+  ],
+  "p1019": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p1020": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1082",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1534",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1614"
+  ],
+  "p1021": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1082",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1534",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1550.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p1024": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p1026": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1534"
+  ],
+  "p1028": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1550.001"
+  ],
+  "p1030": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1534"
+  ],
+  "p1031": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1550.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p1034": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1082",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p1035": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1550.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1614"
+  ],
+  "p1036": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1534",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p1037": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1082",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1534",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1614"
+  ],
+  "p1038": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p1039": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p1040": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p1041": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p1042": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p1043": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1614"
+  ],
+  "p1046": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1614"
+  ],
+  "p1047": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1614"
+  ],
+  "p1049": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1534",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p1050": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1534"
+  ],
+  "p1051": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1550.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1614"
+  ],
+  "p1052": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1082",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1550.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p1053": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1082",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1550.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1614"
+  ],
+  "p1054": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1074.002",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1080",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1082",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1491.002",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1534",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1550.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p1055": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1534",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p1059": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1082",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p1060": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1082",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p1062": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p1063": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1614"
+  ],
+  "p1064": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p1066": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1550.001"
+  ],
+  "p1068": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1550.001"
+  ],
+  "p1069": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1550.001"
+  ],
+  "p1070": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p1073": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p1074": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1534"
+  ],
+  "p1076": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1534"
+  ],
+  "p1077": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1534",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p1078": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1534",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p1079": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p1084": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1550.001"
+  ],
+  "p1085": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1550.001"
+  ],
+  "p1086": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1082",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1205",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1205.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1534",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1550.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1614"
+  ],
+  "p1087": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1082",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p1088": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1534",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1550.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p1090": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1534",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p1091": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1082",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p1092": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1082",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1534",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1550.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p1093": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1534",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1550.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p1094": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1534"
+  ],
+  "p1095": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1534"
+  ],
+  "p1096": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1534",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p1097": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1534",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p1098": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p1103": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1534",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1550.001"
+  ],
+  "p1104": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1550.001"
+  ],
+  "p1105": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1074.002",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1080",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1082",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1491.002",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1550.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p1106": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p1108": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p1115": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "p1121": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1082",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p1123": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p1124": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p1129": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1534",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p1130": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p1131": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p1136": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p1137": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1550.001"
+  ],
+  "p1138": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1534"
+  ],
+  "p1139": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1082",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p1140": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p115": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p116": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p117": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1550.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1614"
+  ],
+  "p120": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1614"
+  ],
+  "p121": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1534"
+  ],
+  "p123": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p126": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1082",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p127": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1205",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1205.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1550.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1614"
+  ],
+  "p128": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1082",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1534",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p129": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1082",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1550.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p130": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p131": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1082",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p134": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1082",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1614"
+  ],
+  "p139": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p14": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1082",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p140": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p142": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p150": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1614"
+  ],
+  "p151": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1534"
+  ],
+  "p152": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1614"
+  ],
+  "p153": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1534"
+  ],
+  "p156": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1534",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1550.001"
+  ],
+  "p157": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1550.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p159": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p16": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1082",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p160": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p161": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1614"
+  ],
+  "p162": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1534",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p163": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1534",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p164": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1534",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1550.001"
+  ],
+  "p165": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1534"
+  ],
+  "p167": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p17": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1082",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p170": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p171": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p173": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1534",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1614"
+  ],
+  "p174": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1534"
+  ],
+  "p175": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1534"
+  ],
+  "p177": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1534",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p178": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1534"
+  ],
+  "p181": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1550.001"
+  ],
+  "p184": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1090.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1095"
+  ],
+  "p188": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1614"
+  ],
+  "p190": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p2": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1090.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1095"
+  ],
+  "p20": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1082",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p3": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p33": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1082",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p34": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "p4": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1614"
+  ],
+  "p40": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1534"
+  ],
+  "p423": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1614"
+  ],
+  "p424": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p425": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p426": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1082",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1534",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p427": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "p428": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "p429": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p43": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p434": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1614"
+  ],
+  "p435": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040"
+  ],
+  "p438": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1082",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1534",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1614"
+  ],
+  "p439": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1074.002",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1080",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1082",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1491.002",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p44": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1550.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p440": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1082",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1550.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p441": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p442": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p444": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1082",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p447": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1082",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p448": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1082",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p45": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1614"
+  ],
+  "p451": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1082",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p454": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1082",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p455": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "p456": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1550.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p458": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "p460": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1082",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p461": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1082",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p463": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1082",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1205",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1205.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1550.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p465": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1614"
+  ],
+  "p466": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1614"
+  ],
+  "p467": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p469": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1082",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p470": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1534"
+  ],
+  "p473": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1550.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p474": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p478": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1082",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p482": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040"
+  ],
+  "p484": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1550.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1614"
+  ],
+  "p485": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1534"
+  ],
+  "p486": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p487": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1074.002",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1080",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1491.002",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p488": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1614"
+  ],
+  "p489": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1074.002",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1080",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1082",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1491.002",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1614"
+  ],
+  "p49": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1534"
+  ],
+  "p491": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1082",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1550.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p492": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1550.001"
+  ],
+  "p493": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1082",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p494": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p495": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p496": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p497": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p498": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1074.002",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1080",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1082",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1491.002",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1614"
+  ],
+  "p499": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1550.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1614"
+  ],
+  "p500": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p501": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "p502": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p503": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p504": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "p505": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "p506": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1534",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1550.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1614"
+  ],
+  "p507": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1074.002",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1080",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1491.002",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1614"
+  ],
+  "p508": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1074.002",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1080",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1491.002",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p509": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1082",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p51": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1550.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p510": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p511": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p512": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1550.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p513": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "p514": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1614"
+  ],
+  "p516": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1074.002",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1080",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1090.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1095",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1491.002",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1534",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p518": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1082",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1614"
+  ],
+  "p52": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1550.001"
+  ],
+  "p520": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1082",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p521": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1534",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1550.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p523": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1082",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1534",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p524": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "p525": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1614"
+  ],
+  "p527": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040"
+  ],
+  "p528": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1082",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p530": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1534",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1614"
+  ],
+  "p532": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1074.002",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1080",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1082",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1491.002",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1614"
+  ],
+  "p533": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040"
+  ],
+  "p534": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "p535": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1534",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1550.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p536": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1534",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p537": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1534",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p538": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "p539": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1550.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1614"
+  ],
+  "p54": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p540": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p542": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p543": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1534",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1550.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1614"
+  ],
+  "p544": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1074.002",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1080",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1082",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1491.002",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p545": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p547": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "p548": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1205",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1205.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1534",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1550.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1614"
+  ],
+  "p549": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "p55": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1614"
+  ],
+  "p550": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1550.001"
+  ],
+  "p557": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p558": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1074.002",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1080",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1491.002"
+  ],
+  "p559": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1082",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p560": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040"
+  ],
+  "p561": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1082",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1550.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p562": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1074.002",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1080",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1491.002",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1550.001"
+  ],
+  "p565": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1614"
+  ],
+  "p566": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p570": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1534",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p571": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p572": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "p573": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1550.001"
+  ],
+  "p574": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1082",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p577": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1614"
+  ],
+  "p578": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1205",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1205.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1534",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1550.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p579": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1205",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1205.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1534",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1550.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1614"
+  ],
+  "p580": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1534",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p581": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p582": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1074.002",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1080",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1082",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1491.002",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1614"
+  ],
+  "p583": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p584": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1082",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1534",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p585": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1082",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1534",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p586": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1082",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1534",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p589": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1534"
+  ],
+  "p591": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p592": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1534"
+  ],
+  "p593": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1074.002",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1080",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1082",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1491.002",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1534",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p594": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1550.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1614"
+  ],
+  "p595": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1534",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1614"
+  ],
+  "p596": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p597": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1614"
+  ],
+  "p598": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1614"
+  ],
+  "p599": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1550.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1614"
+  ],
+  "p605": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1614"
+  ],
+  "p606": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1614"
+  ],
+  "p608": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "p61": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p614": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p615": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1534"
+  ],
+  "p617": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1534",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p619": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1550.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1614"
+  ],
+  "p620": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1550.001"
+  ],
+  "p621": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1082",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1614"
+  ],
+  "p622": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1614"
+  ],
+  "p624": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "p626": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1614"
+  ],
+  "p627": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1205",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1205.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1534",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1550.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1614"
+  ],
+  "p628": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1074.002",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1080",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1082",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1205",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1205.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1491.002",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1550.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p629": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p634": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1205",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1205.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1534",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1550.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p635": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1614"
+  ],
+  "p636": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1534",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1614"
+  ],
+  "p64": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1534",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p65": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1534"
+  ],
+  "p66": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1534"
+  ],
+  "p67": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1082",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1534",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p68": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p70": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "p72": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p73": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1614"
+  ],
+  "p74": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1205",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1205.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1550.001"
+  ],
+  "p75": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1614"
+  ],
+  "p80": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1534",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1614"
+  ],
+  "p81": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1534"
+  ],
+  "p84": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p85": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1614"
+  ],
+  "p86": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p88": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1534"
+  ],
+  "p89": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1534",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p90": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p91": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1534"
+  ],
+  "p92": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "p93": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p95": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p96": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1614"
+  ],
+  "p97": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ],
+  "p98": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1040",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1056.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1081",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1552.001"
+  ]
+}

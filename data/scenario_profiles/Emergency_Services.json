@@ -1,0 +1,1126 @@
+{
+  "generation_input": {
+    "recommended_mulval_case": "scenario_Emergency_Services",
+    "total_step_count": 61,
+    "usable_step_count": 34
+  },
+  "scenario_id": "Emergency_Services",
+  "scenario_name": "Emergency Services",
+  "schema_version": "1.0",
+  "selection_input": {
+    "attack_ids": [
+      "T0809",
+      "T0811",
+      "T0842",
+      "T0863",
+      "T1020",
+      "T1020.001",
+      "T1040",
+      "T1049",
+      "T1056",
+      "T1056.001",
+      "T1059",
+      "T1059.008",
+      "T1063",
+      "T1069",
+      "T1069.003",
+      "T1074",
+      "T1074.002",
+      "T1078.001",
+      "T1080",
+      "T1081",
+      "T1082",
+      "T1087",
+      "T1087.004",
+      "T1090",
+      "T1090.003",
+      "T1095",
+      "T1136.003",
+      "T1188",
+      "T1201",
+      "T1204",
+      "T1204.003",
+      "T1205",
+      "T1205.001",
+      "T1213",
+      "T1213.001",
+      "T1213.003",
+      "T1485",
+      "T1486",
+      "T1491",
+      "T1491.002",
+      "T1496",
+      "T1498",
+      "T1498.001",
+      "T1498.002",
+      "T1499",
+      "T1499.002",
+      "T1499.003",
+      "T1499.004",
+      "T1506",
+      "T1518",
+      "T1518.001",
+      "T1526",
+      "T1527",
+      "T1534",
+      "T1537",
+      "T1538",
+      "T1550",
+      "T1550.001",
+      "T1550.004",
+      "T1552.001",
+      "T1580",
+      "T1593.003",
+      "T1602",
+      "T1602.001",
+      "T1602.002",
+      "T1614",
+      "T1619"
+    ],
+    "scenario_csv": "selection_phase/source/Use-Case/SparqlQueryGeneration/LIAO-NO ICS main SCENARIO/df_SCENARIO_Emergency Services.csv",
+    "scenario_sparql": "selection_phase/source/Use-Case/SparqlQueryGeneration/SPARQL_QUERIES/df_SCENARIO_Emergency Services.sparql"
+  },
+  "steps": [
+    {
+      "attack_ids": [
+        "T1078.001"
+      ],
+      "cvss_score": "9.8",
+      "cvss_severity": "CRITICAL",
+      "generation_mitre_technique": "Default Accounts - T1078.001",
+      "generation_mitre_techniques": [
+        "Default Accounts - T1078.001"
+      ],
+      "order": 3,
+      "selected_attack_id": "T1078.001",
+      "tactic": "Initial Access",
+      "technique": "Default Accounts",
+      "top_cve": "CVE-2020-14510",
+      "usable_for_generation": true
+    },
+    {
+      "attack_ids": [
+        "T1059"
+      ],
+      "cvss_score": "10.0",
+      "cvss_severity": "CRITICAL",
+      "generation_mitre_technique": "Command and Scripting Interpreter - T1059",
+      "generation_mitre_techniques": [
+        "Command and Scripting Interpreter - T1059"
+      ],
+      "order": 4,
+      "selected_attack_id": "T1059",
+      "tactic": "Execution",
+      "technique": "Command and Scripting Interpreter",
+      "top_cve": "CVE-2020-15188",
+      "usable_for_generation": true
+    },
+    {
+      "attack_ids": [
+        "T1204.003"
+      ],
+      "cvss_score": "",
+      "cvss_severity": "",
+      "generation_mitre_technique": "Malicious Image - T1204.003",
+      "generation_mitre_techniques": [
+        "Malicious Image - T1204.003"
+      ],
+      "order": 4,
+      "selected_attack_id": "T1204.003",
+      "tactic": "Execution",
+      "technique": "Malicious Image",
+      "top_cve": "",
+      "usable_for_generation": false
+    },
+    {
+      "attack_ids": [
+        "T1059.008"
+      ],
+      "cvss_score": "10.0",
+      "cvss_severity": "CRITICAL",
+      "generation_mitre_technique": "Network Device CLI - T1059.008",
+      "generation_mitre_techniques": [
+        "Network Device CLI - T1059.008"
+      ],
+      "order": 4,
+      "selected_attack_id": "T1059.008",
+      "tactic": "Execution",
+      "technique": "Network Device CLI",
+      "top_cve": "CVE-2020-15188",
+      "usable_for_generation": true
+    },
+    {
+      "attack_ids": [
+        "T0863",
+        "T1204"
+      ],
+      "cvss_score": "9.8",
+      "cvss_severity": "CRITICAL",
+      "generation_mitre_technique": "User Execution - T0863",
+      "generation_mitre_techniques": [
+        "User Execution - T0863",
+        "User Execution - T1204"
+      ],
+      "order": 4,
+      "selected_attack_id": "T0863",
+      "tactic": "Execution",
+      "technique": "User Execution",
+      "top_cve": "CVE-2020-3198",
+      "usable_for_generation": true
+    },
+    {
+      "attack_ids": [
+        "T1078.001"
+      ],
+      "cvss_score": "9.8",
+      "cvss_severity": "CRITICAL",
+      "generation_mitre_technique": "Default Accounts - T1078.001",
+      "generation_mitre_techniques": [
+        "Default Accounts - T1078.001"
+      ],
+      "order": 5,
+      "selected_attack_id": "T1078.001",
+      "tactic": "Persistence",
+      "technique": "Default Accounts",
+      "top_cve": "CVE-2020-14510",
+      "usable_for_generation": true
+    },
+    {
+      "attack_ids": [
+        "T1078.001"
+      ],
+      "cvss_score": "9.8",
+      "cvss_severity": "CRITICAL",
+      "generation_mitre_technique": "Default Accounts - T1078.001",
+      "generation_mitre_techniques": [
+        "Default Accounts - T1078.001"
+      ],
+      "order": 6,
+      "selected_attack_id": "T1078.001",
+      "tactic": "Privilege Escalation",
+      "technique": "Default Accounts",
+      "top_cve": "CVE-2020-14510",
+      "usable_for_generation": true
+    },
+    {
+      "attack_ids": [
+        "T1078.001"
+      ],
+      "cvss_score": "9.8",
+      "cvss_severity": "CRITICAL",
+      "generation_mitre_technique": "Default Accounts - T1078.001",
+      "generation_mitre_techniques": [
+        "Default Accounts - T1078.001"
+      ],
+      "order": 7,
+      "selected_attack_id": "T1078.001",
+      "tactic": "Defense Evasion",
+      "technique": "Default Accounts",
+      "top_cve": "CVE-2020-14510",
+      "usable_for_generation": true
+    },
+    {
+      "attack_ids": [
+        "T1552.001"
+      ],
+      "cvss_score": "9.8",
+      "cvss_severity": "CRITICAL",
+      "generation_mitre_technique": "Credentials In Files - T1552.001",
+      "generation_mitre_techniques": [
+        "Credentials In Files - T1552.001"
+      ],
+      "order": 8,
+      "selected_attack_id": "T1552.001",
+      "tactic": "Credential Access",
+      "technique": "Credentials In Files",
+      "top_cve": "CVE-2020-3240",
+      "usable_for_generation": true
+    },
+    {
+      "attack_ids": [
+        "T1049"
+      ],
+      "cvss_score": "7.5",
+      "cvss_severity": "HIGH",
+      "generation_mitre_technique": "System Network Connections Discovery - T1049",
+      "generation_mitre_techniques": [
+        "System Network Connections Discovery - T1049"
+      ],
+      "order": 9,
+      "selected_attack_id": "T1049",
+      "tactic": "Discovery",
+      "technique": "System Network Connections Discovery",
+      "top_cve": "CVE-2025-3606",
+      "usable_for_generation": true
+    },
+    {
+      "attack_ids": [
+        "T1614"
+      ],
+      "cvss_score": "7.5",
+      "cvss_severity": "HIGH",
+      "generation_mitre_technique": "System Location Discovery - T1614",
+      "generation_mitre_techniques": [
+        "System Location Discovery - T1614"
+      ],
+      "order": 9,
+      "selected_attack_id": "T1614",
+      "tactic": "Discovery",
+      "technique": "System Location Discovery",
+      "top_cve": "CVE-2025-3606",
+      "usable_for_generation": true
+    },
+    {
+      "attack_ids": [
+        "T1082"
+      ],
+      "cvss_score": "7.5",
+      "cvss_severity": "HIGH",
+      "generation_mitre_technique": "System Information Discovery - T1082",
+      "generation_mitre_techniques": [
+        "System Information Discovery - T1082"
+      ],
+      "order": 9,
+      "selected_attack_id": "T1082",
+      "tactic": "Discovery",
+      "technique": "System Information Discovery",
+      "top_cve": "CVE-2025-3606",
+      "usable_for_generation": true
+    },
+    {
+      "attack_ids": [
+        "T1518"
+      ],
+      "cvss_score": "",
+      "cvss_severity": "",
+      "generation_mitre_technique": "Software Discovery - T1518",
+      "generation_mitre_techniques": [
+        "Software Discovery - T1518"
+      ],
+      "order": 9,
+      "selected_attack_id": "T1518",
+      "tactic": "Discovery",
+      "technique": "Software Discovery",
+      "top_cve": "",
+      "usable_for_generation": false
+    },
+    {
+      "attack_ids": [
+        "T1518.001"
+      ],
+      "cvss_score": "",
+      "cvss_severity": "",
+      "generation_mitre_technique": "Security Software Discovery - T1518.001",
+      "generation_mitre_techniques": [
+        "Security Software Discovery - T1518.001"
+      ],
+      "order": 9,
+      "selected_attack_id": "T1518.001",
+      "tactic": "Discovery",
+      "technique": "Security Software Discovery",
+      "top_cve": "",
+      "usable_for_generation": false
+    },
+    {
+      "attack_ids": [
+        "T1069"
+      ],
+      "cvss_score": "7.5",
+      "cvss_severity": "HIGH",
+      "generation_mitre_technique": "Permission Groups Discovery - T1069",
+      "generation_mitre_techniques": [
+        "Permission Groups Discovery - T1069"
+      ],
+      "order": 9,
+      "selected_attack_id": "T1069",
+      "tactic": "Discovery",
+      "technique": "Permission Groups Discovery",
+      "top_cve": "CVE-2025-3606",
+      "usable_for_generation": true
+    },
+    {
+      "attack_ids": [
+        "T1201"
+      ],
+      "cvss_score": "",
+      "cvss_severity": "",
+      "generation_mitre_technique": "Password Policy Discovery - T1201",
+      "generation_mitre_techniques": [
+        "Password Policy Discovery - T1201"
+      ],
+      "order": 9,
+      "selected_attack_id": "T1201",
+      "tactic": "Discovery",
+      "technique": "Password Policy Discovery",
+      "top_cve": "",
+      "usable_for_generation": false
+    },
+    {
+      "attack_ids": [
+        "T0842",
+        "T1040"
+      ],
+      "cvss_score": "9.8",
+      "cvss_severity": "CRITICAL",
+      "generation_mitre_technique": "Network Sniffing - T0842",
+      "generation_mitre_techniques": [
+        "Network Sniffing - T0842",
+        "Network Sniffing - T1040"
+      ],
+      "order": 9,
+      "selected_attack_id": "T0842",
+      "tactic": "Discovery",
+      "technique": "Network Sniffing",
+      "top_cve": "CVE-2022-46414",
+      "usable_for_generation": true
+    },
+    {
+      "attack_ids": [
+        "T1619"
+      ],
+      "cvss_score": "",
+      "cvss_severity": "",
+      "generation_mitre_technique": "Cloud Storage Object Discovery - T1619",
+      "generation_mitre_techniques": [
+        "Cloud Storage Object Discovery - T1619"
+      ],
+      "order": 9,
+      "selected_attack_id": "T1619",
+      "tactic": "Discovery",
+      "technique": "Cloud Storage Object Discovery",
+      "top_cve": "",
+      "usable_for_generation": false
+    },
+    {
+      "attack_ids": [
+        "T1526"
+      ],
+      "cvss_score": "",
+      "cvss_severity": "",
+      "generation_mitre_technique": "Cloud Service Discovery - T1526",
+      "generation_mitre_techniques": [
+        "Cloud Service Discovery - T1526"
+      ],
+      "order": 9,
+      "selected_attack_id": "T1526",
+      "tactic": "Discovery",
+      "technique": "Cloud Service Discovery",
+      "top_cve": "",
+      "usable_for_generation": false
+    },
+    {
+      "attack_ids": [
+        "T1538"
+      ],
+      "cvss_score": "",
+      "cvss_severity": "",
+      "generation_mitre_technique": "Cloud Service Dashboard - T1538",
+      "generation_mitre_techniques": [
+        "Cloud Service Dashboard - T1538"
+      ],
+      "order": 9,
+      "selected_attack_id": "T1538",
+      "tactic": "Discovery",
+      "technique": "Cloud Service Dashboard",
+      "top_cve": "",
+      "usable_for_generation": false
+    },
+    {
+      "attack_ids": [
+        "T1580"
+      ],
+      "cvss_score": "",
+      "cvss_severity": "",
+      "generation_mitre_technique": "Cloud Infrastructure Discovery - T1580",
+      "generation_mitre_techniques": [
+        "Cloud Infrastructure Discovery - T1580"
+      ],
+      "order": 9,
+      "selected_attack_id": "T1580",
+      "tactic": "Discovery",
+      "technique": "Cloud Infrastructure Discovery",
+      "top_cve": "",
+      "usable_for_generation": false
+    },
+    {
+      "attack_ids": [
+        "T1069.003"
+      ],
+      "cvss_score": "7.5",
+      "cvss_severity": "HIGH",
+      "generation_mitre_technique": "Cloud Groups - T1069.003",
+      "generation_mitre_techniques": [
+        "Cloud Groups - T1069.003"
+      ],
+      "order": 9,
+      "selected_attack_id": "T1069.003",
+      "tactic": "Discovery",
+      "technique": "Cloud Groups",
+      "top_cve": "CVE-2025-3606",
+      "usable_for_generation": true
+    },
+    {
+      "attack_ids": [
+        "T1087.004",
+        "T1136.003"
+      ],
+      "cvss_score": "8.1",
+      "cvss_severity": "HIGH",
+      "generation_mitre_technique": "Cloud Account - T1087.004",
+      "generation_mitre_techniques": [
+        "Cloud Account - T1087.004",
+        "Cloud Account - T1136.003"
+      ],
+      "order": 9,
+      "selected_attack_id": "T1087.004",
+      "tactic": "Discovery",
+      "technique": "Cloud Account",
+      "top_cve": "CVE-2019-3758",
+      "usable_for_generation": true
+    },
+    {
+      "attack_ids": [
+        "T1087"
+      ],
+      "cvss_score": "7.5",
+      "cvss_severity": "HIGH",
+      "generation_mitre_technique": "Account Discovery - T1087",
+      "generation_mitre_techniques": [
+        "Account Discovery - T1087"
+      ],
+      "order": 9,
+      "selected_attack_id": "T1087",
+      "tactic": "Discovery",
+      "technique": "Account Discovery",
+      "top_cve": "CVE-2025-3606",
+      "usable_for_generation": true
+    },
+    {
+      "attack_ids": [],
+      "cvss_score": "",
+      "cvss_severity": "",
+      "generation_mitre_technique": "Network Service Scanning",
+      "generation_mitre_techniques": [],
+      "order": 9,
+      "selected_attack_id": "",
+      "tactic": "Discovery",
+      "technique": "Network Service Scanning",
+      "top_cve": "",
+      "usable_for_generation": false
+    },
+    {
+      "attack_ids": [
+        "T1550.001"
+      ],
+      "cvss_score": "9.8",
+      "cvss_severity": "CRITICAL",
+      "generation_mitre_technique": "Application Access Token - T1550.001",
+      "generation_mitre_techniques": [
+        "Application Access Token - T1550.001"
+      ],
+      "order": 10,
+      "selected_attack_id": "T1550.001",
+      "tactic": "Lateral Movement",
+      "technique": "Application Access Token",
+      "top_cve": "CVE-2022-46414",
+      "usable_for_generation": true
+    },
+    {
+      "attack_ids": [
+        "T1534"
+      ],
+      "cvss_score": "3.2",
+      "cvss_severity": "LOW",
+      "generation_mitre_technique": "Internal Spearphishing - T1534",
+      "generation_mitre_techniques": [
+        "Internal Spearphishing - T1534"
+      ],
+      "order": 10,
+      "selected_attack_id": "T1534",
+      "tactic": "Lateral Movement",
+      "technique": "Internal Spearphishing",
+      "top_cve": "CVE-2025-46394",
+      "usable_for_generation": true
+    },
+    {
+      "attack_ids": [
+        "T1080"
+      ],
+      "cvss_score": "9.8",
+      "cvss_severity": "CRITICAL",
+      "generation_mitre_technique": "Taint Shared Content - T1080",
+      "generation_mitre_techniques": [
+        "Taint Shared Content - T1080"
+      ],
+      "order": 10,
+      "selected_attack_id": "T1080",
+      "tactic": "Lateral Movement",
+      "technique": "Taint Shared Content",
+      "top_cve": "CVE-2022-46414",
+      "usable_for_generation": true
+    },
+    {
+      "attack_ids": [
+        "T1550"
+      ],
+      "cvss_score": "10.0",
+      "cvss_severity": "CRITICAL",
+      "generation_mitre_technique": "Use Alternate Authentication Material - T1550",
+      "generation_mitre_techniques": [
+        "Use Alternate Authentication Material - T1550"
+      ],
+      "order": 10,
+      "selected_attack_id": "T1550",
+      "tactic": "Lateral Movement",
+      "technique": "Use Alternate Authentication Material",
+      "top_cve": "CVE-2025-31324",
+      "usable_for_generation": true
+    },
+    {
+      "attack_ids": [
+        "T1550.004"
+      ],
+      "cvss_score": "10.0",
+      "cvss_severity": "CRITICAL",
+      "generation_mitre_technique": "Web Session Cookie - T1550.004",
+      "generation_mitre_techniques": [
+        "Web Session Cookie - T1550.004"
+      ],
+      "order": 10,
+      "selected_attack_id": "T1550.004",
+      "tactic": "Lateral Movement",
+      "technique": "Web Session Cookie",
+      "top_cve": "CVE-2025-31324",
+      "usable_for_generation": true
+    },
+    {
+      "attack_ids": [
+        "T1602.002"
+      ],
+      "cvss_score": "",
+      "cvss_severity": "",
+      "generation_mitre_technique": "Network Device Configuration Dump - T1602.002",
+      "generation_mitre_techniques": [
+        "Network Device Configuration Dump - T1602.002"
+      ],
+      "order": 11,
+      "selected_attack_id": "T1602.002",
+      "tactic": "Collection",
+      "technique": "Network Device Configuration Dump",
+      "top_cve": "",
+      "usable_for_generation": false
+    },
+    {
+      "attack_ids": [
+        "T1056.001"
+      ],
+      "cvss_score": "",
+      "cvss_severity": "",
+      "generation_mitre_technique": "Keylogging - T1056.001",
+      "generation_mitre_techniques": [
+        "Keylogging - T1056.001"
+      ],
+      "order": 11,
+      "selected_attack_id": "T1056.001",
+      "tactic": "Collection",
+      "technique": "Keylogging",
+      "top_cve": "",
+      "usable_for_generation": false
+    },
+    {
+      "attack_ids": [
+        "T1602.001"
+      ],
+      "cvss_score": "",
+      "cvss_severity": "",
+      "generation_mitre_technique": "SNMP (MIB Dump) - T1602.001",
+      "generation_mitre_techniques": [
+        "SNMP (MIB Dump) - T1602.001"
+      ],
+      "order": 11,
+      "selected_attack_id": "T1602.001",
+      "tactic": "Collection",
+      "technique": "SNMP (MIB Dump)",
+      "top_cve": "",
+      "usable_for_generation": false
+    },
+    {
+      "attack_ids": [
+        "T1074.002"
+      ],
+      "cvss_score": "",
+      "cvss_severity": "",
+      "generation_mitre_technique": "Remote Data Staging - T1074.002",
+      "generation_mitre_techniques": [
+        "Remote Data Staging - T1074.002"
+      ],
+      "order": 11,
+      "selected_attack_id": "T1074.002",
+      "tactic": "Collection",
+      "technique": "Remote Data Staging",
+      "top_cve": "",
+      "usable_for_generation": false
+    },
+    {
+      "attack_ids": [
+        "T1056"
+      ],
+      "cvss_score": "7.7",
+      "cvss_severity": "HIGH",
+      "generation_mitre_technique": "Input Capture - T1056",
+      "generation_mitre_techniques": [
+        "Input Capture - T1056"
+      ],
+      "order": 11,
+      "selected_attack_id": "T1056",
+      "tactic": "Collection",
+      "technique": "Input Capture",
+      "top_cve": "CVE-2024-42451",
+      "usable_for_generation": true
+    },
+    {
+      "attack_ids": [
+        "T1213.003",
+        "T1593.003"
+      ],
+      "cvss_score": "",
+      "cvss_severity": "",
+      "generation_mitre_technique": "Code Repositories - T1213.003",
+      "generation_mitre_techniques": [
+        "Code Repositories - T1213.003",
+        "Code Repositories - T1593.003"
+      ],
+      "order": 11,
+      "selected_attack_id": "T1213.003",
+      "tactic": "Collection",
+      "technique": "Code Repositories",
+      "top_cve": "",
+      "usable_for_generation": false
+    },
+    {
+      "attack_ids": [
+        "T1602"
+      ],
+      "cvss_score": "",
+      "cvss_severity": "",
+      "generation_mitre_technique": "Data from Configuration Repository - T1602",
+      "generation_mitre_techniques": [
+        "Data from Configuration Repository - T1602"
+      ],
+      "order": 11,
+      "selected_attack_id": "T1602",
+      "tactic": "Collection",
+      "technique": "Data from Configuration Repository",
+      "top_cve": "",
+      "usable_for_generation": false
+    },
+    {
+      "attack_ids": [],
+      "cvss_score": "",
+      "cvss_severity": "",
+      "generation_mitre_technique": "Data from Cloud Storage Object",
+      "generation_mitre_techniques": [],
+      "order": 11,
+      "selected_attack_id": "",
+      "tactic": "Collection",
+      "technique": "Data from Cloud Storage Object",
+      "top_cve": "",
+      "usable_for_generation": false
+    },
+    {
+      "attack_ids": [
+        "T1074"
+      ],
+      "cvss_score": "",
+      "cvss_severity": "",
+      "generation_mitre_technique": "Data Staged - T1074",
+      "generation_mitre_techniques": [
+        "Data Staged - T1074"
+      ],
+      "order": 11,
+      "selected_attack_id": "T1074",
+      "tactic": "Collection",
+      "technique": "Data Staged",
+      "top_cve": "",
+      "usable_for_generation": false
+    },
+    {
+      "attack_ids": [
+        "T1213.001"
+      ],
+      "cvss_score": "",
+      "cvss_severity": "",
+      "generation_mitre_technique": "Confluence - T1213.001",
+      "generation_mitre_techniques": [
+        "Confluence - T1213.001"
+      ],
+      "order": 11,
+      "selected_attack_id": "T1213.001",
+      "tactic": "Collection",
+      "technique": "Confluence",
+      "top_cve": "",
+      "usable_for_generation": false
+    },
+    {
+      "attack_ids": [
+        "T0811",
+        "T1213"
+      ],
+      "cvss_score": "",
+      "cvss_severity": "",
+      "generation_mitre_technique": "Data from Information Repositories - T0811",
+      "generation_mitre_techniques": [
+        "Data from Information Repositories - T0811",
+        "Data from Information Repositories - T1213"
+      ],
+      "order": 11,
+      "selected_attack_id": "T0811",
+      "tactic": "Collection",
+      "technique": "Data from Information Repositories",
+      "top_cve": "",
+      "usable_for_generation": false
+    },
+    {
+      "attack_ids": [
+        "T1090.003"
+      ],
+      "cvss_score": "",
+      "cvss_severity": "",
+      "generation_mitre_technique": "Multi-hop Proxy - T1090.003",
+      "generation_mitre_techniques": [
+        "Multi-hop Proxy - T1090.003"
+      ],
+      "order": 12,
+      "selected_attack_id": "T1090.003",
+      "tactic": "Command and Control",
+      "technique": "Multi-hop Proxy",
+      "top_cve": "",
+      "usable_for_generation": false
+    },
+    {
+      "attack_ids": [
+        "T1095"
+      ],
+      "cvss_score": "",
+      "cvss_severity": "",
+      "generation_mitre_technique": "Non-Application Layer Protocol - T1095",
+      "generation_mitre_techniques": [
+        "Non-Application Layer Protocol - T1095"
+      ],
+      "order": 12,
+      "selected_attack_id": "T1095",
+      "tactic": "Command and Control",
+      "technique": "Non-Application Layer Protocol",
+      "top_cve": "",
+      "usable_for_generation": false
+    },
+    {
+      "attack_ids": [
+        "T1205.001"
+      ],
+      "cvss_score": "",
+      "cvss_severity": "",
+      "generation_mitre_technique": "Port Knocking - T1205.001",
+      "generation_mitre_techniques": [
+        "Port Knocking - T1205.001"
+      ],
+      "order": 12,
+      "selected_attack_id": "T1205.001",
+      "tactic": "Command and Control",
+      "technique": "Port Knocking",
+      "top_cve": "",
+      "usable_for_generation": false
+    },
+    {
+      "attack_ids": [
+        "T1090"
+      ],
+      "cvss_score": "6.4",
+      "cvss_severity": "MEDIUM",
+      "generation_mitre_technique": "Proxy - T1090",
+      "generation_mitre_techniques": [
+        "Proxy - T1090"
+      ],
+      "order": 12,
+      "selected_attack_id": "T1090",
+      "tactic": "Command and Control",
+      "technique": "Proxy",
+      "top_cve": "CVE-2025-46511",
+      "usable_for_generation": true
+    },
+    {
+      "attack_ids": [
+        "T1205"
+      ],
+      "cvss_score": "",
+      "cvss_severity": "",
+      "generation_mitre_technique": "Traffic Signaling - T1205",
+      "generation_mitre_techniques": [
+        "Traffic Signaling - T1205"
+      ],
+      "order": 12,
+      "selected_attack_id": "T1205",
+      "tactic": "Command and Control",
+      "technique": "Traffic Signaling",
+      "top_cve": "",
+      "usable_for_generation": false
+    },
+    {
+      "attack_ids": [
+        "T1020.001"
+      ],
+      "cvss_score": "",
+      "cvss_severity": "",
+      "generation_mitre_technique": "Traffic Duplication - T1020.001",
+      "generation_mitre_techniques": [
+        "Traffic Duplication - T1020.001"
+      ],
+      "order": 13,
+      "selected_attack_id": "T1020.001",
+      "tactic": "Exfiltration",
+      "technique": "Traffic Duplication",
+      "top_cve": "",
+      "usable_for_generation": false
+    },
+    {
+      "attack_ids": [
+        "T1537"
+      ],
+      "cvss_score": "",
+      "cvss_severity": "",
+      "generation_mitre_technique": "Transfer Data to Cloud Account - T1537",
+      "generation_mitre_techniques": [
+        "Transfer Data to Cloud Account - T1537"
+      ],
+      "order": 13,
+      "selected_attack_id": "T1537",
+      "tactic": "Exfiltration",
+      "technique": "Transfer Data to Cloud Account",
+      "top_cve": "",
+      "usable_for_generation": false
+    },
+    {
+      "attack_ids": [
+        "T1020"
+      ],
+      "cvss_score": "",
+      "cvss_severity": "",
+      "generation_mitre_technique": "Automated Exfiltration - T1020",
+      "generation_mitre_techniques": [
+        "Automated Exfiltration - T1020"
+      ],
+      "order": 13,
+      "selected_attack_id": "T1020",
+      "tactic": "Exfiltration",
+      "technique": "Automated Exfiltration",
+      "top_cve": "",
+      "usable_for_generation": false
+    },
+    {
+      "attack_ids": [
+        "T1496"
+      ],
+      "cvss_score": "6.8",
+      "cvss_severity": "MEDIUM",
+      "generation_mitre_technique": "Resource Hijacking - T1496",
+      "generation_mitre_techniques": [
+        "Resource Hijacking - T1496"
+      ],
+      "order": 16,
+      "selected_attack_id": "T1496",
+      "tactic": "Impact",
+      "technique": "Resource Hijacking",
+      "top_cve": "CVE-2018-11084",
+      "usable_for_generation": true
+    },
+    {
+      "attack_ids": [
+        "T1499.003"
+      ],
+      "cvss_score": "6.5",
+      "cvss_severity": "MEDIUM",
+      "generation_mitre_technique": "Application Exhaustion Flood - T1499.003",
+      "generation_mitre_techniques": [
+        "Application Exhaustion Flood - T1499.003"
+      ],
+      "order": 16,
+      "selected_attack_id": "T1499.003",
+      "tactic": "Impact",
+      "technique": "Application Exhaustion Flood",
+      "top_cve": "CVE-2025-0639",
+      "usable_for_generation": true
+    },
+    {
+      "attack_ids": [
+        "T1499.004"
+      ],
+      "cvss_score": "9.8",
+      "cvss_severity": "CRITICAL",
+      "generation_mitre_technique": "Application or System Exploitation - T1499.004",
+      "generation_mitre_techniques": [
+        "Application or System Exploitation - T1499.004"
+      ],
+      "order": 16,
+      "selected_attack_id": "T1499.004",
+      "tactic": "Impact",
+      "technique": "Application or System Exploitation",
+      "top_cve": "CVE-2020-3198",
+      "usable_for_generation": true
+    },
+    {
+      "attack_ids": [
+        "T0809",
+        "T1485"
+      ],
+      "cvss_score": "9.1",
+      "cvss_severity": "CRITICAL",
+      "generation_mitre_technique": "Data Destruction - T0809",
+      "generation_mitre_techniques": [
+        "Data Destruction - T0809",
+        "Data Destruction - T1485"
+      ],
+      "order": 16,
+      "selected_attack_id": "T0809",
+      "tactic": "Impact",
+      "technique": "Data Destruction",
+      "top_cve": "CVE-2019-3723",
+      "usable_for_generation": true
+    },
+    {
+      "attack_ids": [
+        "T1486"
+      ],
+      "cvss_score": "",
+      "cvss_severity": "",
+      "generation_mitre_technique": "Data Encrypted for Impact - T1486",
+      "generation_mitre_techniques": [
+        "Data Encrypted for Impact - T1486"
+      ],
+      "order": 16,
+      "selected_attack_id": "T1486",
+      "tactic": "Impact",
+      "technique": "Data Encrypted for Impact",
+      "top_cve": "",
+      "usable_for_generation": false
+    },
+    {
+      "attack_ids": [
+        "T1491"
+      ],
+      "cvss_score": "8.2",
+      "cvss_severity": "HIGH",
+      "generation_mitre_technique": "Defacement - T1491",
+      "generation_mitre_techniques": [
+        "Defacement - T1491"
+      ],
+      "order": 16,
+      "selected_attack_id": "T1491",
+      "tactic": "Impact",
+      "technique": "Defacement",
+      "top_cve": "CVE-2025-43865",
+      "usable_for_generation": true
+    },
+    {
+      "attack_ids": [
+        "T1498.001"
+      ],
+      "cvss_score": "6.5",
+      "cvss_severity": "MEDIUM",
+      "generation_mitre_technique": "Direct Network Flood - T1498.001",
+      "generation_mitre_techniques": [
+        "Direct Network Flood - T1498.001"
+      ],
+      "order": 16,
+      "selected_attack_id": "T1498.001",
+      "tactic": "Impact",
+      "technique": "Direct Network Flood",
+      "top_cve": "CVE-2025-0639",
+      "usable_for_generation": true
+    },
+    {
+      "attack_ids": [
+        "T1499"
+      ],
+      "cvss_score": "8.8",
+      "cvss_severity": "HIGH",
+      "generation_mitre_technique": "Endpoint Denial of Service - T1499",
+      "generation_mitre_techniques": [
+        "Endpoint Denial of Service - T1499"
+      ],
+      "order": 16,
+      "selected_attack_id": "T1499",
+      "tactic": "Impact",
+      "technique": "Endpoint Denial of Service",
+      "top_cve": "CVE-2019-15956",
+      "usable_for_generation": true
+    },
+    {
+      "attack_ids": [
+        "T1491.002"
+      ],
+      "cvss_score": "8.2",
+      "cvss_severity": "HIGH",
+      "generation_mitre_technique": "External Defacement - T1491.002",
+      "generation_mitre_techniques": [
+        "External Defacement - T1491.002"
+      ],
+      "order": 16,
+      "selected_attack_id": "T1491.002",
+      "tactic": "Impact",
+      "technique": "External Defacement",
+      "top_cve": "CVE-2025-43865",
+      "usable_for_generation": true
+    },
+    {
+      "attack_ids": [
+        "T1498"
+      ],
+      "cvss_score": "6.5",
+      "cvss_severity": "MEDIUM",
+      "generation_mitre_technique": "Network Denial of Service - T1498",
+      "generation_mitre_techniques": [
+        "Network Denial of Service - T1498"
+      ],
+      "order": 16,
+      "selected_attack_id": "T1498",
+      "tactic": "Impact",
+      "technique": "Network Denial of Service",
+      "top_cve": "CVE-2025-0639",
+      "usable_for_generation": true
+    },
+    {
+      "attack_ids": [
+        "T1498.002"
+      ],
+      "cvss_score": "6.5",
+      "cvss_severity": "MEDIUM",
+      "generation_mitre_technique": "Reflection Amplification - T1498.002",
+      "generation_mitre_techniques": [
+        "Reflection Amplification - T1498.002"
+      ],
+      "order": 16,
+      "selected_attack_id": "T1498.002",
+      "tactic": "Impact",
+      "technique": "Reflection Amplification",
+      "top_cve": "CVE-2025-0639",
+      "usable_for_generation": true
+    },
+    {
+      "attack_ids": [
+        "T1499.002"
+      ],
+      "cvss_score": "8.6",
+      "cvss_severity": "HIGH",
+      "generation_mitre_technique": "Service Exhaustion Flood - T1499.002",
+      "generation_mitre_techniques": [
+        "Service Exhaustion Flood - T1499.002"
+      ],
+      "order": 16,
+      "selected_attack_id": "T1499.002",
+      "tactic": "Impact",
+      "technique": "Service Exhaustion Flood",
+      "top_cve": "CVE-2019-1703",
+      "usable_for_generation": true
+    }
+  ]
+}

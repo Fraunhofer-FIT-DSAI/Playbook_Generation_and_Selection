@@ -1,0 +1,30 @@
+{
+  "ma_scenario_Communications_0142": [
+    "T1078.001",
+    "T1499.002"
+  ],
+  "ma_scenario_Communications_0143": [
+    "T1078.001",
+    "T1499.002"
+  ],
+  "ma_scenario_Communications_0206": [
+    "T1499.002",
+    "T1550.004"
+  ],
+  "ma_scenario_Communications_0207": [
+    "T1499.002",
+    "T1550.004"
+  ],
+  "ma_scenario_Communications_0398": [
+    "T1078.001",
+    "T1499.002",
+    "T1550.004",
+    "T1552"
+  ],
+  "ma_scenario_Communications_0399": [
+    "T1078.001",
+    "T1499.002",
+    "T1550.004",
+    "T1552"
+  ]
+}

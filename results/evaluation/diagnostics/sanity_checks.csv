@@ -1,0 +1,18 @@
+check,passed,details
+generated_manifest_exists,True,results/generated_repository/reduced_generated_playbooks_manifest.csv
+every_generated_playbook_has_source_scenario_id,True,missing=0
+no_duplicate_generated_step_ids,True,duplicates=0
+playbook_level_attack_coverage_matches_steps,True,playbooks_missing_coverage=0; parser=xml
+reduced_pool_at_most_n_per_scenario,True,{}
+community-only_selection_output_exists,True,results/evaluation/community-only/scenario_playbook_evaluation_community-only.csv
+community-only_has_all_scoring_columns,True,missing=[]
+community-only_has_normalized_recall_columns,True,missing=[]
+generated-reduced_selection_output_exists,True,results/evaluation/generated-reduced/scenario_playbook_evaluation_generated-reduced.csv
+generated-reduced_has_all_scoring_columns,True,missing=[]
+generated-reduced_has_normalized_recall_columns,True,missing=[]
+augmented-reduced_selection_output_exists,True,results/evaluation/augmented-reduced/scenario_playbook_evaluation_augmented-reduced.csv
+augmented-reduced_has_all_scoring_columns,True,missing=[]
+augmented-reduced_has_normalized_recall_columns,True,missing=[]
+community-only_no_cross_scenario_generated_candidates,True,wrong=0
+generated-reduced_no_cross_scenario_generated_candidates,True,wrong=0
+augmented-reduced_no_cross_scenario_generated_candidates,True,wrong=0

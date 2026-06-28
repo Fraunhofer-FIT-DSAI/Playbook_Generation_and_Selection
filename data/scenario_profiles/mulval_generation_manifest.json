@@ -1,0 +1,132 @@
+{
+  "cases": [
+    {
+      "attack_count": 30,
+      "case_dir": "generation_phase/source/mulval-inputs/scenario_Chemical",
+      "mulval_case": "scenario_Chemical",
+      "scenario_id": "Chemical",
+      "scenario_name": "Chemical",
+      "vulnerability_count": 20
+    },
+    {
+      "attack_count": 18,
+      "case_dir": "generation_phase/source/mulval-inputs/scenario_Commercial_Facilities",
+      "mulval_case": "scenario_Commercial_Facilities",
+      "scenario_id": "Commercial_Facilities",
+      "scenario_name": "Commercial Facilities",
+      "vulnerability_count": 10
+    },
+    {
+      "attack_count": 41,
+      "case_dir": "generation_phase/source/mulval-inputs/scenario_Communications",
+      "mulval_case": "scenario_Communications",
+      "scenario_id": "Communications",
+      "scenario_name": "Communications",
+      "vulnerability_count": 26
+    },
+    {
+      "attack_count": 20,
+      "case_dir": "generation_phase/source/mulval-inputs/scenario_Critical_Manufacturing",
+      "mulval_case": "scenario_Critical_Manufacturing",
+      "scenario_id": "Critical_Manufacturing",
+      "scenario_name": "Critical Manufacturing",
+      "vulnerability_count": 13
+    },
+    {
+      "attack_count": 38,
+      "case_dir": "generation_phase/source/mulval-inputs/scenario_Dams",
+      "mulval_case": "scenario_Dams",
+      "scenario_id": "Dams",
+      "scenario_name": "Dams",
+      "vulnerability_count": 23
+    },
+    {
+      "attack_count": 49,
+      "case_dir": "generation_phase/source/mulval-inputs/scenario_Defense_Industrial_Base",
+      "mulval_case": "scenario_Defense_Industrial_Base",
+      "scenario_id": "Defense_Industrial_Base",
+      "scenario_name": "Defense Industrial Base",
+      "vulnerability_count": 31
+    },
+    {
+      "attack_count": 67,
+      "case_dir": "generation_phase/source/mulval-inputs/scenario_Emergency_Services",
+      "mulval_case": "scenario_Emergency_Services",
+      "scenario_id": "Emergency_Services",
+      "scenario_name": "Emergency Services",
+      "vulnerability_count": 35
+    },
+    {
+      "attack_count": 19,
+      "case_dir": "generation_phase/source/mulval-inputs/scenario_Energy",
+      "mulval_case": "scenario_Energy",
+      "scenario_id": "Energy",
+      "scenario_name": "Energy",
+      "vulnerability_count": 12
+    },
+    {
+      "attack_count": 52,
+      "case_dir": "generation_phase/source/mulval-inputs/scenario_Financial_Services",
+      "mulval_case": "scenario_Financial_Services",
+      "scenario_id": "Financial_Services",
+      "scenario_name": "Financial Services",
+      "vulnerability_count": 33
+    },
+    {
+      "attack_count": 37,
+      "case_dir": "generation_phase/source/mulval-inputs/scenario_Food_and_Agriculture",
+      "mulval_case": "scenario_Food_and_Agriculture",
+      "scenario_id": "Food_and_Agriculture",
+      "scenario_name": "Food and Agriculture",
+      "vulnerability_count": 23
+    },
+    {
+      "attack_count": 42,
+      "case_dir": "generation_phase/source/mulval-inputs/scenario_Government_Facilities",
+      "mulval_case": "scenario_Government_Facilities",
+      "scenario_id": "Government_Facilities",
+      "scenario_name": "Government Facilities",
+      "vulnerability_count": 27
+    },
+    {
+      "attack_count": 21,
+      "case_dir": "generation_phase/source/mulval-inputs/scenario_Healthcare_and_Public_Health",
+      "mulval_case": "scenario_Healthcare_and_Public_Health",
+      "scenario_id": "Healthcare_and_Public_Health",
+      "scenario_name": "Healthcare and Public Health",
+      "vulnerability_count": 12
+    },
+    {
+      "attack_count": 20,
+      "case_dir": "generation_phase/source/mulval-inputs/scenario_Information_Technology",
+      "mulval_case": "scenario_Information_Technology",
+      "scenario_id": "Information_Technology",
+      "scenario_name": "Information Technology",
+      "vulnerability_count": 10
+    },
+    {
+      "attack_count": 42,
+      "case_dir": "generation_phase/source/mulval-inputs/scenario_Nuclear_Reactors_Materials_and_Waste",
+      "mulval_case": "scenario_Nuclear_Reactors_Materials_and_Waste",
+      "scenario_id": "Nuclear_Reactors_Materials_and_Waste",
+      "scenario_name": "Nuclear Reactors, Materials, and Waste",
+      "vulnerability_count": 27
+    },
+    {
+      "attack_count": 27,
+      "case_dir": "generation_phase/source/mulval-inputs/scenario_Transportation_Systems",
+      "mulval_case": "scenario_Transportation_Systems",
+      "scenario_id": "Transportation_Systems",
+      "scenario_name": "Transportation Systems",
+      "vulnerability_count": 16
+    },
+    {
+      "attack_count": 25,
+      "case_dir": "generation_phase/source/mulval-inputs/scenario_Water_and_Wastewater_Systems",
+      "mulval_case": "scenario_Water_and_Wastewater_Systems",
+      "scenario_id": "Water_and_Wastewater_Systems",
+      "scenario_name": "Water and Wastewater Systems",
+      "vulnerability_count": 15
+    }
+  ]
+}

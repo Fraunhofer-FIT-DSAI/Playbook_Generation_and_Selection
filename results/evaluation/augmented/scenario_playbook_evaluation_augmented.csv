@@ -1,0 +1,18 @@
+Scenario,Top_MCDM_Playbook,Top_Playbook_Source,MCDM_Score,Artifact_Coverage,Defense_Coverage,Candidate_Count,Scenario_Attack_Count
+Chemical,p580,community,58.09%,50.00%,66.18%,733,30
+Commercial Facilities,p627,community,61.76%,50.00%,73.53%,650,18
+Communications,p627,community,55.96%,37.50%,74.43%,733,41
+Critical Manufacturing,p627,community,55.47%,42.86%,68.08%,682,20
+Dams,p627,community,55.96%,37.50%,74.43%,697,38
+Defense Industrial Base,p627,community,52.85%,36.36%,69.33%,738,49
+Emergency Services,p627,community,55.79%,53.33%,58.25%,811,67
+Energy,p627,community,61.76%,50.00%,73.53%,682,19
+Financial Services,p627,community,50.70%,33.33%,68.07%,738,52
+Food and Agriculture,p627,community,55.96%,37.50%,74.43%,733,37
+Government Facilities,p627,community,55.96%,37.50%,74.43%,675,42
+Healthcare and Public Health,p627,community,69.06%,60.00%,78.12%,616,21
+Information Technology,p627,community,57.54%,42.86%,72.22%,709,20
+"Nuclear Reactors, Materials, and Waste",p627,community,55.96%,37.50%,74.43%,685,42
+Transportation Systems,p627,community,63.23%,50.00%,76.46%,680,27
+Water and Wastewater Systems,p627,community,50.05%,37.50%,62.59%,733,25
+Average,,,57.26%,,,,

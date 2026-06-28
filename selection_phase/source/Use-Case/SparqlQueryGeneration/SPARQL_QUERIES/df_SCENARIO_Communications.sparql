@@ -1,0 +1,91 @@
+
+PREFIX irso: <http://www.semanticweb.org/user/ontologies/2025/1/IncidentResponseSecurityOntology#>
+PREFIX d3f: <http://d3fend.mitre.org/ontologies/d3fend.owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?stepID ?playbookID ?attackId ?defenseRelationship ?artifact
+WHERE {
+  VALUES ?attackId {
+    <http://d3fend.mitre.org/ontologies/d3fend.owl#T0811>
+    <http://d3fend.mitre.org/ontologies/d3fend.owl#T0836>
+    <http://d3fend.mitre.org/ontologies/d3fend.owl#T0838>
+    <http://d3fend.mitre.org/ontologies/d3fend.owl#T0859>
+    <http://d3fend.mitre.org/ontologies/d3fend.owl#T0863>
+    <http://d3fend.mitre.org/ontologies/d3fend.owl#T0869>
+    <http://d3fend.mitre.org/ontologies/d3fend.owl#T0881>
+    <http://d3fend.mitre.org/ontologies/d3fend.owl#T0885>
+    <http://d3fend.mitre.org/ontologies/d3fend.owl#T1043>
+    <http://d3fend.mitre.org/ontologies/d3fend.owl#T1063>
+    <http://d3fend.mitre.org/ontologies/d3fend.owl#T1069>
+    <http://d3fend.mitre.org/ontologies/d3fend.owl#T1069.003>
+    <http://d3fend.mitre.org/ontologies/d3fend.owl#T1078>
+    <http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001>
+    <http://d3fend.mitre.org/ontologies/d3fend.owl#T1087>
+    <http://d3fend.mitre.org/ontologies/d3fend.owl#T1087.004>
+    <http://d3fend.mitre.org/ontologies/d3fend.owl#T1110>
+    <http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.001>
+    <http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.003>
+    <http://d3fend.mitre.org/ontologies/d3fend.owl#T1110.004>
+    <http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003>
+    <http://d3fend.mitre.org/ontologies/d3fend.owl#T1204>
+    <http://d3fend.mitre.org/ontologies/d3fend.owl#T1213>
+    <http://d3fend.mitre.org/ontologies/d3fend.owl#T1489>
+    <http://d3fend.mitre.org/ontologies/d3fend.owl#T1498>
+    <http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001>
+    <http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.002>
+    <http://d3fend.mitre.org/ontologies/d3fend.owl#T1499>
+    <http://d3fend.mitre.org/ontologies/d3fend.owl#T1499.002>
+    <http://d3fend.mitre.org/ontologies/d3fend.owl#T1499.003>
+    <http://d3fend.mitre.org/ontologies/d3fend.owl#T1499.004>
+    <http://d3fend.mitre.org/ontologies/d3fend.owl#T1506>
+    <http://d3fend.mitre.org/ontologies/d3fend.owl#T1518>
+    <http://d3fend.mitre.org/ontologies/d3fend.owl#T1518.001>
+    <http://d3fend.mitre.org/ontologies/d3fend.owl#T1526>
+    <http://d3fend.mitre.org/ontologies/d3fend.owl#T1537>
+    <http://d3fend.mitre.org/ontologies/d3fend.owl#T1550.004>
+    <http://d3fend.mitre.org/ontologies/d3fend.owl#T1552>
+    <http://d3fend.mitre.org/ontologies/d3fend.owl#T1606>
+    <http://d3fend.mitre.org/ontologies/d3fend.owl#T1606.001>
+    <http://d3fend.mitre.org/ontologies/d3fend.owl#T1606.002>
+  }
+
+  {
+    # Retrieve artifacts through direct relationships
+    ?attackId ?artifactRelationship ?artifact .
+    ?artifactRelationship rdfs:subPropertyOf d3f:may-be-associated-with .
+  }
+  UNION
+  {
+    # Retrieve artifacts through inherited relationships
+    ?attackId rdfs:subClassOf+ ?ancestor .
+    ?ancestor ?inheritedArtifactRelationship ?artifact .
+    ?inheritedArtifactRelationship rdfs:subPropertyOf d3f:may-be-associated-with .
+  }
+
+  # Retrieve artifact labels
+  ?artifact rdfs:label ?artifactLabel .
+
+  # Find defensive techniques for these artifacts
+  ?defensiveTechnique ?defenseRelationship ?artifact .
+  ?defenseRelationship rdfs:subPropertyOf d3f:may-be-associated-with .
+
+  # Retrieve defensive technique labels
+  ?defensiveTechnique rdfs:label ?defensiveTechniqueLabel .
+  ?defensiveTechnique rdf:type d3f:DefensiveTechnique .
+    
+  # Find playbook steps that use these defensive techniques
+  ?step irso:usesDefensiveTechnique ?defensiveTechnique .
+
+  # Find the playbook that contains this step
+  ?playbook irso:hasStep ?step .
+    
+  # Find stepID  
+  ?step irso:hasStepID ?stepID .
+  
+  #Find playbook ID
+  ?playbook irso:hasPlaybookID ?playbookID .
+
+}
+ORDER BY ?playbookID
+

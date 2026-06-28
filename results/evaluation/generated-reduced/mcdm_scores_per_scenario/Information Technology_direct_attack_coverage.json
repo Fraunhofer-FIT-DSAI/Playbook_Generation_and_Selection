@@ -1,0 +1,22 @@
+{
+  "ma_scenario_Information_Technology_0156": [
+    "T1110.004"
+  ],
+  "ma_scenario_Information_Technology_0254": [
+    "T1550.004"
+  ],
+  "ma_scenario_Information_Technology_0255": [
+    "T1078.001",
+    "T1550.004"
+  ],
+  "ma_scenario_Information_Technology_0407": [
+    "T1078.001"
+  ],
+  "ma_scenario_Information_Technology_0447": [
+    "T1078.001"
+  ],
+  "ma_scenario_Information_Technology_0495": [
+    "T1078.001",
+    "T1550.004"
+  ]
+}

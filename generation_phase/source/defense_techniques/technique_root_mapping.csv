@@ -1,0 +1,128 @@
+Technique,RootTechnique
+DecoyEnvironment,D3 F E N D Core
+ExecutableDenylisting,Execution Isolation
+Hardware-basedProcessIsolation,Execution Isolation
+MandatoryAccessControl,Mandatory Access Control
+ExecutableAllowlisting,Execution Isolation
+SystemCallFiltering,Access Mediation
+IOPortRestriction,Access Mediation
+CertificateAnalysis,Network Traffic Analysis
+RestoreUserAccountAccess,Restore Access
+UnlockAccount,Restore Access
+ReissueCredential,Restore Access
+RestoreNetworkAccess,Restore Access
+ProcessTermination,Process Eviction
+JobFunctionAccessPatternAnalysis,User Behavior Analysis
+IdentifierActivityAnalysis,Identifier Analysis
+HomoglyphDetection,Identifier Analysis
+URLAnalysis,Identifier Analysis
+URLReputationAnalysis,Identifier Analysis
+EndpointHealthBeacon,Platform Monitoring
+BiometricAuthentication,Agent Authentication
+StrongPasswordPolicy,Credential Hardening
+SenderMTAReputationAnalysis,Message Analysis
+SenderReputationAnalysis,Message Analysis
+FileAnalysis,D3 F E N D Core
+FileEncryption,Platform Hardening
+LocalFilePermissions,Access Policy Administration
+SoftwareUpdate,Platform Hardening
+SystemConfigurationPermissions,Platform Hardening
+DiskEncryption,Platform Hardening
+BootloaderAuthentication,Platform Hardening
+HardwareComponentInventory,Asset Inventory
+NetworkTrafficFiltering,Network Isolation
+EmailFiltering,Network Isolation
+DNSDenylisting,Network Isolation
+DNSAllowlisting,Network Isolation
+Client-serverPayloadProfiling,Network Traffic Analysis
+NetworkTrafficCommunityDeviation,Network Traffic Analysis
+PerHostDownload-UploadRatioAnalysis,Network Traffic Analysis
+ProtocolMetadataAnomalyDetection,Network Traffic Analysis
+RemoteTerminalSessionDetection,Network Traffic Analysis
+NetworkTrafficSignatureAnalysis,Network Traffic Analysis
+RelayPatternAnalysis,Network Traffic Analysis
+DNSTrafficAnalysis,Network Traffic Analysis
+AdministrativeNetworkActivityAnalysis,Network Traffic Analysis
+ConnectionAttemptAnalysis,Network Traffic Analysis
+RPCTrafficAnalysis,Network Traffic Analysis
+FileCarving,Network Traffic Analysis
+InboundSessionVolumeAnalysis,Network Traffic Analysis
+IPCTrafficAnalysis,Network Traffic Analysis
+DomainTrustPolicy,Access Policy Administration
+DecoyUserCredential,Decoy Object
+RestoreConfiguration,Restore Object
+RestoreFile,Restore Object
+RestoreSoftware,Restore Object
+RestoreDatabase,Restore Object
+NetworkTrafficPolicyMapping,Network Mapping
+FileIntegrityMonitoring,Platform Monitoring
+SystemFileAnalysis,Platform Monitoring
+SystemDaemonMonitoring,Platform Monitoring
+ScheduledJobAnalysis,Platform Monitoring
+MemoryBoundaryTracking,Platform Monitoring
+FirmwareBehaviorAnalysis,Platform Monitoring
+FirmwareEmbeddedMonitoringCode,Platform Monitoring
+FirmwareVerification,Platform Monitoring
+ServiceBinaryVerification,Platform Monitoring
+InputDeviceAnalysis,Platform Monitoring
+SystemInitConfigAnalysis,Platform Monitoring
+UserSessionInitConfigAnalysis,Platform Monitoring
+PhysicalLinkMapping,Network Mapping
+ProcessSuspension,Process Eviction
+ProcessCodeSegmentVerification,Process Analysis
+DiskFormatting,Object Eviction
+DiskPartitioning,Object Eviction
+AuthenticationCacheInvalidation,Credential Eviction
+FileCreationAnalysis,Process Analysis
+StackFrameCanaryValidation,Application Hardening
+SegmentAddressOffsetRandomization,Application Hardening
+DynamicAnalysis,File Analysis
+SystemVulnerabilityAssessment,System Mapping
+SystemCallAnalysis,Process Analysis
+ProcessSpawnAnalysis,Process Analysis
+ProcessLineageAnalysis,Process Analysis
+ProcessSelf-ModificationDetection,Process Analysis
+ShadowStackComparisons,Process Analysis
+DatabaseQueryStringAnalysis,Process Analysis
+HostReboot,Process Eviction
+InboundTrafficFiltering,Network Isolation
+ApplicationConfigurationHardening,Application Hardening
+UserGeolocationLogonPatternAnalysis,User Behavior Analysis
+AccessModeling,Operational Activity Mapping
+UserAccountPermissions,Access Policy Administration
+ProcessSegmentExecutionPrevention,Application Hardening
+EmailRemoval,Object Eviction
+LogicalLinkMapping,Network Mapping
+HostShutdown,Process Eviction
+SessionTermination,Process Eviction
+CredentialTransmissionScoping,Access Mediation
+AccountLocking,Credential Eviction
+AuthorizationEventThresholding,User Behavior Analysis
+CredentialRevocation,Credential Eviction
+RegistryKeyDeletion,Object Eviction
+DiskErasure,Object Eviction
+SessionDurationAnalysis,User Behavior Analysis
+ConfigurationInventory,Asset Inventory
+AssetVulnerabilityEnumeration,Asset Inventory
+SoftwareInventory,Asset Inventory
+DataInventory,Asset Inventory
+ContainerImageAnalysis,Asset Inventory
+NetworkNodeInventory,Asset Inventory
+OutboundTrafficFiltering,Network Isolation
+FileEviction,Object Eviction
+LocalAccountMonitoring,User Behavior Analysis
+RestoreEmail,Restore Object
+DecoyFile,Decoy Object
+DecoySessionToken,Decoy Object
+DecoyNetworkResource,Decoy Object
+ResourceAccessPatternAnalysis,User Behavior Analysis
+AuthenticationEventThresholding,User Behavior Analysis
+ReverseResolutionIPDenylisting,Network Isolation
+SystemFirmwareVerification,Platform Monitoring
+CredentialCompromiseScopeAnalysis,User Behavior Analysis
+Multi-factorAuthentication,Agent Authentication
+One-timePassword,Credential Hardening
+CredentialRotation,Credential Hardening
+DomainAccountMonitoring,User Behavior Analysis
+EmulatedFileAnalysis,File Analysis
+ForwardResolutionDomainDenylisting,Network Isolation

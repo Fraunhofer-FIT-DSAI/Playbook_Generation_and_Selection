@@ -1,0 +1,44 @@
+primitive(attackerLocated(_location)).
+primitive(hacl(_src, _dst, _prot, _port)).
+primitive(vulExists(_host, _vulID, _consequence)).
+primitive(vulProperty(_vulID, _consequence)).
+
+
+derived(execCode(_host, _permission, _techniqueID)).
+derived(netAccess(_host, _protocol, _port)).
+
+meta(attackGoal(_)).
+
+meta(advances(_, _)).
+
+/* Tabling predicates */
+:- table execCode/3.
+:- table netAccess/3.
+
+/* interaction rules */
+
+interaction_rule(
+	(execCode(Host, root, Consequence) :- vulExists(Host, _, Consequence), netAccess(Host, _, _)),
+	rule_desc('Code Execution',1.0)).
+
+interaction_rule(
+  (netAccess(H2, Protocol, Port) :-
+	execCode(H1, _Perm, _Conseq),  /* Any permission level */
+	advances(H1, H2),
+    hacl(H1, H2, Protocol, Port)),
+  rule_desc('Access to the host',
+  0.5)).
+  
+  interaction_rule(
+  (netAccess(H, Protocol, Port) :-
+	attackerLocated(Zone),
+	hacl(Zone, H, Protocol, Port)),
+  rule_desc('Access to the host',
+  1.0)).
+
+
+interaction_rule(
+  (netAccess(H, Protocol, Port) :-
+	attackerLocated(H)),
+  rule_desc('Access to the host',
+  1.0)).

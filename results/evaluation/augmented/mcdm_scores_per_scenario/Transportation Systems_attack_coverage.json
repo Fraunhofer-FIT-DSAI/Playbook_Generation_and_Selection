@@ -1,0 +1,3606 @@
+{
+  "ma_scenario_Transportation_Systems_0000": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0001": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0002": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0003": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0004": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0005": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0006": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0007": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0008": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0009": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0010": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0011": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0012": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0013": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0014": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0015": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0016": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0017": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0018": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0019": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0020": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0021": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0022": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0023": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0024": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0025": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0026": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0027": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0028": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0029": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0030": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0031": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0032": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0033": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0034": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0035": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0036": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0037": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0038": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0039": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0040": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0041": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0042": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0043": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0044": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0045": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0046": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0047": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0048": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0049": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0050": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0051": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0052": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0053": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0054": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0055": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0056": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0057": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0058": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0059": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0060": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0061": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0062": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0063": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0064": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0065": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0066": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0067": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0068": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0069": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0070": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0071": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0072": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0073": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0074": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0075": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0076": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0077": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0078": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0079": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0080": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0081": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0082": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0083": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0084": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0085": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0086": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0087": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0088": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0089": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0090": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0091": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0092": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0093": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0094": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0095": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0096": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0097": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0098": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0099": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0100": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0101": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0102": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0103": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0104": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0105": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0106": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0107": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0108": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0109": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0110": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0111": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0112": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0113": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0114": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0115": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0116": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0117": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0118": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0119": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0120": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0121": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0122": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0123": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0124": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0125": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0126": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0127": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0128": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0129": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0130": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0131": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0132": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0133": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0134": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0135": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0136": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0137": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0138": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0139": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0140": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0141": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0142": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0143": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0144": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0145": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0146": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0147": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0148": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0149": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0150": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0151": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0152": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0153": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0154": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0155": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0156": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0157": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0158": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0159": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0160": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0161": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0162": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0163": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0164": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0165": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0166": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0167": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0168": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0169": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0170": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0171": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0172": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0173": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0174": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0175": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0176": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0177": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0178": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0179": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0180": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0181": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0182": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0183": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0184": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0185": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0186": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0187": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0188": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0189": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0190": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0191": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0192": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0193": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0194": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0195": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0196": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0197": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0198": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0199": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0200": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0201": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0202": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0203": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0204": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0205": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0206": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0207": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0208": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0209": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0210": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0211": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0212": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0213": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0214": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0215": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0216": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0217": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0218": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0219": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0220": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0221": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0222": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0223": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0224": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0225": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0226": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0227": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0228": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0229": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0230": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0231": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0232": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0233": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0234": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0235": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0236": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0237": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0238": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0239": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0240": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0241": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0242": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0243": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0244": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0245": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0246": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0247": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0248": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0249": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0250": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0251": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0252": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0253": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0254": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0255": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1498.001"
+  ],
+  "ma_scenario_Transportation_Systems_0256": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0257": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0258": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0259": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0260": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0261": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0262": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0263": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0264": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0265": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0266": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0267": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0268": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0269": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0270": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0271": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0272": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0273": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0274": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0275": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0276": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0277": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0278": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0279": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0280": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0281": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0282": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0283": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0284": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0285": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0286": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0287": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0288": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0289": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0290": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0291": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0292": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0293": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0294": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0295": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0296": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0297": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0298": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0299": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0300": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0301": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0302": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0303": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0304": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0305": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0306": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0307": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0308": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0309": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0310": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0311": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0312": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0313": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0314": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0315": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0316": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0317": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0318": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0319": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0320": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0321": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0322": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0323": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0324": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0325": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0326": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0327": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0328": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0329": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0330": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0331": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0332": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0333": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0334": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0335": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0336": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0337": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0338": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0339": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0340": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0341": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0342": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0343": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0344": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0345": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0346": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0347": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0348": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0349": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0350": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0351": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0352": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0353": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0354": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0355": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0356": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0357": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0358": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0359": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0360": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0361": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0362": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0363": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0364": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0365": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0366": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0367": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0368": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0369": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0370": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0371": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0372": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0373": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0374": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0375": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0376": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0377": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0378": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0379": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0380": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0381": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0382": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0383": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0384": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0385": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0386": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0387": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0388": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0389": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0390": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0391": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0392": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0393": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0394": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0395": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0396": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0397": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0398": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0399": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0400": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0401": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0402": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0403": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0404": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0405": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0406": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0407": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0408": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0409": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0410": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0411": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0412": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0413": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0414": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0415": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0416": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0417": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0418": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0419": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0420": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0421": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0422": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0423": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0424": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0425": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0426": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0427": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0428": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0429": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0430": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0431": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0432": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0433": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0434": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0435": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0436": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0437": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0438": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0439": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0440": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0441": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0442": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0443": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0444": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0445": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0446": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0447": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0448": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0449": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0450": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0451": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0452": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0453": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0454": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0455": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0456": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0457": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0458": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0459": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0460": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0461": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0462": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0463": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0464": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0465": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0466": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0467": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0468": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0469": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0470": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0471": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0472": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0473": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0474": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0475": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0476": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0477": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0478": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0479": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0480": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0481": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0482": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0483": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0484": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0485": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0486": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0487": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0488": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0489": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0490": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0491": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0492": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0493": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0494": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0495": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0496": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0497": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0498": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "ma_scenario_Transportation_Systems_0499": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "p1": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "p1010": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "p1011": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "p1012": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "p1015": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "p1020": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p1021": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p1024": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "p1026": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "p1028": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "p1030": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "p1031": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "p1034": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p1035": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p1037": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p1038": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p1039": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "p1049": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p1050": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "p1052": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "p1053": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p1054": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "p1055": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "p1059": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "p1060": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p1064": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p1074": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "p1079": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p1086": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "p1087": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p1088": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p1090": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "p1091": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p1092": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p1093": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p1096": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "p1097": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "p1105": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p1106": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p1108": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p1115": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "p1121": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p1123": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "p1129": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "p1130": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "p1136": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p1139": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p115": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p116": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p120": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "p126": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p128": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p129": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p130": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p131": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p134": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p139": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p14": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p140": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p142": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p157": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p159": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p16": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p160": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "p17": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p170": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p177": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p20": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p3": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p33": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p34": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "p423": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p424": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p425": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p426": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "p427": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "p428": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "p429": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p43": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p438": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "p439": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "p44": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p440": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p444": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p447": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p448": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p451": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p454": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "p455": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "p456": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "p458": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "p460": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "p461": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p463": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p469": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p474": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p478": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p486": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p487": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "p488": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p489": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p491": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p493": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p494": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p495": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "p498": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p499": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p501": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "p502": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "p503": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "p504": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "p505": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "p506": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "p507": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "p508": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p509": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p51": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p510": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p511": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p513": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "p516": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p518": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "p520": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p523": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p524": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "p528": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p532": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p534": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "p535": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p536": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "p538": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "p539": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p54": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "p540": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "p542": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p544": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p547": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "p549": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "p557": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p559": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p561": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p570": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "p571": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "p572": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "p574": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p578": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "p580": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "p581": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p582": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "p583": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "p584": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "p585": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "p586": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p591": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p592": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "p593": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "p594": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "p595": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p596": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p606": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p608": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "p614": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p617": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "p619": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "p621": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p624": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "p627": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "p628": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p629": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "p634": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p636": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "p64": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p67": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "p70": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1136.003"
+  ],
+  "p86": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p89": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p90": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p92": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078",
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1078.001"
+  ],
+  "p96": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ],
+  "p98": [
+    "http://d3fend.mitre.org/ontologies/d3fend.owl#T1110"
+  ]
+}

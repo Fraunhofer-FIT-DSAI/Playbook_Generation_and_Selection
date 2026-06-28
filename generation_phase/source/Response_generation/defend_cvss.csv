@@ -1,0 +1,19 @@
+def_tactic,def_tactic_label,AV,AC,PR,UI,C,I,A
+File Analysis,Detect,NE,NE,NE,NE,High,High,Low
+Identifier Analysis,Detect,NE,NE,NE,NE,Low,High,Low
+Message Analysis,Detect,NE,NE,NE,NE,Low,High,Low
+Network Traffic Analysis,Detect,NE,NE,NE,High,High,High,Low
+Process Analysis,Detect,NE,High,NE,NE,High,High,Low
+Sensor Visibility,Detect,NE,NE,NE,NE,High,High,High
+User Behavior Analysis,Detect,NE,High,NE,High,Low,Low,High
+Access Mediation,Isolate,NE,NE,High,NE,High,High,High
+Execution Isolation,Isolate,NE,High,High,NE,High,High,High
+Network Isolation,Isolate,Low,High,High,NE,High,High,High
+Resource Isolation,Isolate,NE,High,High,NE,High,High,High
+Isolation Reversal,Isolate,NE,NE,High,NE,NE,NE,NE
+Credential Evoiction,Evict,NE,NE,High,NE,High,High,High
+Object Eviction,Evict,NE,Low,High,NE,High,High,Low
+Process Eviction,Evict,NE,High,High,NE,High,High,High
+Restore Access,Restore,NE,NE,NE,NE,NE,NE,Low
+Restore Object,Restore,NE,NE,NE,NE,Low,Low,Low 
+

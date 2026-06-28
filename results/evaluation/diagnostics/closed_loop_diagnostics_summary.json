@@ -1,0 +1,98 @@
+{
+  "available_modes": [
+    "community-only",
+    "generated-only",
+    "generated-reduced",
+    "augmented",
+    "augmented-reduced"
+  ],
+  "diagnosed_mode": "augmented-reduced",
+  "generated_candidates_retrieved_count": 16,
+  "generated_export": {
+    "available": true,
+    "bad_command_examples": [],
+    "duplicate_step_ids": 0,
+    "duplicate_step_instances": 0,
+    "playbook_count": 7928,
+    "playbooks_with_duplicate_steps": 0,
+    "source_case_count": 16,
+    "step_count": 53103,
+    "top_source_cases_by_step_count": [
+      [
+        "scenario_Emergency_Services",
+        3907
+      ],
+      [
+        "scenario_Communications",
+        3680
+      ],
+      [
+        "scenario_Defense_Industrial_Base",
+        3612
+      ],
+      [
+        "scenario_Government_Facilities",
+        3597
+      ],
+      [
+        "scenario_Financial_Services",
+        3593
+      ],
+      [
+        "scenario_Food_and_Agriculture",
+        3556
+      ],
+      [
+        "scenario_Nuclear_Reactors_Materials_and_Waste",
+        3520
+      ],
+      [
+        "scenario_Dams",
+        3491
+      ],
+      [
+        "scenario_Transportation_Systems",
+        3490
+      ],
+      [
+        "scenario_Water_and_Wastewater_Systems",
+        3467
+      ],
+      [
+        "scenario_Energy",
+        3254
+      ],
+      [
+        "scenario_Chemical",
+        3128
+      ],
+      [
+        "scenario_Critical_Manufacturing",
+        2988
+      ],
+      [
+        "scenario_Commercial_Facilities",
+        2969
+      ],
+      [
+        "scenario_Information_Technology",
+        2863
+      ],
+      [
+        "scenario_Healthcare_and_Public_Health",
+        1988
+      ]
+    ]
+  },
+  "loss_reason_counts": {
+    "achievable_recall_better_than_selected": 11,
+    "augmented_oracle_better_than_selected": 7,
+    "generated_improves_direct_recall_but_loses_mcdm": 2,
+    "generated_improves_risk_but_loses_coverage": 2,
+    "lower_DAC": 2,
+    "lower_DC": 2,
+    "reduced_generated_pool_changes_selected_source": 14
+  },
+  "scenario_count": 16,
+  "selected_generated_count": 14
+}

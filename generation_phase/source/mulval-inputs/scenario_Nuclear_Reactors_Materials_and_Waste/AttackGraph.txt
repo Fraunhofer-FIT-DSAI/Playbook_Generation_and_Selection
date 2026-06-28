@@ -1,0 +1,247 @@
+1,"execCode(host10,root,'Direct Network Flood - T1498.001')","OR",0
+2,"RULE 0 (Code Execution)","AND",0
+3,"netAccess(host10,_,_)","OR",0
+4,"RULE 1 (Access to the host)","AND",0
+5,"hacl(host9,host10,_,_)","LEAF",1
+4,5,-1
+6,"execCode(host9,root,'Network Denial of Service - T1498')","OR",0
+7,"RULE 0 (Code Execution)","AND",0
+8,"netAccess(host9,_,_)","OR",0
+9,"RULE 1 (Access to the host)","AND",0
+10,"hacl(host8,host9,_,_)","LEAF",1
+9,10,-1
+11,"execCode(host8,root,'Cloud Groups - T1069.003')","OR",0
+12,"RULE 0 (Code Execution)","AND",0
+13,"netAccess(host8,_,_)","OR",0
+14,"RULE 1 (Access to the host)","AND",0
+15,"hacl(host7,host8,_,_)","LEAF",1
+14,15,-1
+16,"execCode(host7,root,'Application or System Exploitation - T1499.004')","OR",0
+17,"RULE 0 (Code Execution)","AND",0
+18,"netAccess(host7,_,_)","OR",0
+19,"RULE 1 (Access to the host)","AND",0
+20,"hacl(host6,host7,_,_)","LEAF",1
+19,20,-1
+21,"execCode(host6,root,'Reflection Amplification - T1498.002')","OR",0
+22,"RULE 0 (Code Execution)","AND",0
+23,"netAccess(host6,_,_)","OR",0
+24,"RULE 1 (Access to the host)","AND",0
+25,"hacl(host5,host6,_,_)","LEAF",1
+24,25,-1
+26,"execCode(host5,root,'Brute Force - T1110')","OR",0
+27,"RULE 0 (Code Execution)","AND",0
+28,"netAccess(host5,_,_)","OR",0
+29,"RULE 1 (Access to the host)","AND",0
+30,"hacl(host4,host5,_,_)","LEAF",1
+29,30,-1
+31,"execCode(host4,root,'Account Discovery - T1087')","OR",0
+32,"RULE 0 (Code Execution)","AND",0
+33,"netAccess(host4,_,_)","OR",0
+34,"RULE 1 (Access to the host)","AND",0
+35,"hacl(host3,host4,_,_)","LEAF",1
+34,35,-1
+36,"execCode(host3,root,'Cloud Account - T1087.004')","OR",0
+37,"RULE 0 (Code Execution)","AND",0
+38,"netAccess(host3,_,_)","OR",0
+39,"RULE 1 (Access to the host)","AND",0
+40,"hacl(host2,host3,_,_)","LEAF",1
+39,40,-1
+41,"execCode(host2,root,'SAML Tokens - T1606.002')","OR",0
+42,"RULE 0 (Code Execution)","AND",0
+43,"netAccess(host2,_,_)","OR",0
+44,"RULE 1 (Access to the host)","AND",0
+45,"hacl(host1,host2,_,_)","LEAF",1
+44,45,-1
+46,"execCode(host1,root,'Application Exhaustion Flood - T1499.003')","OR",0
+47,"RULE 0 (Code Execution)","AND",0
+48,"netAccess(host1,_,_)","OR",0
+49,"RULE 2 (Access to the host)","AND",0
+50,"hacl(internet,host1,_,_)","LEAF",1
+49,50,-1
+51,"attackerLocated(internet)","LEAF",1
+49,51,-1
+48,49,-1
+47,48,-1
+52,"vulExists(host1,'CVE-2025-0639','Application Exhaustion Flood - T1499.003')","LEAF",1
+47,52,-1
+46,47,-1
+44,46,-1
+43,44,-1
+53,"RULE 1 (Access to the host)","AND",0
+53,45,-1
+54,"execCode(host1,root,'Credential Stuffing - T1110.004')","OR",0
+55,"RULE 0 (Code Execution)","AND",0
+55,48,-1
+56,"vulExists(host1,'CVE-2024-42457','Credential Stuffing - T1110.004')","LEAF",1
+55,56,-1
+54,55,-1
+53,54,-1
+43,53,-1
+57,"RULE 1 (Access to the host)","AND",0
+57,45,-1
+58,"execCode(host1,root,'Web Cookies - T1606.001')","OR",0
+59,"RULE 0 (Code Execution)","AND",0
+59,48,-1
+60,"vulExists(host1,'CVE-2023-45720','Web Cookies - T1606.001')","LEAF",1
+59,60,-1
+58,59,-1
+57,58,-1
+43,57,-1
+42,43,-1
+61,"vulExists(host2,'CVE-2025-31324','SAML Tokens - T1606.002')","LEAF",1
+42,61,-1
+41,42,-1
+39,41,-1
+38,39,-1
+62,"RULE 1 (Access to the host)","AND",0
+62,40,-1
+63,"execCode(host2,root,'Unsecured Credentials - T1552')","OR",0
+64,"RULE 0 (Code Execution)","AND",0
+64,43,-1
+65,"vulExists(host2,'CVE-2019-3763','Unsecured Credentials - T1552')","LEAF",1
+64,65,-1
+63,64,-1
+62,63,-1
+38,62,-1
+66,"RULE 1 (Access to the host)","AND",0
+66,40,-1
+67,"execCode(host2,root,'User Execution - T0863')","OR",0
+68,"RULE 0 (Code Execution)","AND",0
+68,43,-1
+69,"vulExists(host2,'CVE-2020-3198','User Execution - T0863')","LEAF",1
+68,69,-1
+67,68,-1
+66,67,-1
+38,66,-1
+37,38,-1
+70,"vulExists(host3,'CVE-2019-3758','Cloud Account - T1087.004')","LEAF",1
+37,70,-1
+36,37,-1
+34,36,-1
+33,34,-1
+71,"RULE 1 (Access to the host)","AND",0
+71,35,-1
+72,"execCode(host3,root,'Use Alternate Authentication Material - T1550')","OR",0
+73,"RULE 0 (Code Execution)","AND",0
+73,38,-1
+74,"vulExists(host3,'CVE-2025-31324','Use Alternate Authentication Material - T1550')","LEAF",1
+73,74,-1
+72,73,-1
+71,72,-1
+33,71,-1
+75,"RULE 1 (Access to the host)","AND",0
+75,35,-1
+76,"execCode(host3,root,'Valid Accounts - T0859')","OR",0
+77,"RULE 0 (Code Execution)","AND",0
+77,38,-1
+78,"vulExists(host3,'CVE-2018-15761','Valid Accounts - T0859')","LEAF",1
+77,78,-1
+76,77,-1
+75,76,-1
+33,75,-1
+32,33,-1
+79,"vulExists(host4,'CVE-2025-3606','Account Discovery - T1087')","LEAF",1
+32,79,-1
+31,32,-1
+29,31,-1
+28,29,-1
+80,"RULE 1 (Access to the host)","AND",0
+80,30,-1
+81,"execCode(host4,root,'Default Accounts - T1078.001')","OR",0
+82,"RULE 0 (Code Execution)","AND",0
+82,33,-1
+83,"vulExists(host4,'CVE-2020-14510','Default Accounts - T1078.001')","LEAF",1
+82,83,-1
+81,82,-1
+80,81,-1
+28,80,-1
+27,28,-1
+84,"vulExists(host5,'CVE-2025-46273','Brute Force - T1110')","LEAF",1
+27,84,-1
+26,27,-1
+24,26,-1
+23,24,-1
+85,"RULE 1 (Access to the host)","AND",0
+85,25,-1
+86,"execCode(host5,root,'Endpoint Denial of Service - T1499')","OR",0
+87,"RULE 0 (Code Execution)","AND",0
+87,28,-1
+88,"vulExists(host5,'CVE-2019-15956','Endpoint Denial of Service - T1499')","LEAF",1
+87,88,-1
+86,87,-1
+85,86,-1
+23,85,-1
+22,23,-1
+89,"vulExists(host6,'CVE-2025-0639','Reflection Amplification - T1498.002')","LEAF",1
+22,89,-1
+21,22,-1
+19,21,-1
+18,19,-1
+90,"RULE 1 (Access to the host)","AND",0
+90,20,-1
+91,"execCode(host6,root,'Web Session Cookie - T1550.004')","OR",0
+92,"RULE 0 (Code Execution)","AND",0
+92,23,-1
+93,"vulExists(host6,'CVE-2025-31324','Web Session Cookie - T1550.004')","LEAF",1
+92,93,-1
+91,92,-1
+90,91,-1
+18,90,-1
+17,18,-1
+94,"vulExists(host7,'CVE-2020-3198','Application or System Exploitation - T1499.004')","LEAF",1
+17,94,-1
+16,17,-1
+14,16,-1
+13,14,-1
+95,"RULE 1 (Access to the host)","AND",0
+95,15,-1
+96,"execCode(host7,root,'Service Stop - T0881')","OR",0
+97,"RULE 0 (Code Execution)","AND",0
+97,18,-1
+98,"vulExists(host7,'CVE-2019-1747','Service Stop - T0881')","LEAF",1
+97,98,-1
+96,97,-1
+95,96,-1
+13,95,-1
+12,13,-1
+99,"vulExists(host8,'CVE-2025-3606','Cloud Groups - T1069.003')","LEAF",1
+12,99,-1
+11,12,-1
+9,11,-1
+8,9,-1
+100,"RULE 1 (Access to the host)","AND",0
+100,10,-1
+101,"execCode(host8,root,'Forge Web Credentials - T1606')","OR",0
+102,"RULE 0 (Code Execution)","AND",0
+102,13,-1
+103,"vulExists(host8,'CVE-2025-31324','Forge Web Credentials - T1606')","LEAF",1
+102,103,-1
+101,102,-1
+100,101,-1
+8,100,-1
+7,8,-1
+104,"vulExists(host9,'CVE-2025-0639','Network Denial of Service - T1498')","LEAF",1
+7,104,-1
+6,7,-1
+4,6,-1
+3,4,-1
+105,"RULE 1 (Access to the host)","AND",0
+105,5,-1
+106,"execCode(host9,root,'Service Exhaustion Flood - T1499.002')","OR",0
+107,"RULE 0 (Code Execution)","AND",0
+107,8,-1
+108,"vulExists(host9,'CVE-2019-1703','Service Exhaustion Flood - T1499.002')","LEAF",1
+107,108,-1
+106,107,-1
+105,106,-1
+3,105,-1
+2,3,-1
+109,"vulExists(host10,'CVE-2025-0639','Direct Network Flood - T1498.001')","LEAF",1
+2,109,-1
+1,2,-1
+110,"execCode(host10,root,'Permission Groups Discovery - T1069')","OR",0
+111,"RULE 0 (Code Execution)","AND",0
+111,3,-1
+112,"vulExists(host10,'CVE-2025-3606','Permission Groups Discovery - T1069')","LEAF",1
+111,112,-1
+110,111,-1
