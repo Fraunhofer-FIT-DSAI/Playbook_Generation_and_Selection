@@ -1,0 +1,196 @@
+{
+  "artifact_status": "paper evaluation candidate-table replay",
+  "candidate_tables": {
+    "Chemical": {
+      "path": "results/evaluation/corrected/augmented-reduced/candidate_scores_per_scenario/Chemical_candidate_scores.csv",
+      "rows": 103,
+      "sha256": "9110aeef4075277106abfd63119bece0dba2fc878aaa31ad23dd109bdf51bf4e"
+    },
+    "Commercial Facilities": {
+      "path": "results/evaluation/corrected/augmented-reduced/candidate_scores_per_scenario/Commercial Facilities_candidate_scores.csv",
+      "rows": 95,
+      "sha256": "fea4f042041d93db9e8007b285f95fc23ba2bd4ea6ef17b89896afdb6f3ec693"
+    },
+    "Communications": {
+      "path": "results/evaluation/corrected/augmented-reduced/candidate_scores_per_scenario/Communications_candidate_scores.csv",
+      "rows": 94,
+      "sha256": "4b4154cd2fc648da399a0f19b63c6cf1847e93b28667a61284e3f76de414312a"
+    },
+    "Critical Manufacturing": {
+      "path": "results/evaluation/corrected/augmented-reduced/candidate_scores_per_scenario/Critical Manufacturing_candidate_scores.csv",
+      "rows": 101,
+      "sha256": "bb92cef9f57a37e305e44cf8ad2b539f01cba64c604ab7114524e8a7071ac7c3"
+    },
+    "Dams": {
+      "path": "results/evaluation/corrected/augmented-reduced/candidate_scores_per_scenario/Dams_candidate_scores.csv",
+      "rows": 107,
+      "sha256": "0c65ff16ebf1e75833ea4fa8015b8be09d929f3b80c2a7a864366e55aaf99c4d"
+    },
+    "Defense Industrial Base": {
+      "path": "results/evaluation/corrected/augmented-reduced/candidate_scores_per_scenario/Defense Industrial Base_candidate_scores.csv",
+      "rows": 145,
+      "sha256": "30c140b803b80a45a646dddf5e1649fbd6107c0f135dd63a85d347b36d1a59dc"
+    },
+    "Emergency Services": {
+      "path": "results/evaluation/corrected/augmented-reduced/candidate_scores_per_scenario/Emergency Services_candidate_scores.csv",
+      "rows": 272,
+      "sha256": "2ee852fb47fafc98d578259906f2a2d95003fce43db0e67e24ba9842d90d49dd"
+    },
+    "Energy": {
+      "path": "results/evaluation/corrected/augmented-reduced/candidate_scores_per_scenario/Energy_candidate_scores.csv",
+      "rows": 88,
+      "sha256": "eccbddf2e19b496582d9c751b63db139ae9e2477d48b91ff9cd172ec7b6635f0"
+    },
+    "Financial Services": {
+      "path": "results/evaluation/corrected/augmented-reduced/candidate_scores_per_scenario/Financial Services_candidate_scores.csv",
+      "rows": 165,
+      "sha256": "9125bda141d309ebd0eeac500cfd84f916a4ae5c1299ba05535c7f3f78b4b504"
+    },
+    "Food and Agriculture": {
+      "path": "results/evaluation/corrected/augmented-reduced/candidate_scores_per_scenario/Food and Agriculture_candidate_scores.csv",
+      "rows": 105,
+      "sha256": "679b2fd316063384d0bedf9a3efa5cc603cfd690f5bfd9d0d73d7c2925aacd3f"
+    },
+    "Government Facilities": {
+      "path": "results/evaluation/corrected/augmented-reduced/candidate_scores_per_scenario/Government Facilities_candidate_scores.csv",
+      "rows": 105,
+      "sha256": "7c57bb909d0bd06819161ecf9ad0d0682e82da28bf5020afbc1a5cb64fed474a"
+    },
+    "Healthcare and Public Health": {
+      "path": "results/evaluation/corrected/augmented-reduced/candidate_scores_per_scenario/Healthcare and Public Health_candidate_scores.csv",
+      "rows": 93,
+      "sha256": "ec8ec1eea47e53527d6f99d6909c6f183c231813b67b8fdcae0f62c01e9fd905"
+    },
+    "Information Technology": {
+      "path": "results/evaluation/corrected/augmented-reduced/candidate_scores_per_scenario/Information Technology_candidate_scores.csv",
+      "rows": 92,
+      "sha256": "2b588982bb6f964343d8c94e91165bce1cc41b8504f66331ce8fe190caded43a"
+    },
+    "Nuclear Reactors, Materials, and Waste": {
+      "path": "results/evaluation/corrected/augmented-reduced/candidate_scores_per_scenario/Nuclear Reactors, Materials, and Waste_candidate_scores.csv",
+      "rows": 96,
+      "sha256": "eb8fd9e7739c125d26668b94ca38fa5ec4c3fcff58ddece57087e553d4cde610"
+    },
+    "Transportation Systems": {
+      "path": "results/evaluation/corrected/augmented-reduced/candidate_scores_per_scenario/Transportation Systems_candidate_scores.csv",
+      "rows": 95,
+      "sha256": "6f196217bdbc8d56100b534ca5e923e7faad8aa9b802d50c2cd997af26552dc5"
+    },
+    "Water and Wastewater Systems": {
+      "path": "results/evaluation/corrected/augmented-reduced/candidate_scores_per_scenario/Water and Wastewater Systems_candidate_scores.csv",
+      "rows": 105,
+      "sha256": "9b9c2296976909c138e049d7a9e05aafd32e56a229fb2b33f8d7df2c393525d7"
+    }
+  },
+  "command": "python integration_phase/scripts/run_weight_sensitivity.py --draws 5000 --concentration 100 --seed 20260714",
+  "created_at_utc": "2026-08-05T18:23:38.433016+00:00",
+  "dirichlet_summary": {
+    "generated_winners": {
+      "max": 16.0,
+      "mean": 10.8656,
+      "median": 10.0,
+      "min": 0.0,
+      "q025": 5.0,
+      "q975": 16.0,
+      "sd": 3.1697864516761762
+    },
+    "mean_combined_attack_recall": {
+      "max": 0.2525639131205625,
+      "mean": 0.2423059133356094,
+      "median": 0.2445809221064375,
+      "min": 0.226229390923625,
+      "q025": 0.226229390923625,
+      "q975": 0.24951513263275,
+      "sd": 0.007587931742856208
+    },
+    "mean_direct_attack_recall": {
+      "max": 0.083156894133875,
+      "mean": 0.05895755801005432,
+      "median": 0.055643904762124996,
+      "min": 0.0,
+      "q025": 0.030582010582000003,
+      "q975": 0.083156894133875,
+      "sd": 0.015352992991893877
+    },
+    "mean_inferred_attack_recall": {
+      "max": 0.23099962485418749,
+      "mean": 0.21440516307728275,
+      "median": 0.219081456686,
+      "min": 0.18077828116481248,
+      "q025": 0.18077828116481248,
+      "q975": 0.23099962485418749,
+      "sd": 0.016002328761481457
+    },
+    "mean_normalized_combined_attack_recall": {
+      "max": 0.7182075027977499,
+      "mean": 0.6922224582198365,
+      "median": 0.697002145654875,
+      "min": 0.6420914313691874,
+      "q025": 0.6528766351038751,
+      "q975": 0.7103950027977499,
+      "sd": 0.018804700572913665
+    },
+    "nominal_winner_fraction": {
+      "max": 1.0,
+      "mean": 0.8064,
+      "median": 0.875,
+      "min": 0.25,
+      "q025": 0.5625,
+      "q975": 1.0,
+      "sd": 0.14027152319713368
+    }
+  },
+  "method": {
+    "dirichlet_alpha": {
+      "AC": 3.0,
+      "CC": 7.000000000000001,
+      "DAC": 20.0,
+      "DC": 25.0,
+      "DTC": 20.0,
+      "RC": 15.0,
+      "TC": 10.0
+    },
+    "dirichlet_concentration": 100.0,
+    "dirichlet_draws": 5000,
+    "nominal_weights": {
+      "AC": 0.03,
+      "CC": 0.07,
+      "DAC": 0.2,
+      "DC": 0.25,
+      "DTC": 0.2,
+      "RC": 0.15,
+      "TC": 0.1
+    },
+    "one_at_a_time_multipliers": [
+      0.0,
+      0.5,
+      1.0,
+      1.5,
+      2.0
+    ],
+    "scope": "reweights checked-in criterion values; retrieval and pool-relative criterion normalization are not rerun",
+    "seed": 20260714,
+    "tie_policy": "highest recomputed weighted score, then lexicographically smallest stable playbook_id"
+  },
+  "nominal": {
+    "AC": 0.03,
+    "CC": 0.07,
+    "DAC": 0.2,
+    "DC": 0.25,
+    "DTC": 0.2,
+    "RC": 0.15,
+    "TC": 0.1,
+    "community_winners": 6,
+    "generated_winners": 10,
+    "mean_combined_attack_recall": 0.242758375876,
+    "mean_direct_attack_recall": 0.055643904762124996,
+    "mean_inferred_attack_recall": 0.219081456686,
+    "mean_normalized_combined_attack_recall": 0.693728336131125
+  },
+  "outputs": {
+    "dirichlet_draws": "results/evaluation/corrected/weight_sensitivity/dirichlet_draws.csv",
+    "dirichlet_draws_sha256": "be331baaca28aa63046eafbc460dc725ba7b4507e33e2dc5901475c1191639ad",
+    "one_at_a_time": "results/evaluation/corrected/weight_sensitivity/one_at_a_time.csv",
+    "one_at_a_time_sha256": "01bc75813b7cd0c6e3835e4fa762064e5bc56da6ae6c1f4e1919bff428f90176"
+  }
+}

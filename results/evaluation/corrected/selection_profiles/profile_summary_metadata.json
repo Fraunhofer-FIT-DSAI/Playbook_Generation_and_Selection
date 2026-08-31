@@ -1,0 +1,78 @@
+{
+  "by_scenario": "results/evaluation/corrected/selection_profiles/profile_by_scenario.csv",
+  "by_scenario_sha256": "627726f7db081ebf43781f318753670aebcfe58b02d5eefce8d13a950a530624",
+  "closed_loop_tie_policy": "highest total_score, then lexicographically smallest playbook_id",
+  "command": "python integration_phase/scripts/run_selection_profile_comparison.py --coverage-threshold 0.9",
+  "coverage_threshold": 0.9,
+  "created_at_utc": "2026-08-05T18:23:45.816403+00:00",
+  "mode": "augmented-reduced",
+  "result_state": "paper evaluation",
+  "source_candidate_files": [
+    {
+      "path": "results/evaluation/corrected/augmented-reduced/candidate_scores_per_scenario/Chemical_candidate_scores.csv",
+      "sha256": "9110aeef4075277106abfd63119bece0dba2fc878aaa31ad23dd109bdf51bf4e"
+    },
+    {
+      "path": "results/evaluation/corrected/augmented-reduced/candidate_scores_per_scenario/Commercial Facilities_candidate_scores.csv",
+      "sha256": "fea4f042041d93db9e8007b285f95fc23ba2bd4ea6ef17b89896afdb6f3ec693"
+    },
+    {
+      "path": "results/evaluation/corrected/augmented-reduced/candidate_scores_per_scenario/Communications_candidate_scores.csv",
+      "sha256": "4b4154cd2fc648da399a0f19b63c6cf1847e93b28667a61284e3f76de414312a"
+    },
+    {
+      "path": "results/evaluation/corrected/augmented-reduced/candidate_scores_per_scenario/Critical Manufacturing_candidate_scores.csv",
+      "sha256": "bb92cef9f57a37e305e44cf8ad2b539f01cba64c604ab7114524e8a7071ac7c3"
+    },
+    {
+      "path": "results/evaluation/corrected/augmented-reduced/candidate_scores_per_scenario/Dams_candidate_scores.csv",
+      "sha256": "0c65ff16ebf1e75833ea4fa8015b8be09d929f3b80c2a7a864366e55aaf99c4d"
+    },
+    {
+      "path": "results/evaluation/corrected/augmented-reduced/candidate_scores_per_scenario/Defense Industrial Base_candidate_scores.csv",
+      "sha256": "30c140b803b80a45a646dddf5e1649fbd6107c0f135dd63a85d347b36d1a59dc"
+    },
+    {
+      "path": "results/evaluation/corrected/augmented-reduced/candidate_scores_per_scenario/Emergency Services_candidate_scores.csv",
+      "sha256": "2ee852fb47fafc98d578259906f2a2d95003fce43db0e67e24ba9842d90d49dd"
+    },
+    {
+      "path": "results/evaluation/corrected/augmented-reduced/candidate_scores_per_scenario/Energy_candidate_scores.csv",
+      "sha256": "eccbddf2e19b496582d9c751b63db139ae9e2477d48b91ff9cd172ec7b6635f0"
+    },
+    {
+      "path": "results/evaluation/corrected/augmented-reduced/candidate_scores_per_scenario/Financial Services_candidate_scores.csv",
+      "sha256": "9125bda141d309ebd0eeac500cfd84f916a4ae5c1299ba05535c7f3f78b4b504"
+    },
+    {
+      "path": "results/evaluation/corrected/augmented-reduced/candidate_scores_per_scenario/Food and Agriculture_candidate_scores.csv",
+      "sha256": "679b2fd316063384d0bedf9a3efa5cc603cfd690f5bfd9d0d73d7c2925aacd3f"
+    },
+    {
+      "path": "results/evaluation/corrected/augmented-reduced/candidate_scores_per_scenario/Government Facilities_candidate_scores.csv",
+      "sha256": "7c57bb909d0bd06819161ecf9ad0d0682e82da28bf5020afbc1a5cb64fed474a"
+    },
+    {
+      "path": "results/evaluation/corrected/augmented-reduced/candidate_scores_per_scenario/Healthcare and Public Health_candidate_scores.csv",
+      "sha256": "ec8ec1eea47e53527d6f99d6909c6f183c231813b67b8fdcae0f62c01e9fd905"
+    },
+    {
+      "path": "results/evaluation/corrected/augmented-reduced/candidate_scores_per_scenario/Information Technology_candidate_scores.csv",
+      "sha256": "2b588982bb6f964343d8c94e91165bce1cc41b8504f66331ce8fe190caded43a"
+    },
+    {
+      "path": "results/evaluation/corrected/augmented-reduced/candidate_scores_per_scenario/Nuclear Reactors, Materials, and Waste_candidate_scores.csv",
+      "sha256": "eb8fd9e7739c125d26668b94ca38fa5ec4c3fcff58ddece57087e553d4cde610"
+    },
+    {
+      "path": "results/evaluation/corrected/augmented-reduced/candidate_scores_per_scenario/Transportation Systems_candidate_scores.csv",
+      "sha256": "6f196217bdbc8d56100b534ca5e923e7faad8aa9b802d50c2cd997af26552dc5"
+    },
+    {
+      "path": "results/evaluation/corrected/augmented-reduced/candidate_scores_per_scenario/Water and Wastewater Systems_candidate_scores.csv",
+      "sha256": "9b9c2296976909c138e049d7a9e05aafd32e56a229fb2b33f8d7df2c393525d7"
+    }
+  ],
+  "summary": "results/evaluation/corrected/selection_profiles/profile_summary.csv",
+  "summary_sha256": "b9884fa81264e083eadb7589fd1fd63b01f0287dd58452b5cb636b52865c448c"
+}

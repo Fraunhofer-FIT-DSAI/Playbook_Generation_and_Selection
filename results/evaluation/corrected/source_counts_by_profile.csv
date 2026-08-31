@@ -1,0 +1,14 @@
+profile,scenario_count,generated_selected_count,community_selected_count,generated_selected_fraction,mean_combined_recall,mean_achievable_recall,mean_normalized_recall,source_artifact,source_row_id
+closed-loop-balanced,16,10,6,0.625000000000,0.242758375876,0.352531511996,0.693728336131,results/evaluation/corrected/selection_profiles/profile_by_scenario.csv,closed-loop-balanced
+coverage-primary,16,10,6,0.625000000000,0.267844964428,0.352531511996,0.765884935015,results/evaluation/corrected/selection_profiles/profile_by_scenario.csv,coverage-primary
+90%-coverage-constrained,16,9,7,0.562500000000,0.264631384995,0.352531511996,0.757812018348,results/evaluation/corrected/selection_profiles/profile_by_scenario.csv,coverage-constrained
+neutral,16,10,6,0.625000000000,0.242758375876,0.352531511996,0.693728336131,results/evaluation/corrected/ablations/ablation_by_scenario.csv,neutral
+zero,16,16,0,1.000000000000,0.226229390924,0.352531511996,0.652876635104,results/evaluation/corrected/ablations/ablation_by_scenario.csv,zero
+ignore-and-renormalize,16,14,2,0.875000000000,0.233669867114,0.352531511996,0.671258988045,results/evaluation/corrected/ablations/ablation_by_scenario.csv,ignore
+without-DC,16,16,0,1.000000000000,0.227717486162,0.352531511996,0.656553105692,results/evaluation/corrected/ablations/ablation_by_scenario.csv,without-DC
+without-DAC,16,10,6,0.625000000000,0.249515132633,0.352531511996,0.710395002798,results/evaluation/corrected/ablations/ablation_by_scenario.csv,without-DAC
+without-DTC,16,9,7,0.562500000000,0.249515132633,0.352531511996,0.710395002798,results/evaluation/corrected/ablations/ablation_by_scenario.csv,without-DTC
+without-TC,16,6,10,0.375000000000,0.244580922106,0.352531511996,0.697002145655,results/evaluation/corrected/ablations/ablation_by_scenario.csv,without-TC
+without-RC,16,4,12,0.250000000000,0.239580922106,0.352531511996,0.688073574226,results/evaluation/corrected/ablations/ablation_by_scenario.csv,without-RC
+without-CC,16,9,7,0.562500000000,0.249515132633,0.352531511996,0.710395002798,results/evaluation/corrected/ablations/ablation_by_scenario.csv,without-CC
+without-AC,16,10,6,0.625000000000,0.242758375876,0.352531511996,0.693728336131,results/evaluation/corrected/ablations/ablation_by_scenario.csv,without-AC

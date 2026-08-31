@@ -1,0 +1,20 @@
+{
+  "artifact": "results/evaluation/corrected/publication_tables/corrected_uncertainty_summary.csv",
+  "artifact_sha256": "bbc7dd484abe1611482384140b9c09293847bbf488890a64a1a58962dacf932d",
+  "artifact_status": "paper evaluation",
+  "command": "python integration_phase/scripts/make_corrected_publication_outputs.py",
+  "created_at_utc": "2026-08-18T02:03:15.520773+00:00",
+  "graphdb_endpoint": "http://localhost:7200/repositories/incident-response",
+  "interpretation": "The unit is a benchmark profile. Two profiles have identical ATT&CK target sets; results are not generalisation estimates.",
+  "manifest": "results/generated_repository/corrected_k03/reduced_generated_playbooks_manifest.csv",
+  "manifest_sha256": "866acd440d981c54cc997105fb2d0cdc738f88a58588c3aaa3721b4e8efc5e95",
+  "mapping_owl": "selection_phase/source/GraphDB/playbook_step_defend_mapping.owl",
+  "mapping_sha256": "0ffb6cf054324ac5a3cad0787c1c7b25e4eb03daa7a39bc0fafa1e41e18da271",
+  "repository_count": 167,
+  "sources": [
+    {
+      "path": "results/evaluation/corrected/significance_tests.csv",
+      "sha256": "8d49045f56db028ca5e49f169a308172a4e7bcd2d25d5d5430605638a7b95fbc"
+    }
+  ]
+}

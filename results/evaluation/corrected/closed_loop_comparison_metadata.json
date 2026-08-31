@@ -1,0 +1,82 @@
+{
+  "aggregate_row": "Average",
+  "command": "python integration_phase/scripts/compare_modes.py --evaluation-dir results/evaluation/corrected --out-csv results/evaluation/corrected/closed_loop_comparison.csv",
+  "created_at_utc": "2026-08-05T21:20:30.267862+00:00",
+  "evaluation_dir": "results/evaluation/corrected",
+  "mode_protocols": {
+    "augmented-reduced": {
+      "missing_context_policy": "neutral",
+      "protocol_version": "paper-evaluation-2026-07-27",
+      "scoring_profile": "closed-loop-balanced",
+      "weights": {
+        "AC": 0.03,
+        "CC": 0.07,
+        "DAC": 0.2,
+        "DC": 0.25,
+        "DTC": 0.2,
+        "RC": 0.15,
+        "TC": 0.1
+      }
+    },
+    "community-only": {
+      "missing_context_policy": "neutral",
+      "protocol_version": "paper-evaluation-2026-07-27",
+      "scoring_profile": "coverage-only",
+      "weights": {
+        "DAC": 0.5,
+        "DC": 0.5
+      }
+    },
+    "generated-reduced": {
+      "missing_context_policy": "neutral",
+      "protocol_version": "paper-evaluation-2026-07-27",
+      "scoring_profile": "closed-loop-balanced",
+      "weights": {
+        "AC": 0.03,
+        "CC": 0.07,
+        "DAC": 0.2,
+        "DC": 0.25,
+        "DTC": 0.2,
+        "RC": 0.15,
+        "TC": 0.1
+      }
+    }
+  },
+  "output": "results/evaluation/corrected/closed_loop_comparison.csv",
+  "output_sha256": "d4042b8d973e0e103f25f5f2137872232a60c9b2b4671e7c34eb06568d900a17",
+  "recall_definitions": {
+    "achievable": "union coverage ceiling of the scenario candidate repository",
+    "combined": "set union of direct and inferred target coverage",
+    "direct": "selected generated ATT&CK provenance intersect scenario target",
+    "inferred": "selected artifact-D3FEND semantic associations intersect scenario target",
+    "normalized": "selected combined coverage divided by achievable combined coverage"
+  },
+  "result_state": "paper evaluation",
+  "scenario_rows": 16,
+  "source_files": [
+    {
+      "path": "results/evaluation/corrected/augmented-reduced/scenario_playbook_evaluation_augmented-reduced.csv",
+      "sha256": "319a96e6c0239172aabd26194fafac860f29f1229413ec8614fb28bf9bdb2ba9"
+    },
+    {
+      "path": "results/evaluation/corrected/augmented-reduced/selection_summary.json",
+      "sha256": "c59787eb6ac469c95c172b17f7fe61554d9f526ee6b7e06356ae016e011afcd8"
+    },
+    {
+      "path": "results/evaluation/corrected/community-only/scenario_playbook_evaluation_community-only.csv",
+      "sha256": "1e8eb71317130e4d30f74f35a6d3f722912ef062699a3295f52dff0d609e5f7a"
+    },
+    {
+      "path": "results/evaluation/corrected/community-only/selection_summary.json",
+      "sha256": "30d0fe267541af56f50c699bc4928d3d1d8aecf62549cde49c31593248a5bb37"
+    },
+    {
+      "path": "results/evaluation/corrected/generated-reduced/scenario_playbook_evaluation_generated-reduced.csv",
+      "sha256": "cb22caf1ef755fbd6b346fe9fe2d3737de0b8ce473587410e1afa3fbc343c4e3"
+    },
+    {
+      "path": "results/evaluation/corrected/generated-reduced/selection_summary.json",
+      "sha256": "d58dfcebbf48088abeef3778c12e0d11cddb9dee43cfd325d88b2413520dc048"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+Repository,Scoring profile,Direct,Inferred,Combined union,Achievable,Normalized
+Community-only,Coverage-only,0.000,0.227,0.227,0.292,0.801
+Generated-reduced,Closed-loop balanced,0.082,0.181,0.228,0.288,0.813
+Augmented-reduced,Closed-loop balanced,0.056,0.219,0.243,0.353,0.694

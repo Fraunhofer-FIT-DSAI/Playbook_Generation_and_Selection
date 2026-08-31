@@ -2,9 +2,13 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
+import shlex
+import sys
 import time
 from collections import Counter, defaultdict
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
@@ -12,80 +16,83 @@ from closed_loop_common import (
     DEFAULT_SCENARIOS,
     classify_playbook,
     read_csv_dicts,
+    repo_display_path,
     repo_path,
     to_float,
     write_csv,
 )
-
-
-CLOSED_LOOP_BALANCED_WEIGHTS = {
-    "DC": 0.25,
-    "DAC": 0.20,
-    "DTC": 0.20,
-    "TC": 0.10,
-    "RC": 0.15,
-    "CC": 0.07,
-    "AC": 0.03,
-}
+from selection_protocol import CLOSED_LOOP_BALANCED_WEIGHTS, NEUTRAL_VALUE
 
 ABLATIONS = [
     {
-        "ablation_id": "A",
+        "ablation_id": "community-coverage",
         "description": "community-only + coverage-only",
         "mode": "community-only",
         "scoring_profile": "coverage-only",
         "disabled": set(),
+        "missing_policy": "neutral",
     },
     {
-        "ablation_id": "B",
+        "ablation_id": "augmented-coverage",
         "description": "augmented-reduced + coverage-only",
         "mode": "augmented-reduced",
         "scoring_profile": "coverage-only",
         "disabled": set(),
+        "missing_policy": "neutral",
     },
     {
-        "ablation_id": "C",
-        "description": "augmented-reduced + closed-loop-balanced",
+        "ablation_id": "neutral",
+        "description": "closed-loop-balanced with neutral missing values",
         "mode": "augmented-reduced",
         "scoring_profile": "closed-loop-balanced",
         "disabled": set(),
+        "missing_policy": "neutral",
     },
     {
-        "ablation_id": "D",
-        "description": "augmented-reduced without direct ATT&CK provenance",
+        "ablation_id": "zero",
+        "description": "closed-loop-balanced with zero for missing context",
         "mode": "augmented-reduced",
         "scoring_profile": "closed-loop-balanced",
-        "disabled": {"DTC", "direct-provenance"},
+        "disabled": set(),
+        "missing_policy": "zero",
     },
     {
-        "ablation_id": "E",
-        "description": "augmented-reduced without risk criterion",
+        "ablation_id": "ignore",
+        "description": "closed-loop-balanced ignoring and renormalizing missing context",
         "mode": "augmented-reduced",
         "scoring_profile": "closed-loop-balanced",
-        "disabled": {"RC"},
+        "disabled": set(),
+        "missing_policy": "ignore",
     },
     {
-        "ablation_id": "F",
-        "description": "augmented-reduced without CVE criterion",
+        "ablation_id": "without-direct-channel",
+        "description": "closed-loop-balanced without direct ATT&CK provenance channel",
         "mode": "augmented-reduced",
         "scoring_profile": "closed-loop-balanced",
-        "disabled": {"CC"},
+        "disabled": {"DTC"},
+        "missing_policy": "neutral",
+        "disable_direct_channel": True,
     },
     {
-        "ablation_id": "G",
+        "ablation_id": "generated-neutral",
         "description": "generated-reduced-only + closed-loop-balanced",
         "mode": "generated-reduced",
         "scoring_profile": "closed-loop-balanced",
         "disabled": set(),
-    },
-    {
-        "ablation_id": "H",
-        "description": "augmented-all + closed-loop-balanced",
-        "mode": "augmented-all",
-        "scoring_profile": "closed-loop-balanced",
-        "disabled": set(),
+        "missing_policy": "neutral",
     },
 ]
+for criterion in CLOSED_LOOP_BALANCED_WEIGHTS:
+    ABLATIONS.append(
+        {
+            "ablation_id": f"without-{criterion}",
+            "description": f"closed-loop-balanced with {criterion} weight set to zero",
+            "mode": "augmented-reduced",
+            "scoring_profile": "closed-loop-balanced",
+            "disabled": {criterion},
+            "missing_policy": "neutral",
+        }
+    )
 
 
 def parse_args() -> argparse.Namespace:
@@ -95,7 +102,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--evaluation-dir",
         type=Path,
-        default=Path("results/evaluation"),
+        default=Path("results/evaluation/corrected"),
         help="Evaluation output directory containing mode subdirectories.",
     )
     parser.add_argument(
@@ -106,12 +113,12 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--out-summary",
         type=Path,
-        default=Path("results/evaluation/ablation_summary.csv"),
+        default=Path("results/evaluation/corrected/ablations/ablation_summary.csv"),
     )
     parser.add_argument(
         "--out-by-scenario",
         type=Path,
-        default=Path("results/evaluation/ablation_by_scenario.csv"),
+        default=Path("results/evaluation/corrected/ablations/ablation_by_scenario.csv"),
     )
     return parser.parse_args()
 
@@ -144,6 +151,14 @@ def read_json(path: Path) -> Any:
     return json.loads(path.read_text(encoding="utf-8"))
 
 
+def file_sha256(path: Path) -> str:
+    digest = hashlib.sha256()
+    with path.open("rb") as handle:
+        for chunk in iter(lambda: handle.read(1024 * 1024), b""):
+            digest.update(chunk)
+    return digest.hexdigest()
+
+
 def weights_for(scoring_profile: str, disabled: set[str]) -> dict[str, float]:
     if scoring_profile == "coverage-only":
         return {"DC": 0.5, "DAC": 0.5}
@@ -159,12 +174,36 @@ def weights_for(scoring_profile: str, disabled: set[str]) -> dict[str, float]:
     return {name: value / total for name, value in weights.items() if value > 0}
 
 
-def score_candidate(row: dict[str, str], weights: dict[str, float], disabled: set[str]) -> float:
+def missing_criteria(row: dict[str, str]) -> set[str]:
+    return {
+        item
+        for item in str(row.get("missing_context_fields", "")).split(";")
+        if item in CLOSED_LOOP_BALANCED_WEIGHTS
+    }
+
+
+def score_candidate(
+    row: dict[str, str],
+    weights: dict[str, float],
+    missing_policy: str,
+) -> float:
+    missing = missing_criteria(row)
+    active_weights = {
+        criterion: weight
+        for criterion, weight in weights.items()
+        if missing_policy != "ignore" or criterion not in missing
+    }
+    total_weight = sum(active_weights.values())
+    if total_weight <= 0:
+        return 0.0
     score = 0.0
-    for criterion, weight in weights.items():
-        value = 0.0 if criterion in disabled else to_float(row.get(criterion), 0.0)
-        score += value * weight
-    return score
+    for criterion, weight in active_weights.items():
+        if criterion in missing:
+            criterion_value = NEUTRAL_VALUE if missing_policy == "neutral" else 0.0
+        else:
+            criterion_value = to_float(row.get(criterion), 0.0)
+        score += criterion_value * weight
+    return score / total_weight if missing_policy == "ignore" else score
 
 
 def coverage_for_candidate(
@@ -218,7 +257,7 @@ def select_row(
     inferred_coverage: dict[str, list[str]],
     direct_enabled: bool,
     attack_count: int,
-    disabled: set[str],
+    missing_policy: str,
 ) -> tuple[dict[str, str], float, float]:
     scored = []
     for row in rows:
@@ -230,18 +269,14 @@ def select_row(
             direct_enabled,
         )
         combined_recall = len(combined) / attack_count if attack_count else 0.0
-        total_score = score_candidate(row, weights, disabled)
-        scored.append((
-            total_score,
-            combined_recall,
-            -int(to_float(row.get("action_count"), 10**9)),
-            to_float(row.get("raw_risk_reduction"), 0.0),
-            row.get("playbook_id", ""),
-            row,
-        ))
+        total_score = score_candidate(row, weights, missing_policy)
+        scored.append((total_score, combined_recall, row.get("playbook_id", ""), row))
     if not scored:
         return {}, 0.0, 0.0
-    total_score, combined_recall, _actions, _risk, _playbook, row = max(scored)
+    total_score, combined_recall, _playbook, row = min(
+        scored,
+        key=lambda item: (-item[0], item[2]),
+    )
     return row, total_score, combined_recall
 
 
@@ -277,7 +312,7 @@ def main() -> None:
                 })
                 continue
             rows = read_csv_dicts(path)
-            direct_enabled = "direct-provenance" not in ablation["disabled"]
+            direct_enabled = not ablation.get("disable_direct_channel", False)
             direct_coverage = read_json(coverage_path(evaluation_dir, ablation["mode"], scenario, "direct"))
             inferred_coverage = read_json(coverage_path(evaluation_dir, ablation["mode"], scenario, "inferred"))
             if not direct_enabled:
@@ -301,7 +336,7 @@ def main() -> None:
                 inferred_coverage,
                 direct_enabled,
                 attack_count,
-                ablation["disabled"],
+                ablation["missing_policy"],
             )
             if not selected:
                 by_scenario_rows.append({
@@ -334,14 +369,18 @@ def main() -> None:
                 "status": "ok",
                 "scoring_profile": ablation["scoring_profile"],
                 "disabled_criteria": ";".join(sorted(ablation["disabled"])),
+                "missing_context_policy": ablation["missing_policy"],
                 "selected_source": selected.get("candidate_source", ""),
                 "selected_playbook_id": playbook_id,
-                "combined_attack_recall": f"{combined_recall:.6f}",
-                "direct_attack_recall": f"{direct_recall:.6f}",
-                "inferred_attack_recall": f"{inferred_recall:.6f}",
-                "achievable_combined_attack_recall": f"{achievable_recall:.6f}",
-                "normalized_achievable_recall": f"{normalized_recall:.6f}",
-                "total_score": f"{total_score:.6f}",
+                "selected_missing_criteria": ";".join(
+                    sorted(missing_criteria(selected))
+                ),
+                "combined_attack_recall": f"{combined_recall:.12f}",
+                "direct_attack_recall": f"{direct_recall:.12f}",
+                "inferred_attack_recall": f"{inferred_recall:.12f}",
+                "achievable_combined_attack_recall": f"{achievable_recall:.12f}",
+                "normalized_achievable_recall": f"{normalized_recall:.12f}",
+                "total_score": f"{total_score:.12f}",
                 "candidate_count": len(rows),
                 "community_candidate_count": source_counts.get("community", 0),
                 "generated_candidate_count": source_counts.get("generated", 0),
@@ -368,6 +407,7 @@ def main() -> None:
             "mode": ablation["mode"],
             "scoring_profile": ablation["scoring_profile"],
             "disabled_criteria": ";".join(sorted(ablation["disabled"])),
+            "missing_context_policy": ablation["missing_policy"],
             "status": "ok" if not missing else "incomplete",
             "scenario_count": len(rows),
             "missing_scenario_count": len(missing),
@@ -393,8 +433,10 @@ def main() -> None:
         "status",
         "scoring_profile",
         "disabled_criteria",
+        "missing_context_policy",
         "selected_source",
         "selected_playbook_id",
+        "selected_missing_criteria",
         "combined_attack_recall",
         "direct_attack_recall",
         "inferred_attack_recall",
@@ -415,6 +457,7 @@ def main() -> None:
         "mode",
         "scoring_profile",
         "disabled_criteria",
+        "missing_context_policy",
         "status",
         "scenario_count",
         "missing_scenario_count",
@@ -433,6 +476,54 @@ def main() -> None:
     ]
     write_csv(out_by_scenario, by_scenario_rows, by_scenario_fieldnames)
     write_csv(out_summary, summary_rows, summary_fieldnames)
+    metadata_path = out_summary.with_name(out_summary.stem + "_metadata.json")
+    candidate_paths = sorted(
+        {
+            candidate_path(evaluation_dir, ablation["mode"], scenario)
+            for ablation in ABLATIONS
+            for scenario in DEFAULT_SCENARIOS
+            if candidate_path(
+                evaluation_dir, ablation["mode"], scenario
+            ).exists()
+        }
+    )
+    metadata = {
+        "result_state": "paper evaluation",
+        "created_at_utc": datetime.now(timezone.utc).isoformat(),
+        "command": "python " + shlex.join(sys.argv),
+        "missing_policy_source_independent": True,
+        "missing_policy_rule": (
+            "The missing_context_fields column determines neutral, zero, or "
+            "ignore-and-renormalize behavior identically for community and "
+            "generated candidates; candidate source is not read by scoring."
+        ),
+        "ablations": [
+            {
+                **{
+                    key: value
+                    for key, value in ablation.items()
+                    if key not in {"disabled"}
+                },
+                "disabled": sorted(ablation["disabled"]),
+            }
+            for ablation in ABLATIONS
+        ],
+        "candidate_tables": [
+            {
+                "path": repo_display_path(path),
+                "sha256": file_sha256(path),
+            }
+            for path in candidate_paths
+        ],
+        "summary": repo_display_path(out_summary),
+        "summary_sha256": file_sha256(out_summary),
+        "by_scenario": repo_display_path(out_by_scenario),
+        "by_scenario_sha256": file_sha256(out_by_scenario),
+    }
+    metadata_path.write_text(
+        json.dumps(metadata, indent=2, sort_keys=True) + "\n",
+        encoding="utf-8",
+    )
     print(f"Wrote ablation summary to {out_summary}")
     print(f"Wrote ablation by-scenario results to {out_by_scenario}")
 

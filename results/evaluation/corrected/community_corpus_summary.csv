@@ -1,0 +1,16 @@
+vendor,source_step_rows,source_playbooks,selection_ontology_included,selection_step_rows,selection_playbooks
+CISA,796,81,False,0,0
+Catalyst,16,3,False,0,0
+Chronicle,25,3,False,0,0
+Demisto,511,56,False,0,0
+FortiSOAR,533,141,True,533,141
+IACD,108,9,False,0,0
+LogicHub,617,69,False,0,0
+OasisOpen,7,1,False,0,0
+Rapid7,2223,202,True,2223,202
+Resolve,142,85,False,0,0
+Shuffle,95,18,False,0,0
+Splunk,476,99,False,0,0
+ThreatConnect,713,79,False,0,0
+Tines,1102,84,False,0,0
+XSOAR,1260,126,True,1260,126

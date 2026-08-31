@@ -1,0 +1,24 @@
+{
+  "ma_scenario_Nuclear_Reactors_Materials_and_Waste_0135": [
+    "T1499.003",
+    "T1550"
+  ],
+  "ma_scenario_Nuclear_Reactors_Materials_and_Waste_0151": [
+    "T1499.003",
+    "T1550",
+    "T1550.004"
+  ],
+  "ma_scenario_Nuclear_Reactors_Materials_and_Waste_0263": [
+    "T1499.003",
+    "T1499.004"
+  ],
+  "ma_scenario_Nuclear_Reactors_Materials_and_Waste_0279": [
+    "T1499.003",
+    "T1550.004"
+  ],
+  "ma_scenario_Nuclear_Reactors_Materials_and_Waste_0471": [
+    "T1087.004",
+    "T1499.003",
+    "T1552"
+  ]
+}

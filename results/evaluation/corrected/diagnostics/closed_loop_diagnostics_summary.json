@@ -1,0 +1,102 @@
+{
+  "artifact_status": "paper evaluation",
+  "available_modes": [
+    "community-only",
+    "generated-reduced",
+    "augmented-reduced"
+  ],
+  "command": "python integration_phase/scripts/analyze_closed_loop_results.py --evaluation-dir results/evaluation/corrected --generated-steps-csv results/generated_repository/corrected_k03/reduced_generated_playbooks_manifest.csv --out-dir results/evaluation/corrected/diagnostics",
+  "created_at_utc": "2026-07-28T01:50:10.192545+00:00",
+  "diagnosed_mode": "augmented-reduced",
+  "evaluation_dir": "results/evaluation/corrected",
+  "generated_candidates_retrieved_count": 16,
+  "generated_export": {
+    "available": true,
+    "bad_command_examples": [],
+    "duplicate_step_ids": 0,
+    "duplicate_step_instances": 21,
+    "playbook_count": 167,
+    "playbooks_with_duplicate_steps": 21,
+    "source_case_count": 16,
+    "step_count": 1039,
+    "top_source_cases_by_step_count": [
+      [
+        "scenario_Financial_Services",
+        176
+      ],
+      [
+        "scenario_Food_and_Agriculture",
+        102
+      ],
+      [
+        "scenario_Dams",
+        96
+      ],
+      [
+        "scenario_Government_Facilities",
+        94
+      ],
+      [
+        "scenario_Water_and_Wastewater_Systems",
+        84
+      ],
+      [
+        "scenario_Critical_Manufacturing",
+        80
+      ],
+      [
+        "scenario_Commercial_Facilities",
+        73
+      ],
+      [
+        "scenario_Chemical",
+        72
+      ],
+      [
+        "scenario_Healthcare_and_Public_Health",
+        58
+      ],
+      [
+        "scenario_Defense_Industrial_Base",
+        42
+      ],
+      [
+        "scenario_Energy",
+        35
+      ],
+      [
+        "scenario_Information_Technology",
+        31
+      ],
+      [
+        "scenario_Nuclear_Reactors_Materials_and_Waste",
+        31
+      ],
+      [
+        "scenario_Transportation_Systems",
+        28
+      ],
+      [
+        "scenario_Communications",
+        21
+      ],
+      [
+        "scenario_Emergency_Services",
+        16
+      ]
+    ]
+  },
+  "generated_steps_csv": "results/generated_repository/corrected_k03/reduced_generated_playbooks_manifest.csv",
+  "generated_steps_csv_sha256": "866acd440d981c54cc997105fb2d0cdc738f88a58588c3aaa3721b4e8efc5e95",
+  "loss_reason_counts": {
+    "achievable_recall_better_than_selected": 14,
+    "action_penalty": 4,
+    "augmented_oracle_better_than_selected": 6,
+    "generated_improves_direct_recall_but_loses_mcdm": 6,
+    "generated_improves_risk_but_loses_coverage": 6,
+    "lower_DAC": 4,
+    "lower_DC": 6
+  },
+  "scenario_count": 16,
+  "selected_generated_count": 10
+}

@@ -1,0 +1,24 @@
+{
+  "artifact": "results/evaluation/corrected/publication_tables/corrected_coverage_aware_and_portfolio.csv",
+  "artifact_sha256": "76972888d8ef5cfee6e3f55501c7086c50743add03e59de45581fdfd9958656f",
+  "artifact_status": "paper evaluation",
+  "command": "python integration_phase/scripts/make_corrected_publication_outputs.py",
+  "created_at_utc": "2026-08-18T02:03:15.520773+00:00",
+  "graphdb_endpoint": "http://localhost:7200/repositories/incident-response",
+  "interpretation": "Portfolio coverage is computed over at most three deterministic greedy members and is not evidence of operational actionability.",
+  "manifest": "results/generated_repository/corrected_k03/reduced_generated_playbooks_manifest.csv",
+  "manifest_sha256": "866acd440d981c54cc997105fb2d0cdc738f88a58588c3aaa3721b4e8efc5e95",
+  "mapping_owl": "selection_phase/source/GraphDB/playbook_step_defend_mapping.owl",
+  "mapping_sha256": "0ffb6cf054324ac5a3cad0787c1c7b25e4eb03daa7a39bc0fafa1e41e18da271",
+  "repository_count": 167,
+  "sources": [
+    {
+      "path": "results/evaluation/corrected/selection_profiles/profile_summary.csv",
+      "sha256": "b9884fa81264e083eadb7589fd1fd63b01f0287dd58452b5cb636b52865c448c"
+    },
+    {
+      "path": "results/evaluation/corrected/portfolio/portfolio_summary.csv",
+      "sha256": "1049da98104a4ff3f184e9ade4d3cdbdab41d5bf4da284eafef4dca0c6e2073c"
+    }
+  ]
+}

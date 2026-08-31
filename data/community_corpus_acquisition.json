@@ -1,0 +1,25 @@
+{
+  "artifact": "selection_phase/source/Playbook/steps-coded.csv",
+  "artifact_sha256": "08ac19149208205e63711ae7528941b64fdeb94b9c52029fb317591e9d162672",
+  "observed_rows": 8624,
+  "observed_playbooks": 1056,
+  "paper_vendor_filter": [
+    "FortiSOAR",
+    "Rapid7",
+    "XSOAR"
+  ],
+  "paper_rows_after_filter": 4016,
+  "paper_playbooks_after_filter": 469,
+  "source_provenance": {
+    "recorded_in_source_snapshot": false,
+    "unrecorded_fields": [
+      "acquisition date",
+      "upstream URLs",
+      "upstream revisions",
+      "upstream licenses",
+      "raw artifact hashes",
+      "raw-to-CSV conversion procedure",
+      "pre-CSV exclusion log"
+    ]
+  }
+}

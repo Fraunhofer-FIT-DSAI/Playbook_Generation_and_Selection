@@ -38,6 +38,12 @@ def parse_args() -> argparse.Namespace:
         action="store_true",
         help="Delete all statements in the repository before importing files.",
     )
+    parser.add_argument(
+        "--timeout",
+        type=float,
+        default=180.0,
+        help="HTTP timeout in seconds for each clear/import request.",
+    )
     parser.add_argument("files", nargs="+", type=Path, help="RDF files to import.")
     return parser.parse_args()
 
@@ -62,11 +68,13 @@ def statements_url(base: str, repo: str) -> str:
 
 def main() -> None:
     args = parse_args()
+    if args.timeout <= 0:
+        raise ValueError("--timeout must be positive")
     require_requests()
     url = statements_url(args.graphdb_base, args.repo)
 
     if args.clear:
-        response = requests.delete(url, timeout=60)
+        response = requests.delete(url, timeout=args.timeout)
         response.raise_for_status()
         print(f"Cleared repository {args.repo}")
 
@@ -76,7 +84,12 @@ def main() -> None:
             raise FileNotFoundError(path)
         content_type = CONTENT_TYPES.get(path.suffix.lower(), "application/rdf+xml")
         with path.open("rb") as fh:
-            response = requests.post(url, data=fh, headers={"Content-Type": content_type}, timeout=180)
+            response = requests.post(
+                url,
+                data=fh,
+                headers={"Content-Type": content_type},
+                timeout=args.timeout,
+            )
         response.raise_for_status()
         print(f"Imported {path}")
 

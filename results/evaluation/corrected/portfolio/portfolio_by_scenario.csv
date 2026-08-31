@@ -1,0 +1,35 @@
+scenario,rank,playbook_id,source,marginal_coverage_gain,combined_attack_count_after_selection,total_score,action_count,risk_reduction
+Chemical,1,ma_scenario_Chemical_0297,generated,12,12,0.559835651075,7,0.793381506796
+Chemical,2,p1021,community,2,14,0.269641995173,52,
+Commercial Facilities,1,ma_scenario_Commercial_Facilities_0253,generated,3,3,0.531357273330,7,0.780084300977
+Commercial Facilities,2,ma_scenario_Commercial_Facilities_0250,generated,2,5,0.453205420735,6,0.780080788623
+Communications,1,ma_scenario_Communications_0207,generated,13,13,0.429632876684,6,0.128264210486
+Communications,2,p41,community,3,16,0.464453614398,2,
+Critical Manufacturing,1,ma_scenario_Critical_Manufacturing_0462,generated,5,5,0.423257866654,7,0.347216311017
+Dams,1,ma_scenario_Dams_0186,generated,14,14,0.509392430865,8,0.147842978234
+Defense Industrial Base,1,p440,community,14,14,0.449692947171,13,
+Defense Industrial Base,2,p1021,community,5,19,0.282131671814,52,
+Defense Industrial Base,3,ma_scenario_Defense_Industrial_Base_0060,generated,3,22,0.429015613969,7,0.604265306647
+Emergency Services,1,p1086,community,12,12,0.328509671168,88,
+Emergency Services,2,p1021,community,5,17,0.254222245674,52,
+Emergency Services,3,p117,community,4,21,0.262413459146,25,
+Energy,1,p41,community,3,3,0.486401179941,2,
+Energy,2,ma_scenario_Energy_0128,generated,2,5,0.463739544999,6,0.780264654137
+Financial Services,1,p440,community,14,14,0.441359613837,13,
+Financial Services,2,p1021,community,5,19,0.274287506894,52,
+Financial Services,3,ma_scenario_Financial_Services_0027,generated,1,20,0.421562965427,7,0.839378665837
+Food and Agriculture,1,ma_scenario_Food_and_Agriculture_0058,generated,12,12,0.357313136354,6,0.081779336465
+Food and Agriculture,2,ma_scenario_Food_and_Agriculture_0026,generated,3,15,0.328507849514,7,0.062293044813
+Government Facilities,1,p41,community,11,11,0.464453614398,2,
+Government Facilities,2,ma_scenario_Government_Facilities_0286,generated,4,15,0.366402695114,8,0.426314470552
+Government Facilities,3,p1021,community,2,17,0.267803384346,52,
+Healthcare and Public Health,1,ma_scenario_Healthcare_and_Public_Health_0192,generated,4,4,0.587899730166,6,0.232026752358
+Information Technology,1,ma_scenario_Information_Technology_0495,generated,6,6,0.545144812075,6,0.128424373911
+Information Technology,2,ma_scenario_Information_Technology_0447,generated,1,7,0.404822600151,7,0.074879523456
+"Nuclear Reactors, Materials, and Waste",1,ma_scenario_Nuclear_Reactors_Materials_and_Waste_0471,generated,13,13,0.457773277621,8,0.591134286323
+"Nuclear Reactors, Materials, and Waste",2,p1021,community,3,16,0.267803384346,52,
+"Nuclear Reactors, Materials, and Waste",3,ma_scenario_Nuclear_Reactors_Materials_and_Waste_0151,generated,2,18,0.339947865117,7,0.472052889561
+Transportation Systems,1,ma_scenario_Transportation_Systems_0471,generated,5,5,0.569053263637,6,0.397301524432
+Transportation Systems,2,ma_scenario_Transportation_Systems_0085,generated,2,7,0.448792655823,7,0.100025699725
+Water and Wastewater Systems,1,p1021,community,8,8,0.283783409314,52,
+Water and Wastewater Systems,2,ma_scenario_Water_and_Wastewater_Systems_0192,generated,2,10,0.514699138976,7,0.494532675666

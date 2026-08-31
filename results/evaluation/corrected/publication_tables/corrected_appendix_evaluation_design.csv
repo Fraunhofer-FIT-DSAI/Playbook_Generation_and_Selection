@@ -1,0 +1,6 @@
+Component,Inputs,Variants,Outputs
+Generation,16 scenario-conditioned MulVAL cases,"K=0,...,10; seed 1337","7,928 records; structural and model-derived metrics"
+Reduction,K=3 generated corpus,"Hybrid; N in {5,10,15,25,50}",167 primary records; fresh GraphDB-backed sensitivity
+Primary selection,469 community + 167 generated,"Community, generated, augmented; source-restricted",Direct/inferred/combined/achievable/normalized recall
+Robustness,Augmented candidate tables,"Profiles, K<=3 portfolio, missing policies, criteria, weights","Paired uncertainty, stability, fairness, determinism"
+SBERT diagnostics,"Submitted 4,016 top-1 links","Descriptive cutoffs 0.0,0.2,0.3,0.4,0.5",Integrity and score distribution; no accuracy claim

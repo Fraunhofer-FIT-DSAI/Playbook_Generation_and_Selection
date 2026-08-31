@@ -1,25 +1,12 @@
 import os
-import csv
 import xml.etree.ElementTree as ET
-import graphviz
 import xmltodict
-import uuid
 import random
-from datetime import datetime, timedelta
+from pathlib import Path
 import networkx as nx
-import matplotlib.pyplot as plt
-import copy
-from networkx.drawing.nx_pydot import graphviz_layout
-import json
 from collections import deque
-import matplotlib.pyplot as plt
-import numpy as np
-import seaborn as sns
 from collections import Counter
-import requests
 import pandas as pd
-import time
-from collections import Counter
 import math
 
 
@@ -27,12 +14,15 @@ import math
 
 
 
-root_dir = 'mulval-inputs'
+REPO_ROOT = Path(__file__).resolve().parents[3]
+SOURCE_ROOT = Path(__file__).resolve().parents[1]
+root_dir = os.getenv("MULVAL_INPUT_ROOT", str(SOURCE_ROOT / "mulval-inputs"))
 
 
 class IncidentGenerator:
-    def __init__(self, directory):
+    def __init__(self, directory, max_incidents=None):
         self.directory = directory
+        self.max_incidents = max_incidents
         self.attackGraph = None # This is for the format that MulVal outputs
         self.attackTree = None  # This is for the format that I convert 
         self.incidents = []
@@ -47,8 +37,17 @@ class IncidentGenerator:
         self.avg_cvss = 0
         self.incidentsNum = 0
         self.unique_techniques_num = 0
-        cve_table_path = os.getenv("CVE_MITRE_ENRICHED_PATH", 'Incident_generation/CVE_MITRE_enriched.csv')
+        cve_table_path = os.getenv(
+            "CVE_MITRE_ENRICHED_PATH",
+            str(REPO_ROOT / "data" / "scenario_profiles" / "CVE_MITRE_enriched.scenario.csv"),
+        )
         self.mitre_cve_df = pd.read_csv(cve_table_path)
+        seed_value = os.getenv("INCIDENT_SEED", "1337")
+        try:
+            seed = int(seed_value)
+        except ValueError as exc:
+            raise ValueError(f"INCIDENT_SEED must be an integer, got {seed_value!r}") from exc
+        self._rng = random.Random(seed)
         self.techniques_set = []
         self.assets_set = []
         self.vulns_set = []
@@ -56,11 +55,10 @@ class IncidentGenerator:
 
     
         self.read_attack_graph_file()
-        self.convert_to_graphviz()
+        self.convert_to_attack_tree()
         self.find_goal_and_attacker_nodes()
         self.generate_incidents()
         self.convert_rules_to_goals()
-        self.print_random_incidents()
         self.calculate_scenario_statistics()
 
     def get_directory(self):
@@ -122,26 +120,22 @@ class IncidentGenerator:
                 if file == "AttackGraph.xml":
                     file_path = os.path.join(subdir, file)
                     
-                    # Read the content of the XML file
                     try:
                         tree = ET.parse(file_path)
                         root = tree.getroot()
                         
-                        # Store the XML content in the dictionary with the directory name as key
-                        dir_name = os.path.basename(subdir)
                         tree_string = ET.tostring(root, encoding="unicode")
                         self.attackGraph = xmltodict.parse(tree_string)
                     
                     except ET.ParseError as e:
                         print(f"Error parsing XML file {file_path}: {e}")
     
-    def convert_to_graphviz(self):
-        dot = graphviz.Digraph()
+    def convert_to_attack_tree(self):
         G = nx.DiGraph()
 
         if self.attackGraph is None:
             print("Error: attackGraph is None. No data to process for input ", self.directory)
-            return  # E
+            return
 
         try:
             vertices = self.attackGraph['attack_graph']['vertices']['vertex']
@@ -152,22 +146,17 @@ class IncidentGenerator:
             return
 
         for vertex in vertices:
-            label = f'Index: {vertex["id"]}\nFact: {vertex["fact"]}\nType: {vertex["type"]}'
-            dot.node(str(vertex["id"]), label=label)
             G.add_node(vertex['id'], id=vertex['id'], fact=vertex['fact'], type=vertex['type'], defense={})
 
         
 
 
-        # Extract edges
         for arc in self.attackGraph['attack_graph']['arcs']['arc']:
-            dot.edge(arc['src'], arc['dst'])
             G.add_edge(arc['dst'], arc['src'])
 
         self.attackTree = G
 
     def find_goal_and_attacker_nodes(self):
-        print('we are in input ', self.directory)
         if self.attackTree is None:
             print('There is no attack tree for this input ', self.directory)
             return
@@ -184,67 +173,6 @@ class IncidentGenerator:
                     self.goalNodes.append(node)
                 elif splited_fact == 'attackerLocated':
                     self.attackerNodes.append(Node)
-    
-    def get_cvss_scores(self, cve_id):
-        """
-        Fetches CVSS Exploitability, Impact scores, and Vector String from the NVD API for a given CVE ID.
-        
-        Args:
-            cve_id (str): The CVE identifier (e.g., "CVE-2020-14231").
-            
-        Returns:
-            dict: Dictionary with CVSS version, vector string, exploitability score, and impact score, or error message.
-        """
-        api_url = f"https://services.nvd.nist.gov/rest/json/cves/2.0?cveId={cve_id}"
-        api_key = os.getenv("NVD_API_KEY")
-        headers = {'apiKey': api_key} if api_key else {}
-
-        try:
-            response = requests.get(api_url, headers=headers, timeout=30)
-            response.raise_for_status()
-            data = response.json()
-
-            if data.get('vulnerabilities'):
-                cve_item = data['vulnerabilities'][0]
-                metrics = cve_item.get('cve', {}).get('metrics', {})
-
-                if 'cvssMetricV31' in metrics:
-                    score_data = metrics['cvssMetricV31'][0]
-                    cvss_data = score_data['cvssData']
-                    return {
-                        "cvss_version": "3.1",
-                        "vector_string": cvss_data.get('vectorString'),
-                        "exploitability_score": score_data.get('exploitabilityScore'),
-                        "impact_score": score_data.get('impactScore')
-                    }
-                elif 'cvssMetricV30' in metrics:
-                    score_data = metrics['cvssMetricV30'][0]
-                    cvss_data = score_data['cvssData']
-                    return {
-                        "cvss_version": "3.0",
-                        "vector_string": cvss_data.get('vectorString'),
-                        "exploitability_score": score_data.get('exploitabilityScore'),
-                        "impact_score": score_data.get('impactScore')
-                    }
-                elif 'cvssMetricV2' in metrics:
-                    score_data = metrics['cvssMetricV2'][0]
-                    cvss_data = score_data['cvssData']
-                    return {
-                        "cvss_version": "2.0",
-                        "vector_string": cvss_data.get('vectorString'),
-                        "exploitability_score": score_data.get('exploitabilityScore'),
-                        "impact_score": score_data.get('impactScore')
-                    }
-                else:
-                    return {"error": "No CVSS scores available for this CVE."}
-            else:
-                return {"error": "CVE data is not available or no vulnerability metrics found."}
-
-        except requests.RequestException as e:
-            return {"error": f"Request failed: {e}"}
-        except KeyError as e:
-            return {"error": f"Key error: {e}"}
-
     
     def generate_incidents(self):
         if self.attackerNodes is None or self.attackTree is None:
@@ -281,6 +209,9 @@ class IncidentGenerator:
                 if derived_node in self.goalNodes:
                     self.incidents.append(path)
                     self.averageIncidentLengh += len(path) + 1
+                    if self.max_incidents and len(self.incidents) >= self.max_incidents:
+                        self.averageIncidentLengh = self.averageIncidentLengh / len(self.incidents) if self.incidents else 0
+                        return
                     continue
 
                 next_rules = list(self.attackTree.out_edges(derived_node))
@@ -292,7 +223,6 @@ class IncidentGenerator:
                         new_path.append(next_rule_node)
                         queue.append((node, new_path))
 
-        print(len(self.incidents))
         self.averageIncidentLengh = self.averageIncidentLengh / len(self.incidents) if self.incidents else 0
     
     def find_cve_cvss_by_technique(self, mitre_technique):
@@ -300,10 +230,10 @@ class IncidentGenerator:
         results = [
             (
                 row['CVE'],
-                float(row['CVSS']) if row['CVSS'] else None,
-                row['cvss_vector'],
-                float(row['exploitability_score']) if row['exploitability_score'] else None,
-                float(row['impact_score']) if row['impact_score'] else None
+                float(row['CVSS']) if pd.notna(row['CVSS']) else None,
+                row['cvss_vector'] if pd.notna(row['cvss_vector']) else None,
+                float(row['exploitability_score']) if pd.notna(row['exploitability_score']) else None,
+                float(row['impact_score']) if pd.notna(row['impact_score']) else None
             )
             for _, row in filtered.iterrows()
         ]
@@ -314,30 +244,28 @@ class IncidentGenerator:
         attack_goal_fact = attack_goal_fact[:-1]
         attack_goal_fact = attack_goal_fact.split('(')[1]
         attack_goal_fact = attack_goal_fact.split(',')
-        #print(attack_goal_fact)
         host = attack_goal_fact[0]
         sequence['host'] = host
         mitre_technique = attack_goal_fact[2]
         mitre_technique = mitre_technique[1:-1]
         sequence['mitre'] = mitre_technique
         results = self.find_cve_cvss_by_technique(mitre_technique)
+        results = [r for r in results if None not in (r[1], r[2], r[3], r[4])]
         result = None
         cvss = None
         if results:
-            result = random.choice(results)
+            result = self._rng.choice(results)
             cve = result[0]
             cvss = result[1]
             cvss_vector = result[2]
             exploitability = result[3]
             impact = result[4]
-            #cvss_results = self.get_cvss_scores(cve)
             sequence['exploitability'] = float(exploitability)
             sequence['impact'] = float(impact)
             sequence['cvss_vector'] = cvss_vector
             sequence['cve'] = cve
             sequence['cvss'] = cvss
         
-        #print(sequence)
         return sequence, cvss 
 
     def convert_rules_to_goals(self):
@@ -364,10 +292,10 @@ class IncidentGenerator:
                     sequences.append(incident_sequence_item)
             
             
-            #print(sequences)
-            #print(severities)
             if sequences:
                 self.goal_based_incidents.append(sequences)
+                if self.max_incidents and len(self.goal_based_incidents) >= self.max_incidents:
+                    return
 
     def calculate_entropy(self):
         """
@@ -425,117 +353,15 @@ class IncidentGenerator:
 
         return techniques_jaccard, assets_jaccard, vulns_jaccard, incident_jaccard
 
-    def print_random_incidents(self):
-        if not self.incidents or len(self.incidents) < 2:
-            print("Not enough incidents to pick from.")
-            return
-
-        
-
-        random_incidents = random.sample(self.incidents, 2)
-        for incident in random_incidents:
-            incident_sequence = []
-            last_node = incident[-1]
-            goal_node = list(self.attackTree.out_edges(last_node))[0][1]
-            
-            goal = self.attackTree.nodes[goal_node]
-            
-            for node in incident:
-                fact_nodes = list(self.attackTree.in_edges(node))
-                for _, fact_node in fact_nodes:
-                    incident_sequence.append(self.attackTree.nodes[fact_node])
-            incident_sequence.append(goal)
-            #print(incident_sequence)
-
-
-
-    def plot_diagrams(self, cvsss, unique_techniques_for_incidents, lengths,
-        save_path1='cvss_plot.png', save_path2='value_distribution_scatter.png'):
-        # Use seaborn style for aesthetics
-        sns.set(style="whitegrid")
-
-        # Check input lengths
-        if not (len(cvsss) == len(unique_techniques_for_incidents) == len(lengths)):
-            raise ValueError("All input lists must have the same length.")
-
-        x = list(range(len(cvsss)))
-
-        # --- First Diagram: CVSS Scores ---
-        plt.figure(figsize=(12, 7))
-        points = plt.scatter(x, cvsss, c=cvsss, cmap='coolwarm', s=80, edgecolors='k', alpha=0.8)
-        plt.plot(x, cvsss, color='gray', linestyle='--', alpha=0.5)
-        plt.colorbar(points, label='CVSS Score')
-        plt.xlabel('Incident Index', fontsize=12)
-        plt.ylabel('CVSS Score', fontsize=12)
-        plt.title('CVSS Scores Over Incidents', fontsize=16, fontweight='bold')
-        plt.ylim(0, 10)
-        plt.xticks(fontsize=10)
-        plt.yticks(fontsize=10)
-        plt.tight_layout()
-        plt.savefig(save_path1, dpi=300)
-        plt.close()
-        print(f"First plot (CVSS Scores) saved to {save_path1}")
-
-        # --- Second Diagram: Value Count Scatter for Lengths and Unique T
-        pair_counts = Counter(zip(lengths, unique_techniques_for_incidents))
-
-        # Prepare data
-        x_vals = [pair[0] for pair in pair_counts]         # incident lengths
-        y_vals = [pair[1] for pair in pair_counts]         # number of unique techniques
-        counts = list(pair_counts.values())                # how many incidents had each (x, y) pair
-        sizes = [count * 40 for count in counts]           # scale point size for better visuals
-
-        # Plot
-        plt.figure(figsize=(12, 7))
-        scatter = plt.scatter(
-            x_vals,
-            y_vals,
-            s=sizes,
-            c=counts,
-            cmap='viridis',
-            alpha=0.7,
-            edgecolors='black',
-            linewidth=0.5
-        )
-
-        # Annotate each point with its count
-        for (x, y), count in pair_counts.items():
-            plt.text(x, y + 0.25, str(count), ha='center', fontsize=9)
-
-        # Style
-        plt.xlabel('Incident Length', fontsize=14)
-        plt.ylabel('Number of Unique Techniques', fontsize=14)
-        plt.title('Frequency of (Length, Technique Count) Combinations', fontsize=16, fontweight='bold')
-        plt.colorbar(scatter, label='Incident Count')
-        plt.grid(True, linestyle='--', alpha=0.5)
-        plt.xticks(fontsize=12)
-        plt.yticks(fontsize=12)
-        plt.tight_layout()
-        plt.savefig(save_path2, dpi=300)
-        plt.close()
-        print(f"Second plot (Length vs Techniques Frequency) saved to {save_path2}")
-    
     def calculate_scenario_statistics(self):
         lengths = []
         cvsss = []
-        exploitabilities = []
-        impacts = []
-        risks = []
-        curProb = 1
-        curRisk = 0
-        curImpact = 0
-        unique_techniques_for_incidents = []
-        incident_num = len(self.goal_based_incidents)
         diverse_techniques_for_all = []
 
         for incident in self.goal_based_incidents:
             if not incident:
                 continue
-            curProb = 1
-            curRisk = 0
-            curImpact = 0
             lengths.append(len(incident))
-            #cvsss = []
             diverse_techniques = []
             cvss_sum = 0
             cves = []
@@ -543,7 +369,6 @@ class IncidentGenerator:
             path = []
             
             for sequence in incident:
-                #print(sequence)
                 if not {'cve', 'exploitability', 'impact', 'cvss'}.issubset(sequence):
                     continue
                 cve = sequence['cve']
@@ -552,20 +377,10 @@ class IncidentGenerator:
                 assets.append(host)
                 path.append(host)
                 path.append(cve)
-                #cvss_metrics = self.get_cvss_scores(cve)
-                newProb = sequence['exploitability'] / 10
-                newImpact = sequence['impact']
-                exploitabilities.append(sequence['exploitability'] / 10)
-                impacts.append(sequence['impact'])
-                curProb *= newProb
-                curImpact += newImpact
-                curRisk = curProb * curImpact
-                risks.append(curRisk)
                 cvss_sum += float(sequence['cvss'])
                 diverse_techniques_for_all.append(sequence['mitre'])
                 diverse_techniques.append(sequence['mitre'])
                 path.append(sequence['mitre'])
-            #print(diverse_techniques)
             self.incident_set.append(path)
             self.assets_set.append(assets)
             self.vulns_set.append(cves)
@@ -575,50 +390,9 @@ class IncidentGenerator:
             cvss_avg = cvss_sum / len(incident) if incident else 0
             cvsss.append(cvss_avg)
 
-        #print(exploitabilities)
-        #print(impacts)
-        #print('Risks: ', risks)
-
         self.lengths = lengths
         self.cvsss = cvsss
         self.diverse_techniques_all = len(set(diverse_techniques_for_all))
 
-        #print(self.techniques_set)
-        #jac_tech, jac_ass, jac_vulns, jac_inc = self.calculate_jaccard()
-        #ent_tech, ent_ass, ent_vulns, ent_inc = self.calculate_entropy()
-
-        #print("Jaccurd: ", jac_tech, jac_ass, jac_vulns, jac_inc)
-        #print("Entropy: ", ent_tech, ent_ass, ent_vulns, ent_inc)
-
         self.incidentsNum = len(lengths)
         self.avg_cvss = sum(cvsss) / len(cvsss) if cvsss else 0
-        
-        #self.plot_diagrams(cvsss, self.unique_techniques, lengths)
-        return
-
-
-# Example usage
-if __name__ == "__main__":
-    directories = [d for d in os.listdir(root_dir) if os.path.isdir(os.path.join(root_dir, d))]
-
-    incidentGenerators = []
-
-    incidentsNum = 0
-
-    for dir in directories:
-        #print(dir)
-        if dir == 'NewTest':  # Check if the first character is uppercase
-            #print(dir)
-            start = time.time()
-            incidentGenerator = IncidentGenerator(dir)
-            incidentsNum += incidentGenerator.get_incidents_num()
-            #incidentGenerator.print_random_incidents()
-            #print(incidentGenerator.get_incidents_average_length())
-            #print('Number: ', incidentGenerator.get_incidents_num())
-            #print('Techniques: ', incidentGenerator.get_unique_techniques_num())
-            #print('CVSS: ', incidentGenerator.get_avg_cvss())
-            end = time.time()
-
-            #print(f"Elapsed time: {end - start:.4f} seconds")
-
-            #print(incidentsNum)

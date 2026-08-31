@@ -1,0 +1,28 @@
+{
+  "artifact": "results/evaluation/corrected/publication_tables/corrected_coverage_channels.csv",
+  "artifact_sha256": "032814d2aeee16e52b6aeaa8782cedff7c1b5b51601a014336b5ad75d4ba5d3a",
+  "artifact_status": "paper evaluation",
+  "command": "python integration_phase/scripts/make_corrected_publication_outputs.py",
+  "created_at_utc": "2026-08-18T02:03:15.520773+00:00",
+  "graphdb_endpoint": "http://localhost:7200/repositories/incident-response",
+  "interpretation": "Combined is the set union of direct and inferred coverage, not their arithmetic sum. Inferred links are candidate associations.",
+  "manifest": "results/generated_repository/corrected_k03/reduced_generated_playbooks_manifest.csv",
+  "manifest_sha256": "866acd440d981c54cc997105fb2d0cdc738f88a58588c3aaa3721b4e8efc5e95",
+  "mapping_owl": "selection_phase/source/GraphDB/playbook_step_defend_mapping.owl",
+  "mapping_sha256": "0ffb6cf054324ac5a3cad0787c1c7b25e4eb03daa7a39bc0fafa1e41e18da271",
+  "repository_count": 167,
+  "sources": [
+    {
+      "path": "results/evaluation/corrected/community-only/scenario_playbook_evaluation_community-only.csv",
+      "sha256": "1e8eb71317130e4d30f74f35a6d3f722912ef062699a3295f52dff0d609e5f7a"
+    },
+    {
+      "path": "results/evaluation/corrected/generated-reduced/scenario_playbook_evaluation_generated-reduced.csv",
+      "sha256": "cb22caf1ef755fbd6b346fe9fe2d3737de0b8ce473587410e1afa3fbc343c4e3"
+    },
+    {
+      "path": "results/evaluation/corrected/augmented-reduced/scenario_playbook_evaluation_augmented-reduced.csv",
+      "sha256": "319a96e6c0239172aabd26194fafac860f29f1229413ec8614fb28bf9bdb2ba9"
+    }
+  ]
+}

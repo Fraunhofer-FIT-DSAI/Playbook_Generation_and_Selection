@@ -1,0 +1,83 @@
+{
+  "artifact_status": "paper evaluation",
+  "endpoint": "http://localhost:7200/repositories/incident-response",
+  "observed_at_utc": "2026-07-28T02:25:52Z",
+  "inference": true,
+  "repository_ruleset": "rdfsplus-optimized",
+  "selector_post_filter": "defenseRelationship URI contains '#may-'",
+  "interpretation": "Observed defensive-technique-to-artifact relation predicates admitted by the corrected runtime query. These are candidate-evidence relation types, not mitigation assertions.",
+  "query": "PREFIX d3f: <http://d3fend.mitre.org/ontologies/d3fend.owl#> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT ?relationship (COUNT(DISTINCT ?defensiveTechnique) AS ?techniques) (COUNT(DISTINCT ?artifact) AS ?artifacts) WHERE { ?defensiveTechnique rdf:type d3f:DefensiveTechnique . ?defensiveTechnique ?relationship ?artifact . ?relationship rdfs:subPropertyOf d3f:may-be-associated-with . FILTER(CONTAINS(STR(?relationship), \"#may-\")) } GROUP BY ?relationship ORDER BY ?relationship",
+  "relationship_count": 14,
+  "relationships": [
+    {
+      "local_name": "may-access",
+      "defensive_techniques": 14,
+      "artifacts": 13
+    },
+    {
+      "local_name": "may-be-associated-with",
+      "defensive_techniques": 210,
+      "artifacts": 126
+    },
+    {
+      "local_name": "may-be-modified-by",
+      "defensive_techniques": 1,
+      "artifacts": 1
+    },
+    {
+      "local_name": "may-be-tactically-associated-with",
+      "defensive_techniques": 14,
+      "artifacts": 10
+    },
+    {
+      "local_name": "may-contain",
+      "defensive_techniques": 1,
+      "artifacts": 1
+    },
+    {
+      "local_name": "may-counter",
+      "defensive_techniques": 113,
+      "artifacts": 77
+    },
+    {
+      "local_name": "may-counter-attack",
+      "defensive_techniques": 14,
+      "artifacts": 10
+    },
+    {
+      "local_name": "may-create",
+      "defensive_techniques": 1,
+      "artifacts": 1
+    },
+    {
+      "local_name": "may-disable",
+      "defensive_techniques": 1,
+      "artifacts": 1
+    },
+    {
+      "local_name": "may-evaluate",
+      "defensive_techniques": 4,
+      "artifacts": 5
+    },
+    {
+      "local_name": "may-evict",
+      "defensive_techniques": 14,
+      "artifacts": 10
+    },
+    {
+      "local_name": "may-map",
+      "defensive_techniques": 9,
+      "artifacts": 13
+    },
+    {
+      "local_name": "may-modify",
+      "defensive_techniques": 13,
+      "artifacts": 11
+    },
+    {
+      "local_name": "may-query",
+      "defensive_techniques": 3,
+      "artifacts": 1
+    }
+  ]
+}

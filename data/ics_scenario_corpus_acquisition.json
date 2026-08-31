@@ -1,0 +1,18 @@
+{
+  "artifact_directory": "selection_phase/source/Use-Case/SparqlQueryGeneration/LIAO-NO ICS main SCENARIO",
+  "observed_scenario_csv_files": 17,
+  "canonical_scenarios": 16,
+  "excluded_local_file": "df_SCENARIO_Multiple.csv",
+  "source_provenance": {
+    "recorded_in_source_snapshot": false,
+    "unrecorded_fields": [
+      "exclusion rationale",
+      "upstream dataset name and URL",
+      "acquisition date",
+      "dataset version",
+      "license",
+      "inclusion criteria",
+      "representativeness study"
+    ]
+  }
+}

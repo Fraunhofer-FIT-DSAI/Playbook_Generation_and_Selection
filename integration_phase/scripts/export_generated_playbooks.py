@@ -52,6 +52,7 @@ PROVENANCE_PLAYBOOK_FIELDS = [
     "risk_before",
     "risk_after",
     "risk_reduction",
+    "risk_reduction_pct",
     "path_length",
     "action_count",
     "lifecycle_phases_present",
@@ -89,18 +90,27 @@ def parse_args() -> argparse.Namespace:
         help="Path to the generation phase source directory.",
     )
     parser.add_argument(
+        "--mulval-root",
+        type=Path,
+        default=None,
+        help=(
+            "Optional MulVAL case root. Defaults to <generation-source>/mulval-inputs. "
+            "Use a separate root for seeded repeats without replacing canonical inputs."
+        ),
+    )
+    parser.add_argument(
         "--case",
         action="append",
         default=None,
         help=(
-            "MulVAL case directory under the generation source's mulval-inputs directory. "
+            "MulVAL case directory under the effective MulVAL root. "
             "May be passed multiple times. Defaults to NewTest."
         ),
     )
     parser.add_argument(
         "--all-cases",
         action="store_true",
-        help="Export every directory under generation_phase/source/mulval-inputs.",
+        help="Export every directory under the effective MulVAL root.",
     )
     parser.add_argument(
         "--limit",
@@ -117,16 +127,31 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--cve-table",
         type=Path,
-        default=None,
+        default=Path("data/scenario_profiles/CVE_MITRE_enriched.scenario.csv"),
         help=(
-            "Optional scenario-conditioned CVE_MITRE_enriched.csv. "
-            "Use the file produced by generate_scenario_mulval_inputs.py."
+            "Scenario-conditioned CVE table produced by "
+            "generate_scenario_mulval_inputs.py."
         ),
     )
     parser.add_argument(
         "--generated-prefix",
         default="ma_",
         help="Prefix for generated playbook IDs.",
+    )
+    parser.add_argument(
+        "--countermeasure-top-k",
+        type=int,
+        default=3,
+        help=(
+            "Top countermeasures retained per response phase by the response generator. "
+            "The paper default is 3; pass 0..10 for K sensitivity. K=0 uses "
+            "K=1 only to keep the incident population fixed, then emits no actions."
+        ),
+    )
+    parser.add_argument(
+        "--skip-cacao",
+        action="store_true",
+        help="Skip per-playbook CACAO JSON files when running large K sweeps.",
     )
     return parser.parse_args()
 
@@ -143,25 +168,30 @@ def add_generation_import_paths(generation_source: Path) -> None:
     sys.path.insert(0, str(generation_source / "Incident_generation"))
 
 
-def load_d3fend_lookup(generation_source: Path) -> dict[str, dict[str, str]]:
+def load_d3fend_lookup(generation_source: Path) -> dict[tuple[str, str], dict[str, str]]:
     pandas = require_pandas()
     mapping_path = generation_source / "defense_techniques" / "d3fend-full-mappings.csv"
     if not mapping_path.exists():
         raise FileNotFoundError(f"Missing D3FEND mapping CSV: {mapping_path}")
 
     df = pandas.read_csv(mapping_path)
-    lookup: dict[str, dict[str, str]] = {}
+    lookup: dict[tuple[str, str], dict[str, str]] = {}
     for _, row in df.iterrows():
-        label = str(row.get("def_tech_label", "")).strip()
-        if not label or label in lookup:
+        raw_label = row.get("def_tech_label")
+        label = "" if pandas.isna(raw_label) else str(raw_label).strip()
+        if not label:
             continue
-        lookup[label] = {
+        raw_artifact = row.get("def_artifact_label")
+        artifact_label = "" if pandas.isna(raw_artifact) else str(raw_artifact).strip()
+        ids = {
             "defensive_technique_id": uri_local(row.get("def_tech", "")),
             "defense_artifact_id": uri_local(row.get("def_artifact", "")),
             "offensive_artifact_id": uri_local(row.get("off_artifact", "")),
             "defense_relationship_id": uri_local(row.get("def_artifact_rel", "")),
             "offensive_relationship_id": uri_local(row.get("off_artifact_rel", "")),
         }
+        lookup.setdefault((label, artifact_label), ids)
+        lookup.setdefault((label, ""), ids)
     return lookup
 
 
@@ -273,9 +303,11 @@ def match_incident_step(
 ) -> dict[str, Any]:
     if (host, attack_id) in lookup:
         return lookup[(host, attack_id)]
-    for (known_host, _known_attack), item in lookup.items():
-        if known_host == host:
-            return item
+    parent = attack_id.split(".")[0] if attack_id else ""
+    if parent:
+        for (known_host, known_attack), item in lookup.items():
+            if known_host == host and known_attack.split(".")[0] == parent:
+                return item
     return {}
 
 
@@ -326,6 +358,11 @@ def aggregate_playbook_provenance(playbook: dict[str, Any]) -> None:
         "risk_before": initial_risk,
         "risk_after": final_risk,
         "risk_reduction": max(initial_risk - final_risk, 0.0),
+        "risk_reduction_pct": (
+            max(initial_risk - final_risk, 0.0) / initial_risk
+            if initial_risk > 0
+            else 0.0
+        ),
         "cves": sorted(cves),
         "cvss_scores": sorted(cvss_scores),
         "cvss_severities": sorted({cvss_severity(score) for score in cvss_scores if cvss_severity(score)}),
@@ -436,6 +473,7 @@ def cacao_playbook(playbook: dict[str, Any]) -> dict[str, Any]:
             "x_initial_risk": playbook["initial_risk"],
             "x_final_risk": playbook["final_risk"],
             "x_risk_reduction": playbook.get("risk_reduction", 0.0),
+            "x_relative_risk_reduction": playbook.get("risk_reduction_pct", 0.0),
         },
     }
 
@@ -445,8 +483,15 @@ def incident_fingerprint(incident: list[dict[str, Any]]) -> str:
     return hashlib.sha256(payload.encode("utf-8")).hexdigest()[:12]
 
 
-def cases_to_export(generation_source: Path, args: argparse.Namespace) -> list[str]:
-    mulval_root = generation_source / "mulval-inputs"
+def file_sha256(path: Path) -> str:
+    digest = hashlib.sha256()
+    with path.open("rb") as handle:
+        for chunk in iter(lambda: handle.read(1024 * 1024), b""):
+            digest.update(chunk)
+    return digest.hexdigest()
+
+
+def cases_to_export(mulval_root: Path, args: argparse.Namespace) -> list[str]:
     if args.all_cases:
         if not mulval_root.exists():
             raise FileNotFoundError(f"Missing MulVAL input directory: {mulval_root}")
@@ -456,16 +501,19 @@ def cases_to_export(generation_source: Path, args: argparse.Namespace) -> list[s
 
 def main() -> None:
     args = parse_args()
+    if args.countermeasure_top_k < 0:
+        raise ValueError("--countermeasure-top-k must be >= 0")
     generation_source = repo_path(args.generation_source)
+    mulval_root = repo_path(args.mulval_root) if args.mulval_root else generation_source / "mulval-inputs"
     output_dir = repo_path(args.output_dir)
 
     if not generation_source.exists():
         raise FileNotFoundError(f"Missing generation source directory: {generation_source}")
-    if args.cve_table:
-        cve_table = repo_path(args.cve_table)
-        if not cve_table.exists():
-            raise FileNotFoundError(f"Missing CVE table: {cve_table}")
-        os.environ["CVE_MITRE_ENRICHED_PATH"] = str(cve_table)
+    cve_table = repo_path(args.cve_table)
+    if not cve_table.exists():
+        raise FileNotFoundError(f"Missing CVE table: {cve_table}")
+    os.environ["CVE_MITRE_ENRICHED_PATH"] = str(cve_table)
+    os.environ["MULVAL_INPUT_ROOT"] = str(mulval_root)
     matplotlib_cache = repo_path("results/generated_repository/matplotlib-cache")
     matplotlib_cache.mkdir(parents=True, exist_ok=True)
     os.environ.setdefault("MPLCONFIGDIR", str(matplotlib_cache))
@@ -482,9 +530,11 @@ def main() -> None:
         playbooks: list[dict[str, Any]] = []
         step_rows: list[dict[str, Any]] = []
         skipped_incidents: list[dict[str, Any]] = []
+        attack_graph_hashes: dict[str, str] = {}
+        eligibility_top_k = max(args.countermeasure_top_k, 1)
 
-        for case in cases_to_export(generation_source, args):
-            case_dir = generation_source / "mulval-inputs" / case
+        for case in cases_to_export(mulval_root, args):
+            case_dir = mulval_root / case
             profile = load_case_profile(case_dir)
             mulval_context = parse_mulval_context(case_dir)
             attack_graph = case_dir / "AttackGraph.xml"
@@ -493,14 +543,18 @@ def main() -> None:
                     "Missing AttackGraph.xml for case "
                     f"{case}. Expected: {attack_graph}. Run MulVAL first."
                 )
+            attack_graph_hashes[case] = file_sha256(attack_graph)
 
-            generator = IncidentGenerator(case)
+            generator = IncidentGenerator(case, max_incidents=args.limit)
             incidents = generator.get_goal_based_incidents()[: args.limit]
 
             for incident_index, incident in enumerate(incidents):
                 try:
                     countermeasures, initial_risk, final_risk = (
-                        extractDefenseKnowledge.create_countermeasure_table(incident)
+                        extractDefenseKnowledge.create_countermeasure_table(
+                            incident,
+                            top_k=eligibility_top_k,
+                        )
                     )
                 except Exception as exc:
                     skipped_incidents.append({
@@ -513,9 +567,12 @@ def main() -> None:
                     skipped_incidents.append({
                         "case": case,
                         "incident_index": incident_index,
-                        "error": "No countermeasures returned.",
+                        "error": f"No countermeasures returned at eligibility K={eligibility_top_k}.",
                     })
                     continue
+                if args.countermeasure_top_k == 0:
+                    countermeasures = countermeasures.iloc[0:0].copy()
+                    final_risk = initial_risk
 
                 playbook_id = (
                     args.generated_prefix
@@ -542,6 +599,8 @@ def main() -> None:
                     "attacker_goal": mulval_context["attacker_goal"],
                     "initial_risk": float(initial_risk),
                     "final_risk": float(final_risk),
+                    "countermeasure_top_k": args.countermeasure_top_k,
+                    "countermeasure_eligibility_top_k": eligibility_top_k,
                     "incident": incident,
                     "steps": [],
                 }
@@ -558,7 +617,8 @@ def main() -> None:
 
                 for step_index, (_, record) in enumerate(sort_and_deduplicate_records(records), start=1):
                     label = str(record.get("def_tech_label", "")).strip()
-                    ids = lookup.get(label, {})
+                    artifact_label = str(record.get("def_artifact_label", "")).strip()
+                    ids = lookup.get((label, artifact_label)) or lookup.get((label, ""), {})
                     defensive_id = ids.get("defensive_technique_id") or safe_id(label).replace("_", "")
                     phase_label = str(record.get("def_tactic_label", "")).strip()
                     phase = PHASE_NAMES.get(phase_label, phase_label or "Response")
@@ -592,8 +652,14 @@ def main() -> None:
                         "offensive_artifact_id": ids.get("offensive_artifact_id", ""),
                         "offensive_relationship_id": ids.get("offensive_relationship_id", ""),
                         "attack_technique_id": attack_id,
+                        "matched_attack_technique_id": attack_technique_id(
+                            record.get("matched_off_tech_id", "")
+                        ),
                         "attack_techniques": [attack_id] if attack_id else [],
-                        "attack_technique_label": record.get("off_tech_label", ""),
+                        "attack_technique_label": (
+                            record.get("off_tech_label", "")
+                            or str(incident_step.get("mitre", "")).strip()
+                        ),
                         "cve": cve,
                         "cvss_score": cvss_score,
                         "cvss_severity": cvss_severity(cvss_score),
@@ -615,7 +681,8 @@ def main() -> None:
         os.chdir(old_cwd)
 
     output_dir.mkdir(parents=True, exist_ok=True)
-    write_jsonl(output_dir / "generated_playbooks.jsonl", playbooks)
+    jsonl_path = output_dir / "generated_playbooks.jsonl"
+    write_jsonl(jsonl_path, playbooks)
     missing_counts: dict[str, int] = {}
     missing_rows = []
     for playbook in playbooks:
@@ -639,10 +706,23 @@ def main() -> None:
 
     write_json(output_dir / "summary.json", {
         "generated_at": datetime.now(timezone.utc).isoformat(),
+        "countermeasure_top_k": args.countermeasure_top_k,
+        "countermeasure_eligibility_top_k": eligibility_top_k,
+        "incident_seed": int(os.environ.get("INCIDENT_SEED", "1337")),
+        "limit_per_case": args.limit,
+        "generated_prefix": args.generated_prefix,
+        "all_cases": args.all_cases,
+        "mulval_root": str(mulval_root),
+        "skip_cacao": args.skip_cacao,
         "playbooks": len(playbooks),
         "steps": len(step_rows),
         "skipped_incidents": len(skipped_incidents),
         "cases": sorted({pb["source_case"] for pb in playbooks}),
+        "input_attack_graph_sha256": attack_graph_hashes,
+        "cve_table": str(cve_table),
+        "cve_table_sha256": file_sha256(cve_table),
+        "generated_playbooks_jsonl_sha256": file_sha256(jsonl_path),
+        "python": sys.version,
         "missing_provenance_counts": missing_counts,
     })
     write_json(output_dir / "skipped_incidents.json", skipped_incidents)
@@ -673,6 +753,7 @@ def main() -> None:
         "risk_before",
         "risk_after",
         "playbook_risk_reduction",
+        "playbook_risk_reduction_pct",
         "path_length",
         "action_count",
         "lifecycle_phases_present",
@@ -693,6 +774,7 @@ def main() -> None:
         "offensive_artifact_id",
         "offensive_relationship_id",
         "attack_technique_id",
+        "matched_attack_technique_id",
         "attack_techniques",
         "attack_technique_label",
         "cve",
@@ -723,6 +805,7 @@ def main() -> None:
         row["risk_before"] = playbook.get("risk_before", "")
         row["risk_after"] = playbook.get("risk_after", "")
         row["playbook_risk_reduction"] = playbook.get("risk_reduction", "")
+        row["playbook_risk_reduction_pct"] = playbook.get("risk_reduction_pct", "")
         row["path_length"] = playbook.get("path_length", "")
         row["action_count"] = playbook.get("action_count", "")
         row["lifecycle_phases_present"] = join_multi(playbook.get("lifecycle_phases_present", []))
@@ -731,11 +814,12 @@ def main() -> None:
         row["missing_provenance_fields"] = join_multi(row.get("missing_provenance_fields", []))
     write_csv(output_dir / "generated_playbook_steps.csv", step_rows, fieldnames)
 
-    cacao_dir = output_dir / "cacao"
-    cacao_dir.mkdir(parents=True, exist_ok=True)
-    for playbook in playbooks:
-        path = cacao_dir / f"{playbook['playbook_id']}.json"
-        write_json(path, cacao_playbook(playbook))
+    if not args.skip_cacao:
+        cacao_dir = output_dir / "cacao"
+        cacao_dir.mkdir(parents=True, exist_ok=True)
+        for playbook in playbooks:
+            path = cacao_dir / f"{playbook['playbook_id']}.json"
+            write_json(path, cacao_playbook(playbook))
 
     print(f"Wrote {len(playbooks)} playbooks and {len(step_rows)} steps to {output_dir}")
 

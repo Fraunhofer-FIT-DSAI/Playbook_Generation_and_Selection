@@ -2,7 +2,6 @@
 from __future__ import annotations
 
 import argparse
-import csv
 import json
 import random
 import shutil
@@ -30,7 +29,7 @@ def parse_args() -> argparse.Namespace:
         "--profile-dir",
         type=Path,
         default=Path("data/scenario_profiles"),
-        help="Directory created by build_scenario_profiles.py.",
+        help="Directory containing the checked-in canonical scenario profiles.",
     )
     parser.add_argument(
         "--profile",
@@ -44,6 +43,15 @@ def parse_args() -> argparse.Namespace:
         default=Path("generation_phase/source"),
         help="Generation-phase source directory inside this repository.",
     )
+    parser.add_argument(
+        "--mulval-root",
+        type=Path,
+        default=None,
+        help=(
+            "Optional output root for case directories. Defaults to "
+            "<generation-source>/mulval-inputs."
+        ),
+    )
     parser.add_argument("--host-count", type=int, default=10)
     parser.add_argument("--vulns-per-host", type=int, default=2)
     parser.add_argument("--seed", type=int, default=42)
@@ -52,6 +60,12 @@ def parse_args() -> argparse.Namespace:
         type=Path,
         default=Path("data/scenario_profiles/CVE_MITRE_enriched.scenario.csv"),
         help="Scenario-conditioned CVE table for IncidentGenerator.",
+    )
+    parser.add_argument(
+        "--manifest",
+        type=Path,
+        default=Path("data/scenario_profiles/mulval_generation_manifest.json"),
+        help="Output manifest containing exact per-case topology seeds and parameters.",
     )
     return parser.parse_args()
 
@@ -74,19 +88,9 @@ def profile_paths(profile_dir: Path, profile_args: list[str] | None) -> list[Pat
 
     index_path = profile_dir / "index.json"
     if not index_path.exists():
-        raise FileNotFoundError(
-            f"Missing {index_path}. Run build_scenario_profiles.py first."
-        )
+        raise FileNotFoundError(f"Missing canonical scenario index: {index_path}")
     index = load_json(index_path)
     return [Path(item["path"]) for item in index.get("profiles", [])]
-
-
-def read_existing_enriched(generation_source: Path) -> dict[str, dict[str, str]]:
-    path = generation_source / "Incident_generation" / "CVE_MITRE_enriched.csv"
-    if not path.exists():
-        return {}
-    with path.open(encoding="utf-8-sig", newline="") as fh:
-        return {row["CVE"]: row for row in csv.DictReader(fh)}
 
 
 def default_cvss_values(score_text: str) -> dict[str, str]:
@@ -121,7 +125,6 @@ def default_cvss_values(score_text: str) -> dict[str, str]:
 
 def scenario_vulnerabilities(
     profile: dict[str, Any],
-    existing_enriched: dict[str, dict[str, str]],
 ) -> list[dict[str, str]]:
     rows = []
     seen = set()
@@ -144,15 +147,14 @@ def scenario_vulnerabilities(
             if (cve, technique) in seen:
                 continue
             seen.add((cve, technique))
-            existing = existing_enriched.get(cve, {})
             defaults = default_cvss_values(str(step.get("cvss_score", "")))
             rows.append({
                 "CVE": cve,
                 "MITRE_Technique": technique,
-                "CVSS": str(step.get("cvss_score") or existing.get("CVSS") or "7.0"),
-                "cvss_vector": existing.get("cvss_vector") or defaults["cvss_vector"],
-                "exploitability_score": existing.get("exploitability_score") or defaults["exploitability_score"],
-                "impact_score": existing.get("impact_score") or defaults["impact_score"],
+                "CVSS": str(step.get("cvss_score") or "7.0"),
+                "cvss_vector": defaults["cvss_vector"],
+                "exploitability_score": defaults["exploitability_score"],
+                "impact_score": defaults["impact_score"],
             })
     return rows
 
@@ -201,8 +203,8 @@ def write_mulval_input(case_dir: Path, vulnerabilities: list[dict[str, str]], ho
 def main() -> None:
     args = parse_args()
     generation_source = repo_path(args.generation_source)
+    mulval_root = repo_path(args.mulval_root) if args.mulval_root else generation_source / "mulval-inputs"
     profile_dir = repo_path(args.profile_dir)
-    existing_enriched = read_existing_enriched(generation_source)
     rules_path = generation_source / "mulval-new-rules.P"
     if not rules_path.exists():
         raise FileNotFoundError(rules_path)
@@ -213,10 +215,10 @@ def main() -> None:
         profile = load_json(path)
         scenario_id = profile["scenario_id"]
         case_name = profile["generation_input"]["recommended_mulval_case"]
-        case_dir = generation_source / "mulval-inputs" / case_name
+        case_dir = mulval_root / case_name
         case_dir.mkdir(parents=True, exist_ok=True)
 
-        vulnerabilities = scenario_vulnerabilities(profile, existing_enriched)
+        vulnerabilities = scenario_vulnerabilities(profile)
         write_mulval_input(
             case_dir,
             vulnerabilities,
@@ -232,6 +234,9 @@ def main() -> None:
             "scenario_id": scenario_id,
             "mulval_case": case_name,
             "case_dir": str(case_dir),
+            "seed": args.seed + index,
+            "host_count": args.host_count,
+            "vulnerabilities_per_host": args.vulns_per_host,
             "vulnerability_count": len(vulnerabilities),
             "attack_count": len(profile["selection_input"]["attack_ids"]),
         })
@@ -248,8 +253,16 @@ def main() -> None:
 
     out_cve_table = repo_path(args.out_cve_table)
     write_csv(out_cve_table, deduped, ENRICHED_FIELDS)
-    write_json(profile_dir / "mulval_generation_manifest.json", {"cases": manifest})
-    print(f"Wrote {len(manifest)} MulVAL cases under {generation_source / 'mulval-inputs'}")
+    manifest_path = repo_path(args.manifest)
+    write_json(manifest_path, {
+        "base_seed": args.seed,
+        "rng": "Python random.Random (MT19937)",
+        "host_count": args.host_count,
+        "vulnerabilities_per_host": args.vulns_per_host,
+        "mulval_root": str(mulval_root),
+        "cases": manifest,
+    })
+    print(f"Wrote {len(manifest)} MulVAL cases under {mulval_root}")
     print(f"Wrote scenario CVE table to {out_cve_table}")
 
 

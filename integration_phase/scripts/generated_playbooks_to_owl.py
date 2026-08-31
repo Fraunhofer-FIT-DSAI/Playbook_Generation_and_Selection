@@ -117,6 +117,17 @@ def enriched_playbook(playbook: dict) -> dict:
             playbook["risk_reduction"] = max(float(playbook.get("risk_before") or 0.0) - float(playbook.get("risk_after") or 0.0), 0.0)
         except (TypeError, ValueError):
             playbook["risk_reduction"] = ""
+    if playbook.get("risk_reduction_pct") in {None, ""}:
+        try:
+            risk_before = float(playbook.get("risk_before") or 0.0)
+            playbook["risk_reduction_pct"] = (
+                max(risk_before - float(playbook.get("risk_after") or 0.0), 0.0)
+                / risk_before
+                if risk_before > 0
+                else 0.0
+            )
+        except (TypeError, ValueError):
+            playbook["risk_reduction_pct"] = ""
     if not playbook.get("attack_techniques"):
         attacks = {step.get("attack_technique_id", "") for step in steps if step.get("attack_technique_id", "")}
         for item in incident:
@@ -184,6 +195,12 @@ def main() -> None:
         add_float_if_present(graph, playbook_uri, IRSO.hasRiskBefore, playbook.get("risk_before", playbook.get("initial_risk", "")))
         add_float_if_present(graph, playbook_uri, IRSO.hasRiskAfter, playbook.get("risk_after", playbook.get("final_risk", "")))
         add_float_if_present(graph, playbook_uri, IRSO.hasRiskReduction, playbook.get("risk_reduction", ""))
+        add_float_if_present(
+            graph,
+            playbook_uri,
+            IRSO.hasRelativeRiskReduction,
+            playbook.get("risk_reduction_pct", ""),
+        )
         add_int_if_present(graph, playbook_uri, IRSO.pathLength, playbook.get("path_length", ""))
         add_int_if_present(graph, playbook_uri, IRSO.actionCount, playbook.get("action_count", ""))
         add_float_if_present(graph, playbook_uri, IRSO.phaseCompleteness, playbook.get("phase_completeness", ""))
@@ -236,6 +253,13 @@ def main() -> None:
             attack_technique_id = step.get("attack_technique_id", "")
             for step_attack_id in step_attack_ids(step):
                 graph.add((step_uri, IRSO.generatedForAttackTechnique, URIRef(D3F + safe_id(step_attack_id))))
+            matched_attack_id = step.get("matched_attack_technique_id", "")
+            if matched_attack_id:
+                graph.add((
+                    step_uri,
+                    IRSO.matchedMappingAttackTechnique,
+                    URIRef(D3F + safe_id(matched_attack_id)),
+                ))
 
             manifest_rows.append({
                 "playbook_id": playbook_id,
@@ -260,6 +284,7 @@ def main() -> None:
                 "risk_before": playbook.get("risk_before", playbook.get("initial_risk", "")),
                 "risk_after": playbook.get("risk_after", playbook.get("final_risk", "")),
                 "playbook_risk_reduction": playbook.get("risk_reduction", ""),
+                "playbook_risk_reduction_pct": playbook.get("risk_reduction_pct", ""),
                 "path_length": playbook.get("path_length", ""),
                 "action_count": playbook.get("action_count", ""),
                 "lifecycle_phases_present": join_multi(playbook.get("lifecycle_phases_present", [])),
@@ -274,6 +299,7 @@ def main() -> None:
                 "defensive_technique_label": step.get("defensive_technique_label", ""),
                 "defense_artifact_id": defense_artifact_id,
                 "attack_technique_id": attack_technique_id,
+                "matched_attack_technique_id": matched_attack_id,
                 "attack_techniques": join_multi(step.get("attack_techniques", [attack_technique_id] if attack_technique_id else [])),
                 "attack_technique_label": step.get("attack_technique_label", ""),
                 "command": step.get("command", ""),
@@ -309,6 +335,7 @@ def main() -> None:
             "risk_before",
             "risk_after",
             "playbook_risk_reduction",
+            "playbook_risk_reduction_pct",
             "path_length",
             "action_count",
             "lifecycle_phases_present",
@@ -323,6 +350,7 @@ def main() -> None:
             "defensive_technique_label",
             "defense_artifact_id",
             "attack_technique_id",
+            "matched_attack_technique_id",
             "attack_techniques",
             "attack_technique_label",
             "command",

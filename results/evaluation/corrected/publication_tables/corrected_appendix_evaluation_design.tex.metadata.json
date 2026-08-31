@@ -1,0 +1,36 @@
+{
+  "artifact": "results/evaluation/corrected/publication_tables/corrected_appendix_evaluation_design.tex",
+  "artifact_sha256": "dbb600e2823cfc04f0802119e7c0bf340a8bcfe3db4d6f158c7040a43f14222c",
+  "artifact_status": "paper evaluation",
+  "command": "python integration_phase/scripts/make_corrected_publication_outputs.py",
+  "created_at_utc": "2026-08-18T02:03:15.520773+00:00",
+  "graphdb_endpoint": "http://localhost:7200/repositories/incident-response",
+  "interpretation": "Technical and construct-level validation only; no expert, cyber-range, or operational validation.",
+  "manifest": "results/generated_repository/corrected_k03/reduced_generated_playbooks_manifest.csv",
+  "manifest_sha256": "866acd440d981c54cc997105fb2d0cdc738f88a58588c3aaa3721b4e8efc5e95",
+  "mapping_owl": "selection_phase/source/GraphDB/playbook_step_defend_mapping.owl",
+  "mapping_sha256": "0ffb6cf054324ac5a3cad0787c1c7b25e4eb03daa7a39bc0fafa1e41e18da271",
+  "repository_count": 167,
+  "sources": [
+    {
+      "path": "results/generated_repository/k_sweep/k_sensitivity_summary.csv",
+      "sha256": "0e255fed440cb30b51cf29c9cd8612c52f7e74fb11437be4a51b5b6eae09a467"
+    },
+    {
+      "path": "results/generated_repository/corrected_k03/reduction_summary.json",
+      "sha256": "3c50a066d98afbf273c71c408f172f8bc377b0d7ec536e3027a94ae0478c8bc1"
+    },
+    {
+      "path": "results/evaluation/corrected/determinism_check.json",
+      "sha256": "2eebf59d6db344e3f5a38669d1c66dfe4a3a363df04f5565e2b128884ea3bdbf"
+    },
+    {
+      "path": "results/evaluation/corrected/fairness_checks.json",
+      "sha256": "31db668dbb6f0fa631ff60a38dabf716e83e627fa9a38b28e6e2d35957c713bd"
+    },
+    {
+      "path": "results/evaluation/corrected/sbert_mapping_diagnostics_metadata.json",
+      "sha256": "9aacfd83e94c19120e8421344149911269db0df0093aba40e63d1a58a76501c5"
+    }
+  ]
+}

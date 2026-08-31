@@ -1,0 +1,56 @@
+{
+  "allow_cross_scenario_generated": false,
+  "artifact_status": "paper evaluation",
+  "by_scenario_csv": "results/evaluation/corrected/fairness_checks.csv",
+  "candidate_source_counts": {
+    "community": 1694,
+    "generated": 167
+  },
+  "checks": {
+    "augmented_reduced_includes_community": {
+      "checked_count": 16,
+      "passed": true,
+      "passed_count": 16
+    },
+    "community_only_unchanged_invariant": {
+      "checked_count": 16,
+      "passed": true,
+      "passed_count": 16
+    },
+    "direct_attack_links_not_full_target_copied": {
+      "checked_count": 16,
+      "passed": true,
+      "passed_count": 16
+    },
+    "direct_attack_links_only_generated": {
+      "checked_count": 16,
+      "passed": true,
+      "passed_count": 16
+    },
+    "generated_playbooks_only_match_scenario": {
+      "checked_count": 16,
+      "passed": true,
+      "passed_count": 16
+    },
+    "playbook_covers_equals_step_generated_for": {
+      "checked_count": 16,
+      "passed": true,
+      "passed_count": 16
+    }
+  },
+  "checks_failed": 0,
+  "checks_passed": 6,
+  "command": "python integration_phase/scripts/run_fairness_checks.py --evaluation-dir results/evaluation/corrected --generated-owl results/generated_repository/corrected_k03/reduced_generated_playbooks.owl --out-json results/evaluation/corrected/fairness_checks.json --out-csv results/evaluation/corrected/fairness_checks.csv",
+  "community_mode": "community-only",
+  "created_at_utc": "2026-08-05T21:27:39.694259+00:00",
+  "evaluation_dir": "results/evaluation/corrected",
+  "generated_owl": "results/generated_repository/corrected_k03/reduced_generated_playbooks.owl",
+  "generated_owl_sha256": "9f7531f9e83ea6bee68bd5ee504098eac5c06fd4595b99be908aaeb5ee755a4d",
+  "mode": "augmented-reduced",
+  "owl_attack_coverage_summary": {
+    "available": true,
+    "generated_playbooks_with_step_attack_provenance": 167,
+    "parser": "xml.etree.ElementTree",
+    "playbook_step_attack_mismatches": 0
+  }
+}

@@ -1,0 +1,96 @@
+\begin{tikzpicture}
+  \definecolor{pbblack}{HTML}{1F2933}
+  \definecolor{pbblue}{HTML}{2F6B8A}
+  \definecolor{pbred}{HTML}{A44A3F}
+  \begin{groupplot}[
+    group style={group size=2 by 1, horizontal sep=1.15cm},
+    width=0.43\linewidth,
+    height=3.3cm,
+    xmin=0.7,
+    xmax=10.3,
+    xtick={1,2,3,4,5,6,7,8,9,10},
+    xlabel={Per-phase countermeasure cap K},
+    tick label style={font=\scriptsize},
+    label style={font=\small},
+    ymajorgrids,
+    grid style={draw=gray!25},
+    axis line style={draw=pbblack},
+    tick style={draw=pbblack},
+  ]
+    \nextgroupplot[
+      ylabel={Mean actions},
+      ymin=3.3,
+      ymax=15.0,
+      ytick={4,6,8,10,12,14},
+    ]
+      \addplot[
+        color=pbblack,
+        thick,
+        mark=*,
+        mark size=1.7pt,
+      ] coordinates {
+        (1,3.8165993945509586)
+        (2,5.1475782038345100)
+        (3,6.6020433905146310)
+        (4,7.8019677093844600)
+        (5,9.2681634712411700)
+        (6,9.9750252270433900)
+        (7,10.8752522704339040)
+        (8,11.6946266397578200)
+        (9,13.5441473259334000)
+        (10,14.4779263370333000)
+      };
+
+    \nextgroupplot[
+      ylabel={Mean (\%)},
+      ymin=24,
+      ymax=48.3,
+      ytick={25,30,35,40,45},
+      legend style={
+        draw=none,
+        fill=none,
+        font=\scriptsize,
+        at={(0.5,1.02)},
+        anchor=south,
+        cells={anchor=west},
+      },
+    ]
+      \addplot[
+        color=pbblue,
+        thick,
+        mark=*,
+        mark size=1.7pt,
+      ] coordinates {
+        (1,25.087568873832750)
+        (2,25.087568873832750)
+        (3,29.103113537712430)
+        (4,30.933896136658495)
+        (5,35.629990349654833)
+        (6,36.527662654365480)
+        (7,39.391787996732497)
+        (8,40.666719723543640)
+        (9,45.138713701087560)
+        (10,46.116852265628755)
+      };
+      \addlegendentry{Direct ATT\&CK recall}
+
+      \addplot[
+        color=pbred,
+        thick,
+        mark=square*,
+        mark size=1.7pt,
+      ] coordinates {
+        (1,41.777771375363190)
+        (2,41.777771375363190)
+        (3,44.264445275971614)
+        (4,45.329769119541380)
+        (5,46.656114293812740)
+        (6,46.659887540813680)
+        (7,46.804318715457977)
+        (8,47.044477005638480)
+        (9,47.197346387160466)
+        (10,47.209492432622774)
+      };
+      \addlegendentry{Model-derived relative risk reduction}
+  \end{groupplot}
+\end{tikzpicture}

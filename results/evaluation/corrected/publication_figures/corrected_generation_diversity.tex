@@ -1,0 +1,44 @@
+\begin{tikzpicture}
+  \definecolor{pbblack}{HTML}{1F2933}
+  \definecolor{pbblue}{HTML}{2F6B8A}
+  \definecolor{pbgold}{HTML}{A66E20}
+  \begin{groupplot}[
+    group style={group size=2 by 1, horizontal sep=1.15cm},
+    width=0.43\linewidth,
+    height=3.2cm,
+    xtick={1,2,3,4},
+    xticklabels={ATT\&CK,Hosts,CVEs,{Path triples}},
+    x tick label style={rotate=20,anchor=east,font=\scriptsize},
+    tick label style={font=\scriptsize},
+    label style={font=\small},
+    enlarge x limits=0.16,
+    ymajorgrids,
+    grid style={draw=gray!25},
+    axis line style={draw=pbblack},
+    tick style={draw=pbblack},
+  ]
+    \nextgroupplot[
+      ybar,
+      bar width=11pt,
+      ymin=0,
+      ymax=1,
+      ytick={0,0.2,0.4,0.6,0.8,1.0},
+      ylabel={Jaccard distance},
+      title={Set-overlap diversity},
+      title style={font=\small},
+    ]
+      \addplot[fill=pbblue,draw=none] coordinates {(1,0.686500) (2,0.000000) (3,0.543958) (4,0.927901)};
+
+    \nextgroupplot[
+      ybar,
+      bar width=11pt,
+      ymin=0,
+      ymax=7.2,
+      ytick={0,2,4,6},
+      ylabel={Shannon entropy (bits)},
+      title={Distributional diversity},
+      title style={font=\small},
+    ]
+      \addplot[fill=pbgold,draw=none] coordinates {(1,4.341698) (2,3.321928) (3,3.495743) (4,6.779611)};
+  \end{groupplot}
+\end{tikzpicture}

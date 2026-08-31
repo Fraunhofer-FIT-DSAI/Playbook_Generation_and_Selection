@@ -3,7 +3,10 @@ from __future__ import annotations
 
 import argparse
 import csv
+import hashlib
+import sys
 from collections import Counter, defaultdict
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
@@ -12,6 +15,7 @@ from closed_loop_common import (
     EVALUATION_MODES,
     classify_playbook,
     read_csv_dicts,
+    repo_display_path,
     repo_path,
     split_playbook_ids,
     to_float,
@@ -30,7 +34,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--evaluation-dir",
         type=Path,
-        default=Path("results/evaluation"),
+        default=Path("results/evaluation/corrected"),
         help="Directory containing selection/recall outputs.",
     )
     parser.add_argument(
@@ -43,7 +47,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--out-dir",
         type=Path,
-        default=Path("results/evaluation/diagnostics"),
+        default=Path("results/evaluation/corrected/diagnostics"),
         help="Output directory for diagnostic summaries.",
     )
     parser.add_argument(
@@ -62,6 +66,14 @@ def rows_by_scenario(path: Path) -> dict[str, dict[str, str]]:
         for row in read_csv_dicts(path)
         if row.get("Scenario") and row.get("Scenario") != "Average"
     }
+
+
+def file_sha256(path: Path) -> str:
+    digest = hashlib.sha256()
+    with path.open("rb") as fh:
+        for chunk in iter(lambda: fh.read(1024 * 1024), b""):
+            digest.update(chunk)
+    return digest.hexdigest()
 
 
 def duplicate_step_stats(path: Path) -> dict[str, Any]:
@@ -131,7 +143,10 @@ def best_by_source(rows: list[dict[str, str]], source: str, metric: str = "total
     candidates = [row for row in rows if row.get("candidate_source") == source]
     if not candidates:
         return {}
-    return max(candidates, key=lambda row: to_float(row.get(metric), -1.0))
+    return min(
+        candidates,
+        key=lambda row: (-to_float(row.get(metric), -1.0), row.get("playbook_id", "")),
+    )
 
 
 def max_metric_by_source(rows: list[dict[str, str]], source: str, metric: str) -> float:
@@ -195,7 +210,6 @@ def main() -> None:
     }
 
     by_scenario_rows = []
-    loss_rows = []
     counters = Counter()
 
     augmented_all_selection = selections.get("augmented", selections.get("augmented-all", {}))
@@ -251,7 +265,10 @@ def main() -> None:
         if generated_lost and to_float(best_generated.get("RC"), 0.0) > to_float(selected_candidate.get("RC"), 0.0):
             if to_float(best_generated.get("DC"), 0.0) < to_float(selected_candidate.get("DC"), 0.0) or to_float(best_generated.get("DAC"), 0.0) < to_float(selected_candidate.get("DAC"), 0.0):
                 counters["generated_improves_risk_but_loses_coverage"] += 1
-        oracle = to_float(recall_summary.get("Max Recall (Candidate Pool)"), 0.0)
+        oracle = max(
+            (to_float(row.get("combined_attack_recall"), 0.0) for row in rows),
+            default=0.0,
+        )
         if oracle > selected_recall:
             counters["augmented_oracle_better_than_selected"] += 1
         if achievable_recall > selected_recall:
@@ -305,10 +322,17 @@ def main() -> None:
             "reduced_generated_pool_changes_selected_source": str(reduced_changes_source),
         }
         by_scenario_rows.append(row)
-        loss_rows.append(row)
 
     export_stats = duplicate_step_stats(generated_steps_csv)
     summary = {
+        "artifact_status": "paper evaluation",
+        "created_at_utc": datetime.now(timezone.utc).isoformat(),
+        "command": "python " + " ".join(sys.argv),
+        "evaluation_dir": repo_display_path(evaluation_dir),
+        "generated_steps_csv": repo_display_path(generated_steps_csv),
+        "generated_steps_csv_sha256": (
+            file_sha256(generated_steps_csv) if generated_steps_csv.exists() else None
+        ),
         "available_modes": modes,
         "diagnosed_mode": preferred_mode,
         "scenario_count": len(by_scenario_rows),
@@ -350,7 +374,6 @@ def main() -> None:
 
     write_json(out_dir / "closed_loop_diagnostics_summary.json", summary)
     write_csv(out_dir / "closed_loop_diagnostics_by_scenario.csv", by_scenario_rows, fieldnames)
-    write_csv(out_dir / "closed_loop_candidate_loss_reasons.csv", loss_rows, fieldnames)
 
     print("Closed-loop diagnostics")
     print(f"- diagnosed mode: {preferred_mode}")

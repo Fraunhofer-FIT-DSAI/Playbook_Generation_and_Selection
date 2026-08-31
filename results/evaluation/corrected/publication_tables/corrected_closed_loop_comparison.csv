@@ -1,0 +1,4 @@
+Repository,Scoring profile,Candidates,Generated winners,Community winners,Combined,Achievable,Normalized
+Community-only,Coverage-only,105.875,0,16,0.227,0.292,0.801
+Generated-reduced,Closed-loop balanced,10.438,16,0,0.228,0.288,0.813
+Augmented-reduced,Closed-loop balanced,116.312,10,6,0.243,0.353,0.694

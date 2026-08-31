@@ -1,0 +1,7 @@
+normalized_rank,scenario,selected_playbook_id,selected_source,combined_recall,achievable_combined_recall,normalized_combined_recall,absolute_headroom,selected_action_count,selected_risk_reduction,scoring_profile,missing_context_policy
+1,Emergency Services,ma_scenario_Emergency_Services_0487,generated,0.149253731343,0.328358208955,0.454545454545,0.179104477612,8,0.713095176034,closed-loop-balanced,neutral
+2,Food and Agriculture,ma_scenario_Food_and_Agriculture_0314,generated,0.189189189189,0.405405405405,0.466666666667,0.216216216216,8,0.453508643800,closed-loop-balanced,neutral
+3,"Nuclear Reactors, Materials, and Waste",p41,community,0.261904761905,0.452380952381,0.578947368421,0.190476190476,2,,closed-loop-balanced,neutral
+4,Commercial Facilities,ma_scenario_Commercial_Facilities_0253,generated,0.166666666667,0.277777777778,0.600000000000,0.111111111111,7,0.780084300977,closed-loop-balanced,neutral
+4,Critical Manufacturing,ma_scenario_Critical_Manufacturing_0158,generated,0.150000000000,0.250000000000,0.600000000000,0.100000000000,8,0.840013139206,closed-loop-balanced,neutral
+4,Energy,p41,community,0.157894736842,0.263157894737,0.600000000000,0.105263157895,2,,closed-loop-balanced,neutral

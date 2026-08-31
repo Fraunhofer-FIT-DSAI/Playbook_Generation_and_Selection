@@ -1,0 +1,384 @@
+{
+  "candidate_metadata_scope": "complete candidate ID set",
+  "canonical_mode": "community-only",
+  "command": "python integration_phase/scripts/run_mcdm_selection.py --mode community-only --scoring-profile coverage-only --out-dir results/evaluation/corrected",
+  "endpoint": "http://localhost:7200/repositories/incident-response",
+  "generated_owl": "",
+  "generated_owl_sha256": "",
+  "generated_prefix": "ma_",
+  "historical_candidate_table_reused": false,
+  "mapping_owl": "selection_phase/source/GraphDB/playbook_step_defend_mapping.owl",
+  "mapping_owl_sha256": "0ffb6cf054324ac5a3cad0787c1c7b25e4eb03daa7a39bc0fafa1e41e18da271",
+  "match_generated_source_case": true,
+  "missing_context_policy": "neutral",
+  "mode": "community-only",
+  "neutral_default": 0.5,
+  "reduced_manifest": "",
+  "reduced_manifest_loaded": false,
+  "reduced_manifest_sha256": "",
+  "result_state": "paper evaluation",
+  "risk_criterion_input": "hasRelativeRiskReduction when present; legacy hasRiskReduction fallback",
+  "run_completed_at_utc": "2026-07-28T01:06:11.598263+00:00",
+  "run_started_at_utc": "2026-07-28T01:03:50.931119+00:00",
+  "scenario_count": 16,
+  "scenarios": {
+    "Chemical": {
+      "achievable_attack_technique_count": 13,
+      "achievable_combined_attack_recall": 0.43333333333333335,
+      "candidate_count": 91,
+      "community_candidate_count": 91,
+      "generated_candidate_count": 0,
+      "normalized_combined_attack_recall": 0.7692307692307693,
+      "scenario_attack_count": 30,
+      "top_missing_context_fields": [
+        "TC",
+        "RC",
+        "CC"
+      ],
+      "top_playbooks": [
+        "p41"
+      ],
+      "top_score": 0.575,
+      "top_source": "community"
+    },
+    "Commercial Facilities": {
+      "achievable_attack_technique_count": 3,
+      "achievable_combined_attack_recall": 0.16666666666666666,
+      "candidate_count": 82,
+      "community_candidate_count": 82,
+      "generated_candidate_count": 0,
+      "normalized_combined_attack_recall": 1.0,
+      "scenario_attack_count": 18,
+      "top_missing_context_fields": [
+        "TC",
+        "RC",
+        "CC"
+      ],
+      "top_playbooks": [
+        "p1086"
+      ],
+      "top_score": 0.6571212121212121,
+      "top_source": "community"
+    },
+    "Communications": {
+      "achievable_attack_technique_count": 14,
+      "achievable_combined_attack_recall": 0.34146341463414637,
+      "candidate_count": 91,
+      "community_candidate_count": 91,
+      "generated_candidate_count": 0,
+      "normalized_combined_attack_recall": 0.7857142857142857,
+      "scenario_attack_count": 41,
+      "top_missing_context_fields": [
+        "TC",
+        "RC",
+        "CC"
+      ],
+      "top_playbooks": [
+        "p1086"
+      ],
+      "top_score": 0.582832694680782,
+      "top_source": "community"
+    },
+    "Critical Manufacturing": {
+      "achievable_attack_technique_count": 4,
+      "achievable_combined_attack_recall": 0.2,
+      "candidate_count": 89,
+      "community_candidate_count": 89,
+      "generated_candidate_count": 0,
+      "normalized_combined_attack_recall": 0.75,
+      "scenario_attack_count": 20,
+      "top_missing_context_fields": [
+        "TC",
+        "RC",
+        "CC"
+      ],
+      "top_playbooks": [
+        "p1086"
+      ],
+      "top_score": 0.5797859547859547,
+      "top_source": "community"
+    },
+    "Dams": {
+      "achievable_attack_technique_count": 14,
+      "achievable_combined_attack_recall": 0.3684210526315789,
+      "candidate_count": 91,
+      "community_candidate_count": 91,
+      "generated_candidate_count": 0,
+      "normalized_combined_attack_recall": 0.7857142857142857,
+      "scenario_attack_count": 38,
+      "top_missing_context_fields": [
+        "TC",
+        "RC",
+        "CC"
+      ],
+      "top_playbooks": [
+        "p1086"
+      ],
+      "top_score": 0.582832694680782,
+      "top_source": "community"
+    },
+    "Defense Industrial Base": {
+      "achievable_attack_technique_count": 19,
+      "achievable_combined_attack_recall": 0.3877551020408163,
+      "candidate_count": 139,
+      "community_candidate_count": 139,
+      "generated_candidate_count": 0,
+      "normalized_combined_attack_recall": 0.7368421052631579,
+      "scenario_attack_count": 49,
+      "top_missing_context_fields": [
+        "TC",
+        "RC",
+        "CC"
+      ],
+      "top_playbooks": [
+        "p440"
+      ],
+      "top_score": 0.553030303030303,
+      "top_source": "community"
+    },
+    "Emergency Services": {
+      "achievable_attack_technique_count": 21,
+      "achievable_combined_attack_recall": 0.31343283582089554,
+      "candidate_count": 270,
+      "community_candidate_count": 270,
+      "generated_candidate_count": 0,
+      "normalized_combined_attack_recall": 0.47619047619047616,
+      "scenario_attack_count": 67,
+      "top_missing_context_fields": [
+        "TC",
+        "RC",
+        "CC"
+      ],
+      "top_playbooks": [
+        "p440"
+      ],
+      "top_score": 0.4361999723030051,
+      "top_source": "community"
+    },
+    "Energy": {
+      "achievable_attack_technique_count": 3,
+      "achievable_combined_attack_recall": 0.15789473684210525,
+      "candidate_count": 82,
+      "community_candidate_count": 82,
+      "generated_candidate_count": 0,
+      "normalized_combined_attack_recall": 1.0,
+      "scenario_attack_count": 19,
+      "top_missing_context_fields": [
+        "TC",
+        "RC",
+        "CC"
+      ],
+      "top_playbooks": [
+        "p1086"
+      ],
+      "top_score": 0.6571212121212121,
+      "top_source": "community"
+    },
+    "Financial Services": {
+      "achievable_attack_technique_count": 19,
+      "achievable_combined_attack_recall": 0.36538461538461536,
+      "candidate_count": 139,
+      "community_candidate_count": 139,
+      "generated_candidate_count": 0,
+      "normalized_combined_attack_recall": 0.7368421052631579,
+      "scenario_attack_count": 52,
+      "top_missing_context_fields": [
+        "TC",
+        "RC",
+        "CC"
+      ],
+      "top_playbooks": [
+        "p440"
+      ],
+      "top_score": 0.5340909090909092,
+      "top_source": "community"
+    },
+    "Food and Agriculture": {
+      "achievable_attack_technique_count": 14,
+      "achievable_combined_attack_recall": 0.3783783783783784,
+      "candidate_count": 91,
+      "community_candidate_count": 91,
+      "generated_candidate_count": 0,
+      "normalized_combined_attack_recall": 0.7857142857142857,
+      "scenario_attack_count": 37,
+      "top_missing_context_fields": [
+        "TC",
+        "RC",
+        "CC"
+      ],
+      "top_playbooks": [
+        "p1086"
+      ],
+      "top_score": 0.582832694680782,
+      "top_source": "community"
+    },
+    "Government Facilities": {
+      "achievable_attack_technique_count": 14,
+      "achievable_combined_attack_recall": 0.3333333333333333,
+      "candidate_count": 91,
+      "community_candidate_count": 91,
+      "generated_candidate_count": 0,
+      "normalized_combined_attack_recall": 0.7857142857142857,
+      "scenario_attack_count": 42,
+      "top_missing_context_fields": [
+        "TC",
+        "RC",
+        "CC"
+      ],
+      "top_playbooks": [
+        "p1086"
+      ],
+      "top_score": 0.582832694680782,
+      "top_source": "community"
+    },
+    "Healthcare and Public Health": {
+      "achievable_attack_technique_count": 3,
+      "achievable_combined_attack_recall": 0.14285714285714285,
+      "candidate_count": 82,
+      "community_candidate_count": 82,
+      "generated_candidate_count": 0,
+      "normalized_combined_attack_recall": 1.0,
+      "scenario_attack_count": 21,
+      "top_missing_context_fields": [
+        "TC",
+        "RC",
+        "CC"
+      ],
+      "top_playbooks": [
+        "p1086"
+      ],
+      "top_score": 0.751904761904762,
+      "top_source": "community"
+    },
+    "Information Technology": {
+      "achievable_attack_technique_count": 5,
+      "achievable_combined_attack_recall": 0.25,
+      "candidate_count": 85,
+      "community_candidate_count": 85,
+      "generated_candidate_count": 0,
+      "normalized_combined_attack_recall": 1.0,
+      "scenario_attack_count": 20,
+      "top_missing_context_fields": [
+        "TC",
+        "RC",
+        "CC"
+      ],
+      "top_playbooks": [
+        "p1086"
+      ],
+      "top_score": 0.6375152625152625,
+      "top_source": "community"
+    },
+    "Nuclear Reactors, Materials, and Waste": {
+      "achievable_attack_technique_count": 14,
+      "achievable_combined_attack_recall": 0.3333333333333333,
+      "candidate_count": 91,
+      "community_candidate_count": 91,
+      "generated_candidate_count": 0,
+      "normalized_combined_attack_recall": 0.7857142857142857,
+      "scenario_attack_count": 42,
+      "top_missing_context_fields": [
+        "TC",
+        "RC",
+        "CC"
+      ],
+      "top_playbooks": [
+        "p1086"
+      ],
+      "top_score": 0.582832694680782,
+      "top_source": "community"
+    },
+    "Transportation Systems": {
+      "achievable_attack_technique_count": 5,
+      "achievable_combined_attack_recall": 0.18518518518518517,
+      "candidate_count": 89,
+      "community_candidate_count": 89,
+      "generated_candidate_count": 0,
+      "normalized_combined_attack_recall": 0.8,
+      "scenario_attack_count": 27,
+      "top_missing_context_fields": [
+        "TC",
+        "RC",
+        "CC"
+      ],
+      "top_playbooks": [
+        "p1086"
+      ],
+      "top_score": 0.6783769063180829,
+      "top_source": "community"
+    },
+    "Water and Wastewater Systems": {
+      "achievable_attack_technique_count": 8,
+      "achievable_combined_attack_recall": 0.32,
+      "candidate_count": 91,
+      "community_candidate_count": 91,
+      "generated_candidate_count": 0,
+      "normalized_combined_attack_recall": 0.625,
+      "scenario_attack_count": 25,
+      "top_missing_context_fields": [
+        "TC",
+        "RC",
+        "CC"
+      ],
+      "top_playbooks": [
+        "p1086"
+      ],
+      "top_score": 0.5560846560846561,
+      "top_source": "community"
+    }
+  },
+  "scoring_profile": "coverage-only",
+  "selection_csv": "results/evaluation/corrected/community-only/scenario_playbook_evaluation_community-only.csv",
+  "selection_csv_sha256": "1e8eb71317130e4d30f74f35a6d3f722912ef062699a3295f52dff0d609e5f7a",
+  "selection_protocol": {
+    "criteria_order": [
+      "DC",
+      "DAC",
+      "DTC",
+      "TC",
+      "RC",
+      "CC",
+      "AC"
+    ],
+    "missing_context_policy": "neutral",
+    "neutral_context_criteria": [
+      "TC",
+      "RC",
+      "CC",
+      "AC"
+    ],
+    "neutral_value": 0.5,
+    "protocol_version": "paper-evaluation-2026-07-27",
+    "recall_definitions": {
+      "combined_attack_recall": "Union of direct and inferred target coverage divided by target-set size.",
+      "direct_attack_recall": "Direct-provenance target coverage divided by target-set size.",
+      "inferred_attack_recall": "Ontology-inferred target coverage divided by target-set size.",
+      "normalized_combined_attack_recall": "Selected combined target coverage divided by the union coverage achievable by the scenario candidate pool."
+    },
+    "score_definitions": {
+      "AC": "Inverse min-max normalized action count within the scenario candidate pool; 1 is the smallest available count and 0 is the largest.",
+      "CC": "Candidate CVEs intersecting scenario CVEs divided by the number of scenario CVEs.",
+      "DAC": "Distinct artifacts linked to the candidate through inferred ontology paths divided by the scenario artifact universe.",
+      "DC": "Adjusted defensive-relation completeness: observed unique (ATT&CK technique, D3FEND relation) pairs divided by the scenario relation universe, multiplied by 1 - redundant_steps / matched_steps.",
+      "DTC": "Direct ATT&CK techniques carried by candidate provenance and present in the target set, divided by target-set size.",
+      "RC": "Candidate relative risk reduction RR=(R-Rs)/R divided by the largest available relative RR in the scenario candidate pool.",
+      "TC": "Topology/context match: 1 for a generated candidate whose source case or scenario matches the evaluated scenario, 0 for a known mismatch, otherwise missing.",
+      "total_score": "Weighted sum of active criteria after applying the declared missing-value policy."
+    },
+    "top1_tie_policy": "highest score, then lexicographically smallest stable playbook_id",
+    "weights": {
+      "DAC": 0.5,
+      "DC": 0.5
+    },
+    "zero_if_absent_criteria": [
+      "DC",
+      "DAC",
+      "DTC"
+    ]
+  },
+  "top1_tie_policy": "highest score, then lexicographically smallest stable playbook_id",
+  "weights": {
+    "DAC": 0.5,
+    "DC": 0.5
+  }
+}

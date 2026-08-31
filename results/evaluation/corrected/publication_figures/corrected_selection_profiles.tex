@@ -1,0 +1,55 @@
+\begin{tikzpicture}
+  \definecolor{pbblue}{HTML}{2F6B8A}
+  \definecolor{pbgreen}{HTML}{3B7A57}
+  \definecolor{pbblack}{HTML}{1F2933}
+  \begin{axis}[
+    width=\linewidth,
+    height=3.5cm,
+    ybar,
+    bar width=13pt,
+    ymin=0,
+    ymax=1,
+    ytick={0,0.2,0.4,0.6,0.8,1.0},
+    ylabel={Mean recall},
+    xtick={0,1,2,3},
+    xticklabels={
+      {Closed-loop\\balanced},
+      {Coverage\\primary},
+      {90\% coverage\\constrained},
+      {Portfolio\\$K\leq3$}
+    },
+    xticklabel style={align=center, font=\scriptsize},
+    tick label style={font=\scriptsize},
+    label style={font=\small},
+    enlarge x limits=0.12,
+    ymajorgrids,
+    grid style={draw=gray!25},
+    axis line style={draw=pbblack},
+    tick style={draw=pbblack},
+    legend columns=2,
+    legend style={
+      draw=none,
+      fill=none,
+      font=\scriptsize,
+      at={(0.01,0.99)},
+      anchor=north west,
+      /tikz/every even column/.append style={column sep=6pt},
+    },
+  ]
+    \addplot[fill=pbblue, draw=none, area legend] coordinates {
+      (0,0.243)
+      (1,0.268)
+      (2,0.265)
+      (3,0.350)
+    };
+    \addlegendentry{Combined}
+
+    \addplot[fill=pbgreen, draw=none, area legend] coordinates {
+      (0,0.694)
+      (1,0.766)
+      (2,0.758)
+      (3,0.994)
+    };
+    \addlegendentry{Normalized}
+  \end{axis}
+\end{tikzpicture}

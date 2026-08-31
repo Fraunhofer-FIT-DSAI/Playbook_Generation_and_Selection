@@ -1,0 +1,24 @@
+{
+  "artifact": "results/evaluation/corrected/publication_tables/corrected_weight_sensitivity.tex",
+  "artifact_sha256": "cd71711766b4b1f364c1a7e2612d6a4562d7cd37df0dafb3e6d65b87b2f44fdb",
+  "artifact_status": "paper evaluation",
+  "command": "python integration_phase/scripts/make_corrected_publication_outputs.py",
+  "created_at_utc": "2026-08-18T02:03:15.520773+00:00",
+  "graphdb_endpoint": "http://localhost:7200/repositories/incident-response",
+  "interpretation": "Weights are fixed heuristic parameters. Draws replay corrected candidate criteria and do not rerun GraphDB retrieval.",
+  "manifest": "results/generated_repository/corrected_k03/reduced_generated_playbooks_manifest.csv",
+  "manifest_sha256": "866acd440d981c54cc997105fb2d0cdc738f88a58588c3aaa3721b4e8efc5e95",
+  "mapping_owl": "selection_phase/source/GraphDB/playbook_step_defend_mapping.owl",
+  "mapping_sha256": "0ffb6cf054324ac5a3cad0787c1c7b25e4eb03daa7a39bc0fafa1e41e18da271",
+  "repository_count": 167,
+  "sources": [
+    {
+      "path": "results/evaluation/corrected/weight_sensitivity/summary.json",
+      "sha256": "212d830af67112e0626f713621f2fb5a9e0c2c190f046180513e8b13bffd3b84"
+    },
+    {
+      "path": "results/evaluation/corrected/weight_sensitivity/dirichlet_draws.csv",
+      "sha256": "be331baaca28aa63046eafbc460dc725ba7b4507e33e2dc5901475c1191639ad"
+    }
+  ]
+}

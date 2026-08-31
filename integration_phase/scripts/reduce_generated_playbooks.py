@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
 from collections import defaultdict
 from pathlib import Path
 from typing import Any
@@ -14,6 +15,7 @@ except ModuleNotFoundError:
 from closed_loop_common import (
     join_multi,
     read_csv_dicts,
+    repo_display_path,
     repo_path,
     safe_id,
     split_multi,
@@ -63,22 +65,32 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--out-manifest",
         type=Path,
-        default=Path("results/generated_repository/reduced_generated_playbooks_manifest.csv"),
+        default=Path(
+            "results/generated_repository/corrected_k03/"
+            "reduced_generated_playbooks_manifest.csv"
+        ),
     )
     parser.add_argument(
         "--out-owl",
         type=Path,
-        default=Path("results/generated_repository/reduced_generated_playbooks.owl"),
+        default=Path(
+            "results/generated_repository/corrected_k03/"
+            "reduced_generated_playbooks.owl"
+        ),
     )
     parser.add_argument(
         "--report-csv",
         type=Path,
-        default=Path("results/generated_repository/reduction_report.csv"),
+        default=Path(
+            "results/generated_repository/corrected_k03/reduction_report.csv"
+        ),
     )
     parser.add_argument(
         "--summary-json",
         type=Path,
-        default=Path("results/generated_repository/reduction_summary.json"),
+        default=Path(
+            "results/generated_repository/corrected_k03/reduction_summary.json"
+        ),
     )
     return parser.parse_args()
 
@@ -108,7 +120,8 @@ def aggregate_manifest(rows: list[dict[str, str]]) -> dict[str, dict[str, Any]]:
             "artifacts": set(),
             "phases": set(),
             "hosts": set(),
-            "risk_reduction": to_float(row.get("playbook_risk_reduction") or row.get("risk_reduction"), 0.0),
+            "risk_reduction": relative_risk_reduction(row),
+            "absolute_risk_reduction": absolute_risk_reduction(row),
             "phase_completeness": to_float(row.get("phase_completeness"), 0.0),
             "action_count": int(to_float(row.get("action_count"), 0.0)) if row.get("action_count") else 0,
         })
@@ -131,7 +144,11 @@ def aggregate_manifest(rows: list[dict[str, str]]) -> dict[str, dict[str, Any]]:
             item[target].update(split_multi(row.get(field, "")))
         item["risk_reduction"] = max(
             item["risk_reduction"],
-            to_float(row.get("playbook_risk_reduction") or row.get("risk_reduction"), 0.0),
+            relative_risk_reduction(row),
+        )
+        item["absolute_risk_reduction"] = max(
+            item["absolute_risk_reduction"],
+            absolute_risk_reduction(row),
         )
         if row.get("action_count"):
             item["action_count"] = max(item["action_count"], int(to_float(row.get("action_count"), 0.0)))
@@ -139,6 +156,27 @@ def aggregate_manifest(rows: list[dict[str, str]]) -> dict[str, dict[str, Any]]:
             item["action_count"] = max(item["action_count"], len(item["rows"]))
         item["phase_completeness"] = max(item["phase_completeness"], to_float(row.get("phase_completeness"), 0.0))
     return playbooks
+
+
+def absolute_risk_reduction(row: dict[str, str]) -> float:
+    explicit = row.get("playbook_risk_reduction")
+    if explicit not in {None, ""}:
+        return max(to_float(explicit, 0.0), 0.0)
+    before = to_float(row.get("risk_before"), 0.0)
+    after = to_float(row.get("risk_after"), before)
+    if before or row.get("risk_after") not in {None, ""}:
+        return max(before - after, 0.0)
+    return max(to_float(row.get("risk_reduction"), 0.0), 0.0)
+
+
+def relative_risk_reduction(row: dict[str, str]) -> float:
+    explicit = row.get("playbook_risk_reduction_pct")
+    if explicit not in {None, ""}:
+        return max(0.0, min(1.0, to_float(explicit, 0.0)))
+    before = to_float(row.get("risk_before"), 0.0)
+    if before <= 0:
+        return 0.0
+    return max(0.0, min(1.0, absolute_risk_reduction(row) / before))
 
 
 def scenario_key(item: dict[str, Any]) -> str:
@@ -168,6 +206,20 @@ def ranking_tuple(item: dict[str, Any]) -> tuple[float, int, int, int, float, in
         len(item["artifacts"]),
         float(item["phase_completeness"]),
         -int(item["action_count"] or 0),
+    )
+
+
+def ranking_sort_key(item: dict[str, Any]) -> tuple[float, int, int, int, float, int, str]:
+    """Sort best first and resolve an exact objective tie by stable ID."""
+    rank = ranking_tuple(item)
+    return (
+        -rank[0],
+        -rank[1],
+        -rank[2],
+        -rank[3],
+        -rank[4],
+        -rank[5],
+        str(item["playbook_id"]),
     )
 
 
@@ -203,7 +255,7 @@ def diverse_representatives(items: list[dict[str, Any]]) -> list[dict[str, Any]]
         by_signature[semantic_signature(item)].append(item)
     reps = []
     for group in by_signature.values():
-        reps.append(sorted(group, key=ranking_tuple, reverse=True)[0])
+        reps.append(min(group, key=ranking_sort_key))
     return reps
 
 
@@ -217,10 +269,18 @@ def reduce_items(items: list[dict[str, Any]], strategy: str, limit: int) -> list
     else:
         candidates = pareto_front(diverse_representatives(items))
 
-    ranked = sorted(candidates, key=ranking_tuple, reverse=True)
+    ranked = sorted(candidates, key=ranking_sort_key)
     if limit > 0 and len(ranked) > limit:
         ranked = ranked[:limit]
     return ranked
+
+
+def file_sha256(path: Path) -> str:
+    digest = hashlib.sha256()
+    with path.open("rb") as handle:
+        for chunk in iter(lambda: handle.read(1024 * 1024), b""):
+            digest.update(chunk)
+    return digest.hexdigest()
 
 
 def write_reduced_owl(input_owl: Path, output_owl: Path, selected_ids: set[str]) -> None:
@@ -274,7 +334,7 @@ def main() -> None:
         selected = reduce_items(items, args.strategy, args.per_scenario)
         scenario_selected_ids = {item["playbook_id"] for item in selected}
         selected_ids.update(scenario_selected_ids)
-        ranked_all = sorted(items, key=ranking_tuple, reverse=True)
+        ranked_all = sorted(items, key=ranking_sort_key)
         for rank, item in enumerate(ranked_all, start=1):
             report_rows.append({
                 "source_scenario_id": scenario,
@@ -282,7 +342,8 @@ def main() -> None:
                 "kept": str(item["playbook_id"] in scenario_selected_ids),
                 "rank": rank,
                 "strategy": args.strategy,
-                "risk_reduction": f"{float(item['risk_reduction']):.6f}",
+                "risk_reduction_pct": f"{float(item['risk_reduction']):.6f}",
+                "absolute_risk_reduction": f"{float(item['absolute_risk_reduction']):.6f}",
                 "direct_attack_count": len(item["attack_techniques"]),
                 "d3fend_count": len(item["d3fend_techniques"]),
                 "artifact_count": len(item["artifacts"]),
@@ -303,7 +364,8 @@ def main() -> None:
             "kept",
             "rank",
             "strategy",
-            "risk_reduction",
+            "risk_reduction_pct",
+            "absolute_risk_reduction",
             "direct_attack_count",
             "d3fend_count",
             "artifact_count",
@@ -315,6 +377,33 @@ def main() -> None:
     write_json(summary_json, {
         "strategy": args.strategy,
         "per_scenario": args.per_scenario,
+        "algorithm": {
+            "scope": "per scenario",
+            "cap_interpretation": "maximum retained playbooks per scenario after diversity and Pareto filtering",
+            "semantic_representation": (
+                "exact tuple of ATT&CK techniques, CVEs, D3FEND techniques, "
+                "artifacts, and lifecycle phases"
+            ),
+            "similarity_or_clustering": "none",
+            "risk_objective": "relative RR=(risk_before-risk_after)/risk_before",
+            "pareto_objectives": [
+                "relative_risk_reduction:max",
+                "attack_technique_count:max",
+                "artifact_count:max",
+                "phase_completeness:max",
+                "action_count:min",
+            ],
+            "final_order": [
+                "relative_risk_reduction:descending",
+                "attack_technique_count:descending",
+                "d3fend_technique_count:descending",
+                "artifact_count:descending",
+                "phase_completeness:descending",
+                "action_count:ascending",
+                "playbook_id:ascending",
+            ],
+            "tie_policy": "lexicographically smallest stable playbook_id",
+        },
         "input_playbooks": len(playbooks),
         "selected_playbooks": len(selected_ids),
         "scenarios": {
@@ -324,8 +413,15 @@ def main() -> None:
             }
             for scenario, items in sorted(by_scenario.items())
         },
-        "out_manifest": str(out_manifest),
-        "out_owl": str(out_owl),
+        "out_manifest": repo_display_path(out_manifest),
+        "out_owl": repo_display_path(out_owl),
+        "sha256": {
+            "input_manifest": file_sha256(manifest),
+            "input_owl": file_sha256(input_owl),
+            "output_manifest": file_sha256(out_manifest),
+            "output_owl": file_sha256(out_owl),
+            "report_csv": file_sha256(report_csv),
+        },
     })
     print(f"Selected {len(selected_ids)} of {len(playbooks)} generated playbooks")
     print(f"Wrote reduced manifest to {out_manifest}")

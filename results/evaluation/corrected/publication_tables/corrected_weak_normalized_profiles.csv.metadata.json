@@ -1,0 +1,27 @@
+{
+  "artifact": "results/evaluation/corrected/publication_tables/corrected_weak_normalized_profiles.csv",
+  "artifact_sha256": "7dc1b34df9c1aad1a92f751125069112c446d34efddc5581ad633bb8dff6f789",
+  "command": "python integration_phase/scripts/make_weak_profile_figure.py --input results/evaluation/corrected/augmented-reduced/scenario_playbook_evaluation_augmented-reduced.csv --manifest results/generated_repository/corrected_k03/reduced_generated_playbooks_manifest.csv --requested-count 5",
+  "cutoff_tie_policy": "include every profile tied at the cutoff",
+  "fifth_order_cutoff": 0.6,
+  "included_profile_count": 6,
+  "included_scenarios": [
+    "Emergency Services",
+    "Food and Agriculture",
+    "Nuclear Reactors, Materials, and Waste",
+    "Commercial Facilities",
+    "Critical Manufacturing",
+    "Energy"
+  ],
+  "interpretation": "Achievable recall is the source-restricted candidate-pool ceiling. Normalized recall is selected combined recall divided by that ceiling.",
+  "missing_context_policy": "neutral",
+  "ranking_metric": "normalized_combined_attack_recall ascending",
+  "repository_count": 167,
+  "repository_manifest": "results/generated_repository/corrected_k03/reduced_generated_playbooks_manifest.csv",
+  "repository_manifest_sha256": "866acd440d981c54cc997105fb2d0cdc738f88a58588c3aaa3721b4e8efc5e95",
+  "requested_profile_count": 5,
+  "scoring_profile": "closed-loop-balanced",
+  "selection_mode": "augmented-reduced",
+  "source": "results/evaluation/corrected/augmented-reduced/scenario_playbook_evaluation_augmented-reduced.csv",
+  "source_sha256": "319a96e6c0239172aabd26194fafac860f29f1229413ec8614fb28bf9bdb2ba9"
+}

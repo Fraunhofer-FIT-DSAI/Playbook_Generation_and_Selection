@@ -1,0 +1,16 @@
+# Keep executable source and documentation consistent across platforms.
+*.py text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.txt text eol=lf
+*.sh text eol=lf
+*.sparql text eol=lf
+*.P text eol=lf
+*.dot text eol=lf
+
+# Preserve byte-identical evaluated artifacts and their published hashes.
+*.csv -text
+*.owl -text
+*.rdf -text
+*.xml -text
+*.png binary

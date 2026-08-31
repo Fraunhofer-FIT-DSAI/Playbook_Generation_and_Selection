@@ -1,0 +1,40 @@
+{
+  "created_at_utc": "2026-07-27T17:18:41.481098+00:00",
+  "input_playbooks": 1056,
+  "input_rows": 8624,
+  "missing_values": {
+    "action": 0,
+    "artifact": 0,
+    "playbook_description": 0,
+    "playbook_id": 0,
+    "playbook_name": 0,
+    "step_description": 0,
+    "step_id": 0,
+    "step_names": 0
+  },
+  "output": "selection_phase/source/Playbook-defend-mapping/Preprocessing/filtered_playbooks.csv",
+  "output_playbooks": 469,
+  "output_rows": 4016,
+  "output_sha256": "bb9ad5e86384c2e87c7c5a4a7cd0b2542a6229641d248bda90d05c948c8d337e",
+  "output_steps": 4016,
+  "row_order": "source order preserved",
+  "selected_columns": [
+    "playbook_name",
+    "playbook_id",
+    "playbook_description",
+    "step_names",
+    "step_id",
+    "step_description",
+    "action",
+    "artifact"
+  ],
+  "source": "selection_phase/source/Playbook/steps-coded.csv",
+  "source_delimiter": ";",
+  "source_sha256": "08ac19149208205e63711ae7528941b64fdeb94b9c52029fb317591e9d162672",
+  "vendor_filter": [
+    "FortiSOAR",
+    "Rapid7",
+    "XSOAR"
+  ],
+  "vendor_filter_semantics": "exact allowlist; empty only with --all-vendors"
+}

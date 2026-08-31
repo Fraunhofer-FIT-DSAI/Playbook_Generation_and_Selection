@@ -1,8 +1,0 @@
-PREFIX irso: <http://www.semanticweb.org/user/ontologies/2025/1/IncidentResponseSecurityOntology#>
-
-SELECT DISTINCT ?playbookID ?stepID
-WHERE {
-  ?playbook irso:hasPlaybookID ?playbookID .
-  ?playbook irso:hasStep ?step .
-  ?step irso:hasStepID ?stepID .
-}

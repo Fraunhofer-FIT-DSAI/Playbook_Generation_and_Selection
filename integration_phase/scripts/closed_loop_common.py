@@ -247,12 +247,27 @@ def playbook_id_filter_clause(
     if mode == "generated-reduced":
         if not allowed_ids:
             return "FILTER(false)"
+        if scenario_name and match_generated_source_case:
+            # Push down the compact source-case prefix. filter_rows() still
+            # enforces the exact manifest allow-list on every returned row.
+            return (
+                "FILTER(STRSTARTS(STR(?playbookID), "
+                f"{scenario_generated_prefix_literal}))"
+            )
         values = " ".join(sparql_string(playbook_id) for playbook_id in allowed_ids)
         return f"VALUES ?playbookID {{ {values} }}"
 
     if mode == "augmented-reduced":
         if not allowed_ids:
             return f"FILTER(!STRSTARTS(STR(?playbookID), {generated_prefix_literal}))"
+        if scenario_name and match_generated_source_case:
+            # Prefix pushdown avoids pathological GraphDB plans for long IN
+            # lists; filter_rows() applies the exact manifest intersection.
+            return (
+                f"FILTER(!STRSTARTS(STR(?playbookID), {generated_prefix_literal}) "
+                f"|| STRSTARTS(STR(?playbookID), "
+                f"{scenario_generated_prefix_literal}))"
+            )
         values = ", ".join(sparql_string(playbook_id) for playbook_id in allowed_ids)
         return (
             f"FILTER(!STRSTARTS(STR(?playbookID), {generated_prefix_literal}) "
@@ -328,13 +343,30 @@ WHERE {{
   OPTIONAL {{ ?playbook irso:derivedFromAttackPath ?attackPath . }}
   OPTIONAL {{ ?playbook irso:addressesCVE ?cve . }}
   OPTIONAL {{ ?playbook irso:targetsHost ?targetHost . }}
-  OPTIONAL {{ ?playbook irso:hasRiskReduction ?riskReduction . }}
+  OPTIONAL {{ ?playbook irso:hasRiskReduction ?absoluteRiskReduction . }}
+  OPTIONAL {{ ?playbook irso:hasRelativeRiskReduction ?relativeRiskReduction . }}
+  BIND(COALESCE(?relativeRiskReduction, ?absoluteRiskReduction) AS ?riskReduction)
   OPTIONAL {{ ?playbook irso:hasRiskBefore ?riskBefore . }}
   OPTIONAL {{ ?playbook irso:hasRiskAfter ?riskAfter . }}
   OPTIONAL {{ ?playbook irso:actionCount ?actionCount . }}
   OPTIONAL {{ ?playbook irso:phaseCompleteness ?phaseCompleteness . }}
 }}
 """
+
+
+def scenario_inferred_query(
+    path: Path,
+    playbook_filter: str = "",
+) -> str:
+    query = read_text(path)
+    if not playbook_filter:
+        return query
+    anchor = "?playbook irso:hasPlaybookID ?playbookID ."
+    if query.count(anchor) != 1:
+        raise ValueError(
+            f"Expected one playbook-ID anchor in scenario query: {path}"
+        )
+    return query.replace(anchor, f"{anchor}\n  {playbook_filter}", 1)
 
 
 def scenario_generated_metadata_query(path: Path) -> str:
@@ -361,7 +393,9 @@ WHERE {{
   OPTIONAL {{ ?playbook irso:derivedFromAttackPath ?attackPath . }}
   OPTIONAL {{ ?playbook irso:addressesCVE ?cve . }}
   OPTIONAL {{ ?playbook irso:targetsHost ?targetHost . }}
-  OPTIONAL {{ ?playbook irso:hasRiskReduction ?riskReduction . }}
+  OPTIONAL {{ ?playbook irso:hasRiskReduction ?absoluteRiskReduction . }}
+  OPTIONAL {{ ?playbook irso:hasRelativeRiskReduction ?relativeRiskReduction . }}
+  BIND(COALESCE(?relativeRiskReduction, ?absoluteRiskReduction) AS ?riskReduction)
   OPTIONAL {{ ?playbook irso:hasRiskBefore ?riskBefore . }}
   OPTIONAL {{ ?playbook irso:hasRiskAfter ?riskAfter . }}
   OPTIONAL {{ ?playbook irso:actionCount ?actionCount . }}
@@ -376,18 +410,145 @@ WHERE {{
 """
 
 
-def execute_sparql(endpoint: str, query: str) -> list[dict[str, dict[str, str]]]:
-    from SPARQLWrapper import JSON, SPARQLWrapper
+def playbook_metadata_query(playbook_ids: Iterable[str]) -> str:
+    selected_ids = sorted({playbook_id for playbook_id in playbook_ids if playbook_id})
+    if not selected_ids:
+        return ""
+    values = " ".join(sparql_string(playbook_id) for playbook_id in selected_ids)
+    return f"""
+PREFIX irso: <http://www.semanticweb.org/user/ontologies/2025/1/IncidentResponseSecurityOntology#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT DISTINCT ?playbookID ?metadataField ?metadataValue
+WHERE {{
+  VALUES ?playbookID {{ {values} }}
+  ?playbook rdf:type irso:Playbook ;
+            irso:hasPlaybookID ?playbookID .
+  {{
+    ?playbook irso:source ?metadataValue .
+    BIND("source" AS ?metadataField)
+  }}
+  UNION
+  {{
+    ?playbook irso:generatedFromSource ?metadataValue .
+    BIND("source" AS ?metadataField)
+  }}
+  UNION
+  {{
+    ?playbook irso:generatedFromCase ?metadataValue .
+    BIND("sourceCase" AS ?metadataField)
+  }}
+  UNION
+  {{
+    ?playbook irso:sourceCaseId ?metadataValue .
+    BIND("sourceCase" AS ?metadataField)
+  }}
+  UNION
+  {{
+    ?playbook irso:derivedFromScenario ?metadataValue .
+    BIND("sourceScenario" AS ?metadataField)
+  }}
+  UNION
+  {{
+    ?playbook irso:sourceScenarioId ?metadataValue .
+    BIND("sourceScenario" AS ?metadataField)
+  }}
+  UNION
+  {{
+    ?playbook irso:derivedFromAttackPath ?metadataValue .
+    BIND("attackPath" AS ?metadataField)
+  }}
+  UNION
+  {{
+    ?playbook irso:addressesCVE ?metadataValue .
+    BIND("cve" AS ?metadataField)
+  }}
+  UNION
+  {{
+    ?playbook irso:targetsHost ?metadataValue .
+    BIND("targetHost" AS ?metadataField)
+  }}
+  UNION
+  {{
+    ?playbook irso:hasStep ?metadataValue .
+    BIND("step" AS ?metadataField)
+  }}
+  UNION
+  {{
+    ?playbook irso:hasRelativeRiskReduction ?metadataValue .
+    BIND("riskReduction" AS ?metadataField)
+  }}
+  UNION
+  {{
+    ?playbook irso:hasRiskReduction ?metadataValue .
+    FILTER NOT EXISTS {{ ?playbook irso:hasRelativeRiskReduction ?relativeRisk }}
+    BIND("riskReduction" AS ?metadataField)
+  }}
+  UNION
+  {{
+    ?playbook irso:hasRiskBefore ?metadataValue .
+    BIND("riskBefore" AS ?metadataField)
+  }}
+  UNION
+  {{
+    ?playbook irso:hasRiskAfter ?metadataValue .
+    BIND("riskAfter" AS ?metadataField)
+  }}
+  UNION
+  {{
+    ?playbook irso:actionCount ?metadataValue .
+    BIND("actionCount" AS ?metadataField)
+  }}
+  UNION
+  {{
+    ?playbook irso:phaseCompleteness ?metadataValue .
+    BIND("phaseCompleteness" AS ?metadataField)
+  }}
+}}
+"""
+
+
+def execute_sparql(
+    endpoint: str,
+    query: str,
+    *,
+    infer: bool = True,
+) -> list[dict[str, dict[str, str]]]:
+    from SPARQLWrapper import JSON, POST, SPARQLWrapper
 
     sparql = SPARQLWrapper(endpoint)
+    # Large source-restricted candidate pools can make VALUES clauses exceed
+    # GraphDB/Tomcat's request-header limit when SPARQLWrapper defaults to GET.
+    sparql.setMethod(POST)
     sparql.setQuery(query)
     sparql.setReturnFormat(JSON)
+    sparql.addParameter("infer", str(infer).lower())
     results = sparql.query().convert()
     return results["results"]["bindings"]
 
 
 def execute_scenario_query(endpoint: str, sparql_file: Path) -> list[dict[str, dict[str, str]]]:
     return execute_sparql(endpoint, read_text(sparql_file))
+
+
+def execute_filtered_scenario_query(
+    endpoint: str,
+    sparql_file: Path,
+    mode: str,
+    generated_prefix: str,
+    scenario_name: str | None = None,
+    match_generated_source_case: bool = False,
+    allowed_generated_ids: set[str] | None = None,
+) -> list[dict[str, dict[str, str]]]:
+    playbook_filter = playbook_id_filter_clause(
+        mode,
+        generated_prefix,
+        scenario_name=scenario_name,
+        match_generated_source_case=match_generated_source_case,
+        allowed_generated_ids=allowed_generated_ids,
+    )
+    query = scenario_inferred_query(sparql_file, playbook_filter)
+    return execute_sparql(endpoint, query) if query else []
 
 
 def execute_scenario_universe_query(endpoint: str, sparql_file: Path) -> list[dict[str, dict[str, str]]]:
@@ -423,6 +584,14 @@ def execute_filtered_scenario_direct_attack_query(
 def execute_scenario_generated_metadata_query(endpoint: str, sparql_file: Path) -> list[dict[str, dict[str, str]]]:
     query = scenario_generated_metadata_query(sparql_file)
     return execute_sparql(endpoint, query) if query else []
+
+
+def execute_playbook_metadata_query(
+    endpoint: str,
+    playbook_ids: Iterable[str],
+) -> list[dict[str, dict[str, str]]]:
+    query = playbook_metadata_query(playbook_ids)
+    return execute_sparql(endpoint, query, infer=False) if query else []
 
 
 def value(row: dict[str, dict[str, str]], key: str, default: str = "") -> str:
@@ -559,6 +728,7 @@ def metadata_by_playbook(rows: list[dict[str, dict[str, str]]]) -> dict[str, dic
         "cve": "cves",
         "targetHost": "target_hosts",
         "phase": "phases",
+        "step": "steps",
     }
     scalar_fields = {
         "riskReduction": "risk_reduction",
@@ -573,6 +743,23 @@ def metadata_by_playbook(rows: list[dict[str, dict[str, str]]]) -> dict[str, dic
         if not playbook_id:
             continue
         item = result.setdefault(playbook_id, {target: set() for target in multi_fields.values()})
+        metadata_field = value(row, "metadataField")
+        metadata_value = value(row, "metadataValue")
+        if metadata_field and metadata_value:
+            if metadata_field in multi_fields:
+                target = multi_fields[metadata_field]
+                casted = item.setdefault(target, set())
+                if isinstance(casted, set):
+                    casted.add(
+                        local_name(metadata_value)
+                        if metadata_value.startswith("http")
+                        else metadata_value
+                    )
+            elif metadata_field in scalar_fields:
+                target = scalar_fields[metadata_field]
+                if not item.get(target):
+                    item[target] = metadata_value
+            continue
         for source, target in multi_fields.items():
             raw = value(row, source)
             if raw:

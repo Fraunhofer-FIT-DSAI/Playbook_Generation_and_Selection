@@ -1,0 +1,7 @@
+Metric,Mean,Median,2.5%,97.5%,Min,Max
+generated winners,10.8656,10.0000,5.0000,16.0000,0.0000,16.0000
+mean combined attack recall,0.2423,0.2446,0.2262,0.2495,0.2262,0.2526
+mean direct attack recall,0.0590,0.0556,0.0306,0.0832,0.0000,0.0832
+mean inferred attack recall,0.2144,0.2191,0.1808,0.2310,0.1808,0.2310
+mean normalized combined attack recall,0.6922,0.6970,0.6529,0.7104,0.6421,0.7182
+nominal winner fraction,0.8064,0.8750,0.5625,1.0000,0.2500,1.0000

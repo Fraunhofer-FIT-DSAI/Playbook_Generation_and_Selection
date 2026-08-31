@@ -1,0 +1,35 @@
+{
+  "excluded_local_scenario": "Multiple",
+  "identical_attack_sets": [
+    {
+      "intersection_count": 42,
+      "intersection_techniques": "T0811;T0836;T0838;T0859;T0863;T0869;T0881;T0885;T1043;T1063;T1069;T1069.003;T1078;T1078.001;T1087;T1087.004;T1110;T1110.001;T1110.003;T1110.004;T1136.003;T1204;T1213;T1489;T1498;T1498.001;T1498.002;T1499;T1499.002;T1499.003;T1499.004;T1506;T1518;T1518.001;T1526;T1537;T1550;T1550.004;T1552;T1606;T1606.001;T1606.002",
+      "jaccard": "1.000000000000",
+      "scenario_a": "Government_Facilities",
+      "scenario_b": "Nuclear_Reactors_Materials_and_Waste",
+      "union_count": 42
+    }
+  ],
+  "jaccard_max": {
+    "intersection_count": 42,
+    "intersection_techniques": "T0811;T0836;T0838;T0859;T0863;T0869;T0881;T0885;T1043;T1063;T1069;T1069.003;T1078;T1078.001;T1087;T1087.004;T1110;T1110.001;T1110.003;T1110.004;T1136.003;T1204;T1213;T1489;T1498;T1498.001;T1498.002;T1499;T1499.002;T1499.003;T1499.004;T1506;T1518;T1518.001;T1526;T1537;T1550;T1550.004;T1552;T1606;T1606.001;T1606.002",
+    "jaccard": "1.000000000000",
+    "scenario_a": "Government_Facilities",
+    "scenario_b": "Nuclear_Reactors_Materials_and_Waste",
+    "union_count": 42
+  },
+  "jaccard_mean": 0.5624756056704694,
+  "jaccard_median": 0.5515202702702703,
+  "jaccard_min": {
+    "intersection_count": 11,
+    "intersection_techniques": "T0811;T0863;T1069;T1078.001;T1087;T1204;T1213;T1499;T1506;T1537;T1550.004",
+    "jaccard": "0.142857142857",
+    "scenario_a": "Emergency_Services",
+    "scenario_b": "Healthcare_and_Public_Health",
+    "union_count": 77
+  },
+  "local_scenario_csv_count": 17,
+  "pair_count": 120,
+  "scenario_count": 16,
+  "unique_attack_techniques": 91
+}

@@ -1,0 +1,20 @@
+{
+  "artifact": "results/evaluation/corrected/publication_tables/corrected_scenario_headroom.csv",
+  "artifact_sha256": "8f686ee98f6034aa858efb7cc7d25d7df8dbeef434bd5e7e4ead21fe57180ebc",
+  "artifact_status": "paper evaluation",
+  "command": "python integration_phase/scripts/make_corrected_publication_outputs.py",
+  "created_at_utc": "2026-08-18T02:03:15.520773+00:00",
+  "graphdb_endpoint": "http://localhost:7200/repositories/incident-response",
+  "interpretation": "Headroom is achievable combined recall minus selected combined recall within the source-restricted candidate pool.",
+  "manifest": "results/generated_repository/corrected_k03/reduced_generated_playbooks_manifest.csv",
+  "manifest_sha256": "866acd440d981c54cc997105fb2d0cdc738f88a58588c3aaa3721b4e8efc5e95",
+  "mapping_owl": "selection_phase/source/GraphDB/playbook_step_defend_mapping.owl",
+  "mapping_sha256": "0ffb6cf054324ac5a3cad0787c1c7b25e4eb03daa7a39bc0fafa1e41e18da271",
+  "repository_count": 167,
+  "sources": [
+    {
+      "path": "results/evaluation/corrected/augmented-reduced/scenario_playbook_evaluation_augmented-reduced.csv",
+      "sha256": "319a96e6c0239172aabd26194fafac860f29f1229413ec8614fb28bf9bdb2ba9"
+    }
+  ]
+}

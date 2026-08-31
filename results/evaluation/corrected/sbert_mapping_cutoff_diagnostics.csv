@@ -1,0 +1,6 @@
+confidence_cutoff,mapping_rows_retained,mapping_rows_excluded,mapping_share_retained,unique_playbooks_with_link,unique_steps_with_link,unique_d3fend_techniques,interpretation
+0.0,4016,0,1.0,469,4016,127,descriptive link-retention diagnostic only; not threshold calibration and not semantic-accuracy evidence
+0.2,3773,243,0.93949203187251,464,3773,122,descriptive link-retention diagnostic only; not threshold calibration and not semantic-accuracy evidence
+0.3,1212,2804,0.301792828685259,284,1212,85,descriptive link-retention diagnostic only; not threshold calibration and not semantic-accuracy evidence
+0.4,210,3806,0.052290836653386456,84,210,25,descriptive link-retention diagnostic only; not threshold calibration and not semantic-accuracy evidence
+0.5,19,3997,0.0047310756972111555,11,19,7,descriptive link-retention diagnostic only; not threshold calibration and not semantic-accuracy evidence

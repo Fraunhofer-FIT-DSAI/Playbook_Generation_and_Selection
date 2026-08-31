@@ -1,0 +1,48 @@
+{
+  "artifact_status": "submitted mapping restricted to the paper corpus",
+  "confidence_max": 0.6803,
+  "confidence_mean": 0.2797326942231076,
+  "confidence_min": 0.1295,
+  "created_at_utc": "2026-07-27T17:18:42.447458+00:00",
+  "mapping_recomputed": false,
+  "matched_count": 4016,
+  "minimum_confidence_used_by_submitted_artifact": 0.0,
+  "model": "all-MiniLM-L6-v2",
+  "no_match_count": 0,
+  "original_model_name": "all-MiniLM-L6-v2",
+  "original_model_revision_recorded": false,
+  "original_runtime_configuration_recorded": false,
+  "field_weights": {
+    "action": 0.2,
+    "artifact": 0.2,
+    "playbook_description": 0.2,
+    "playbook_name": 0.1,
+    "step_description": 0.2,
+    "step_name": 0.1
+  },
+  "output": "selection_phase/source/Playbook-defend-mapping/MainPart/playbook_defend_mapping.csv",
+  "output_sha256": "39751c5e1e64bf3cbb2a178ffde4e9188b1862d92b23d892e305e13dfe130884",
+  "owl_build": {
+    "created_at_utc": "2026-07-27T17:18:44.151811+00:00",
+    "link_count": 4016,
+    "mapping_csv_sha256": "39751c5e1e64bf3cbb2a178ffde4e9188b1862d92b23d892e305e13dfe130884",
+    "output_sha256": {
+      "selection_phase/source/GraphDB/playbook_step_defend_mapping.owl": "0ffb6cf054324ac5a3cad0787c1c7b25e4eb03daa7a39bc0fafa1e41e18da271"
+    },
+    "triple_count": 4016
+  },
+  "playbook_count": 469,
+  "restriction": {
+    "source_mapping_included": false,
+    "input_mapping_sha256": "7b6f856a10cd5d4f6eda2a1ef956abed12733a803b190274330fc8ee63ea41b3",
+    "input_rows": 8624,
+    "operation": "exact inner restriction by (playbook_id, step_id)",
+    "ordering": "input mapping order preserved",
+    "paper_step_rows": 4016,
+    "paper_steps": "selection_phase/source/Playbook-defend-mapping/Preprocessing/filtered_playbooks.csv",
+    "paper_steps_sha256": "bb9ad5e86384c2e87c7c5a4a7cd0b2542a6229641d248bda90d05c948c8d337e"
+  },
+  "row_count": 4016,
+  "step_count": 4016,
+  "threshold_evidence": "Every submitted row, including scores below 0.35, was materialized as an OWL link; this is equivalent to no rejection threshold."
+}

@@ -1,0 +1,154 @@
+{
+  "analysis_version": "1.1",
+  "command": "python integration_phase/scripts/analyze_generation_diversity.py --input-jsonl results/generated_repository/full_k03/export/generated_playbooks.jsonl --reduced-manifest results/generated_repository/corrected_k03/reduced_generated_playbooks_manifest.csv",
+  "corpora": {
+    "corrected_k03_reduced": {
+      "label": "Retained K=3 repository",
+      "metrics": {
+        "attack_techniques": {
+          "definition": "ATT&CK technique identifiers observed on each incident path",
+          "included_in_publication_figure": true,
+          "label": "ATT&CK",
+          "occurrences": 1670,
+          "pairwise_jaccard_distance": 0.6865001972376513,
+          "shannon_entropy_bits": 4.341698465784867,
+          "unique_values": 31
+        },
+        "cves": {
+          "definition": "CVE identifiers observed on each incident path",
+          "included_in_publication_figure": true,
+          "label": "CVEs",
+          "occurrences": 1670,
+          "pairwise_jaccard_distance": 0.5439579845160251,
+          "shannon_entropy_bits": 3.495742782514106,
+          "unique_values": 19
+        },
+        "hosts": {
+          "definition": "host identifiers observed on each incident path",
+          "included_in_publication_figure": true,
+          "label": "Hosts",
+          "occurrences": 1670,
+          "pairwise_jaccard_distance": 0.0,
+          "shannon_entropy_bits": 3.3219280948873626,
+          "unique_values": 10
+        },
+        "step_evidence_triples": {
+          "definition": "(host, CVE, ATT&CK technique) incident-step triples observed on each path",
+          "included_in_publication_figure": true,
+          "label": "Path triples",
+          "occurrences": 1670,
+          "pairwise_jaccard_distance": 0.927901297033524,
+          "shannon_entropy_bits": 6.779611016126246,
+          "unique_values": 146
+        }
+      },
+      "playbooks": 167,
+      "scenario_counts": {
+        "Chemical": 12,
+        "Commercial_Facilities": 13,
+        "Communications": 3,
+        "Critical_Manufacturing": 12,
+        "Dams": 16,
+        "Defense_Industrial_Base": 6,
+        "Emergency_Services": 2,
+        "Energy": 6,
+        "Financial_Services": 26,
+        "Food_and_Agriculture": 14,
+        "Government_Facilities": 14,
+        "Healthcare_and_Public_Health": 11,
+        "Information_Technology": 7,
+        "Nuclear_Reactors_Materials_and_Waste": 5,
+        "Transportation_Systems": 6,
+        "Water_and_Wastewater_Systems": 14
+      },
+      "skipped_incident_steps": 0,
+      "unordered_playbook_pairs": 13861,
+      "valid_incident_steps": 1670
+    },
+    "full_k03": {
+      "label": "Unreduced K=3 corpus",
+      "metrics": {
+        "attack_techniques": {
+          "definition": "ATT&CK technique identifiers observed on each incident path",
+          "included_in_publication_figure": true,
+          "label": "ATT&CK",
+          "occurrences": 79280,
+          "pairwise_jaccard_distance": 0.7655755218267384,
+          "shannon_entropy_bits": 4.514550492589453,
+          "unique_values": 36
+        },
+        "cves": {
+          "definition": "CVE identifiers observed on each incident path",
+          "included_in_publication_figure": true,
+          "label": "CVEs",
+          "occurrences": 79280,
+          "pairwise_jaccard_distance": 0.6320891723863923,
+          "shannon_entropy_bits": 3.632829497677032,
+          "unique_values": 21
+        },
+        "hosts": {
+          "definition": "host identifiers observed on each incident path",
+          "included_in_publication_figure": true,
+          "label": "Hosts",
+          "occurrences": 79280,
+          "pairwise_jaccard_distance": 0.0,
+          "shannon_entropy_bits": 3.3219280948873626,
+          "unique_values": 10
+        },
+        "step_evidence_triples": {
+          "definition": "(host, CVE, ATT&CK technique) incident-step triples observed on each path",
+          "included_in_publication_figure": true,
+          "label": "Path triples",
+          "occurrences": 79280,
+          "pairwise_jaccard_distance": 0.9489617128761043,
+          "shannon_entropy_bits": 7.141079594057369,
+          "unique_values": 167
+        }
+      },
+      "playbooks": 7928,
+      "scenario_counts": {
+        "Chemical": 500,
+        "Commercial_Facilities": 500,
+        "Communications": 500,
+        "Critical_Manufacturing": 500,
+        "Dams": 500,
+        "Defense_Industrial_Base": 500,
+        "Emergency_Services": 500,
+        "Energy": 500,
+        "Financial_Services": 500,
+        "Food_and_Agriculture": 500,
+        "Government_Facilities": 500,
+        "Healthcare_and_Public_Health": 436,
+        "Information_Technology": 492,
+        "Nuclear_Reactors_Materials_and_Waste": 500,
+        "Transportation_Systems": 500,
+        "Water_and_Wastewater_Systems": 500
+      },
+      "skipped_incident_steps": 0,
+      "unordered_playbook_pairs": 31422628,
+      "valid_incident_steps": 79280
+    }
+  },
+  "definitions": {
+    "pairwise_jaccard_distance": "For each metric, convert every playbook's observations to a set; compute 1-|A intersection B|/|A union B| for every unordered playbook pair; report the arithmetic mean. Empty-empty distance is 0.",
+    "shannon_entropy_bits": "Flatten all occurrence-level observations for a metric and compute -sum_x p(x) log2 p(x)."
+  },
+  "inputs": {
+    "countermeasure_k": 3,
+    "incident_seed": 1337,
+    "reduced_manifest": {
+      "path": "results/generated_repository/corrected_k03/reduced_generated_playbooks_manifest.csv",
+      "sha256": "866acd440d981c54cc997105fb2d0cdc738f88a58588c3aaa3721b4e8efc5e95"
+    },
+    "unreduced_k03_jsonl": {
+      "path": "results/generated_repository/full_k03/export/generated_playbooks.jsonl",
+      "release_archive": "semantic-playbook-selection-corrected-large-artifacts-v0.2.tar.gz",
+      "release_archive_sha256": "259c436f112f7ad5dd64e0b2d72e8e29141c2413484755a1c659633c2e781b31",
+      "sha256": "2e52bf0af0cac1019652ae550e834ff66be27e45abfd7b003150ba8ea4e848ce"
+    }
+  },
+  "outputs": {
+    "csv": "results/evaluation/corrected/generation_diversity_diagnostics.csv",
+    "tikz": "results/evaluation/corrected/publication_figures/corrected_generation_diversity.tex"
+  }
+}

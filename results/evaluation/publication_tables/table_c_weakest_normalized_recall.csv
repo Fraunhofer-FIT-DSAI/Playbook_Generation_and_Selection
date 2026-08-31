@@ -1,6 +1,0 @@
-scenario,selected_playbook_id,selected_source,combined_attack_recall,achievable_combined_attack_recall,normalized_achievable_recall,direct_attack_recall,inferred_attack_recall,action_count,risk_reduction
-Critical Manufacturing,ma_scenario_Critical_Manufacturing_0158,generated,0.150,0.250,0.600,0.100,0.150,7,2.445581
-Emergency Services,ma_scenario_Emergency_Services_0493,generated,0.179,0.284,0.632,0.045,0.164,8,0.782522
-Transportation Systems,ma_scenario_Transportation_Systems_0343,generated,0.185,0.259,0.714,0.074,0.148,6,1.568915
-Food and Agriculture,ma_scenario_Food_and_Agriculture_0314,generated,0.324,0.405,0.800,0.108,0.297,8,1.950676
-Financial Services,ma_scenario_Financial_Services_0027,generated,0.288,0.346,0.833,0.058,0.269,8,3.016799

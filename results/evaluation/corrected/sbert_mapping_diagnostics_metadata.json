@@ -1,0 +1,30 @@
+{
+  "artifact_status": "paper evaluation descriptive diagnostics",
+  "command": "python integration_phase/scripts/diagnose_sbert_mapping.py",
+  "confidence_interpretation": "descriptive SBERT similarity score from the submitted mapping artifact; not a calibrated probability and not semantic-accuracy evidence",
+  "created_at_utc": "2026-07-28T01:52:31.472541+00:00",
+  "endpoint": "http://localhost:7200/repositories/incident-response",
+  "expert_validation_available": false,
+  "integrity": {
+    "csv_graphdb_extra_links": 0,
+    "csv_graphdb_missing_links": 0,
+    "csv_owl_extra_links": 0,
+    "csv_owl_missing_links": 0,
+    "expected_csv_links": 4016,
+    "graphdb_explicit_community_links": 4016,
+    "mapping_owl_links": 4016
+  },
+  "integrity_status": "pass",
+  "manual_validation_available": false,
+  "mapping_csv": "selection_phase/source/Playbook-defend-mapping/MainPart/playbook_defend_mapping.csv",
+  "mapping_csv_sha256": "39751c5e1e64bf3cbb2a178ffde4e9188b1862d92b23d892e305e13dfe130884",
+  "mapping_manifest": "selection_phase/source/Playbook-defend-mapping/MainPart/semantic_mapping_manifest.json",
+  "mapping_manifest_sha256": "0d08251a056c8d025f22fcddfba6642e120f4b1951c82246c0e1a5b21eb4dfbf",
+  "mapping_owl": "selection_phase/source/GraphDB/playbook_step_defend_mapping.owl",
+  "mapping_owl_sha256": "0ffb6cf054324ac5a3cad0787c1c7b25e4eb03daa7a39bc0fafa1e41e18da271",
+  "outputs": {
+    "diagnostics": "results/evaluation/corrected/sbert_mapping_diagnostics.csv",
+    "cutoff_diagnostics": "results/evaluation/corrected/sbert_mapping_cutoff_diagnostics.csv"
+  },
+  "selection_threshold_sensitivity_performed": false
+}

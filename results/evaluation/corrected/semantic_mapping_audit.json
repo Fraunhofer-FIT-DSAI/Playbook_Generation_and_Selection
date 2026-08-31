@@ -1,0 +1,28 @@
+{
+  "above_threshold_no_match_count": 0,
+  "at_or_above_threshold_count": 4016,
+  "below_threshold_count": 0,
+  "confidence_max": 0.6803,
+  "confidence_mean": 0.2797326942231076,
+  "confidence_min": 0.1295,
+  "expected_threshold": 0.0,
+  "expected_unique_csv_link_count": 4016,
+  "extra_owl_link_count": 0,
+  "extra_owl_link_examples": [],
+  "issues": [],
+  "linked_csv_row_count": 4016,
+  "manifest_available": true,
+  "matching_owl_link_count": 4016,
+  "missing_owl_link_count": 0,
+  "missing_owl_link_examples": [],
+  "numeric_score_count": 4016,
+  "owl_uses_defensive_technique_count": 4016,
+  "reproduction_metadata_status": "incomplete_historical_record",
+  "row_count": 4016,
+  "status": "pass",
+  "subthreshold_link_count": 0,
+  "unresolved": [
+    "submitted mapping model revision was not recorded in the source snapshot",
+    "submitted mapping runtime configuration was not recorded in the source snapshot"
+  ]
+}

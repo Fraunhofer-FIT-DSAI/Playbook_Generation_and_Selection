@@ -4,8 +4,6 @@ requests
 SPARQLWrapper
 cvss
 networkx
-graphviz
 xmltodict
 numpy
 matplotlib
-seaborn

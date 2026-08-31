@@ -1,0 +1,56 @@
+record_type,metric,value,count,share,threshold,technique,status,notes
+corpus,mapping_rows,4016,,,,,observed,
+corpus,unique_playbooks,469,,,,,observed,
+corpus,unique_steps,4016,,,,,observed,
+corpus,linked_rows,4016,,,,,observed,
+corpus,unlinked_rows,0,,,,,observed,
+corpus,one_row_per_step,True,,,,,observed,
+confidence,mean,0.2797326942231076,,,,,observed,
+confidence,population_sd,0.06324214204303458,,,,,observed,
+confidence,min,0.1295,,,,,observed,
+confidence,q01,0.1748,,,,,observed,
+confidence,q05,0.197475,,,,,observed,
+confidence,q10,0.2106,,,,,observed,
+confidence,q25,0.2362,,,,,observed,
+confidence,median,0.2692,,,,,observed,
+confidence,q75,0.310725,,,,,observed,
+confidence,q90,0.36245,,,,,observed,
+confidence,q95,0.401725,,,,,observed,
+confidence,q99,0.47355999999999987,,,,,observed,
+confidence,max,0.6803,,,,,observed,
+confidence_threshold,count_below,243,243,0.06050796812749004,0.2,,observed,
+confidence_threshold,count_below,2804,2804,0.6982071713147411,0.3,,observed,
+confidence_threshold,count_below,3806,3806,0.9477091633466136,0.4,,observed,
+confidence_threshold,count_below,3997,3997,0.9952689243027888,0.5,,observed,
+technique_distribution,rank_1,TransferAgentAuthentication,311,0.0774402390438247,,TransferAgentAuthentication,observed,Frequency is descriptive; it is not mapping-accuracy evidence.
+technique_distribution,rank_2,FileHashing,262,0.06523904382470119,,FileHashing,observed,Frequency is descriptive; it is not mapping-accuracy evidence.
+technique_distribution,rank_3,SenderMTAReputationAnalysis,238,0.05926294820717132,,SenderMTAReputationAnalysis,observed,Frequency is descriptive; it is not mapping-accuracy evidence.
+technique_distribution,rank_4,URLAnalysis,216,0.053784860557768925,,URLAnalysis,observed,Frequency is descriptive; it is not mapping-accuracy evidence.
+technique_distribution,rank_5,IdentifierReputationAnalysis,190,0.04731075697211155,,IdentifierReputationAnalysis,observed,Frequency is descriptive; it is not mapping-accuracy evidence.
+technique_distribution,rank_6,IdentifierActivityAnalysis,166,0.04133466135458167,,IdentifierActivityAnalysis,observed,Frequency is descriptive; it is not mapping-accuracy evidence.
+technique_distribution,rank_7,MessageAuthentication,126,0.03137450199203187,,MessageAuthentication,observed,Frequency is descriptive; it is not mapping-accuracy evidence.
+technique_distribution,rank_8,AssetVulnerabilityEnumeration,117,0.029133466135458166,,AssetVulnerabilityEnumeration,observed,Frequency is descriptive; it is not mapping-accuracy evidence.
+technique_distribution,rank_9,OperatingSystemMonitoring,107,0.026643426294820718,,OperatingSystemMonitoring,observed,Frequency is descriptive; it is not mapping-accuracy evidence.
+technique_distribution,rank_10,DomainRegistrationTakedown,105,0.026145418326693228,,DomainRegistrationTakedown,observed,Frequency is descriptive; it is not mapping-accuracy evidence.
+technique_distribution,rank_11,ByteSequenceEmulation,92,0.022908366533864542,,ByteSequenceEmulation,observed,Frequency is descriptive; it is not mapping-accuracy evidence.
+technique_distribution,rank_12,RestoreNetworkAccess,92,0.022908366533864542,,RestoreNetworkAccess,observed,Frequency is descriptive; it is not mapping-accuracy evidence.
+technique_distribution,rank_13,SoftwareInventory,91,0.022659362549800798,,SoftwareInventory,observed,Frequency is descriptive; it is not mapping-accuracy evidence.
+technique_distribution,rank_14,SoftwareUpdate,91,0.022659362549800798,,SoftwareUpdate,observed,Frequency is descriptive; it is not mapping-accuracy evidence.
+technique_distribution,rank_15,FileEviction,87,0.02166334661354582,,FileEviction,observed,Frequency is descriptive; it is not mapping-accuracy evidence.
+technique_distribution,rank_16,DNSCacheEviction,72,0.017928286852589643,,DNSCacheEviction,observed,Frequency is descriptive; it is not mapping-accuracy evidence.
+technique_distribution,rank_17,DNSDenylisting,64,0.01593625498007968,,DNSDenylisting,observed,Frequency is descriptive; it is not mapping-accuracy evidence.
+technique_distribution,rank_18,FileIntegrityMonitoring,61,0.015189243027888447,,FileIntegrityMonitoring,observed,Frequency is descriptive; it is not mapping-accuracy evidence.
+technique_distribution,rank_19,AccountLocking,59,0.014691235059760957,,AccountLocking,observed,Frequency is descriptive; it is not mapping-accuracy evidence.
+technique_distribution,rank_20,ProcessTermination,57,0.014193227091633466,,ProcessTermination,observed,Frequency is descriptive; it is not mapping-accuracy evidence.
+integrity,expected_csv_links,4016,,,,,observed,
+integrity,mapping_owl_links,4016,,,,,observed,
+integrity,graphdb_explicit_community_links,4016,,,,,observed,
+integrity,csv_owl_missing_links,0,,,,,observed,
+integrity,csv_owl_extra_links,0,,,,,observed,
+integrity,csv_graphdb_missing_links,0,,,,,observed,
+integrity,csv_graphdb_extra_links,0,,,,,observed,
+validation,expert_labelled_evaluation_available,False,,,,,observed,Confidence and integrity diagnostics do not establish semantic accuracy.
+provenance,submitted_model_name,all-MiniLM-L6-v2,,,,,recorded,
+provenance,submitted_model_revision,,,,,,unrecorded,
+provenance,submitted_runtime_configuration,,,,,,unrecorded,
+provenance,submitted_effective_threshold,0.0,,,,,observed,

@@ -1,0 +1,20 @@
+{
+  "artifact": "results/evaluation/corrected/publication_tables/corrected_generation_k_sensitivity.tex",
+  "artifact_sha256": "b01a05a12ddaf16e40aa2adbb43d0336cc29a5e9c09a4a14784a0cc86f90688a",
+  "artifact_status": "paper evaluation",
+  "command": "python integration_phase/scripts/make_corrected_publication_outputs.py",
+  "created_at_utc": "2026-08-18T02:03:15.520773+00:00",
+  "graphdb_endpoint": "http://localhost:7200/repositories/incident-response",
+  "interpretation": "Structural and model-derived generation characteristics. Risk reduction is not an observed operational effect.",
+  "manifest": "results/generated_repository/corrected_k03/reduced_generated_playbooks_manifest.csv",
+  "manifest_sha256": "866acd440d981c54cc997105fb2d0cdc738f88a58588c3aaa3721b4e8efc5e95",
+  "mapping_owl": "selection_phase/source/GraphDB/playbook_step_defend_mapping.owl",
+  "mapping_sha256": "0ffb6cf054324ac5a3cad0787c1c7b25e4eb03daa7a39bc0fafa1e41e18da271",
+  "repository_count": 167,
+  "sources": [
+    {
+      "path": "results/generated_repository/k_sweep/k_sensitivity_summary.csv",
+      "sha256": "0e255fed440cb30b51cf29c9cd8612c52f7e74fb11437be4a51b5b6eae09a467"
+    }
+  ]
+}

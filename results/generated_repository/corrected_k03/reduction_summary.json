@@ -1,0 +1,105 @@
+{
+  "algorithm": {
+    "cap_interpretation": "maximum retained playbooks per scenario after diversity and Pareto filtering",
+    "final_order": [
+      "relative_risk_reduction:descending",
+      "attack_technique_count:descending",
+      "d3fend_technique_count:descending",
+      "artifact_count:descending",
+      "phase_completeness:descending",
+      "action_count:ascending",
+      "playbook_id:ascending"
+    ],
+    "pareto_objectives": [
+      "relative_risk_reduction:max",
+      "attack_technique_count:max",
+      "artifact_count:max",
+      "phase_completeness:max",
+      "action_count:min"
+    ],
+    "risk_objective": "relative RR=(risk_before-risk_after)/risk_before",
+    "scope": "per scenario",
+    "semantic_representation": "exact tuple of ATT&CK techniques, CVEs, D3FEND techniques, artifacts, and lifecycle phases",
+    "similarity_or_clustering": "none",
+    "tie_policy": "lexicographically smallest stable playbook_id"
+  },
+  "input_playbooks": 7928,
+  "out_manifest": "results/generated_repository/corrected_k03/reduced_generated_playbooks_manifest.csv",
+  "out_owl": "results/generated_repository/corrected_k03/reduced_generated_playbooks.owl",
+  "per_scenario": 50,
+  "scenarios": {
+    "Chemical": {
+      "input_playbooks": 500,
+      "selected_playbooks": 12
+    },
+    "Commercial_Facilities": {
+      "input_playbooks": 500,
+      "selected_playbooks": 13
+    },
+    "Communications": {
+      "input_playbooks": 500,
+      "selected_playbooks": 3
+    },
+    "Critical_Manufacturing": {
+      "input_playbooks": 500,
+      "selected_playbooks": 12
+    },
+    "Dams": {
+      "input_playbooks": 500,
+      "selected_playbooks": 16
+    },
+    "Defense_Industrial_Base": {
+      "input_playbooks": 500,
+      "selected_playbooks": 6
+    },
+    "Emergency_Services": {
+      "input_playbooks": 500,
+      "selected_playbooks": 2
+    },
+    "Energy": {
+      "input_playbooks": 500,
+      "selected_playbooks": 6
+    },
+    "Financial_Services": {
+      "input_playbooks": 500,
+      "selected_playbooks": 26
+    },
+    "Food_and_Agriculture": {
+      "input_playbooks": 500,
+      "selected_playbooks": 14
+    },
+    "Government_Facilities": {
+      "input_playbooks": 500,
+      "selected_playbooks": 14
+    },
+    "Healthcare_and_Public_Health": {
+      "input_playbooks": 436,
+      "selected_playbooks": 11
+    },
+    "Information_Technology": {
+      "input_playbooks": 492,
+      "selected_playbooks": 7
+    },
+    "Nuclear_Reactors_Materials_and_Waste": {
+      "input_playbooks": 500,
+      "selected_playbooks": 5
+    },
+    "Transportation_Systems": {
+      "input_playbooks": 500,
+      "selected_playbooks": 6
+    },
+    "Water_and_Wastewater_Systems": {
+      "input_playbooks": 500,
+      "selected_playbooks": 14
+    }
+  },
+  "selected_playbooks": 167,
+  "sha256": {
+    "input_manifest": "3f939078ba443e8418f91fc8ceb91ad0acfc35a8396fce31bf7fdfc552423ba9",
+    "input_owl": "719ca0c9c8623a2be44a20a715f615790d24c7162dfe3fa88cd715d0917ce396",
+    "output_manifest": "866acd440d981c54cc997105fb2d0cdc738f88a58588c3aaa3721b4e8efc5e95",
+    "output_owl": "9f7531f9e83ea6bee68bd5ee504098eac5c06fd4595b99be908aaeb5ee755a4d",
+    "report_csv": "cf5ab462dded1daf5c0b90362ab935e0036b89598aadafcea65b861dcd063cfa"
+  },
+  "strategy": "hybrid"
+}

@@ -2,14 +2,19 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
+import shlex
+import sys
 from collections import Counter
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
 from closed_loop_common import (
     DEFAULT_SCENARIOS,
     read_csv_dicts,
+    repo_display_path,
     repo_path,
     to_float,
     write_csv,
@@ -23,19 +28,19 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--evaluation-dir",
         type=Path,
-        default=Path("results/evaluation"),
+        default=Path("results/evaluation/corrected"),
     )
     parser.add_argument("--mode", default="augmented-reduced")
     parser.add_argument("--portfolio-size", type=int, default=3)
     parser.add_argument(
         "--out-summary",
         type=Path,
-        default=Path("results/evaluation/portfolio_selection_summary.csv"),
+        default=Path("results/evaluation/corrected/portfolio/portfolio_summary.csv"),
     )
     parser.add_argument(
         "--out-by-scenario",
         type=Path,
-        default=Path("results/evaluation/portfolio_selection_by_scenario.csv"),
+        default=Path("results/evaluation/corrected/portfolio/portfolio_by_scenario.csv"),
     )
     return parser.parse_args()
 
@@ -76,8 +81,18 @@ def average(values: list[float]) -> float:
     return sum(values) / len(values) if values else 0.0
 
 
+def file_sha256(path: Path) -> str:
+    digest = hashlib.sha256()
+    with path.open("rb") as handle:
+        for chunk in iter(lambda: handle.read(1024 * 1024), b""):
+            digest.update(chunk)
+    return digest.hexdigest()
+
+
 def main() -> None:
     args = parse_args()
+    if args.portfolio_size < 1 or args.portfolio_size > 3:
+        raise ValueError("--portfolio-size must be between 1 and 3.")
     evaluation_dir = repo_path(args.evaluation_dir)
     out_summary = repo_path(args.out_summary)
     out_by_scenario = repo_path(args.out_by_scenario)
@@ -119,14 +134,15 @@ def main() -> None:
             for playbook_id, row in remaining.items():
                 gain = len(coverage_by_id.get(playbook_id, set()) - covered)
                 ranked.append((
-                    gain,
-                    to_float(row.get("total_score"), 0.0),
-                    -int(to_float(row.get("action_count"), 10**9)),
-                    to_float(row.get("raw_risk_reduction"), 0.0),
+                    -gain,
+                    -to_float(row.get("total_score"), 0.0),
+                    int(to_float(row.get("action_count"), 10**9)),
+                    -to_float(row.get("raw_risk_reduction"), 0.0),
                     playbook_id,
                     row,
                 ))
-            gain, _score, _action, _risk, playbook_id, row = max(ranked)
+            negative_gain, _score, _action, _risk, playbook_id, row = min(ranked)
+            gain = -negative_gain
             if gain <= 0:
                 break
             selected_rows.append(row)
@@ -140,6 +156,21 @@ def main() -> None:
         portfolio_recall = len(covered) / attack_count if attack_count else 0.0
         achievable_recall = len(achievable) / attack_count if attack_count else 0.0
         normalized = portfolio_recall / achievable_recall if achievable_recall > 0 else 0.0
+        best_single_count = max(
+            (len(coverage) for coverage in coverage_by_id.values()),
+            default=0,
+        )
+        best_single_recall = (
+            best_single_count / attack_count if attack_count else 0.0
+        )
+        primary_id = selection.get("Top_MCDM_Playbook", "")
+        primary_coverage = coverage_by_id.get(primary_id, set())
+        primary_recall = (
+            len(primary_coverage) / attack_count if attack_count else 0.0
+        )
+        primary_normalized = (
+            primary_recall / achievable_recall if achievable_recall > 0 else 0.0
+        )
         generated_risks = [
             to_float(row.get("raw_risk_reduction"), 0.0)
             for row in selected_rows
@@ -155,12 +186,20 @@ def main() -> None:
             "selected_sources": ";".join(selected_sources),
             "generated_selected_count": source_counts.get("generated", 0),
             "community_selected_count": source_counts.get("community", 0),
-            "portfolio_combined_attack_recall": f"{portfolio_recall:.6f}",
-            "achievable_combined_attack_recall": f"{achievable_recall:.6f}",
-            "portfolio_normalized_achievable_recall": f"{normalized:.6f}",
+            "portfolio_combined_attack_recall": f"{portfolio_recall:.12f}",
+            "achievable_combined_attack_recall": f"{achievable_recall:.12f}",
+            "portfolio_normalized_achievable_recall": f"{normalized:.12f}",
+            "best_single_combined_attack_recall": f"{best_single_recall:.12f}",
+            "closed_loop_balanced_combined_attack_recall": f"{primary_recall:.12f}",
+            "closed_loop_balanced_normalized_recall": f"{primary_normalized:.12f}",
+            "delta_combined_vs_closed_loop_balanced": f"{portfolio_recall - primary_recall:.12f}",
+            "delta_normalized_vs_closed_loop_balanced": f"{normalized - primary_normalized:.12f}",
+            "portfolio_not_below_best_member": str(
+                portfolio_recall + 1e-12 >= best_single_recall
+            ),
             "marginal_coverage_gain": ";".join(str(gain) for gain in marginal_gains),
             "total_action_count": total_action_count,
-            "average_risk_reduction_generated": f"{average(generated_risks):.6f}" if generated_risks else "",
+            "average_risk_reduction_generated": f"{average(generated_risks):.12f}" if generated_risks else "",
         })
 
         for rank, row in enumerate(selected_rows, start=1):
@@ -176,6 +215,62 @@ def main() -> None:
                 "risk_reduction": row.get("raw_risk_reduction", ""),
             })
 
+    valid_summary_rows = [
+        row for row in summary_rows if row.get("status") == "ok"
+    ]
+    if valid_summary_rows:
+        summary_rows.append(
+            {
+                "scenario": "Average",
+                "status": "aggregate",
+                "portfolio_size": (
+                    f"{average([to_float(row.get('portfolio_size'), 0.0) for row in valid_summary_rows]):.6f}"
+                ),
+                "generated_selected_count": sum(
+                    int(to_float(row.get("generated_selected_count"), 0.0))
+                    for row in valid_summary_rows
+                ),
+                "community_selected_count": sum(
+                    int(to_float(row.get("community_selected_count"), 0.0))
+                    for row in valid_summary_rows
+                ),
+                "portfolio_combined_attack_recall": (
+                    f"{average([to_float(row.get('portfolio_combined_attack_recall'), 0.0) for row in valid_summary_rows]):.12f}"
+                ),
+                "achievable_combined_attack_recall": (
+                    f"{average([to_float(row.get('achievable_combined_attack_recall'), 0.0) for row in valid_summary_rows]):.12f}"
+                ),
+                "portfolio_normalized_achievable_recall": (
+                    f"{average([to_float(row.get('portfolio_normalized_achievable_recall'), 0.0) for row in valid_summary_rows]):.12f}"
+                ),
+                "best_single_combined_attack_recall": (
+                    f"{average([to_float(row.get('best_single_combined_attack_recall'), 0.0) for row in valid_summary_rows]):.12f}"
+                ),
+                "closed_loop_balanced_combined_attack_recall": (
+                    f"{average([to_float(row.get('closed_loop_balanced_combined_attack_recall'), 0.0) for row in valid_summary_rows]):.12f}"
+                ),
+                "closed_loop_balanced_normalized_recall": (
+                    f"{average([to_float(row.get('closed_loop_balanced_normalized_recall'), 0.0) for row in valid_summary_rows]):.12f}"
+                ),
+                "delta_combined_vs_closed_loop_balanced": (
+                    f"{average([to_float(row.get('delta_combined_vs_closed_loop_balanced'), 0.0) for row in valid_summary_rows]):.12f}"
+                ),
+                "delta_normalized_vs_closed_loop_balanced": (
+                    f"{average([to_float(row.get('delta_normalized_vs_closed_loop_balanced'), 0.0) for row in valid_summary_rows]):.12f}"
+                ),
+                "portfolio_not_below_best_member": str(
+                    all(
+                        row.get("portfolio_not_below_best_member") == "True"
+                        for row in valid_summary_rows
+                    )
+                ),
+                "total_action_count": sum(
+                    int(to_float(row.get("total_action_count"), 0.0))
+                    for row in valid_summary_rows
+                ),
+            }
+        )
+
     summary_fieldnames = [
         "scenario",
         "status",
@@ -187,6 +282,12 @@ def main() -> None:
         "portfolio_combined_attack_recall",
         "achievable_combined_attack_recall",
         "portfolio_normalized_achievable_recall",
+        "best_single_combined_attack_recall",
+        "closed_loop_balanced_combined_attack_recall",
+        "closed_loop_balanced_normalized_recall",
+        "delta_combined_vs_closed_loop_balanced",
+        "delta_normalized_vs_closed_loop_balanced",
+        "portfolio_not_below_best_member",
         "marginal_coverage_gain",
         "total_action_count",
         "average_risk_reduction_generated",
@@ -204,6 +305,38 @@ def main() -> None:
     ]
     write_csv(out_summary, summary_rows, summary_fieldnames)
     write_csv(out_by_scenario, detail_rows, detail_fieldnames)
+    metadata_path = out_summary.with_name(out_summary.stem + "_metadata.json")
+    candidate_files = [
+        candidate_path(evaluation_dir, args.mode, scenario)
+        for scenario in DEFAULT_SCENARIOS
+    ]
+    metadata = {
+        "result_state": "paper evaluation",
+        "created_at_utc": datetime.now(timezone.utc).isoformat(),
+        "command": "python " + shlex.join(sys.argv),
+        "mode": args.mode,
+        "portfolio_size_limit": args.portfolio_size,
+        "algorithm": (
+            "greedy maximum marginal combined ATT&CK coverage; ties by total "
+            "score descending, action count ascending, relative risk metadata "
+            "descending, playbook ID ascending"
+        ),
+        "source_candidate_files": [
+            {
+                "path": repo_display_path(path),
+                "sha256": file_sha256(path),
+            }
+            for path in candidate_files
+        ],
+        "summary": repo_display_path(out_summary),
+        "summary_sha256": file_sha256(out_summary),
+        "by_scenario": repo_display_path(out_by_scenario),
+        "by_scenario_sha256": file_sha256(out_by_scenario),
+    }
+    metadata_path.write_text(
+        json.dumps(metadata, indent=2, sort_keys=True) + "\n",
+        encoding="utf-8",
+    )
     print(f"Wrote portfolio summary to {out_summary}")
     print(f"Wrote portfolio by-scenario details to {out_by_scenario}")
 

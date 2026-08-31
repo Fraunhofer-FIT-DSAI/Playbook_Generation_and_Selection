@@ -1,20 +1,3 @@
-# Optional dependencies for legacy preprocessing scripts.
-# The canonical integration pipeline only needs requirements.txt.
-
-psutil
-scikit-learn
-mitreattack-python
-rapidfuzz
-numpy<2
-
-# Used by Playbook-defend-mapping/MainPart/playbook-defend-mapping.py.
+# Optional dependencies for recomputing the SBERT mapping.
 sentence-transformers
 torch
-
-# Used only by generation_phase/source/Response_generation/response.py.
-# Pin spaCy below 3.8 for Python 3.9 compatibility; newer spaCy releases may
-# request thinc versions that are not available for this environment.
-inflect
-textstat
-nltk
-spacy<3.8

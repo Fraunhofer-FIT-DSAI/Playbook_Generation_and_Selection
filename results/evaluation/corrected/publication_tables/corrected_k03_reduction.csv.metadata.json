@@ -1,0 +1,24 @@
+{
+  "artifact": "results/evaluation/corrected/publication_tables/corrected_k03_reduction.csv",
+  "artifact_sha256": "903773c24d0eda6788cbca938fdb091f867865f7026ca739e120ca9a7a9efc3a",
+  "artifact_status": "paper evaluation",
+  "command": "python integration_phase/scripts/make_corrected_publication_outputs.py",
+  "created_at_utc": "2026-08-18T02:03:15.520773+00:00",
+  "graphdb_endpoint": "http://localhost:7200/repositories/incident-response",
+  "interpretation": "N=50 is a per-scenario cap after exact-signature diversity and Pareto filtering; the filters retain 167 playbooks, so the cap is not forced.",
+  "manifest": "results/generated_repository/corrected_k03/reduced_generated_playbooks_manifest.csv",
+  "manifest_sha256": "866acd440d981c54cc997105fb2d0cdc738f88a58588c3aaa3721b4e8efc5e95",
+  "mapping_owl": "selection_phase/source/GraphDB/playbook_step_defend_mapping.owl",
+  "mapping_sha256": "0ffb6cf054324ac5a3cad0787c1c7b25e4eb03daa7a39bc0fafa1e41e18da271",
+  "repository_count": 167,
+  "sources": [
+    {
+      "path": "results/generated_repository/corrected_k03/reduction_summary.json",
+      "sha256": "3c50a066d98afbf273c71c408f172f8bc377b0d7ec536e3027a94ae0478c8bc1"
+    },
+    {
+      "path": "results/generated_repository/corrected_k03/reduced_generated_playbooks_manifest.csv",
+      "sha256": "866acd440d981c54cc997105fb2d0cdc738f88a58588c3aaa3721b4e8efc5e95"
+    }
+  ]
+}

@@ -1,0 +1,681 @@
+{
+  "artifact_trees": [
+    {
+      "bytes": 260443,
+      "exists": true,
+      "file_count": 18,
+      "path": "data/scenario_profiles",
+      "pattern": "*.json",
+      "tree_sha256": "0f3f772d0557688a6231b37777dcda2b7df4a5910f7076203ceded3416ddc0a4"
+    },
+    {
+      "bytes": 579373,
+      "exists": true,
+      "file_count": 16,
+      "path": "results/evaluation/corrected/community-only/candidate_scores_per_scenario",
+      "pattern": "*.csv",
+      "tree_sha256": "4d8a1e61f9206ee7bc1989370d1842b3c0add2fe03fa0cadf3b5c033368b3d8e"
+    },
+    {
+      "bytes": 114195,
+      "exists": true,
+      "file_count": 16,
+      "path": "results/evaluation/corrected/generated-reduced/candidate_scores_per_scenario",
+      "pattern": "*.csv",
+      "tree_sha256": "c6a39bcac03c398c548ab042b3cbb59e8400440d90d769d05f6775cd989d8227"
+    },
+    {
+      "bytes": 697249,
+      "exists": true,
+      "file_count": 16,
+      "path": "results/evaluation/corrected/augmented-reduced/candidate_scores_per_scenario",
+      "pattern": "*.csv",
+      "tree_sha256": "99ecabbf6570ec39a7dc8c5385718439f293fb4221ad982d7423f1489010c1de"
+    },
+    {
+      "bytes": 1150703,
+      "exists": true,
+      "file_count": 2,
+      "path": "results/evaluation/corrected/weight_sensitivity",
+      "pattern": "*.csv",
+      "tree_sha256": "ffdfca021e26f0e383403a1edbbc6fadd8668d85c3d0bed4e5ffc46ebe484866"
+    },
+    {
+      "bytes": 50507,
+      "exists": true,
+      "file_count": 39,
+      "path": "results/evaluation/corrected/publication_tables",
+      "pattern": "*",
+      "tree_sha256": "c1dd989f4e1e2b6776d8e74ab2c02981afb3fe62cd3e59d012cc95c78f2e524b"
+    },
+    {
+      "bytes": 206728,
+      "exists": true,
+      "file_count": 13,
+      "path": "results/evaluation/corrected/publication_figures",
+      "pattern": "*",
+      "tree_sha256": "8c35c060fee027f6d190a8ddecd1f8d50fbb57f1c82b3ef752babcb0a40ec467"
+    },
+    {
+      "bytes": 514730,
+      "exists": true,
+      "file_count": 32,
+      "path": "integration_phase/scripts",
+      "pattern": "*.py",
+      "tree_sha256": "6798882c593ab4bdf8d68583f5a9284014d7ae8182a7547654b2f90e377009e8"
+    },
+    {
+      "bytes": 31816,
+      "exists": true,
+      "file_count": 3,
+      "path": "generation_phase/source",
+      "pattern": "*.py",
+      "tree_sha256": "c727ccb1bce456a1d78a1d3c9e4dd92ee340417d9ac66e1303ff30481a1f4c3f"
+    },
+    {
+      "bytes": 20865,
+      "exists": true,
+      "file_count": 4,
+      "path": "selection_phase/source",
+      "pattern": "*.py",
+      "tree_sha256": "6a3117cb846bb6ca8d43b6e23cb174ffdf4a603d1601b1e44b58b236de716246"
+    },
+    {
+      "bytes": 2632,
+      "exists": true,
+      "file_count": 1,
+      "path": "tests",
+      "pattern": "*.py",
+      "tree_sha256": "e27690df185fcfcc20bde370acde0864b112709b28b3bde45ef48e2c4959f62f"
+    }
+  ],
+  "artifacts": [
+    {
+      "bytes": 12818,
+      "exists": true,
+      "path": "README.md",
+      "sha256": "281df0d7cadd496c4c3528a9e9c843a6f392eb7fe9cbd1c1f3f5ce809c6d4a87"
+    },
+    {
+      "bytes": 78,
+      "exists": true,
+      "path": "requirements.txt",
+      "sha256": "1be1a22014b58cdf449593fefd8f8db65be2882c39b4bb876ad23db1ca9e85f7"
+    },
+    {
+      "bytes": 369,
+      "exists": true,
+      "path": "requirements-lock.txt",
+      "sha256": "1312100bb746a99b33e3cd05ceba7c2ff9033a369b17650956c620611d51ebdc"
+    },
+    {
+      "bytes": 87,
+      "exists": true,
+      "path": "requirements-optional.txt",
+      "sha256": "d3090c06abcf77509caab15a39ff435e45785107c9f6a074aa15bb5954bb3294"
+    },
+    {
+      "bytes": 2632,
+      "exists": true,
+      "path": "tests/test_generation_correctness.py",
+      "sha256": "adcf18c3830b320792db2c2aa64c82bf807281da2e7153f55771c0107fe76c42"
+    },
+    {
+      "bytes": 3630,
+      "exists": true,
+      "path": "data/scenario_profiles/index.json",
+      "sha256": "81adaf0c2bb15c523243f3531001a546b957f7e890d96a6e47dbdb1da9f1f410"
+    },
+    {
+      "bytes": 4882,
+      "exists": true,
+      "path": "data/scenario_profiles/mulval_generation_manifest.json",
+      "sha256": "da393bc5fae9da479e6f96788eb3ea5ac61038a0700776a3c155c38f01e8dd53"
+    },
+    {
+      "bytes": 670,
+      "exists": true,
+      "path": "data/community_corpus_acquisition.json",
+      "sha256": "d1a52a73aa2545e0b41485bbdd0277a09d53585b41a41552eb9adbcc412cb98c"
+    },
+    {
+      "bytes": 531,
+      "exists": true,
+      "path": "data/ics_scenario_corpus_acquisition.json",
+      "sha256": "0a7ef384cc76f7bf86bc2a57a8e10e76b77c4ce447c084b690c0dd853231e0af"
+    },
+    {
+      "bytes": 6598,
+      "exists": true,
+      "path": "docs/artifact_manifest.md",
+      "sha256": "6a276e9a5b012748bfab2b798dcb79b1437c475faf7e6f3c0a92ed67216afacc"
+    },
+    {
+      "bytes": 7861,
+      "exists": true,
+      "path": "docs/reproduction.md",
+      "sha256": "5d2d4b022c617c028eb0cb2b8b3b7b6543e82b5430d06a0ac44fc8b9953b41e2"
+    },
+    {
+      "bytes": 2980994,
+      "exists": true,
+      "path": "selection_phase/source/Playbook/steps-coded.csv",
+      "sha256": "08ac19149208205e63711ae7528941b64fdeb94b9c52029fb317591e9d162672"
+    },
+    {
+      "bytes": 6942162,
+      "exists": true,
+      "path": "selection_phase/source/GraphDB/playbooks.owl",
+      "sha256": "db4ed6b43bc6d76c2c0a15120915828d64471160fbfe914f662ec1dd89864528"
+    },
+    {
+      "bytes": 1627182,
+      "exists": true,
+      "path": "selection_phase/source/Playbook-defend-mapping/Preprocessing/filtered_playbooks.csv",
+      "sha256": "bb9ad5e86384c2e87c7c5a4a7cd0b2542a6229641d248bda90d05c948c8d337e"
+    },
+    {
+      "bytes": 55595,
+      "exists": true,
+      "path": "selection_phase/source/Playbook-defend-mapping/Preprocessing/filtered_defensive_techniques.csv",
+      "sha256": "cae7e14277601712a5d5c6f281d463b3194669e6fb8d248def277878baaf1d33"
+    },
+    {
+      "bytes": 1744710,
+      "exists": true,
+      "path": "selection_phase/source/Playbook-defend-mapping/MainPart/playbook_defend_mapping.csv",
+      "sha256": "39751c5e1e64bf3cbb2a178ffde4e9188b1862d92b23d892e305e13dfe130884"
+    },
+    {
+      "bytes": 11225,
+      "exists": true,
+      "path": "selection_phase/source/Playbook-defend-mapping/MainPart/playbook-defend-mapping.py",
+      "sha256": "be5716100d6b7a940b54d26e9c649aa7c3c5c3986b97a1690b0452b2e384ec79"
+    },
+    {
+      "bytes": 1066749,
+      "exists": true,
+      "path": "selection_phase/source/GraphDB/playbook_step_defend_mapping.owl",
+      "sha256": "0ffb6cf054324ac5a3cad0787c1c7b25e4eb03daa7a39bc0fafa1e41e18da271"
+    },
+    {
+      "bytes": 3764,
+      "exists": true,
+      "path": "results/generated_repository/k_sweep/k_sensitivity_summary.csv",
+      "sha256": "0e255fed440cb30b51cf29c9cd8612c52f7e74fb11437be4a51b5b6eae09a467"
+    },
+    {
+      "bytes": 36333,
+      "exists": true,
+      "path": "results/generated_repository/k_sweep/k_sensitivity_summary.json",
+      "sha256": "8f20344e79cc4cc9e482a2774de41a221c7a71c16410aa2ebc4f7ea1dcb4b3de"
+    },
+    {
+      "bytes": 2746510,
+      "exists": true,
+      "path": "results/generated_repository/corrected_k03/reduced_generated_playbooks_manifest.csv",
+      "sha256": "866acd440d981c54cc997105fb2d0cdc738f88a58588c3aaa3721b4e8efc5e95"
+    },
+    {
+      "bytes": 4190318,
+      "exists": true,
+      "path": "results/generated_repository/corrected_k03/reduced_generated_playbooks.owl",
+      "sha256": "9f7531f9e83ea6bee68bd5ee504098eac5c06fd4595b99be908aaeb5ee755a4d"
+    },
+    {
+      "bytes": 4057004,
+      "exists": true,
+      "path": "results/generated_repository/corrected_k03/reduction_report.csv",
+      "sha256": "cf5ab462dded1daf5c0b90362ab935e0036b89598aadafcea65b861dcd063cfa"
+    },
+    {
+      "bytes": 3277,
+      "exists": true,
+      "path": "results/generated_repository/corrected_k03/reduction_summary.json",
+      "sha256": "3c50a066d98afbf273c71c408f172f8bc377b0d7ec536e3027a94ae0478c8bc1"
+    },
+    {
+      "bytes": 4323,
+      "exists": true,
+      "path": "results/evaluation/corrected/graphdb_load_verification.json",
+      "sha256": "fbdad987784339f4e257d9e962aee9378429eddd842db52e504a6a6abe4ff3a6"
+    },
+    {
+      "bytes": 2597,
+      "exists": true,
+      "path": "results/evaluation/corrected/d3fend_relation_runtime_audit.json",
+      "sha256": "11ddb5127f69618dd0ecb8ba1cfc9588a5d62b29f82acb75f993ff1f14dee0c8"
+    },
+    {
+      "bytes": 924,
+      "exists": true,
+      "path": "results/evaluation/corrected/semantic_mapping_audit.json",
+      "sha256": "a98e6106c059ca919d28d32d5253eb0d9e9d9f3ea3f8e2f7a7c6784b51b73131"
+    },
+    {
+      "bytes": 11445,
+      "exists": true,
+      "path": "results/evaluation/corrected/closed_loop_comparison.csv",
+      "sha256": "d4042b8d973e0e103f25f5f2137872232a60c9b2b4671e7c34eb06568d900a17"
+    },
+    {
+      "bytes": 36843,
+      "exists": true,
+      "path": "results/evaluation/corrected/significance_tests.json",
+      "sha256": "9a3b17638143cf6518957bfca324d04800ca2937d5c5f67a7f117d353c7cc197"
+    },
+    {
+      "bytes": 24103,
+      "exists": true,
+      "path": "results/evaluation/corrected/determinism_check.json",
+      "sha256": "2eebf59d6db344e3f5a38669d1c66dfe4a3a363df04f5565e2b128884ea3bdbf"
+    },
+    {
+      "bytes": 1974,
+      "exists": true,
+      "path": "results/evaluation/corrected/fairness_checks.json",
+      "sha256": "de2dff3e0c8f4ff6c5c3c0daf36b695326a19cafa27d2ab0b6f7bf024882db08"
+    },
+    {
+      "bytes": 6473,
+      "exists": true,
+      "path": "results/evaluation/corrected/sanity_summary.json",
+      "sha256": "354db2378868e2c585aa8286afb66e733e92aca593a3ae88db1b2c6c188a26bc"
+    },
+    {
+      "bytes": 488,
+      "exists": true,
+      "path": "results/evaluation/corrected/selection_profiles/profile_summary.csv",
+      "sha256": "b9884fa81264e083eadb7589fd1fd63b01f0287dd58452b5cb636b52865c448c"
+    },
+    {
+      "bytes": 4726,
+      "exists": true,
+      "path": "results/evaluation/corrected/portfolio/portfolio_summary.csv",
+      "sha256": "1049da98104a4ff3f184e9ade4d3cdbdab41d5bf4da284eafef4dca0c6e2073c"
+    },
+    {
+      "bytes": 3251,
+      "exists": true,
+      "path": "results/evaluation/corrected/ablations/ablation_summary.csv",
+      "sha256": "6459ce085c610216601dcd2ad277a9ad77378d97a482e60bea927518f255d757"
+    },
+    {
+      "bytes": 3939,
+      "exists": true,
+      "path": "results/evaluation/corrected/reduction_sensitivity/reduction_sensitivity.csv",
+      "sha256": "3f3854e1513688285590e641f7998e498d24ffe1b3122916376d23ee325f08c5"
+    },
+    {
+      "bytes": 7745,
+      "exists": true,
+      "path": "results/evaluation/corrected/weight_sensitivity/summary.json",
+      "sha256": "74e1128837fb7b11ffb5becbce0b477ef4813c425060c5e21f39a63c25636f83"
+    },
+    {
+      "bytes": 5313,
+      "exists": true,
+      "path": "results/evaluation/corrected/sbert_mapping_diagnostics.csv",
+      "sha256": "cc848b3df099453bea3b9fea699d890cb85777339648baced7e46a945d0bd893"
+    },
+    {
+      "bytes": 901,
+      "exists": true,
+      "path": "results/evaluation/corrected/sbert_mapping_cutoff_diagnostics.csv",
+      "sha256": "bb9d14529d456509f492625de39389b47384ca8451d634594c96737f6f5f4293"
+    },
+    {
+      "bytes": 9225,
+      "exists": true,
+      "path": "results/evaluation/corrected/publication_tables/publication_outputs_manifest.json",
+      "sha256": "de75909d34dc8f436f7c31730dcf677b4794b691b243bc0cde55ac06ba094c65"
+    },
+    {
+      "bytes": 8140,
+      "exists": true,
+      "path": "results/evaluation/corrected/source_selection_diagnostics.csv",
+      "sha256": "fe192383017489b845e3821389d3f5d831ca9b7275905616f4b5efae9dbd6b7a"
+    },
+    {
+      "bytes": 7988,
+      "exists": true,
+      "path": "results/evaluation/corrected/source_weight_stability.csv",
+      "sha256": "065c6b5bdfe34bcb7aa8fb636622729b5548825e7fb5d604706e94a2ab1f7895"
+    },
+    {
+      "bytes": 9132,
+      "exists": true,
+      "path": "results/evaluation/corrected/reduction_effect_by_scenario.csv",
+      "sha256": "418f68665ac4bd68b34537500ceb81980354bc204edc415a86190dd20921c94f"
+    },
+    {
+      "bytes": 1386,
+      "exists": true,
+      "path": "results/evaluation/corrected/reduction_alternative_summary.csv",
+      "sha256": "e32f49910c398cc33450d8bb9c55a3698c20d564885f5477dfdcb099dfb444ce"
+    },
+    {
+      "bytes": 1380,
+      "exists": true,
+      "path": "results/evaluation/corrected/generation_diversity_diagnostics.csv",
+      "sha256": "009bba296565b9af85d03244bb6a414e56f3cb39e91a702bca4ea3245ee2ce63"
+    },
+    {
+      "bytes": 6237,
+      "exists": true,
+      "path": "results/evaluation/corrected/generation_diversity_diagnostics.json",
+      "sha256": "8f3cda708af77dff6bdaa2beea68f2dcd171442503a56010ef205f9bb3bea057"
+    },
+    {
+      "bytes": 1314,
+      "exists": true,
+      "path": "results/evaluation/corrected/publication_figures/corrected_generation_diversity.tex",
+      "sha256": "653e39c006c8bf7fa842c50bc07e8de50a854f280fa04aa16aab45c418cbf6a3"
+    },
+    {
+      "bytes": 1067,
+      "exists": true,
+      "path": "results/evaluation/corrected/publication_figures/corrected_generation_diversity.tex.metadata.json",
+      "sha256": "26dbcc1c4f3f26f6783689c377fd3ae3ee9fe79699b8e96060bb17255e4088f9"
+    },
+    {
+      "bytes": 1209,
+      "exists": true,
+      "path": "results/evaluation/corrected/publication_tables/corrected_weak_normalized_profiles.csv",
+      "sha256": "7dc1b34df9c1aad1a92f751125069112c446d34efddc5581ad633bb8dff6f789"
+    },
+    {
+      "bytes": 1648,
+      "exists": true,
+      "path": "results/evaluation/corrected/publication_tables/corrected_weak_normalized_profiles.csv.metadata.json",
+      "sha256": "37d3fcf84508e98f6f13a10ee5f43a13e1d0ede2714f7afe1cb8f1931c5a59e9"
+    },
+    {
+      "bytes": 1511,
+      "exists": true,
+      "path": "results/evaluation/corrected/publication_figures/corrected_weak_normalized_profiles.tex",
+      "sha256": "d916d579d9f606075429c02b243b2d8a7a047b86635036b1b179378de24f7b15"
+    },
+    {
+      "bytes": 1649,
+      "exists": true,
+      "path": "results/evaluation/corrected/publication_figures/corrected_weak_normalized_profiles.tex.metadata.json",
+      "sha256": "9bccf610a01f50d4cc4da779edd2049b8e4565ac0bf63af2280332f646a7f5da"
+    },
+    {
+      "bytes": 56312,
+      "exists": true,
+      "path": "results/ics_scenario_inventory.csv",
+      "sha256": "7ea6663aafa5b4b62f8e16a039ca352588dbd5afc743c9e676815076e0c8b021"
+    },
+    {
+      "bytes": 27895,
+      "exists": true,
+      "path": "results/ics_scenario_jaccard.csv",
+      "sha256": "37ad193b60f71401b5e00bffc1a55cb67d423af90ed859de0e8383a238b49a33"
+    },
+    {
+      "bytes": 1696,
+      "exists": true,
+      "path": "results/ics_scenario_summary.json",
+      "sha256": "b39a8cf2c75d2dfa55b5982b350f9eb58f22a11bcfc4e26b6155e3463f5334c1"
+    }
+  ],
+  "corpus": {
+    "acquisition": {
+      "artifact": "selection_phase/source/Playbook/steps-coded.csv",
+      "artifact_sha256": "08ac19149208205e63711ae7528941b64fdeb94b9c52029fb317591e9d162672",
+      "observed_playbooks": 1056,
+      "observed_rows": 8624,
+      "paper_playbooks_after_filter": 469,
+      "paper_rows_after_filter": 4016,
+      "paper_vendor_filter": [
+        "FortiSOAR",
+        "Rapid7",
+        "XSOAR"
+      ],
+      "source_provenance": {
+        "recorded_in_source_snapshot": false,
+        "unrecorded_fields": [
+          "acquisition date",
+          "upstream URLs",
+          "upstream revisions",
+          "upstream licenses",
+          "raw artifact hashes",
+          "raw-to-CSV conversion procedure",
+          "pre-CSV exclusion log"
+        ]
+      }
+    },
+    "missing_values": {
+      "action": 0,
+      "artifact": 0,
+      "playbook_description": 0,
+      "playbook_id": 0,
+      "playbook_name": 0,
+      "step_description": 2,
+      "step_id": 0,
+      "step_names": 2,
+      "vendor": 0
+    },
+    "selection_ontology_filter": {
+      "playbooks": 469,
+      "rows": 4016,
+      "steps": 4016,
+      "vendors": [
+        "FortiSOAR",
+        "Rapid7",
+        "XSOAR"
+      ]
+    },
+    "selection_owl_observed": {
+      "canonical_graphdb_input": {
+        "path": "selection_phase/source/GraphDB/playbooks.owl",
+        "playbook_id_triples": 469,
+        "sha256": "db4ed6b43bc6d76c2c0a15120915828d64471160fbfe914f662ec1dd89864528",
+        "step_id_triples": 4016,
+        "unique_playbook_ids": 469,
+        "unique_step_ids": 4016
+      }
+    },
+    "semantic_mapping_projection": {
+      "path": "selection_phase/source/Playbook-defend-mapping/Preprocessing/filtered_playbooks.csv",
+      "playbooks": 469,
+      "rows": 4016,
+      "sha256": "bb9ad5e86384c2e87c7c5a4a7cd0b2542a6229641d248bda90d05c948c8d337e",
+      "steps": 4016,
+      "vendor_filter": [
+        "FortiSOAR",
+        "Rapid7",
+        "XSOAR"
+      ]
+    },
+    "source_delimiter": ";",
+    "source_duplicate_step_ids": 0,
+    "source_path": "selection_phase/source/Playbook/steps-coded.csv",
+    "source_playbooks": 1056,
+    "source_rows": 8624,
+    "source_sha256": "08ac19149208205e63711ae7528941b64fdeb94b9c52029fb317591e9d162672",
+    "source_unique_steps": 8624,
+    "vendor_count": 15
+  },
+  "generation": {
+    "configured_incident_seed": 1337,
+    "configured_per_scenario_topology_seed": "42 + zero-based scenario index",
+    "configured_topology_seed": 42,
+    "countermeasure_k_values": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "fixed_attack_graphs_in_main_evaluation": true,
+    "paper_configuration_k": 3,
+    "seed_environment_variable": "INCIDENT_SEED",
+    "seed_scope": "The K=0..10 sweep uses the checked-in attack graphs and INCIDENT_SEED=1337.",
+    "supplemental_k_sensitivity": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ]
+  },
+  "manifest_version": "artifact-v0.2",
+  "reduction": {
+    "algorithm_source": "integration_phase/scripts/reduce_generated_playbooks.py",
+    "evaluated_k03": {
+      "input_playbooks": 7928,
+      "selected_playbooks": 167,
+      "status": "evaluated generation and relative-risk reducer"
+    },
+    "per_scenario_limit": 50,
+    "strategy": "hybrid",
+    "tie_policy": "lexicographically smallest stable playbook_id after numeric objectives"
+  },
+  "repository_root": ".",
+  "run_label": "paper-evaluation",
+  "runtime": {
+    "accelerators": {
+      "cuda_available": null,
+      "cuda_device_count": null,
+      "cuda_device_names": [],
+      "mps_available": null,
+      "torch_available": false
+    },
+    "capture_command": [
+      "integration_phase/scripts/build_reproducibility_manifest.py",
+      "--graphdb-version",
+      "10.3.1"
+    ],
+    "captured_at_utc": "2026-08-05T21:31:21.415269+00:00",
+    "cpu_model": "i386",
+    "graphdb_endpoint": "http://localhost:7200/repositories/incident-response",
+    "graphdb_version": "10.3.1",
+    "hardware_note": "",
+    "logical_cpu_count": 12,
+    "machine": "x86_64",
+    "mulval_version_recorded": false,
+    "packages": {
+      "SPARQLWrapper": "2.0.0",
+      "cvss": "3.6",
+      "huggingface-hub": null,
+      "matplotlib": "3.11.1",
+      "networkx": "3.6.1",
+      "numpy": "2.5.1",
+      "pandas": "3.0.5",
+      "psutil": null,
+      "rdflib": "7.6.0",
+      "requests": "2.34.2",
+      "sentence-transformers": null,
+      "tokenizers": null,
+      "torch": null,
+      "transformers": null,
+      "xmltodict": "1.0.4"
+    },
+    "physical_cpu_count": null,
+    "physical_memory_bytes": 34359738368,
+    "platform": "macOS-15.7.7-x86_64-i386-64bit-Mach-O",
+    "python": "3.14.5 (main, May 10 2026, 10:21:34) [Clang 17.0.0 (clang-1700.6.4.2)]",
+    "python_executable": "python",
+    "release": "24.6.0",
+    "scope": "environment used to generate this public artifact manifest",
+    "system": "Darwin"
+  },
+  "scope_limits": [
+    "Complete upstream acquisition metadata is unavailable for parts of the community corpus.",
+    "The semantic mapping has no expert-labelled precision or recall evaluation.",
+    "The K=0..10 sweep is conditional on the checked-in attack graphs and incident seed.",
+    "The MulVAL version used to create the checked-in graphs was not recorded."
+  ],
+  "selection": {
+    "criteria_order": [
+      "DC",
+      "DAC",
+      "DTC",
+      "TC",
+      "RC",
+      "CC",
+      "AC"
+    ],
+    "missing_context_policy": "neutral",
+    "neutral_context_criteria": [
+      "TC",
+      "RC",
+      "CC",
+      "AC"
+    ],
+    "neutral_value": 0.5,
+    "protocol_version": "paper-evaluation-2026-07-27",
+    "recall_definitions": {
+      "combined_attack_recall": "Union of direct and inferred target coverage divided by target-set size.",
+      "direct_attack_recall": "Direct-provenance target coverage divided by target-set size.",
+      "inferred_attack_recall": "Ontology-inferred target coverage divided by target-set size.",
+      "normalized_combined_attack_recall": "Selected combined target coverage divided by the union coverage achievable by the scenario candidate pool."
+    },
+    "score_definitions": {
+      "AC": "Inverse min-max normalized action count within the scenario candidate pool; 1 is the smallest available count and 0 is the largest.",
+      "CC": "Candidate CVEs intersecting scenario CVEs divided by the number of scenario CVEs.",
+      "DAC": "Distinct artifacts linked to the candidate through inferred ontology paths divided by the scenario artifact universe.",
+      "DC": "Adjusted defensive-relation completeness: observed unique (ATT&CK technique, D3FEND relation) pairs divided by the scenario relation universe, multiplied by 1 - redundant_steps / matched_steps.",
+      "DTC": "Direct ATT&CK techniques carried by candidate provenance and present in the target set, divided by target-set size.",
+      "RC": "Candidate relative risk reduction RR=(R-Rs)/R divided by the largest available relative RR in the scenario candidate pool.",
+      "TC": "Topology/context match: 1 for a generated candidate whose source case or scenario matches the evaluated scenario, 0 for a known mismatch, otherwise missing.",
+      "total_score": "Weighted sum of active criteria after applying the declared missing-value policy."
+    },
+    "top1_tie_policy": "highest score, then lexicographically smallest stable playbook_id",
+    "weights": {
+      "AC": 0.03,
+      "CC": 0.07,
+      "DAC": 0.2,
+      "DC": 0.25,
+      "DTC": 0.2,
+      "RC": 0.15,
+      "TC": 0.1
+    },
+    "zero_if_absent_criteria": [
+      "DC",
+      "DAC",
+      "DTC"
+    ]
+  },
+  "semantic_mapping": {
+    "confidence": {
+      "maximum": 0.6803,
+      "mean": 0.2797326942231076,
+      "minimum": 0.1295
+    },
+    "expected_threshold": 0.0,
+    "linked_rows_below_expected_threshold": 0,
+    "mapping_path": "selection_phase/source/Playbook-defend-mapping/MainPart/playbook_defend_mapping.csv",
+    "mapping_sha256": "39751c5e1e64bf3cbb2a178ffde4e9188b1862d92b23d892e305e13dfe130884",
+    "no_match_count": 0,
+    "playbooks": 469,
+    "rows": 4016,
+    "semantic_mapping_manifest_present": true,
+    "semantic_mapping_manifest_sha256": "ed3e4a266e9de2070a86b9c6c361a6df6677333d5af61a2e5eb04e4a141d1d8a",
+    "steps": 4016,
+    "threshold_compatible": true
+  },
+  "statistical_protocol": {
+    "bootstrap_samples": 10000,
+    "bootstrap_seed": 12345,
+    "rng": "numpy.random.Generator(PCG64)",
+    "unit_of_analysis": "16 paired sector scenarios",
+    "weight_draws": 5000,
+    "weight_sensitivity_seed": 20260714
+  }
+}

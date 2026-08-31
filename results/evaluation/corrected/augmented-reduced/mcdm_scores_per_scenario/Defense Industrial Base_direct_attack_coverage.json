@@ -1,0 +1,28 @@
+{
+  "ma_scenario_Defense_Industrial_Base_0052": [
+    "T1087.004",
+    "T1499.003",
+    "T1499.004"
+  ],
+  "ma_scenario_Defense_Industrial_Base_0060": [
+    "T1087.004",
+    "T1499.003",
+    "T1499.004"
+  ],
+  "ma_scenario_Defense_Industrial_Base_0404": [
+    "T1078.004",
+    "T1499.004"
+  ],
+  "ma_scenario_Defense_Industrial_Base_0412": [
+    "T1078.004",
+    "T1499.004"
+  ],
+  "ma_scenario_Defense_Industrial_Base_0468": [
+    "T1078.004",
+    "T1499.004"
+  ],
+  "ma_scenario_Defense_Industrial_Base_0476": [
+    "T1078.004",
+    "T1499.004"
+  ]
+}

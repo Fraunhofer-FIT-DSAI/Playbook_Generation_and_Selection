@@ -1,0 +1,9 @@
+corpus,playbooks,unordered_playbook_pairs,metric,metric_label,pairwise_jaccard_distance,shannon_entropy_bits,occurrences,unique_values,included_in_publication_figure,metric_definition
+full_k03,7928,31422628,attack_techniques,ATT&CK,0.765575521827,4.514550492589,79280,36,true,ATT&CK technique identifiers observed on each incident path
+full_k03,7928,31422628,hosts,Hosts,0.000000000000,3.321928094887,79280,10,true,host identifiers observed on each incident path
+full_k03,7928,31422628,cves,CVEs,0.632089172386,3.632829497677,79280,21,true,CVE identifiers observed on each incident path
+full_k03,7928,31422628,step_evidence_triples,Path triples,0.948961712876,7.141079594057,79280,167,true,"(host, CVE, ATT&CK technique) incident-step triples observed on each path"
+corrected_k03_reduced,167,13861,attack_techniques,ATT&CK,0.686500197238,4.341698465785,1670,31,true,ATT&CK technique identifiers observed on each incident path
+corrected_k03_reduced,167,13861,hosts,Hosts,0.000000000000,3.321928094887,1670,10,true,host identifiers observed on each incident path
+corrected_k03_reduced,167,13861,cves,CVEs,0.543957984516,3.495742782514,1670,19,true,CVE identifiers observed on each incident path
+corrected_k03_reduced,167,13861,step_evidence_triples,Path triples,0.927901297034,6.779611016126,1670,146,true,"(host, CVE, ATT&CK technique) incident-step triples observed on each path"

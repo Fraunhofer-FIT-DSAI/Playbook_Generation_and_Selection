@@ -1,4 +1,11 @@
 #!/usr/bin/env python3
+"""Reducer replay helper.
+
+This module provides shared reduction functions for
+`run_corrected_reduction_sensitivity.py`. Its standalone replay does not
+recompute GraphDB retrieval or pool-relative criteria and is not the corrected
+selection-sensitivity experiment.
+"""
 from __future__ import annotations
 
 import argparse
@@ -11,6 +18,7 @@ from typing import Any
 from closed_loop_common import (
     DEFAULT_SCENARIOS,
     read_csv_dicts,
+    repo_display_path,
     repo_path,
     to_float,
     write_csv,
@@ -25,13 +33,24 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--evaluation-dir",
         type=Path,
-        default=Path("results/evaluation"),
+        default=Path("results/evaluation/corrected"),
     )
     parser.add_argument("--mode", default="augmented-reduced")
     parser.add_argument(
         "--manifest",
         type=Path,
         default=Path("results/generated_repository/generated_playbooks_manifest.csv"),
+    )
+    parser.add_argument(
+        "--reduction-report",
+        type=Path,
+        default=Path(
+            "results/generated_repository/corrected_k03/reduction_report.csv"
+        ),
+        help=(
+            "Compact reducer report used when --manifest is unavailable. "
+            "It preserves every field needed to replay reduction caps."
+        ),
     )
     parser.add_argument(
         "--strategy",
@@ -47,7 +66,10 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--out-csv",
         type=Path,
-        default=Path("results/evaluation/reduction_sensitivity.csv"),
+        default=Path(
+            "results/evaluation/corrected/reduction_sensitivity/"
+            "reducer_only_replay.csv"
+        ),
     )
     return parser.parse_args()
 
@@ -80,16 +102,75 @@ def rows_by_scenario(path: Path) -> dict[str, dict[str, str]]:
     }
 
 
-def reduced_ids_by_scenario(manifest: Path, strategy: str, limit: int) -> dict[str, set[str]]:
-    rows = read_csv_dicts(manifest)
-    playbooks = aggregate_manifest(rows)
+def items_from_reduction_report(path: Path) -> dict[str, dict[str, Any]]:
+    playbooks: dict[str, dict[str, Any]] = {}
+    for row in read_csv_dicts(path):
+        playbook_id = row.get("playbook_id", "").strip()
+        if not playbook_id:
+            continue
+        signature_parts = row.get("semantic_signature", "").split("|")
+        signature_parts.extend([""] * (5 - len(signature_parts)))
+        attacks, cves, d3fend, artifacts, phases = (
+            {value for value in part.split(";") if value}
+            for part in signature_parts[:5]
+        )
+        risk_value = (
+            row.get("risk_reduction_pct")
+            if row.get("risk_reduction_pct") not in {None, ""}
+            else row.get("risk_reduction")
+        )
+        playbooks[playbook_id] = {
+            "playbook_id": playbook_id,
+            "rows": [],
+            "source": "generated",
+            "source_case_id": "",
+            "source_scenario_id": row.get("source_scenario_id", ""),
+            "scenario_name": row.get("source_scenario_id", ""),
+            "attack_path_id": "",
+            "attack_techniques": attacks,
+            "cves": cves,
+            "d3fend_techniques": d3fend,
+            "artifacts": artifacts,
+            "phases": phases,
+            "hosts": set(),
+            "risk_reduction": to_float(risk_value, 0.0),
+            "absolute_risk_reduction": to_float(
+                row.get("absolute_risk_reduction", row.get("risk_reduction", "0")),
+                0.0,
+            ),
+            "phase_completeness": to_float(row.get("phase_completeness"), 0.0),
+            "action_count": int(to_float(row.get("action_count"), 0.0)),
+        }
+    return playbooks
+
+
+def reduced_ids_by_scenario(
+    manifest: Path,
+    reduction_report: Path,
+    strategy: str,
+    limit: int,
+) -> tuple[dict[str, set[str]], str]:
+    if manifest.exists():
+        playbooks = aggregate_manifest(read_csv_dicts(manifest))
+        input_source = repo_display_path(manifest)
+    elif reduction_report.exists():
+        playbooks = items_from_reduction_report(reduction_report)
+        input_source = repo_display_path(reduction_report)
+    else:
+        raise FileNotFoundError(
+            f"Neither reducer manifest nor compact reduction report exists: "
+            f"{manifest}, {reduction_report}"
+        )
     grouped: dict[str, list[dict[str, Any]]] = defaultdict(list)
     for item in playbooks.values():
         grouped[scenario_key(item)].append(item)
-    return {
-        scenario: {item["playbook_id"] for item in reduce_items(items, strategy, limit)}
-        for scenario, items in grouped.items()
-    }
+    return (
+        {
+            scenario: {item["playbook_id"] for item in reduce_items(items, strategy, limit)}
+            for scenario, items in grouped.items()
+        },
+        input_source,
+    )
 
 
 def combined_coverage(playbook_id: str, direct: dict[str, list[str]], inferred: dict[str, list[str]]) -> set[str]:
@@ -104,13 +185,19 @@ def main() -> None:
     args = parse_args()
     evaluation_dir = repo_path(args.evaluation_dir)
     manifest = repo_path(args.manifest)
+    reduction_report = repo_path(args.reduction_report)
     out_csv = repo_path(args.out_csv)
     selection_rows = rows_by_scenario(selection_path(evaluation_dir, args.mode))
 
     output_rows: list[dict[str, Any]] = []
     for limit in args.per_scenario:
         started = time.perf_counter()
-        selected_generated_by_scenario = reduced_ids_by_scenario(manifest, args.strategy, limit)
+        selected_generated_by_scenario, reduction_input = reduced_ids_by_scenario(
+            manifest,
+            reduction_report,
+            args.strategy,
+            limit,
+        )
         selected_sources = Counter()
         selected_recalls: list[float] = []
         achievable_recalls: list[float] = []
@@ -142,13 +229,10 @@ def main() -> None:
             if attack_count <= 0:
                 attack_count = len(set().union(*(combined_coverage(row.get("playbook_id", ""), direct, inferred) for row in filtered)))
 
-            selected = max(
+            selected = min(
                 filtered,
                 key=lambda row: (
-                    to_float(row.get("total_score"), 0.0),
-                    len(combined_coverage(row.get("playbook_id", ""), direct, inferred)),
-                    -int(to_float(row.get("action_count"), 10**9)),
-                    to_float(row.get("raw_risk_reduction"), 0.0),
+                    -to_float(row.get("total_score"), 0.0),
                     row.get("playbook_id", ""),
                 ),
             )
@@ -164,6 +248,7 @@ def main() -> None:
 
         output_rows.append({
             "per_scenario": limit,
+            "reduction_input": reduction_input,
             "status": "ok" if not missing_scenarios else "incomplete",
             "missing_scenarios": ";".join(missing_scenarios),
             "generated_candidates_retained": len(retained_generated_ids),
@@ -181,6 +266,7 @@ def main() -> None:
         output_rows,
         [
             "per_scenario",
+            "reduction_input",
             "status",
             "missing_scenarios",
             "generated_candidates_retained",

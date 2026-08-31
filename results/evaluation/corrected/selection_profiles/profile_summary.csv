@@ -1,0 +1,4 @@
+profile,scenario_count,generated_selected_count,community_selected_count,avg_combined_attack_recall,avg_achievable_combined_attack_recall,avg_normalized_achievable_recall,normalized_improvement_vs_closed_loop_balanced,avg_combined_improvement_vs_closed_loop_balanced
+closed-loop-balanced,16,10,6,0.242758,0.352532,0.693728,0.000000,0.000000
+coverage-primary,16,10,6,0.267845,0.352532,0.765885,0.072157,0.025087
+coverage-constrained,16,9,7,0.264631,0.352532,0.757812,0.064084,0.021873

@@ -2,7 +2,11 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
+import json
+import sys
 from collections import Counter, defaultdict
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 import xml.etree.ElementTree as ET
@@ -21,6 +25,8 @@ from closed_loop_common import (
     repo_path,
     safe_id,
     split_multi,
+    split_playbook_ids,
+    to_float,
     write_csv,
     write_json,
 )
@@ -36,34 +42,43 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--manifest",
         type=Path,
-        default=Path("results/generated_repository/reduced_generated_playbooks_manifest.csv"),
+        default=Path(
+            "results/generated_repository/corrected_k03/"
+            "reduced_generated_playbooks_manifest.csv"
+        ),
     )
     parser.add_argument(
         "--generated-owl",
         type=Path,
-        default=Path("results/generated_repository/reduced_generated_playbooks.owl"),
+        default=Path(
+            "results/generated_repository/corrected_k03/"
+            "reduced_generated_playbooks.owl"
+        ),
     )
     parser.add_argument(
         "--reduced-manifest",
         type=Path,
-        default=Path("results/generated_repository/reduced_generated_playbooks_manifest.csv"),
+        default=Path(
+            "results/generated_repository/corrected_k03/"
+            "reduced_generated_playbooks_manifest.csv"
+        ),
     )
     parser.add_argument(
         "--evaluation-dir",
         type=Path,
-        default=Path("results/evaluation"),
+        default=Path("results/evaluation/corrected"),
     )
     parser.add_argument("--per-scenario", type=int, default=50)
     parser.add_argument("--allow-cross-scenario-generated", action="store_true")
     parser.add_argument(
         "--out-json",
         type=Path,
-        default=Path("results/evaluation/diagnostics/sanity_summary.json"),
+        default=Path("results/evaluation/corrected/sanity_summary.json"),
     )
     parser.add_argument(
         "--out-csv",
         type=Path,
-        default=Path("results/evaluation/diagnostics/sanity_checks.csv"),
+        default=Path("results/evaluation/corrected/sanity_checks.csv"),
     )
     return parser.parse_args()
 
@@ -74,6 +89,14 @@ def add_check(rows: list[dict[str, Any]], check: str, passed: bool, details: str
         "passed": str(passed),
         "details": details,
     })
+
+
+def file_sha256(path: Path) -> str:
+    digest = hashlib.sha256()
+    with path.open("rb") as fh:
+        for chunk in iter(lambda: fh.read(1024 * 1024), b""):
+            digest.update(chunk)
+    return digest.hexdigest()
 
 
 def check_manifest(rows: list[dict[str, Any]], manifest: Path) -> dict[str, list[dict[str, str]]]:
@@ -215,7 +238,20 @@ def check_selection_outputs(rows: list[dict[str, Any]], evaluation_dir: Path, al
         add_check(rows, f"{mode}_selection_output_exists", path.exists(), repo_display_path(path))
         if path.exists():
             csv_rows = read_csv_dicts(path)
+            scenario_rows = [
+                row for row in csv_rows
+                if row.get("Scenario") and row.get("Scenario") != "Average"
+            ]
             columns = set(csv_rows[0].keys()) if csv_rows else set()
+            scenario_names = [row.get("Scenario", "") for row in scenario_rows]
+            add_check(
+                rows,
+                f"{mode}_has_exactly_16_scenarios",
+                len(scenario_rows) == len(DEFAULT_SCENARIOS)
+                and sorted(scenario_names) == sorted(DEFAULT_SCENARIOS),
+                f"rows={len(scenario_rows)}; missing={sorted(set(DEFAULT_SCENARIOS) - set(scenario_names))}; "
+                f"extra={sorted(set(scenario_names) - set(DEFAULT_SCENARIOS))}",
+            )
             add_check(
                 rows,
                 f"{mode}_has_all_scoring_columns",
@@ -227,6 +263,75 @@ def check_selection_outputs(rows: list[dict[str, Any]], evaluation_dir: Path, al
                 f"{mode}_has_normalized_recall_columns",
                 recall_columns <= columns,
                 f"missing={sorted(recall_columns - columns)}",
+            )
+
+            invalid_recall_rows = []
+            non_union_rows = []
+            above_achievable_rows = []
+            invalid_normalized_rows = []
+            tie_mismatches = []
+            non_single_winners = []
+            for selection in scenario_rows:
+                scenario = selection.get("Scenario", "")
+                direct = to_float(selection.get("direct_attack_recall"), -1.0)
+                inferred = to_float(selection.get("inferred_attack_recall"), -1.0)
+                combined = to_float(selection.get("combined_attack_recall"), -1.0)
+                achievable = to_float(selection.get("achievable_combined_attack_recall"), -1.0)
+                normalized = to_float(selection.get("normalized_combined_attack_recall"), -1.0)
+                if any(value < -1e-12 or value > 1.0 + 1e-12 for value in (direct, inferred, combined, achievable)):
+                    invalid_recall_rows.append(scenario)
+                if combined + 1e-12 < max(direct, inferred) or combined > direct + inferred + 1e-12:
+                    non_union_rows.append(scenario)
+                if combined > achievable + 1e-12:
+                    above_achievable_rows.append(scenario)
+                expected_normalized = combined / achievable if achievable > 0 else 0.0
+                if (
+                    normalized < -1e-12
+                    or normalized > 1.0 + 1e-12
+                    or abs(normalized - expected_normalized) > 1e-9
+                ):
+                    invalid_normalized_rows.append(scenario)
+
+                selected_ids = split_playbook_ids(selection.get("Top_MCDM_Playbook", ""))
+                if len(selected_ids) != 1:
+                    non_single_winners.append(scenario)
+                    continue
+                candidate_path = (
+                    evaluation_dir / mode / "candidate_scores_per_scenario"
+                    / f"{scenario}_candidate_scores.csv"
+                )
+                candidate_rows = read_csv_dicts(candidate_path) if candidate_path.exists() else []
+                if not candidate_rows:
+                    tie_mismatches.append(f"{scenario}:missing candidate table")
+                    continue
+                max_score = max(to_float(row.get("total_score"), -1.0) for row in candidate_rows)
+                expected_id = min(
+                    row.get("playbook_id", "")
+                    for row in candidate_rows
+                    if abs(to_float(row.get("total_score"), -1.0) - max_score) <= 1e-12
+                    and row.get("playbook_id")
+                )
+                if selected_ids[0] != expected_id:
+                    tie_mismatches.append(f"{scenario}:{selected_ids[0]}!={expected_id}")
+
+            add_check(rows, f"{mode}_recall_values_within_bounds", not invalid_recall_rows, str(invalid_recall_rows))
+            add_check(rows, f"{mode}_combined_recall_is_union_compatible", not non_union_rows, str(non_union_rows))
+            add_check(rows, f"{mode}_combined_not_above_achievable", not above_achievable_rows, str(above_achievable_rows))
+            add_check(rows, f"{mode}_normalized_recall_consistent", not invalid_normalized_rows, str(invalid_normalized_rows))
+            add_check(rows, f"{mode}_exactly_one_winner_per_scenario", not non_single_winners, str(non_single_winners))
+            add_check(rows, f"{mode}_winner_matches_declared_tie_policy", not tie_mismatches, str(tie_mismatches))
+
+            summary_path = evaluation_dir / mode / "selection_summary.json"
+            summary_text = summary_path.read_text(encoding="utf-8") if summary_path.exists() else ""
+            historical_manifest_reference = (
+                "results/generated_repository/reduced_generated_playbooks_manifest.csv"
+                in summary_text
+            )
+            add_check(
+                rows,
+                f"{mode}_does_not_reference_historical_manifest",
+                not historical_manifest_reference,
+                repo_display_path(summary_path),
             )
 
     for mode in EVALUATION_MODES:
@@ -272,6 +377,16 @@ def main() -> None:
     failed = len(rows) - passed
     write_csv(out_csv, rows, ["check", "passed", "details"])
     write_json(out_json, {
+        "artifact_status": "paper evaluation",
+        "created_at_utc": datetime.now(timezone.utc).isoformat(),
+        "command": "python " + " ".join(sys.argv),
+        "evaluation_dir": repo_display_path(evaluation_dir),
+        "manifest": repo_display_path(manifest),
+        "manifest_sha256": file_sha256(manifest) if manifest.exists() else None,
+        "generated_owl": repo_display_path(generated_owl),
+        "generated_owl_sha256": (
+            file_sha256(generated_owl) if generated_owl.exists() else None
+        ),
         "passed": passed,
         "failed": failed,
         "checks": rows,

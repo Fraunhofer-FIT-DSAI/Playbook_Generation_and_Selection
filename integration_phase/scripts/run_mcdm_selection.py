@@ -2,7 +2,11 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
+import shlex
+import sys
 from collections import Counter, defaultdict
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
@@ -14,7 +18,8 @@ from closed_loop_common import (
     classify_playbook,
     coverage_by_playbook,
     execute_filtered_scenario_direct_attack_query,
-    execute_scenario_query,
+    execute_filtered_scenario_query,
+    execute_playbook_metadata_query,
     execute_scenario_universe_query,
     expected_source_case_id,
     expected_source_scenario_id,
@@ -25,6 +30,7 @@ from closed_loop_common import (
     local_name,
     metadata_by_playbook,
     playbook_sources,
+    repo_display_path,
     repo_path,
     scenario_profile_cves,
     split_playbook_ids,
@@ -34,24 +40,14 @@ from closed_loop_common import (
     write_csv,
     write_json,
 )
-
-
-COVERAGE_ONLY_WEIGHTS = {
-    "DC": 0.5,
-    "DAC": 0.5,
-}
-
-CLOSED_LOOP_BALANCED_WEIGHTS = {
-    "DC": 0.25,
-    "DAC": 0.20,
-    "DTC": 0.20,
-    "TC": 0.10,
-    "RC": 0.15,
-    "CC": 0.07,
-    "AC": 0.03,
-}
-
-CRITERIA = ["DC", "DAC", "DTC", "TC", "RC", "CC", "AC"]
+from selection_protocol import (
+    CLOSED_LOOP_BALANCED_WEIGHTS,
+    COVERAGE_ONLY_WEIGHTS,
+    CRITERIA,
+    NEUTRAL_VALUE,
+    TOP1_TIE_POLICY,
+    protocol_manifest,
+)
 
 
 def parse_args() -> argparse.Namespace:
@@ -78,7 +74,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--mode",
         choices=EVALUATION_MODES,
-        default="augmented",
+        default="augmented-reduced",
         help="Candidate pool to evaluate.",
     )
     parser.add_argument(
@@ -89,8 +85,19 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--reduced-manifest",
         type=Path,
-        default=Path("results/generated_repository/reduced_generated_playbooks_manifest.csv"),
+        default=Path(
+            "results/generated_repository/corrected_k03/"
+            "reduced_generated_playbooks_manifest.csv"
+        ),
         help="Reduced generated manifest used by generated-reduced and augmented-reduced modes.",
+    )
+    parser.add_argument(
+        "--generated-owl",
+        type=Path,
+        help=(
+            "Generated OWL loaded into GraphDB. For reduced modes, defaults to "
+            "the sibling of --reduced-manifest with '_manifest.csv' replaced by '.owl'."
+        ),
     )
     parser.add_argument(
         "--allow-cross-scenario-generated",
@@ -158,10 +165,20 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--out-dir",
         type=Path,
-        default=Path("results/evaluation"),
+        default=Path("results/evaluation/corrected"),
         help="Output directory.",
     )
     return parser.parse_args()
+
+
+def file_sha256(path: Path | None) -> str | None:
+    if path is None or not path.exists():
+        return None
+    digest = hashlib.sha256()
+    with path.open("rb") as handle:
+        for chunk in iter(lambda: handle.read(1024 * 1024), b""):
+            digest.update(chunk)
+    return digest.hexdigest()
 
 
 def get_all_playbooks(rows: list[dict[str, dict[str, str]]]) -> tuple[list[str], list[str]]:
@@ -280,7 +297,7 @@ def context_value(
         return max(0.0, min(1.0, value_obj)), False
     missing_fields.append(field_name)
     if policy == "neutral":
-        return 0.5, True
+        return NEUTRAL_VALUE, True
     if policy == "zero":
         return 0.0, True
     return 0.0, True
@@ -367,6 +384,10 @@ def candidate_int(row: dict[str, Any], key: str, default: int = 0) -> int:
     return int(to_float(row.get(key), float(default)))
 
 
+def format_metric(value_obj: float) -> str:
+    return f"{value_obj:.12f}"
+
+
 def select_playbooks(
     scoring_profile: str,
     relevance_scores: dict[str, float],
@@ -386,13 +407,12 @@ def select_playbooks(
         ranked = sorted(
             relevance_scores,
             key=lambda playbook: (
-                candidate_float(by_id.get(playbook, {}), "combined_attack_recall", 0.0),
-                relevance_scores[playbook],
-                -candidate_int(by_id.get(playbook, {}), "action_count", 10**9),
-                candidate_float(by_id.get(playbook, {}), "raw_risk_reduction", 0.0),
+                -candidate_float(by_id.get(playbook, {}), "combined_attack_recall", 0.0),
+                -relevance_scores[playbook],
+                candidate_int(by_id.get(playbook, {}), "action_count", 10**9),
+                -candidate_float(by_id.get(playbook, {}), "raw_risk_reduction", 0.0),
                 playbook,
             ),
-            reverse=True,
         )
         top_playbook = ranked[0]
         return [top_playbook], relevance_scores[top_playbook], True, oracle_combined_recall
@@ -409,21 +429,20 @@ def select_playbooks(
         ranked = sorted(
             retained,
             key=lambda playbook: (
-                relevance_scores[playbook],
-                candidate_float(by_id.get(playbook, {}), "combined_attack_recall", 0.0),
-                -candidate_int(by_id.get(playbook, {}), "action_count", 10**9),
-                candidate_float(by_id.get(playbook, {}), "raw_risk_reduction", 0.0),
+                -relevance_scores[playbook],
+                -candidate_float(by_id.get(playbook, {}), "combined_attack_recall", 0.0),
+                candidate_int(by_id.get(playbook, {}), "action_count", 10**9),
+                -candidate_float(by_id.get(playbook, {}), "raw_risk_reduction", 0.0),
                 playbook,
             ),
-            reverse=True,
         )
         top_playbook = ranked[0]
         return [top_playbook], relevance_scores[top_playbook], threshold_satisfied, oracle_combined_recall
 
     ranked = sorted(relevance_scores.items(), key=lambda item: item[1], reverse=True)
     max_score = ranked[0][1]
-    top_playbooks = [playbook for playbook, score in ranked if score == max_score]
-    return top_playbooks, max_score, True, oracle_combined_recall
+    tied = sorted(playbook for playbook, score in ranked if score == max_score)
+    return [tied[0]], max_score, True, oracle_combined_recall
 
 
 def main() -> None:
@@ -449,9 +468,30 @@ def main() -> None:
     )
 
     weights = scoring_weights(args)
+    mapping_owl = repo_path(
+        "selection_phase/source/GraphDB/playbook_step_defend_mapping.owl"
+    )
+    generated_owl = None
+    if canonical in GENERATED_REDUCED_MODES:
+        generated_owl = (
+            repo_path(args.generated_owl)
+            if args.generated_owl is not None
+            else reduced_manifest.with_name(
+                reduced_manifest.name.removesuffix("_manifest.csv") + ".owl"
+            )
+        )
+        if generated_owl is None or not generated_owl.exists():
+            raise FileNotFoundError(
+                "Generated OWL for the reduced manifest was not found: "
+                f"{generated_owl}"
+            )
+    run_started_at = datetime.now(timezone.utc).isoformat()
 
     all_results = []
     summary = {
+        "result_state": "paper evaluation",
+        "run_started_at_utc": run_started_at,
+        "command": "python " + shlex.join(sys.argv),
         "mode": mode,
         "canonical_mode": canonical,
         "endpoint": args.endpoint,
@@ -459,8 +499,45 @@ def main() -> None:
         "match_generated_source_case": not args.allow_cross_scenario_generated,
         "scoring_profile": args.scoring_profile,
         "missing_context_policy": args.missing_context_policy,
-        "reduced_manifest": str(reduced_manifest) if reduced_manifest else "",
-        "reduced_manifest_loaded": bool(allowed_generated_ids),
+        "neutral_default": NEUTRAL_VALUE,
+        "weights": weights,
+        "top1_tie_policy": TOP1_TIE_POLICY,
+        "selection_protocol": protocol_manifest(
+            weights=weights,
+            missing_context_policy=args.missing_context_policy,
+        ),
+        "risk_criterion_input": (
+            "hasRelativeRiskReduction when present; legacy hasRiskReduction fallback"
+        ),
+        "reduced_manifest": (
+            repo_display_path(reduced_manifest)
+            if canonical in GENERATED_REDUCED_MODES
+            else ""
+        ),
+        "reduced_manifest_sha256": (
+            file_sha256(reduced_manifest)
+            if canonical in GENERATED_REDUCED_MODES
+            else ""
+        ),
+        "reduced_manifest_loaded": (
+            bool(allowed_generated_ids)
+            if canonical in GENERATED_REDUCED_MODES
+            else False
+        ),
+        "mapping_owl": repo_display_path(mapping_owl),
+        "mapping_owl_sha256": file_sha256(mapping_owl),
+        "generated_owl": (
+            repo_display_path(generated_owl)
+            if canonical in GENERATED_REDUCED_MODES
+            else ""
+        ),
+        "generated_owl_sha256": (
+            file_sha256(generated_owl)
+            if canonical in GENERATED_REDUCED_MODES
+            else ""
+        ),
+        "historical_candidate_table_reused": False,
+        "candidate_metadata_scope": "complete candidate ID set",
         "scenarios": {},
     }
 
@@ -469,7 +546,15 @@ def main() -> None:
         profile = load_scenario_profile(profile_dir, scenario_name)
         scenario_cves = scenario_profile_cves(profile)
 
-        raw_inferred_rows = execute_scenario_query(args.endpoint, sparql_path)
+        raw_inferred_rows = execute_filtered_scenario_query(
+            args.endpoint,
+            sparql_path,
+            mode,
+            args.generated_prefix,
+            scenario_name=scenario_name,
+            match_generated_source_case=not args.allow_cross_scenario_generated,
+            allowed_generated_ids=allowed_generated_ids,
+        )
         raw_direct_rows = execute_filtered_scenario_direct_attack_query(
             args.endpoint,
             sparql_path,
@@ -526,7 +611,7 @@ def main() -> None:
                 "missing_context_fields": "",
                 "scoring_profile": args.scoring_profile,
                 "missing_context_policy": args.missing_context_policy,
-                "coverage_threshold": f"{args.coverage_threshold:.6f}",
+                "coverage_threshold": format_metric(args.coverage_threshold),
                 "coverage_threshold_satisfied": "",
                 "oracle_combined_attack_recall": "",
                 "selected_action_count": "",
@@ -587,7 +672,8 @@ def main() -> None:
             if scenario_artifacts
         }
 
-        metadata = direct_metadata_for_playbooks(direct_rows)
+        metadata_rows = execute_playbook_metadata_query(args.endpoint, all_playbooks)
+        metadata = direct_metadata_for_playbooks(metadata_rows)
         raw_risk_reduction: dict[str, float | None] = {}
         action_counts: dict[str, int | None] = {}
         for playbook in all_playbooks:
@@ -597,6 +683,8 @@ def main() -> None:
             raw_action_count = metadata_scalar(item, "action_count")
             if raw_action_count:
                 action_counts[playbook] = int(to_float(raw_action_count, 0))
+            elif metadata_set(item, "steps"):
+                action_counts[playbook] = len(metadata_set(item, "steps"))
             elif step_counts.get(playbook):
                 action_counts[playbook] = step_counts[playbook]
             else:
@@ -667,7 +755,6 @@ def main() -> None:
 
             if source == "generated" and not direct_attack_coverage.get(playbook):
                 missing_fields.append("direct_ATTCK_provenance")
-                missing_criteria.add("DTC")
             if source == "generated" and not target_hosts:
                 missing_fields.append("topology_metadata")
 
@@ -715,22 +802,26 @@ def main() -> None:
                 "Scenario": scenario_name,
                 "playbook_id": playbook,
                 "candidate_source": source,
-                "DC": f"{dc:.6f}",
-                "DAC": f"{dac:.6f}",
-                "DTC": f"{dtc:.6f}",
-                "TC": f"{tc:.6f}",
-                "RC": f"{rc:.6f}",
-                "CC": f"{cc:.6f}",
-                "AC": f"{ac:.6f}",
-                "total_score": f"{total_score:.6f}",
-                "direct_attack_recall": f"{direct_recall:.6f}",
-                "inferred_attack_recall": f"{inferred_recall:.6f}",
-                "combined_attack_recall": f"{combined_recall:.6f}",
-                "normalized_direct_attack_recall": f"{normalized_direct_recall:.6f}",
-                "normalized_inferred_attack_recall": f"{normalized_inferred_recall:.6f}",
-                "normalized_combined_attack_recall": f"{normalized_combined_recall:.6f}",
-                "achievable_combined_attack_recall": f"{achievable_combined_recall:.6f}",
-                "raw_risk_reduction": "" if raw_risk_reduction.get(playbook) is None else f"{raw_risk_reduction[playbook]:.6f}",
+                "DC": format_metric(dc),
+                "DAC": format_metric(dac),
+                "DTC": format_metric(dtc),
+                "TC": format_metric(tc),
+                "RC": format_metric(rc),
+                "CC": format_metric(cc),
+                "AC": format_metric(ac),
+                "total_score": format_metric(total_score),
+                "direct_attack_recall": format_metric(direct_recall),
+                "inferred_attack_recall": format_metric(inferred_recall),
+                "combined_attack_recall": format_metric(combined_recall),
+                "normalized_direct_attack_recall": format_metric(normalized_direct_recall),
+                "normalized_inferred_attack_recall": format_metric(normalized_inferred_recall),
+                "normalized_combined_attack_recall": format_metric(normalized_combined_recall),
+                "achievable_combined_attack_recall": format_metric(achievable_combined_recall),
+                "raw_risk_reduction": (
+                    ""
+                    if raw_risk_reduction.get(playbook) is None
+                    else format_metric(raw_risk_reduction[playbook])
+                ),
                 "action_count": "" if action_counts.get(playbook) is None else action_counts[playbook],
                 "source_case_id": ";".join(sorted(source_cases)),
                 "source_scenario_id": ";".join(sorted(source_scenarios)),
@@ -740,7 +831,7 @@ def main() -> None:
                 "missing_context_fields": ";".join(sorted(set(missing_fields))),
                 "scoring_profile": args.scoring_profile,
                 "missing_context_policy": args.missing_context_policy,
-                "coverage_threshold": f"{args.coverage_threshold:.6f}",
+                "coverage_threshold": format_metric(args.coverage_threshold),
                 "coverage_threshold_satisfied": "",
                 "oracle_combined_attack_recall": "",
             })
@@ -825,7 +916,9 @@ def main() -> None:
                 candidate_float(row, "combined_attack_recall", 0.0)
                 >= args.coverage_threshold * oracle_combined_recall - 1e-12
             )
-            row["oracle_combined_attack_recall"] = f"{oracle_combined_recall:.6f}"
+            row["oracle_combined_attack_recall"] = format_metric(
+                oracle_combined_recall
+            )
         write_csv(candidate_dir / f"{scenario_name}_candidate_scores.csv", candidate_rows, candidate_fieldnames)
         generated_candidate_count = sum(1 for playbook in all_playbooks if classify_playbook(playbook, args.generated_prefix) == "generated")
         community_candidate_count = len(all_playbooks) - generated_candidate_count
@@ -851,24 +944,24 @@ def main() -> None:
             "missing_context_fields": selected_candidate["missing_context_fields"],
             "scoring_profile": args.scoring_profile,
             "missing_context_policy": args.missing_context_policy,
-            "coverage_threshold": f"{args.coverage_threshold:.6f}",
+            "coverage_threshold": format_metric(args.coverage_threshold),
             "coverage_threshold_satisfied": str(coverage_threshold_satisfied),
-            "oracle_combined_attack_recall": f"{oracle_combined_recall:.6f}",
+            "oracle_combined_attack_recall": format_metric(oracle_combined_recall),
             "selected_action_count": selected_candidate.get("action_count", ""),
             "selected_risk_reduction": selected_candidate.get("raw_risk_reduction", ""),
             "source_case_id": selected_candidate.get("source_case_id", ""),
             "source_scenario_id": selected_candidate.get("source_scenario_id", ""),
             "attack_path_id": selected_candidate.get("attack_path_id", ""),
-            "direct_attack_recall": f"{direct_recall:.6f}",
-            "inferred_attack_recall": f"{inferred_recall:.6f}",
-            "combined_attack_recall": f"{combined_recall:.6f}",
+            "direct_attack_recall": format_metric(direct_recall),
+            "inferred_attack_recall": format_metric(inferred_recall),
+            "combined_attack_recall": format_metric(combined_recall),
             "achievable_attack_technique_count": len(achievable_combined_attacks),
-            "achievable_direct_attack_recall": f"{achievable_direct_recall:.6f}",
-            "achievable_inferred_attack_recall": f"{achievable_inferred_recall:.6f}",
-            "achievable_combined_attack_recall": f"{achievable_combined_recall:.6f}",
-            "normalized_direct_attack_recall": f"{normalized_direct_recall:.6f}",
-            "normalized_inferred_attack_recall": f"{normalized_inferred_recall:.6f}",
-            "normalized_combined_attack_recall": f"{normalized_combined_recall:.6f}",
+            "achievable_direct_attack_recall": format_metric(achievable_direct_recall),
+            "achievable_inferred_attack_recall": format_metric(achievable_inferred_recall),
+            "achievable_combined_attack_recall": format_metric(achievable_combined_recall),
+            "normalized_direct_attack_recall": format_metric(normalized_direct_recall),
+            "normalized_inferred_attack_recall": format_metric(normalized_inferred_recall),
+            "normalized_combined_attack_recall": format_metric(normalized_combined_recall),
             "generated_candidate_count": generated_candidate_count,
             "community_candidate_count": community_candidate_count,
             "reduced_generated_candidate_count": generated_candidate_count if canonical in GENERATED_REDUCED_MODES else "",
@@ -915,7 +1008,7 @@ def main() -> None:
             "missing_context_fields": "",
             "scoring_profile": args.scoring_profile,
             "missing_context_policy": args.missing_context_policy,
-            "coverage_threshold": f"{args.coverage_threshold:.6f}",
+            "coverage_threshold": format_metric(args.coverage_threshold),
             "coverage_threshold_satisfied": "",
             "oracle_combined_attack_recall": "",
             "selected_action_count": "",
@@ -986,6 +1079,10 @@ def main() -> None:
             "reduced_generated_candidate_count",
         ],
     )
+    summary["run_completed_at_utc"] = datetime.now(timezone.utc).isoformat()
+    summary["scenario_count"] = len(summary["scenarios"])
+    summary["selection_csv"] = repo_display_path(csv_path)
+    summary["selection_csv_sha256"] = file_sha256(csv_path)
     write_json(out_dir / "selection_summary.json", summary)
     print(f"Wrote selection results to {csv_path}")
 

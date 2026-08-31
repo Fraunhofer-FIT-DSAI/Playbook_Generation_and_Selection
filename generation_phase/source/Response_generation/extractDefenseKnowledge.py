@@ -1,29 +1,22 @@
+import math
+from pathlib import Path
+
 import pandas as pd
-from def3nd.def3nd import get_root_defensive_technique
-import re
 from cvss import CVSS3
 import copy
 
-
-
-# Load the CSV into a DataFrame
-
-
-def add_spaces_to_camel_case(name: str) -> str:
-    return re.sub(r'(?<!^)(?=[A-Z])', ' ', name)
-
-
-
-#class Countermeasures:
-#    def __init__(self):
-full_mapping_path = "defense_techniques/d3fend-full-mappings.csv"  # Update with your actual file path
+SOURCE_ROOT = Path(__file__).resolve().parents[1]
+full_mapping_path = SOURCE_ROOT / "defense_techniques" / "d3fend-full-mappings.csv"
 df = pd.read_csv(full_mapping_path)
-uri = 'http://d3fend.mitre.org/ontologies/d3fend.owl#'
-techniques_root_mapping_path = "defense_techniques/technique_root_mapping.csv"
+techniques_root_mapping_path = SOURCE_ROOT / "defense_techniques" / "technique_root_mapping.csv"
 techniques_root_mapping_df = pd.read_csv(techniques_root_mapping_path)
 techniques_root_mapping = techniques_root_mapping_df.set_index('Technique')['RootTechnique'].to_dict()
 
-tactic_df = pd.read_csv("Response_generation/defend_cvss.csv")
+tactic_df = pd.read_csv(Path(__file__).resolve().parent / "defend_cvss.csv")
+tactic_rows_by_strategy = {
+    strategy: rows.to_dict(orient="records")
+    for strategy, rows in tactic_df.groupby("def_tactic", dropna=False)
+}
 
 
 
@@ -47,17 +40,18 @@ df = df[required_columns]
 df['off_tech_id'] = df['off_tech_id'].astype(str).str.strip()
 df['off_tech_parent_id'] = df['off_tech_id'].str.split('.').str[0]
 
-attack_IDs = list(df['off_tech_id'].unique())
+_countermeasure_cache = {}
 
-#def create_artifact_mapping():
-
-
-# Function to filter by attack_id and group by off_artifact_label
 def filter_and_group_by_attack_id(attack_id):
     attack_id = str(attack_id).strip()
+    if attack_id in _countermeasure_cache:
+        return _countermeasure_cache[attack_id].copy()
+
     filtered_df = df[df['off_tech_id'] == attack_id]
     if filtered_df.empty and "." in attack_id:
-        filtered_df = df[df['off_tech_parent_id'] == attack_id.split(".")[0]]
+        parent = attack_id.split(".")[0]
+        parent_exact = df[df['off_tech_id'] == parent]
+        filtered_df = parent_exact if not parent_exact.empty else df[df['off_tech_parent_id'] == parent]
 
 
     countermeasures_df = filtered_df[['off_tech_id', 'def_tech_label', 'def_tactic_label', 'def_tactic_rel_label', 'def_artifact_rel_label', 'def_artifact_label']]
@@ -65,16 +59,12 @@ def filter_and_group_by_attack_id(attack_id):
     mapped_rows = []
     strategies = []
 
-    for index, row in countermeasures_df.iterrows():
-        #artifact = row['off_artifact_label']
+    for _, row in countermeasures_df.iterrows():
         technique = row['def_tech_label']
         technique = technique.replace(" ", "")
-        #print(technique)
         strategy = techniques_root_mapping.get(technique)
         if not strategy:
             continue
-        #strategy = add_spaces_to_camel_case(strategy)
-        #print(strategy)
         mapped_rows.append(row)
         strategies.append(strategy)
                 
@@ -84,21 +74,24 @@ def filter_and_group_by_attack_id(attack_id):
 
     countermeasures_df = pd.DataFrame(mapped_rows).copy()
     countermeasures_df['strategies'] = strategies
+    countermeasures_df['matched_off_tech_id'] = countermeasures_df['off_tech_id']
+    countermeasures_df['off_tech_id'] = attack_id
 
-    return countermeasures_df
+    _countermeasure_cache[attack_id] = countermeasures_df
+    return countermeasures_df.copy()
 
 
 def escalate(val):
-        """Escalate N → L → H"""
-        cvss_scale = ['N', 'L', 'H']
-        try:
-            idx = cvss_scale.index(val)
-            return cvss_scale[min(idx + 1, 2)]
-        except ValueError:
-            return val
+    """Escalate N -> L -> H."""
+    cvss_scale = ['N', 'L', 'H']
+    try:
+        idx = cvss_scale.index(val)
+        return cvss_scale[min(idx + 1, 2)]
+    except ValueError:
+        return val
 
 def deescalate(val):
-    """Deescalate H → L → N"""
+    """Deescalate H -> L -> N."""
     cvss_scale = ['N', 'L', 'H']
     try:
         idx = cvss_scale.index(val)
@@ -106,15 +99,19 @@ def deescalate(val):
     except ValueError:
         return val
 
-def adjust_cvss(cvss_vector: str, tactic_data: pd.DataFrame) -> tuple[str, float]:
+def adjust_cvss(cvss_vector: str, tactic_data) -> tuple[str, float]:
     cvss_scale = ['N', 'L', 'H']
     try:
         vector_dict = {item.split(":")[0]: item.split(":")[1] for item in cvss_vector.split("/")[1:]}
-    except Exception as e:
-        #print(f"Failed to parse CVSS vector: {e}")
+    except Exception:
         return cvss_vector, None
 
-    for _, row in tactic_data.iterrows():
+    if isinstance(tactic_data, pd.DataFrame):
+        tactic_rows = tactic_data.to_dict(orient="records")
+    else:
+        tactic_rows = tactic_data
+
+    for row in tactic_rows:
         for metric in ['AC', 'PR', 'UI', 'C', 'I', 'A']:  
             adjustment = row.get(metric)
             if pd.isna(adjustment) or adjustment == 'NE':
@@ -136,13 +133,11 @@ def adjust_cvss(cvss_vector: str, tactic_data: pd.DataFrame) -> tuple[str, float
             elif adjustment == 'Low':
                 vector_dict[metric] = deescalate(current_val)
 
-        # Reconstruct vector (preserve original ordering)
     new_vector = "CVSS:3.1/" + "/".join([f"{k}:{v}" for k, v in vector_dict.items()])
 
     try:
         new_score = CVSS3(new_vector).base_score
-    except Exception as e:
-        #print(f"Error computing score: {e}")
+    except Exception:
         new_score = None
 
     return new_vector, new_score
@@ -173,8 +168,12 @@ def extract_exploitability_and_impact(vector):
         A = impact_weights[metrics['A']]
         
         exploitability = 8.22 * AV_val * AC_val * PR_val * UI_val
-        impact = 1 - ((1 - C) * (1 - I) * (1 - A))
-        impact *= 6.42 if scope == 'U' else 7.52
+        iss = 1 - ((1 - C) * (1 - I) * (1 - A))
+        if scope == 'U':
+            impact = 6.42 * iss
+        else:
+            impact = 7.52 * (iss - 0.029) - 3.25 * (iss - 0.02) ** 15
+        impact = max(impact, 0.0)
         return round(exploitability, 2), round(impact, 2)
     
 
@@ -197,14 +196,36 @@ def calculate_risk(incident):
     return total_risk
 
 
+def normalize_incident_for_risk(incident):
+    """Use one CVSS computation for both baseline and adjusted path risk."""
+    normalized = copy.deepcopy(incident)
+    for step in normalized:
+        try:
+            exploitability, impact = extract_exploitability_and_impact(step.get('cvss_vector'))
+        except Exception:
+            continue
+        step['exploitability'] = exploitability
+        step['impact'] = impact
+    return normalized
+
+
 def create_countermeasure_table(incident, top_k=3):
     dfs = []
+    adjustment_cache = {}
+    risk_cache = {}
 
     hosts = []
     attack_ids = []
     cvss_vectors = []
     
-    risk = calculate_risk(incident)
+    incident_for_risk = normalize_incident_for_risk(incident)
+    risk = calculate_risk(incident_for_risk)
+    empty_columns = required_columns + [
+        'strategies', 'matched_off_tech_id', 'host', 'step_index',
+        'risk', 'cvss_vector', 'risk_reduction',
+    ]
+    if top_k <= 0:
+        return pd.DataFrame(columns=empty_columns), risk, risk
 
     for step in incident:
         hosts.append(step['host'])
@@ -220,28 +241,33 @@ def create_countermeasure_table(incident, top_k=3):
 
 
         df['host'] = host
-        df['risk'] = calculate_risk(incident)
+        df['step_index'] = i
+        df['risk'] = risk
         df['cvss_vector'] = cvss_vector
         df['risk_reduction'] = 0.0  # Initialize column
 
 
         for idx, row in df.iterrows():
             strategy = row['strategies']  # Assuming this column exists in `df`
-            tactic_row = tactic_df[tactic_df['def_tactic'] == strategy]
+            tactic_rows = tactic_rows_by_strategy.get(strategy, [])
 
-            if tactic_row.empty:
+            if not tactic_rows:
                 continue  # Skip if no tactic found
 
-            new_vector, new_score = adjust_cvss(cvss_vector, tactic_row)
+            adjustment_key = (cvss_vector, strategy)
+            if adjustment_key not in adjustment_cache:
+                adjustment_cache[adjustment_key] = adjust_cvss(cvss_vector, tactic_rows)
+            new_vector, new_score = adjustment_cache[adjustment_key]
 
             if new_score is not None:
-                modified_incident = copy.deepcopy(incident)
-                
-                exploitability, impact = extract_exploitability_and_impact(new_vector)
-                modified_incident[i]['exploitability'] = exploitability
-                modified_incident[i]['impact'] = impact
-
-                new_risk = calculate_risk(modified_incident)
+                risk_key = (i, new_vector)
+                if risk_key not in risk_cache:
+                    modified_incident = copy.deepcopy(incident_for_risk)
+                    exploitability, impact = extract_exploitability_and_impact(new_vector)
+                    modified_incident[i]['exploitability'] = exploitability
+                    modified_incident[i]['impact'] = impact
+                    risk_cache[risk_key] = calculate_risk(modified_incident)
+                new_risk = risk_cache[risk_key]
                 risk_reduction = risk - new_risk
 
                 df.at[idx, 'risk_reduction'] = risk_reduction
@@ -250,29 +276,23 @@ def create_countermeasure_table(incident, top_k=3):
             dfs.append(df)
 
     if not dfs:
-        empty_columns = required_columns + ['strategies', 'host', 'risk', 'cvss_vector', 'risk_reduction']
         return pd.DataFrame(columns=empty_columns), risk, risk
 
     combined_df = pd.concat(dfs, ignore_index=True)
 
-    #print(combined_df)
-
-    tactic_labels = ['Detect', 'Isolate', 'Evict', 'Restore']
-
     detection_df = combined_df[combined_df['def_tactic_label'] == 'Detect'] \
-        .sort_values(by='risk_reduction', ascending=False).head(top_k)
+        .sort_values(by='risk_reduction', ascending=False, kind='mergesort').head(top_k)
 
     containment_df = combined_df[combined_df['def_tactic_label'] == 'Isolate'] \
-        .sort_values(by='risk_reduction', ascending=False).head(top_k)
+        .sort_values(by='risk_reduction', ascending=False, kind='mergesort').head(top_k)
 
     eradication_df = combined_df[combined_df['def_tactic_label'] == 'Evict'] \
-        .sort_values(by='risk_reduction', ascending=False).head(top_k)
+        .sort_values(by='risk_reduction', ascending=False, kind='mergesort').head(top_k)
 
     recovery_df = combined_df[combined_df['def_tactic_label'] == 'Restore'] \
-        .sort_values(by='risk_reduction', ascending=False).head(top_k)
+        .sort_values(by='risk_reduction', ascending=False, kind='mergesort').head(top_k)
 
     
-    # Collect all DataFrames into one list
     selected_countermeasures_dfs = [detection_df, containment_df, eradication_df, recovery_df]
 
     selected_countermeasures = pd.concat(selected_countermeasures_dfs, ignore_index=True)
@@ -282,154 +302,58 @@ def create_countermeasure_table(incident, top_k=3):
         'def_tactic_label',
         'def_artifact_label',
         'host',
+        'step_index',
     ]
     selected_countermeasures = selected_countermeasures \
-        .sort_values(by='risk_reduction', ascending=False) \
+        .sort_values(by='risk_reduction', ascending=False, kind='mergesort') \
         .drop_duplicates(subset=dedup_columns, keep='first')
 
-    # Extract unique (strategy, cvss_vector) pairs as a list of tuples
-    unique_strategies = list(
-        selected_countermeasures[['strategies', 'cvss_vector', 'host']].drop_duplicates().itertuples(index=False, name=None)
-    )
+    candidates = []
+    for _, row in selected_countermeasures.iterrows():
+        try:
+            step_index = int(row['step_index'])
+        except (KeyError, TypeError, ValueError):
+            continue
+        tactic_rows = tactic_rows_by_strategy.get(row['strategies'], [])
+        if not tactic_rows:
+            continue
+        adjustment_key = (row['cvss_vector'], row['strategies'])
+        if adjustment_key not in adjustment_cache:
+            adjustment_cache[adjustment_key] = adjust_cvss(row['cvss_vector'], tactic_rows)
+        new_vector, new_score = adjustment_cache[adjustment_key]
+        if new_score is None:
+            continue
+        exploitability, impact = extract_exploitability_and_impact(new_vector)
+        if math.isnan(exploitability) or math.isnan(impact):
+            continue
+        candidates.append((step_index, new_vector, new_score, exploitability, impact))
 
-    incident_copy = copy.deepcopy(incident)
+    incident_copy = copy.deepcopy(incident_for_risk)
+    epsilon = 1e-9
+    for _ in range(max(1, 50 * len(candidates))):
+        current_risk = calculate_risk(incident_copy)
+        best_gain = epsilon
+        best = None
+        for candidate in candidates:
+            step_index, _new_vector, _new_score, exploitability, impact = candidate
+            step = incident_copy[step_index]
+            saved = (step.get('exploitability'), step.get('impact'))
+            step['exploitability'] = exploitability
+            step['impact'] = impact
+            gain = current_risk - calculate_risk(incident_copy)
+            step['exploitability'], step['impact'] = saved
+            if gain > best_gain:
+                best_gain = gain
+                best = candidate
+        if best is None:
+            break
+        step_index, new_vector, new_score, exploitability, impact = best
+        step = incident_copy[step_index]
+        step['cvss_vector'] = new_vector
+        step['cvss_score'] = new_score
+        step['exploitability'] = exploitability
+        step['impact'] = impact
 
-    # Loop through each unique strategy entry
-    for strategy, original_vector, host in unique_strategies:
-        # Find the tactic row corresponding to the strategy
-        tactic_row = tactic_df[tactic_df['def_tactic'] == strategy]
-        if tactic_row.empty:
-            continue  # Skip if no tactic match
-
-        # Adjust the CVSS vector using the tactic
-        new_vector, new_score = adjust_cvss(original_vector, tactic_row)
-
-        # Extract exploitability and impact if new_score is available
-        if new_score is not None:
-            exploitability, impact = extract_exploitability_and_impact(new_vector)
-
-            # Update the matching host in the incident copy
-            for step in incident_copy:
-                if step['host'] == host:
-                    step['cvss_vector'] = new_vector
-                    step['cvss_score'] = new_score
-                    step['exploitability'] = exploitability
-                    step['impact'] = impact
-                    break  # Assume one match per host
-
-    # Recalculate risk after updates
     updated_risk = calculate_risk(incident_copy)
 
     return selected_countermeasures, risk, updated_risk
-
-
-incident = [
-    {
-        "host": "web-server",
-        "mitre": "T1190",
-        "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-        "exploitability": 3.9,  # Example value from extract_exploitability_and_impact
-        "impact": 5.9           # Example value from extract_exploitability_and_impact
-    },
-    {
-        "host": "db-server",
-        "mitre": "T1040",
-        "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
-        "exploitability": 1.8,
-        "impact": 4.1
-    },
-    {
-        "host": "app-server",
-        "mitre": "T1059",
-        "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:C/C:L/I:H/A:N",
-        "exploitability": 2.5,
-        "impact": 3.7
-    }
-]
-
-
-
-
-def filter_attack_IDs(attack_IDs):
-    attacks = []
-    for attack_id in attack_IDs:
-        filter_by_attack_ID = df[df['off_tech_id'] == attack_id]
-
-
-        countermeasures_df = filter_by_attack_ID[['def_tech_label', 'off_artifact_label', 'def_tactic_label']]
-
-        
-        isContain = False
-        isEradicate = False
-        isRecovery = False
-        isDetect = False
-        for index, row in countermeasures_df.iterrows():
-
-            stage = row['def_tactic_label']
-            if stage == 'Detect':
-                isDetect = True
-            elif stage == 'Isolate':
-                isContain = True          
-            elif stage == 'Evict':
-                isEradicate = True
-            elif stage == 'Restore':
-                isRecovery = True
-
-        if isDetect and isContain and isEradicate and isRecovery:
-            attacks.append(attack_id)
-    
-    #print(attacks)
-
-
-def get_defenses(attack_id):
-    attack_id_df = df[df['off_tech_id'] == attack_id]
-    defense_df = attack_id_df[['def_tech_label', 'def_tactic_label', 'def_tactic_rel_label', 'def_artifact_rel_label', 'def_artifact_label']].drop_duplicates()
-
-def get_containments(attack_id):
-    attack_id_df = df[df['off_tech_id'] == attack_id]
-    defense_df = attack_id_df[['def_tech_label', 'def_tactic_label', 'def_tactic_rel_label', 'def_artifact_rel_label', 'def_artifact_label']].drop_duplicates()
-    contain_df = defense_df[defense_df['def_tactic_label'] == 'Isolate'] 
-    return contain_df
-
-def get_detections(attack_id):
-    attack_id_df = df[df['off_tech_id'] == attack_id]
-    defense_df = attack_id_df[['def_tech_label', 'def_tactic_label', 'def_tactic_rel_label', 'def_artifact_rel_label', 'def_artifact_label']].drop_duplicates()
-    detection_df = defense_df[defense_df['def_tactic_label'] == 'Detect'] 
-    return detection_df
-
-
-def get_detections_by_artifact(attack_id, artifact):
-    attack_artifact_df = df[(df['off_tech_id'] == attack_id) & (df['off_artifact_label'] == artifact)]
-    defense_df = attack_artifact_df[['def_tech_label', 'def_tactic_label', 'def_tactic_rel_label', 'def_artifact_rel_label', 'def_artifact_label']].drop_duplicates()
-    detection_df = defense_df[defense_df['def_tactic_label'] == 'Detect'] 
-    detection_df = detection_df.drop_duplicates()
-    return detection_df
-
-def get_containments_by_artifact(attack_id, artifact):
-    attack_artifact_df = df[(df['off_tech_id'] == attack_id) & (df['off_artifact_label'] == artifact)]
-    defense_df = attack_artifact_df[['def_tech_label', 'def_tactic_label', 'def_tactic_rel_label', 'def_artifact_rel_label', 'def_artifact_label']]
-    containment_df = defense_df[defense_df['def_tactic_label'] == 'Isolate'] 
-    containment_df = containment_df.drop_duplicates()
-    return containment_df
-
-
-def get_eradications(attack_id):
-    attack_id_df = df[df['off_tech_id'] == attack_id]
-    defense_df = attack_id_df[['def_tech_label', 'def_tactic_label', 'def_tactic_rel_label', 'def_artifact_rel_label', 'def_artifact_label']].drop_duplicates()
-    evict_df = defense_df[defense_df['def_tactic_label'] == 'Evict'] 
-    return evict_df
-
-def get_eradications_by_artifact(attack_id, artifact):
-    attack_artifact_df = df[(df['off_tech_id'] == attack_id) & (df['off_artifact_label'] == artifact)]
-    defense_df = attack_artifact_df[['def_tech_label', 'def_tactic_label', 'def_tactic_rel_label', 'def_artifact_rel_label', 'def_artifact_label']]
-    eradicatoin_df = defense_df[defense_df['def_tactic_label'] == 'Evict'] 
-    eradicatoin_df = eradicatoin_df.drop_duplicates()
-    return eradicatoin_df
-
-def get_tactics_by_attack_tech(attack_id):
-    """
-    Returns a list of unique 'def_tactic_label' values
-    where 'off_tech_id' matches the given attack_id.
-    """
-    filtered = df[df['off_tech_id'] == attack_id]
-    return filtered['def_tactic_label'].dropna().unique().tolist()

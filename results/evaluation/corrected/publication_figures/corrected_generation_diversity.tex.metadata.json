@@ -1,0 +1,13 @@
+{
+  "artifact": "results/evaluation/corrected/publication_figures/corrected_generation_diversity.tex",
+  "artifact_sha256": "653e39c006c8bf7fa842c50bc07e8de50a854f280fa04aa16aab45c418cbf6a3",
+  "command": "python integration_phase/scripts/analyze_generation_diversity.py --input-jsonl results/generated_repository/full_k03/export/generated_playbooks.jsonl --reduced-manifest results/generated_repository/corrected_k03/reduced_generated_playbooks_manifest.csv",
+  "corpus": "corrected_k03_reduced",
+  "playbooks": 167,
+  "reduced_manifest_sha256": "866acd440d981c54cc997105fb2d0cdc738f88a58588c3aaa3721b4e8efc5e95",
+  "source_csv": "results/evaluation/corrected/generation_diversity_diagnostics.csv",
+  "source_csv_sha256": "009bba296565b9af85d03244bb6a414e56f3cb39e91a702bca4ea3245ee2ce63",
+  "source_json": "results/evaluation/corrected/generation_diversity_diagnostics.json",
+  "source_json_sha256": "8f3cda708af77dff6bdaa2beea68f2dcd171442503a56010ef205f9bb3bea057",
+  "unreduced_jsonl_sha256": "2e52bf0af0cac1019652ae550e834ff66be27e45abfd7b003150ba8ea4e848ce"
+}

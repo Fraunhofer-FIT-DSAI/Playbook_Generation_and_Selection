@@ -1,0 +1,35 @@
+{
+  "ma_scenario_Nuclear_Reactors_Materials_and_Waste_0151": [
+    "T1110",
+    "T1110.001",
+    "T1110.003",
+    "T1110.004",
+    "T1552",
+    "T1606",
+    "T1606.001",
+    "T1606.002"
+  ],
+  "ma_scenario_Nuclear_Reactors_Materials_and_Waste_0279": [
+    "T1110",
+    "T1110.001",
+    "T1110.003",
+    "T1110.004",
+    "T1552",
+    "T1606",
+    "T1606.001",
+    "T1606.002"
+  ],
+  "ma_scenario_Nuclear_Reactors_Materials_and_Waste_0471": [
+    "T1078",
+    "T1078.001",
+    "T1110",
+    "T1110.001",
+    "T1110.003",
+    "T1110.004",
+    "T1136.003",
+    "T1552",
+    "T1606",
+    "T1606.001",
+    "T1606.002"
+  ]
+}

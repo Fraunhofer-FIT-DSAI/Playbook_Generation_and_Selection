@@ -1,0 +1,117 @@
+{
+  "checks": {
+    "all_generated_playbooks_have_relative_risk": true,
+    "community_mapping_links_equal_4016": true,
+    "community_playbooks_equal_469": true,
+    "community_steps_equal_4016": true,
+    "corrected_generated_playbooks_equal_167": true,
+    "d3fend_namespace_present": true,
+    "generated_manifest_ids_match_graphdb": true,
+    "generated_playbooks_equal_manifest": true,
+    "generated_scenarios_match_manifest": true,
+    "repository_readable": true,
+    "repository_running": true,
+    "repository_writable": true
+  },
+  "command": "python integration_phase/scripts/verify_graphdb_load.py --manifest results/generated_repository/corrected_k03/reduced_generated_playbooks_manifest.csv --input selection_phase/source/IncidentResponseSecurityOntology.rdf --input selection_phase/source/GraphDB/d3fend.owl --input selection_phase/source/GraphDB/playbooks.owl --input selection_phase/source/GraphDB/playbook_step_defend_mapping.owl --input results/generated_repository/corrected_k03/reduced_generated_playbooks.owl --out-json results/evaluation/corrected/graphdb_load_verification.json",
+  "counts_with_inference": {
+    "communityPlaybooks": 469,
+    "communitySteps": 4016,
+    "d3fendNamespaceTriples": 131646,
+    "generatedPlaybooks": 167,
+    "generatedSteps": 1039,
+    "identifiedPlaybooks": 636,
+    "identifiedSteps": 5055,
+    "mappingLinks": 4016,
+    "relativeRiskPlaybooks": 167,
+    "total": 308815
+  },
+  "endpoint": "http://localhost:7200/repositories/incident-response",
+  "explicit_counts": {
+    "communityPlaybooks": 469,
+    "communitySteps": 4016,
+    "d3fendNamespaceTriples": 45520,
+    "generatedPlaybooks": 167,
+    "generatedSteps": 1039,
+    "identifiedPlaybooks": 636,
+    "identifiedSteps": 5055,
+    "mappingLinks": 4016,
+    "relativeRiskPlaybooks": 167,
+    "total": 129271
+  },
+  "generated_id_comparison": {
+    "extra_ids": [],
+    "graphdb_ids": 167,
+    "manifest_ids": 167,
+    "missing_ids": [],
+    "scenario_mismatches": []
+  },
+  "graphdb_version": {
+    "Workbench": "2.3.1",
+    "connectors": "16.1.1",
+    "productType": "free",
+    "productVersion": "10.3.1",
+    "sesame": "4.3.5"
+  },
+  "input_files": [
+    {
+      "bytes": 8855058,
+      "path": "selection_phase/source/IncidentResponseSecurityOntology.rdf",
+      "sha256": "713c08d7f515d21a88f55a9325bed7ac9e34ce1aba9bef1e035ed92be93d085c"
+    },
+    {
+      "bytes": 4853897,
+      "path": "selection_phase/source/GraphDB/d3fend.owl",
+      "sha256": "99dc61f4b5464f11efe61ed8be15992c3dfa6bf0805ed641c8d6534ae46af4b1"
+    },
+    {
+      "bytes": 6942162,
+      "path": "selection_phase/source/GraphDB/playbooks.owl",
+      "sha256": "db4ed6b43bc6d76c2c0a15120915828d64471160fbfe914f662ec1dd89864528"
+    },
+    {
+      "bytes": 1066749,
+      "path": "selection_phase/source/GraphDB/playbook_step_defend_mapping.owl",
+      "sha256": "0ffb6cf054324ac5a3cad0787c1c7b25e4eb03daa7a39bc0fafa1e41e18da271"
+    },
+    {
+      "bytes": 4190318,
+      "path": "results/generated_repository/corrected_k03/reduced_generated_playbooks.owl",
+      "sha256": "9f7531f9e83ea6bee68bd5ee504098eac5c06fd4595b99be908aaeb5ee755a4d"
+    }
+  ],
+  "interpretation": "Mapping counts and graph equality establish artifact integrity only; they do not establish semantic accuracy.",
+  "manifest": {
+    "bytes": 2746510,
+    "path": "results/generated_repository/corrected_k03/reduced_generated_playbooks_manifest.csv",
+    "per_scenario": {
+      "Chemical": 12,
+      "Commercial_Facilities": 13,
+      "Communications": 3,
+      "Critical_Manufacturing": 12,
+      "Dams": 16,
+      "Defense_Industrial_Base": 6,
+      "Emergency_Services": 2,
+      "Energy": 6,
+      "Financial_Services": 26,
+      "Food_and_Agriculture": 14,
+      "Government_Facilities": 14,
+      "Healthcare_and_Public_Health": 11,
+      "Information_Technology": 7,
+      "Nuclear_Reactors_Materials_and_Waste": 5,
+      "Transportation_Systems": 6,
+      "Water_and_Wastewater_Systems": 14
+    },
+    "sha256": "866acd440d981c54cc997105fb2d0cdc738f88a58588c3aaa3721b4e8efc5e95",
+    "unique_playbooks": 167
+  },
+  "repository": {
+    "id": "incident-response",
+    "readable": true,
+    "ruleset": "rdfsplus-optimized",
+    "state": "RUNNING",
+    "writable": true
+  },
+  "status": "pass",
+  "verified_at_utc": "2026-07-30T05:17:38.166420+00:00"
+}

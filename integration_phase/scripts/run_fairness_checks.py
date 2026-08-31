@@ -2,8 +2,11 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
+import sys
 from collections import Counter, defaultdict
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 import xml.etree.ElementTree as ET
@@ -40,7 +43,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--evaluation-dir",
         type=Path,
-        default=Path("results/evaluation"),
+        default=Path("results/evaluation/corrected"),
         help="Evaluation output directory.",
     )
     parser.add_argument(
@@ -56,7 +59,10 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--generated-owl",
         type=Path,
-        default=Path("results/generated_repository/reduced_generated_playbooks.owl"),
+        default=Path(
+            "results/generated_repository/corrected_k03/"
+            "reduced_generated_playbooks.owl"
+        ),
         help="Generated playbook OWL containing playbook and step ATT&CK provenance.",
     )
     parser.add_argument(
@@ -68,12 +74,12 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--out-json",
         type=Path,
-        default=Path("results/evaluation/diagnostics/fairness_checks.json"),
+        default=Path("results/evaluation/corrected/fairness_checks.json"),
     )
     parser.add_argument(
         "--out-csv",
         type=Path,
-        default=Path("results/evaluation/diagnostics/fairness_checks_by_scenario.csv"),
+        default=Path("results/evaluation/corrected/fairness_checks.csv"),
     )
     return parser.parse_args()
 
@@ -82,6 +88,14 @@ def read_json(path: Path) -> Any:
     if not path.exists():
         return {}
     return json.loads(path.read_text(encoding="utf-8"))
+
+
+def file_sha256(path: Path) -> str:
+    digest = hashlib.sha256()
+    with path.open("rb") as fh:
+        for chunk in iter(lambda: fh.read(1024 * 1024), b""):
+            digest.update(chunk)
+    return digest.hexdigest()
 
 
 def candidate_path(evaluation_dir: Path, mode: str, scenario: str) -> Path:
@@ -128,11 +142,12 @@ def replay_selected_ids(rows: list[dict[str, str]]) -> set[str]:
     if not rows:
         return set()
     max_score = max(to_float(row.get("total_score"), -1.0) for row in rows)
-    return {
+    tied = sorted({
         row.get("playbook_id", "")
         for row in rows
         if to_float(row.get("total_score"), -1.0) == max_score and row.get("playbook_id")
-    }
+    })
+    return {tied[0]} if tied else set()
 
 
 def load_owl_attack_equality(owl_path: Path) -> tuple[dict[str, bool], dict[str, dict[str, int]], dict[str, Any]]:
@@ -274,7 +289,8 @@ def main() -> None:
         community_candidate_path = candidate_path(evaluation_dir, args.community_mode, scenario)
         community_candidate_rows = read_csv_dicts(community_candidate_path) if community_candidate_path.exists() else []
         community_selection = community_selection_rows.get(scenario, {})
-        community_selected = set(split_playbook_ids(community_selection.get("Top_MCDM_Playbook", "")))
+        community_first = first_selected_id(community_selection)
+        community_selected = {community_first} if community_first else set()
         replayed_community = replay_selected_ids(community_candidate_rows)
         community_has_no_generated = all(
             row.get("candidate_source") != "generated"
@@ -365,6 +381,14 @@ def main() -> None:
 
     write_csv(out_csv, by_scenario_rows, fieldnames)
     write_json(out_json, {
+        "artifact_status": "paper evaluation",
+        "created_at_utc": datetime.now(timezone.utc).isoformat(),
+        "command": "python " + " ".join(sys.argv),
+        "evaluation_dir": repo_display_path(evaluation_dir),
+        "generated_owl": repo_display_path(generated_owl),
+        "generated_owl_sha256": (
+            file_sha256(generated_owl) if generated_owl.exists() else None
+        ),
         "mode": args.mode,
         "community_mode": args.community_mode,
         "allow_cross_scenario_generated": args.allow_cross_scenario_generated,

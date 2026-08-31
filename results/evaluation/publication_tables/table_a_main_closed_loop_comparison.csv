@@ -1,3 +1,0 @@
-mode,avg_combined_attack_recall,avg_achievable_recall,avg_normalized_achievable_recall,generated_selected_count,generated_playbook_count
-community-only,0.229,0.239,0.964,0/16,0
-augmented-reduced,0.265,0.309,0.858,14/16,244
