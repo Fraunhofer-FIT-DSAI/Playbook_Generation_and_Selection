@@ -4,7 +4,7 @@ Reproducibility artifact for:
 
 **Semantic and Provenance-Aware Selection of Incident Response Playbooks through Attack-Graph-Based Repository Enrichment**
 
-Accepted at the SecAI 2026 workshop, co-located with ESORICS 2026.
+The paper was accepted at SecAI 2026 and will be published by Springer in the Computer Security ESORICS 2026 International Workshops proceedings.
 
 ## Scope
 
